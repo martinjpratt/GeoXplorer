@@ -1,0 +1,15 @@
+Apollo 11	1	23	July 20, 1969	Mare (Sea of Tranquillity), basaltic lava.
+Apollo 12	-3	-23	Nov. 19, 1969	Mare (Ocean of Storms), rocks are basaltic lava; ray from Copernicus Crater crosses the site.
+Apollo 14	-3	-17	Jan. 31, 1971	Highlands (Fra Mauro formation) - thought to be ejecta from the Imbrium Basin.
+Apollo 15	26	4	July 30, 1971	Mare (Hadley Rille in a mare area near the margin of Mare Imbrium) and highlands (Apennine Mountains, a ring of the Imbrium basin); rocks are breccia and basalt.
+Apollo 16	-9	16	April 21, 1972	Highlands (Descartes formation and Cayley Plains); rocks are anorthosite and highlands soil.
+Apollo 17	20	31	Dec. 11, 1972	Mare (Sea of Serenity) and Highlands; rocks are mare soil, orange soil, basaltic lava, anorthosite.
+Luna 9	7.13	-64.37	Jan. 31, 1966	Success - first lunar soft landing, numerous photos, Oceanus Procellarum.
+Luna 13	19	-62	Dec. 21, 1966	Success - second lunar soft landing, numerous photos, Oceanus Procellarum.
+Luna 16	-0.68	56.3	Sep. 12, 1970	Success - returned 0.10kg of Moon soil back to Earth, Mare Fecunditatis.
+Luna 17	38.28	-35	Nov. 10, 1970	Success - Lunikhod-1 rover traveled 10.5 km across lunar surface, Mare Imbrium.
+Luna 18	3.57	56.5	Sep. 2, 1971	Failure - lunar crash impact, Mare Fecunditatis.
+Luna 20	3.57	56.5	Feb. 14, 1972	Success - returned 0.05 kg of Moon soil back to Earth, Mare Fecunditatis.
+Luna 21	25.85	30.45	Jan. 8, 1973	Success - Lunokhod-2 rover traveled 37.0 km across lunar surface, LeMonnier Crater.
+Luna 23	12	62	Oct. 28, 1974	Failure - Moon landing achieved, but malfunction prevented sample return, Mare Crisium.
+Luna 24	12.25	32.2	Aug. 9, 1976	Success - returned 0.17 kg of Moon soil back to Earth, Mare Crisium.

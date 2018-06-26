@@ -1,0 +1,8 @@
+InSight	-44.1	4.5	1	InSightLanding	insight-bundle	1	#
+Curiosity (MSL)	-42.2	-5.4	1	MSLLanding	msl-bundle	1	#
+Phoenix	54.2	68.15	1	PhoenixLanding	phoenix-bundle	1	#
+Opportunity (MER-B)	174.4734	1.9462	1	OppyLanding	oppy-bundle	1	#
+Spirit (MER-A)	-4.5215	14.5718	1	SpiritLanding	spirit-bundle	1	#
+Pathfinder	146.45	19.33	1	PathfinderLanding	pathfinder-bundle	1	#
+Viking 2	-45.990	48.269	1	Viking2Landing	viking2-bundle	1	#
+Viking 1	131.778	22.697	1	Viking1Landing	viking1-bundle	1	#

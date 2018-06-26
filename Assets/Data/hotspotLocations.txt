@@ -1,0 +1,61 @@
+﻿Eifel hotspot	50.2	6.7	w= 1	az= 082° ±8°	rate= 12 ±2 mm/yr
+Iceland hotspot	64.4	-17.3	Eurasian Plate, w= .8 az= 075° ±10° rate= 5 ±3 mm/yr	North American Plate, w= .8 az= 287° ±10° rate= 15 ±5 mm/yr
+Azores hotspot	37.9	-26	Eurasian Plate, w= .5 az= 110° ±12°	North American Plate, w= .3 az= 280° ±15°
+Jan Mayen hotspot	71	-9
+Hainan hotspot	20	110	az= 000° ±15°
+Mount Etna	37.755	14.995
+Hoggar hotspot	23.3	5.6	w= .3 az= 046° ±12°
+Tibesti hotspot	20.8	17.5	w= .2 az= 030° ±15° 
+Jebel Marra/Darfur hotspot	13	24.2	w= .5 az= 045° ±8° 
+Afar hotspot	7	39.5	w= .2 az= 030° ±15° rate= 16 ±8 mm/yr 
+Cameroon hotspot	2	5.1	w= .3 az= 032° ±3° rate= 15 ±5 mm/yr 
+Madeira hotspot	32.6	-17.3	w= .3 az= 055° ±15° rate= 8 ±3 mm/yr 
+Canary hotspot	28.2	-18	w= 1 az= 094° ±8° rate= 20 ±4 mm/yr 
+New England/Great Meteor hotspot	29.4	-29.2	w= .8 az= 040° ±10° 
+Cape Verde hotspot	16	-24	w= .2 az= 060° ±30° 
+St. Helena hotspot	-16.5	-9.5	w= 1 az= 078° ±5° rate= 20 ±3 mm/yr 
+Gough hotspot	-40.3	10	w= .8 az= 079° ±5° rate= 18 ±3 mm/yr 
+Tristan hotspot	-37.2	-12.3 
+Vema hotspot	-32.1	-6.3 
+Discovery hotspot	-43	-2.7	w= 1 az= 068° ±3° 
+Bouvet hotspot	-54.4	3.4 
+Shona/Meteor hotspot	-51.4	-1	w= .3 az= 074° ±6° 
+Réunion hotspot	-21.2	55.7	w= .8 az= 047° ±10° rate= 40 ±10 mm/yr 
+Comoros hotspot	-11.5	43.3	w= .5 az=118 ±10° rate=35 ±10 mm/yr 
+Marion hotspot	-46.9	37.6	w= .5 az= 080° ±12° 
+Crozet hotspot	-46.1	50.2	w= .8 az= 109° ±10° rate= 25 ±13 mm/yr 
+Kerguelen hotspot	-49.6	69	w= .2 az= 050° ±30° rate= 3 ±1 mm/yr 
+Heard hotspot	-53.1	73.5	w= .2 az= 030° ±20° 
+Balleny hotspot	-67.6	164.8	w= .2 az= 325° ±7° 
+Erebus hotspot	-77.5	167.2 
+Trindade/Martin Vaz hotspot	-20.5	-28.8	w= 1 az= 264° ±5° 
+Fernando hotspot	-3.8	-32.4	w= 1 az= 266° ±7° 
+Ascension hotspot	-7.9	-14.3 
+Bermuda hotspot	32.6	-64.3	w= .3 az= 260° ±15° 
+Yellowstone hotspot	44.5	-110.6	w= .8 az= 235° ±5° rate= 26 ±5 mm/yr 
+Raton hotspot	36.8	-104.1	w= 1 az= 240°±4° rate= 30 ±20 mm/yr 
+Anahim hotspot	52.9	-123.73
+Lord Howe hotspot	-34.7	159.8	w= .8 az= 351° ±10° 
+Tasmantid hotspot	-40.4	155.5	w= .8 az= 007° ±5° rate= 63 ±5 mm/yr 
+East Australia hotspot	-40.8	146	w= .3 az= 000° ±15° rate= 65 ±3 mm/yr 
+Juan Fernández hotspot	-33.9	-81.8	w= 1 az= 084° ±3° rate= 80 ±20 mm/yr 
+San Felix hotspot	-26.4	-80.1	w= .3 az= 083° ±8° 
+Easter hotspot	-26.4	-106.5	w= 1 az= 087° ±3° rate= 95 ±5 mm/yr 
+Galápagos hotspot	-0.4	-91.6	Nazca Plate, w= 1 az= 096° ±5° rate= 55 ±8 mm/yr	Cocos Plate, w= .5 az= 045° ±6°
+Louisville hotspot	-53.6	-140.6	w= 1 az= 316° ±5° rate= 67 ±5 mm/yr 
+Foundation hotspot/Ngatemato seamounts	-37.7	-111.1	w= 1 az= 292° ±3° rate= 80 ±6 mm/yr 
+Macdonald hotspot	-29	-140.3	w= 1 az= 289° ±6° rate= 105 ±10 mm/yr 
+North Austral/President Thiers	-25.6	-143.3	w= (1.0) azim= 293° ± 3° rate= 75 ±15 mm/yr 
+Arago hotspot	-23.4	-150.7	w= 1 azim= 296° ±4° rate= 120 ±20 mm/yr 
+Maria/Southern Cook hotspot	-20.2	-153.8	w= 0.8 az= 300° ±4° 
+Samoa hotspot	-14.5	-168.2	w= .8 az= 285°±5° rate= 95 ±20 mm/yr 
+Crough hotspot	-26.9	-114.6	w= .8 az= 284° ± 2° 
+Pitcairn hotspot	-25.4	-129.3	w= 1 az= 293° ±3° rate= 90 ±15 mm/yr 
+Society/Tahiti hotspot	-18.2	-148.4	w= .8 az= 295°±5° rate= 109 ±10 mm/yr 
+Marquesas hotspot	-10.5	-139	w= .5 az= 319° ±8° rate= 93 ±7 mm/yr 
+Caroline hotspot	4.8	164.4	w= 1 az= 289° ±4° rate= 135 ±20 mm/yr 
+Hawaii hotspot	19	-155.2	w= 1 az= 304° ±3° rate= 92 ±3 mm/yr 
+Socorro/Revillagigedos hotspot	19	-111 
+Guadalupe hotspot	27.7	-114.5	w= .8 az= 292° ±5° rate= 80 ±10 mm/yr 
+Cobb hotspot	46	-130.1	w= 1 az= 321° ±5° rate= 43 ±3 mm/yr 
+Bowie/Pratt-Welker hotspot	53	-134.8	w=.8 az= 306° ±4° rate= 40 ±20 mm/yr 

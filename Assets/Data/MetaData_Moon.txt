@@ -1,0 +1,6 @@
+Apollo 11	23	1	1	Apollo11	apollo11-bundle	1	#
+Apollo 12	-23	-3	1	Apollo12	apollo12-bundle	1	#
+Apollo 14	-17	-3	1	Apollo14	apollo14-bundle	1	#
+Apollo 15	4	26	1	Apollo15	apollo15-bundle	1	#
+Apollo 16	16	-9	1	Apollo16	apollo16-bundle	1	#
+Apollo 17	31	20	1	Apollo17	apollo17-bundle	1	#

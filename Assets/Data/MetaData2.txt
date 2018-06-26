@@ -1,0 +1,11 @@
+Valley Of Fire	-114.55438248	36.41229788	3	Valley of Fire 5	ValleyOfFire5	vof5-bundle	1	Muddy Mountain 3	Outcrop3	mmoutcrop3-bundle	1	Muddy Mountain Drone	DroneModel	mmdrone-bundle	1	#
+Palisade Sill	-73.90382335	41.0010986	1	pallisade_2017-01-05	palisade-bundle	1	#
+Hughes Mountain	-90.71099284	37.80398056	1	hughesMountain_full	hmfull-bundle	1	#
+San Juan	-69.06524	-30.20495	3	Basalt Columns	BasaltColumns	basalt-bundle	1	Travertine Quarry	TravertineQuarry	travertine-bundle	1	Cerro La Silla	Cerro_La_Silla_simplified_3d_mesh	cerrolasilla-bundle	1	#
+Stackpole Quay	-4.67762654	51.69729694	1	stackpole	stackpole-bundle	1	#
+Azores	-25.111650	36.952054	6	Santa Maria Raised Beach	SantaMariaPaleoBeach	smbeach-bundle	1	Faial da Terra Dyke	FdTDyke	fdtdyke-bundle	1	Fogo Ignimbrite	fogoIgnimbriteDrone	fogoignimbrite-bundle	1	Ignimbrite 1	ignimbrite1	ignimbrite1-bundle	1	Ignimbrite 2	ignimbrite2	ignimbrite2-bundle	1	Paleo-landslide	paleoLandslide	paleolandslide-bundle	1	#
+Marin Headlands	-122.48856	37.832734	1	Marin_Headlands-for-AR-2	marinheadlands-bundle	1	#
+Moeraki Boulders	170.826362	-45.345356	1	Moeraki	moeraki-bundle	1	#
+Alpine Fault	170.322214	-43.316131	1	AlpineFault	alpinefault-bundle	1	#
+Gothic Cave	-86.1210358	37.1940813	1	gothic	gothiccave-bundle	1	#
+Meteor Crater	-111.0266621	35.0277194	1	meteorCrater1	meteorcrater-bundle	1	#
