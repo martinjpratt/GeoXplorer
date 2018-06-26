@@ -1,0 +1,92 @@
+﻿<?xml version="1.0"?>
+<doc>
+	<assembly>
+		<name>UnityEngine.VehiclesModule</name>
+	</assembly>
+	<members>
+		<member name="T:UnityEngine.WheelHit">
+			<summary>Contact information for the wheel, reported by WheelCollider.</summary>
+		</member>
+		<member name="T:UnityEngine.WheelCollider">
+			<summary>A special collider for vehicle wheels.</summary>
+		</member>
+		<member name="P:UnityEngine.WheelHit.collider">
+			<summary>The other Collider the wheel is hitting.</summary>
+		</member>
+		<member name="P:UnityEngine.WheelCollider.center">
+			<summary>The center of the wheel, measured in the object's local space.</summary>
+		</member>
+		<member name="P:UnityEngine.WheelCollider.radius">
+			<summary>The radius of the wheel, measured in local space.</summary>
+		</member>
+		<member name="P:UnityEngine.WheelHit.point">
+			<summary>The point of contact between the wheel and the ground.</summary>
+		</member>
+		<member name="P:UnityEngine.WheelHit.normal">
+			<summary>The normal at the point of contact.</summary>
+		</member>
+		<member name="P:UnityEngine.WheelHit.forwardDir">
+			<summary>The direction the wheel is pointing in.</summary>
+		</member>
+		<member name="P:UnityEngine.WheelHit.sidewaysDir">
+			<summary>The sideways direction of the wheel.</summary>
+		</member>
+		<member name="P:UnityEngine.WheelCollider.suspensionDistance">
+			<summary>Maximum extension distance of wheel suspension, measured in local space.</summary>
+		</member>
+		<member name="P:UnityEngine.WheelCollider.suspensionSpring">
+			<summary>The parameters of wheel's suspension. The suspension attempts to reach a target position by applying a linear force and a damping force.</summary>
+		</member>
+		<member name="P:UnityEngine.WheelHit.force">
+			<summary>The magnitude of the force being applied for the contact.</summary>
+		</member>
+		<member name="P:UnityEngine.WheelHit.forwardSlip">
+			<summary>Tire slip in the rolling direction. Acceleration slip is negative, braking slip is positive.</summary>
+		</member>
+		<member name="P:UnityEngine.WheelCollider.forceAppPointDistance">
+			<summary>Application point of the suspension and tire forces measured from the base of the resting wheel.</summary>
+		</member>
+		<member name="P:UnityEngine.WheelHit.sidewaysSlip">
+			<summary>Tire slip in the sideways direction.</summary>
+		</member>
+		<member name="P:UnityEngine.WheelCollider.mass">
+			<summary>The mass of the wheel, expressed in kilograms. Must be larger than zero. Typical values would be in range (20,80).</summary>
+		</member>
+		<member name="P:UnityEngine.WheelCollider.wheelDampingRate">
+			<summary>The damping rate of the wheel. Must be larger than zero.</summary>
+		</member>
+		<member name="P:UnityEngine.WheelCollider.forwardFriction">
+			<summary>Properties of tire friction in the direction the wheel is pointing in.</summary>
+		</member>
+		<member name="P:UnityEngine.WheelCollider.sidewaysFriction">
+			<summary>Properties of tire friction in the sideways direction.</summary>
+		</member>
+		<member name="P:UnityEngine.WheelCollider.motorTorque">
+			<summary>Motor torque on the wheel axle expressed in Newton metres. Positive or negative depending on direction.</summary>
+		</member>
+		<member name="P:UnityEngine.WheelCollider.brakeTorque">
+			<summary>Brake torque expressed in Newton metres.</summary>
+		</member>
+		<member name="P:UnityEngine.WheelCollider.steerAngle">
+			<summary>Steering angle in degrees, always around the local y-axis.</summary>
+		</member>
+		<member name="P:UnityEngine.WheelCollider.isGrounded">
+			<summary>Indicates whether the wheel currently collides with something (Read Only).</summary>
+		</member>
+		<member name="P:UnityEngine.WheelCollider.sprungMass">
+			<summary>The mass supported by this WheelCollider.</summary>
+		</member>
+		<member name="P:UnityEngine.WheelCollider.rpm">
+			<summary>Current wheel axle rotation speed, in rotations per minute (Read Only).</summary>
+		</member>
+		<member name="M:UnityEngine.WheelCollider.ConfigureVehicleSubsteps(System.Single,System.Int32,System.Int32)">
+			<summary>Configure vehicle sub-stepping parameters.</summary>
+		</member>
+		<member name="M:UnityEngine.WheelCollider.GetGroundHit(UnityEngine.WheelHit&)">
+			<summary>Gets ground collision data for the wheel.</summary>
+		</member>
+		<member name="M:UnityEngine.WheelCollider.GetWorldPose(UnityEngine.Vector3&,UnityEngine.Quaternion&)">
+			<summary>Gets the world space pose of the wheel accounting for ground contact, suspension limits, steer angle, and rotation angle (angles in degrees).</summary>
+		</member>
+	</members>
+</doc>

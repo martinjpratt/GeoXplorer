@@ -1,0 +1,20 @@
+﻿<?xml version="1.0"?>
+<doc>
+	<assembly>
+		<name>UnityEngine.ScreenCaptureModule</name>
+	</assembly>
+	<members>
+		<member name="T:UnityEngine.ScreenCapture">
+			<summary>Functionality to take Screenshots.</summary>
+		</member>
+		<member name="M:UnityEngine.ScreenCapture.CaptureScreenshot(System.String)">
+			<summary>Captures a screenshot at path filename as a PNG file.</summary>
+		</member>
+		<member name="M:UnityEngine.ScreenCapture.CaptureScreenshot(System.String,System.Int32)">
+			<summary>Captures a screenshot at path filename as a PNG file.</summary>
+		</member>
+		<member name="M:UnityEngine.ScreenCapture.CaptureScreenshotAsTexture(System.Int32)">
+			<summary>Captures a screenshot of the game view into a Texture2D object.</summary>
+		</member>
+	</members>
+</doc>

@@ -1,0 +1,32 @@
+﻿<?xml version="1.0"?>
+<doc>
+	<assembly>
+		<name>UnityEngine.SpriteMaskModule</name>
+	</assembly>
+	<members>
+		<member name="T:UnityEngine.SpriteMask">
+			<summary>A component for masking Sprites and Particles.</summary>
+		</member>
+		<member name="P:UnityEngine.SpriteMask.sprite">
+			<summary>The Sprite used to define the mask.</summary>
+		</member>
+		<member name="P:UnityEngine.SpriteMask.alphaCutoff">
+			<summary>The minimum alpha value used by the mask to select the area of influence defined over the mask's sprite.</summary>
+		</member>
+		<member name="P:UnityEngine.SpriteMask.isCustomRangeActive">
+			<summary>Mask sprites from front to back sorting values only.</summary>
+		</member>
+		<member name="P:UnityEngine.SpriteMask.frontSortingLayerID">
+			<summary>Unique ID of the sorting layer defining the start of the custom range.</summary>
+		</member>
+		<member name="P:UnityEngine.SpriteMask.frontSortingOrder">
+			<summary>Order within the front sorting layer defining the start of the custom range.</summary>
+		</member>
+		<member name="P:UnityEngine.SpriteMask.backSortingLayerID">
+			<summary>Unique ID of the sorting layer defining the end of the custom range.</summary>
+		</member>
+		<member name="P:UnityEngine.SpriteMask.backSortingOrder">
+			<summary>Order within the back sorting layer defining the end of the custom range.</summary>
+		</member>
+	</members>
+</doc>

@@ -1,0 +1,50 @@
+﻿<?xml version="1.0"?>
+<doc>
+	<assembly>
+		<name>UnityEngine.UnityConnectModule</name>
+	</assembly>
+	<members>
+		<member name="T:UnityEngine.RemoteSettings">
+			<summary>Accesses remote settings (common for all game instances).</summary>
+		</member>
+		<member name="T:UnityEngine.RemoteSettings.UpdatedEventHandler">
+			<summary>This event occurs when a new RemoteSettings is fetched and successfully parsed from the server.</summary>
+		</member>
+		<member name="M:UnityEngine.RemoteSettings.ForceUpdate()">
+			<summary>Forces the game to download the newest settings from the server and update its values.</summary>
+		</member>
+		<member name="M:UnityEngine.RemoteSettings.GetInt(System.String,System.Int32)">
+			<summary>Returns the value corresponding to key in the remote settings if it exists.</summary>
+		</member>
+		<member name="M:UnityEngine.RemoteSettings.GetInt(System.String)">
+			<summary>Returns the value corresponding to key in the remote settings if it exists.</summary>
+		</member>
+		<member name="M:UnityEngine.RemoteSettings.GetFloat(System.String,System.Single)">
+			<summary>Returns the value corresponding to key in the remote settings if it exists.</summary>
+		</member>
+		<member name="M:UnityEngine.RemoteSettings.GetFloat(System.String)">
+			<summary>Returns the value corresponding to key in the remote settings if it exists.</summary>
+		</member>
+		<member name="M:UnityEngine.RemoteSettings.GetString(System.String,System.String)">
+			<summary>Returns the value corresponding to key in the remote settings if it exists.</summary>
+		</member>
+		<member name="M:UnityEngine.RemoteSettings.GetString(System.String)">
+			<summary>Returns the value corresponding to key in the remote settings if it exists.</summary>
+		</member>
+		<member name="M:UnityEngine.RemoteSettings.GetBool(System.String,System.Boolean)">
+			<summary>Returns the value corresponding to key in the remote settings if it exists.</summary>
+		</member>
+		<member name="M:UnityEngine.RemoteSettings.GetBool(System.String)">
+			<summary>Returns the value corresponding to key in the remote settings if it exists.</summary>
+		</member>
+		<member name="M:UnityEngine.RemoteSettings.HasKey(System.String)">
+			<summary>Returns true if key exists in the remote settings.</summary>
+		</member>
+		<member name="M:UnityEngine.RemoteSettings.GetCount()">
+			<summary>Returns number of keys in remote settings.</summary>
+		</member>
+		<member name="M:UnityEngine.RemoteSettings.GetKeys()">
+			<summary>Returns all the keys in remote settings.</summary>
+		</member>
+	</members>
+</doc>

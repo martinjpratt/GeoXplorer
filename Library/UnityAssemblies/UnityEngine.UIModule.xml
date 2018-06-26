@@ -1,0 +1,242 @@
+﻿<?xml version="1.0"?>
+<doc>
+	<assembly>
+		<name>UnityEngine.UIModule</name>
+	</assembly>
+	<members>
+		<member name="T:UnityEngine.RenderMode">
+			<summary>RenderMode for the Canvas.</summary>
+		</member>
+		<member name="T:UnityEngine.ICanvasRaycastFilter">
+			<summary>This element can filter raycasts. If the top level element is hit it can further 'check' if the location is valid.</summary>
+		</member>
+		<member name="T:UnityEngine.RectTransformUtility">
+			<summary>Utility class containing helper methods for working with  RectTransform.</summary>
+		</member>
+		<member name="T:UnityEngine.CanvasRenderer">
+			<summary>A component that will render to the screen after all normal rendering has completed when attached to a Canvas. Designed for GUI application.</summary>
+		</member>
+		<member name="T:UnityEngine.CanvasGroup">
+			<summary>A Canvas placable element that can be used to modify children Alpha, Raycasting, Enabled state.</summary>
+		</member>
+		<member name="T:UnityEngine.Canvas">
+			<summary>Element that can be used for screen rendering.</summary>
+		</member>
+		<member name="T:UnityEngine.AdditionalCanvasShaderChannels">
+			<summary>Enum mask of possible shader channel properties that can also be included when the Canvas mesh is created.</summary>
+		</member>
+		<member name="M:UnityEngine.RectTransformUtility.RectangleContainsScreenPoint(UnityEngine.RectTransform,UnityEngine.Vector2,UnityEngine.Camera)">
+			<summary>Does the RectTransform contain the screen point as seen from the given camera?</summary>
+		</member>
+		<member name="M:UnityEngine.ICanvasRaycastFilter.IsRaycastLocationValid(UnityEngine.Vector2,UnityEngine.Camera)">
+			<summary>Given a point and a camera is the raycast valid.</summary>
+		</member>
+		<member name="P:UnityEngine.Canvas.renderMode">
+			<summary>Is the Canvas in World or Overlay mode?</summary>
+		</member>
+		<member name="P:UnityEngine.CanvasGroup.alpha">
+			<summary>Set the alpha of the group.</summary>
+		</member>
+		<member name="P:UnityEngine.CanvasRenderer.isMask">
+			<summary>Is the UIRenderer a mask component.</summary>
+		</member>
+		<member name="P:UnityEngine.CanvasRenderer.hasRectClipping">
+			<summary></summary>
+		</member>
+		<member name="P:UnityEngine.CanvasGroup.interactable">
+			<summary>Is the group interactable (are the elements beneath the group enabled).</summary>
+		</member>
+		<member name="M:UnityEngine.RectTransformUtility.PixelAdjustPoint(UnityEngine.Vector2,UnityEngine.Transform,UnityEngine.Canvas)">
+			<summary>Convert a given point in screen space into a pixel correct point.</summary>
+		</member>
+		<member name="P:UnityEngine.Canvas.isRootCanvas">
+			<summary>Is this the root Canvas?</summary>
+		</member>
+		<member name="M:UnityEngine.RectTransformUtility.PixelAdjustRect(UnityEngine.RectTransform,UnityEngine.Canvas)">
+			<summary>Given a rect transform, return the corner points in pixel accurate coordinates.</summary>
+		</member>
+		<member name="M:UnityEngine.RectTransformUtility.RectangleContainsScreenPoint(UnityEngine.RectTransform,UnityEngine.Vector2)">
+			<summary>Does the RectTransform contain the screen point as seen from the given camera?</summary>
+		</member>
+		<member name="P:UnityEngine.CanvasRenderer.hasPopInstruction">
+			<summary>Enable 'render stack' pop draw call.</summary>
+		</member>
+		<member name="P:UnityEngine.Canvas.worldCamera">
+			<summary></summary>
+		</member>
+		<member name="P:UnityEngine.CanvasGroup.blocksRaycasts">
+			<summary>Does this group block raycasting (allow collision).</summary>
+		</member>
+		<member name="M:UnityEngine.RectTransformUtility.ScreenPointToWorldPointInRectangle(UnityEngine.RectTransform,UnityEngine.Vector2,UnityEngine.Camera,UnityEngine.Vector3&)">
+			<summary>Transform a screen space point to a position in world space that is on the plane of the given RectTransform.</summary>
+		</member>
+		<member name="M:UnityEngine.RectTransformUtility.ScreenPointToLocalPointInRectangle(UnityEngine.RectTransform,UnityEngine.Vector2,UnityEngine.Camera,UnityEngine.Vector2&)">
+			<summary>Transform a screen space point to a position in the local space of a RectTransform that is on the plane of its rectangle.</summary>
+		</member>
+		<member name="M:UnityEngine.RectTransformUtility.FlipLayoutOnAxis(UnityEngine.RectTransform,System.Int32,System.Boolean,System.Boolean)">
+			<summary>Flips the alignment of the RectTransform along the horizontal or vertical axis, and optionally its children as well.</summary>
+		</member>
+		<member name="P:UnityEngine.CanvasGroup.ignoreParentGroups">
+			<summary>Should the group ignore parent groups?</summary>
+		</member>
+		<member name="M:UnityEngine.RectTransformUtility.FlipLayoutAxes(UnityEngine.RectTransform,System.Boolean,System.Boolean)">
+			<summary>Flips the horizontal and vertical axes of the RectTransform size and alignment, and optionally its children as well.</summary>
+		</member>
+		<member name="P:UnityEngine.Canvas.pixelRect">
+			<summary>Get the render rect for the Canvas.</summary>
+		</member>
+		<member name="M:UnityEngine.CanvasGroup.IsRaycastLocationValid(UnityEngine.Vector2,UnityEngine.Camera)">
+			<summary>Returns true if the Group allows raycasts.</summary>
+		</member>
+		<member name="P:UnityEngine.CanvasRenderer.materialCount">
+			<summary>The number of materials usable by this renderer.</summary>
+		</member>
+		<member name="P:UnityEngine.Canvas.scaleFactor">
+			<summary>Used to scale the entire canvas, while still making it fit the screen. Only applies with renderMode is Screen Space.</summary>
+		</member>
+		<member name="P:UnityEngine.CanvasRenderer.popMaterialCount">
+			<summary>The number of materials usable by this renderer. Used internally for masking.</summary>
+		</member>
+		<member name="P:UnityEngine.Canvas.referencePixelsPerUnit">
+			<summary>The number of pixels per unit that is considered the default.</summary>
+		</member>
+		<member name="P:UnityEngine.CanvasRenderer.relativeDepth">
+			<summary>Depth of the renderer realative to the parent canvas.</summary>
+		</member>
+		<member name="P:UnityEngine.Canvas.overridePixelPerfect">
+			<summary>Allows for nested canvases to override pixelPerfect settings inherited from parent canvases.</summary>
+		</member>
+		<member name="P:UnityEngine.CanvasRenderer.cull">
+			<summary>Indicates whether geometry emitted by this renderer is ignored.</summary>
+		</member>
+		<member name="P:UnityEngine.Canvas.pixelPerfect">
+			<summary>Force elements in the canvas to be aligned with pixels. Only applies with renderMode is Screen Space.</summary>
+		</member>
+		<member name="P:UnityEngine.CanvasRenderer.absoluteDepth">
+			<summary>Depth of the renderer relative to the root canvas.</summary>
+		</member>
+		<member name="P:UnityEngine.Canvas.planeDistance">
+			<summary>How far away from the camera is the Canvas generated.</summary>
+		</member>
+		<member name="P:UnityEngine.CanvasRenderer.hasMoved">
+			<summary>True if any change has occured that would invalidate the positions of generated geometry.</summary>
+		</member>
+		<member name="P:UnityEngine.Canvas.renderOrder">
+			<summary>The render order in which the canvas is being emitted to the scene.</summary>
+		</member>
+		<member name="M:UnityEngine.CanvasRenderer.SetColor(UnityEngine.Color)">
+			<summary>Set the color of the renderer. Will be multiplied with the UIVertex color and the Canvas color.</summary>
+		</member>
+		<member name="P:UnityEngine.Canvas.overrideSorting">
+			<summary>Override the sorting of canvas.</summary>
+		</member>
+		<member name="M:UnityEngine.CanvasRenderer.GetColor()">
+			<summary>Get the current color of the renderer.</summary>
+		</member>
+		<member name="P:UnityEngine.Canvas.sortingOrder">
+			<summary>Canvas' order within a sorting layer.</summary>
+		</member>
+		<member name="M:UnityEngine.CanvasRenderer.GetAlpha()">
+			<summary>Get the current alpha of the renderer.</summary>
+		</member>
+		<member name="P:UnityEngine.Canvas.targetDisplay">
+			<summary>For Overlay mode, display index on which the UI canvas will appear.</summary>
+		</member>
+		<member name="M:UnityEngine.CanvasRenderer.SetAlpha(System.Single)">
+			<summary>Set the alpha of the renderer. Will be multiplied with the UIVertex alpha and the Canvas alpha.</summary>
+		</member>
+		<member name="P:UnityEngine.Canvas.sortingGridNormalizedSize">
+			<summary>The normalized grid size that the canvas will split the renderable area into.</summary>
+		</member>
+		<member name="M:UnityEngine.CanvasRenderer.SetVertices(System.Collections.Generic.List`1<UnityEngine.UIVertex>)">
+			<summary>Set the vertices for the UIRenderer.</summary>
+		</member>
+		<member name="M:UnityEngine.CanvasRenderer.SetVertices(UnityEngine.UIVertex[],System.Int32)">
+			<summary>Set the vertices for the UIRenderer.</summary>
+		</member>
+		<member name="P:UnityEngine.Canvas.normalizedSortingGridSize">
+			<summary>The normalized grid size that the canvas will split the renderable area into.</summary>
+		</member>
+		<member name="M:UnityEngine.CanvasRenderer.EnableRectClipping(UnityEngine.Rect)">
+			<summary>Enables rect clipping on the CanvasRendered. Geometry outside of the specified rect will be clipped (not rendered).</summary>
+		</member>
+		<member name="M:UnityEngine.CanvasRenderer.DisableRectClipping()">
+			<summary>Disables rectangle clipping for this CanvasRenderer.</summary>
+		</member>
+		<member name="M:UnityEngine.CanvasRenderer.SetMaterial(UnityEngine.Material,System.Int32)">
+			<summary></summary>
+		</member>
+		<member name="M:UnityEngine.CanvasRenderer.SetMaterial(UnityEngine.Material,UnityEngine.Texture)">
+			<summary></summary>
+		</member>
+		<member name="P:UnityEngine.Canvas.sortingLayerID">
+			<summary>Unique ID of the Canvas' sorting layer.</summary>
+		</member>
+		<member name="M:UnityEngine.CanvasRenderer.GetMaterial()">
+			<summary>Gets the current Material assigned to the CanvasRenderer.</summary>
+		</member>
+		<member name="M:UnityEngine.CanvasRenderer.GetMaterial(System.Int32)">
+			<summary>Gets the current Material assigned to the CanvasRenderer.</summary>
+		</member>
+		<member name="P:UnityEngine.Canvas.cachedSortingLayerValue">
+			<summary>Cached calculated value based upon SortingLayerID.</summary>
+		</member>
+		<member name="M:UnityEngine.CanvasRenderer.SetPopMaterial(UnityEngine.Material,System.Int32)">
+			<summary>Set the material for the canvas renderer. Used internally for masking.</summary>
+		</member>
+		<member name="P:UnityEngine.Canvas.additionalShaderChannels">
+			<summary>Get or set the mask of additional shader channels to be used when creating the Canvas mesh.</summary>
+		</member>
+		<member name="M:UnityEngine.CanvasRenderer.GetPopMaterial(System.Int32)">
+			<summary>Gets the current Material assigned to the CanvasRenderer. Used internally for masking.</summary>
+		</member>
+		<member name="P:UnityEngine.Canvas.sortingLayerName">
+			<summary>Name of the Canvas' sorting layer.</summary>
+		</member>
+		<member name="M:UnityEngine.CanvasRenderer.SetTexture(UnityEngine.Texture)">
+			<summary>Sets the texture used by this renderer's material.</summary>
+		</member>
+		<member name="P:UnityEngine.Canvas.rootCanvas">
+			<summary>Returns the Canvas closest to root, by checking through each parent and returning the last canvas found. If no other canvas is found then the canvas will return itself.</summary>
+		</member>
+		<member name="M:UnityEngine.CanvasRenderer.SetAlphaTexture(UnityEngine.Texture)">
+			<summary>The Alpha Texture that will be passed to the Shader under the _AlphaTex property.</summary>
+		</member>
+		<member name="M:UnityEngine.Canvas.GetDefaultCanvasMaterial()">
+			<summary>Returns the default material that can be used for rendering normal elements on the Canvas.</summary>
+		</member>
+		<member name="M:UnityEngine.CanvasRenderer.SetMesh(UnityEngine.Mesh)">
+			<summary>Sets the Mesh used by this renderer.</summary>
+		</member>
+		<member name="M:UnityEngine.Canvas.GetETC1SupportedCanvasMaterial()">
+			<summary>Gets or generates the ETC1 Material.</summary>
+		</member>
+		<member name="M:UnityEngine.Canvas.GetDefaultCanvasTextMaterial()">
+			<summary>Returns the default material that can be used for rendering text elements on the Canvas.</summary>
+		</member>
+		<member name="M:UnityEngine.CanvasRenderer.Clear()">
+			<summary>Remove all cached vertices.</summary>
+		</member>
+		<member name="M:UnityEngine.CanvasRenderer.SplitUIVertexStreams(System.Collections.Generic.List`1<UnityEngine.UIVertex>,System.Collections.Generic.List`1<UnityEngine.Vector3>,System.Collections.Generic.List`1<UnityEngine.Color32>,System.Collections.Generic.List`1<UnityEngine.Vector2>,System.Collections.Generic.List`1<UnityEngine.Vector2>,System.Collections.Generic.List`1<UnityEngine.Vector3>,System.Collections.Generic.List`1<UnityEngine.Vector4>,System.Collections.Generic.List`1<System.Int32>)">
+			<summary>Given a list of UIVertex, split the stream into it's component types.</summary>
+		</member>
+		<member name="M:UnityEngine.CanvasRenderer.SplitUIVertexStreams(System.Collections.Generic.List`1<UnityEngine.UIVertex>,System.Collections.Generic.List`1<UnityEngine.Vector3>,System.Collections.Generic.List`1<UnityEngine.Color32>,System.Collections.Generic.List`1<UnityEngine.Vector2>,System.Collections.Generic.List`1<UnityEngine.Vector2>,System.Collections.Generic.List`1<UnityEngine.Vector2>,System.Collections.Generic.List`1<UnityEngine.Vector2>,System.Collections.Generic.List`1<UnityEngine.Vector3>,System.Collections.Generic.List`1<UnityEngine.Vector4>,System.Collections.Generic.List`1<System.Int32>)">
+			<summary>Given a list of UIVertex, split the stream into it's component types.</summary>
+		</member>
+		<member name="M:UnityEngine.Canvas.ForceUpdateCanvases()">
+			<summary>Force all canvases to update their content.</summary>
+		</member>
+		<member name="M:UnityEngine.CanvasRenderer.CreateUIVertexStream(System.Collections.Generic.List`1<UnityEngine.UIVertex>,System.Collections.Generic.List`1<UnityEngine.Vector3>,System.Collections.Generic.List`1<UnityEngine.Color32>,System.Collections.Generic.List`1<UnityEngine.Vector2>,System.Collections.Generic.List`1<UnityEngine.Vector2>,System.Collections.Generic.List`1<UnityEngine.Vector3>,System.Collections.Generic.List`1<UnityEngine.Vector4>,System.Collections.Generic.List`1<System.Int32>)">
+			<summary>Convert a set of vertex components into a stream of UIVertex.</summary>
+		</member>
+		<member name="M:UnityEngine.CanvasRenderer.CreateUIVertexStream(System.Collections.Generic.List`1<UnityEngine.UIVertex>,System.Collections.Generic.List`1<UnityEngine.Vector3>,System.Collections.Generic.List`1<UnityEngine.Color32>,System.Collections.Generic.List`1<UnityEngine.Vector2>,System.Collections.Generic.List`1<UnityEngine.Vector2>,System.Collections.Generic.List`1<UnityEngine.Vector2>,System.Collections.Generic.List`1<UnityEngine.Vector2>,System.Collections.Generic.List`1<UnityEngine.Vector3>,System.Collections.Generic.List`1<UnityEngine.Vector4>,System.Collections.Generic.List`1<System.Int32>)">
+			<summary>Convert a set of vertex components into a stream of UIVertex.</summary>
+		</member>
+		<member name="M:UnityEngine.CanvasRenderer.AddUIVertexStream(System.Collections.Generic.List`1<UnityEngine.UIVertex>,System.Collections.Generic.List`1<UnityEngine.Vector3>,System.Collections.Generic.List`1<UnityEngine.Color32>,System.Collections.Generic.List`1<UnityEngine.Vector2>,System.Collections.Generic.List`1<UnityEngine.Vector2>,System.Collections.Generic.List`1<UnityEngine.Vector3>,System.Collections.Generic.List`1<UnityEngine.Vector4>)">
+			<summary>Take the Vertex steam and split it corrisponding arrays (positions, colors, uv0s, uv1s, normals and tangents).</summary>
+		</member>
+		<member name="M:UnityEngine.CanvasRenderer.AddUIVertexStream(System.Collections.Generic.List`1<UnityEngine.UIVertex>,System.Collections.Generic.List`1<UnityEngine.Vector3>,System.Collections.Generic.List`1<UnityEngine.Color32>,System.Collections.Generic.List`1<UnityEngine.Vector2>,System.Collections.Generic.List`1<UnityEngine.Vector2>,System.Collections.Generic.List`1<UnityEngine.Vector2>,System.Collections.Generic.List`1<UnityEngine.Vector2>,System.Collections.Generic.List`1<UnityEngine.Vector3>,System.Collections.Generic.List`1<UnityEngine.Vector4>)">
+			<summary>Take the Vertex steam and split it corrisponding arrays (positions, colors, uv0s, uv1s, normals and tangents).</summary>
+		</member>
+	</members>
+</doc>

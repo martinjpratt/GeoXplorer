@@ -1,0 +1,35 @@
+﻿<?xml version="1.0"?>
+<doc>
+	<assembly>
+		<name>UnityEngine.UnityWebRequestModule</name>
+	</assembly>
+	<members>
+		<member name="T:UnityEngine.WWWForm">
+			<summary>Helper class to generate form data to post to web servers using the UnityWebRequest or WWW classes.</summary>
+		</member>
+		<member name="P:UnityEngine.WWWForm.headers">
+			<summary>(Read Only) Returns the correct request headers for posting the form using the WWW class.</summary>
+		</member>
+		<member name="P:UnityEngine.WWWForm.data">
+			<summary>(Read Only) The raw data to pass as the POST request body when sending the form.</summary>
+		</member>
+		<member name="M:UnityEngine.WWWForm.AddField(System.String,System.String)">
+			<summary>Add a simple field to the form.</summary>
+		</member>
+		<member name="M:UnityEngine.WWWForm.AddField(System.String,System.String,System.Text.Encoding)">
+			<summary>Add a simple field to the form.</summary>
+		</member>
+		<member name="M:UnityEngine.WWWForm.AddField(System.String,System.Int32)">
+			<summary>Add a simple field to the form.</summary>
+		</member>
+		<member name="M:UnityEngine.WWWForm.AddBinaryData(System.String,System.Byte[])">
+			<summary>Add binary data to the form.</summary>
+		</member>
+		<member name="M:UnityEngine.WWWForm.AddBinaryData(System.String,System.Byte[],System.String)">
+			<summary>Add binary data to the form.</summary>
+		</member>
+		<member name="M:UnityEngine.WWWForm.AddBinaryData(System.String,System.Byte[],System.String,System.String)">
+			<summary>Add binary data to the form.</summary>
+		</member>
+	</members>
+</doc>

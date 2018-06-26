@@ -1,0 +1,1214 @@
+﻿<?xml version="1.0"?>
+<doc>
+	<assembly>
+		<name>UnityEngine.IMGUIModule</name>
+	</assembly>
+	<members>
+		<member name="T:UnityEngine.Event">
+			<summary>A UnityGUI event.</summary>
+		</member>
+		<member name="T:UnityEngine.EventModifiers">
+			<summary>Types of modifier key that can be active during a keystroke event.</summary>
+		</member>
+		<member name="T:UnityEngine.FocusType">
+			<summary>Used by GUIUtility.GetControlID to inform the IMGUI system if a given control can get keyboard focus. This allows the IMGUI system to give focus appropriately when a user presses tab for cycling between controls.</summary>
+		</member>
+		<member name="T:UnityEngine.ScaleMode">
+			<summary>Scaling mode to draw textures with.</summary>
+		</member>
+		<member name="T:UnityEngine.GUILayout.ScrollViewScope">
+			<summary>Disposable helper class for managing BeginScrollView / EndScrollView.</summary>
+		</member>
+		<member name="T:UnityEngine.GUIContent">
+			<summary>The contents of a GUI element.</summary>
+		</member>
+		<member name="T:UnityEngine.GUISettings">
+			<summary>General settings for how the GUI behaves.</summary>
+		</member>
+		<member name="T:UnityEngine.GUILayout.HorizontalScope">
+			<summary>Disposable helper class for managing BeginHorizontal / EndHorizontal.</summary>
+		</member>
+		<member name="T:UnityEngine.GUITargetAttribute">
+			<summary>Allows to control for which display the OnGUI is called.</summary>
+		</member>
+		<member name="T:UnityEngine.GUILayoutUtility">
+			<summary>Utility functions for implementing and extending the GUILayout class.</summary>
+		</member>
+		<member name="T:UnityEngine.GUILayout.AreaScope">
+			<summary>Disposable helper class for managing BeginArea / EndArea.</summary>
+		</member>
+		<member name="T:UnityEngine.GUI.ToolbarButtonSize">
+			<summary>Determines how toolbar button size is calculated.</summary>
+		</member>
+		<member name="T:UnityEngine.GUI.WindowFunction">
+			<summary>Callback to draw GUI within a window (used with GUI.Window).</summary>
+		</member>
+		<member name="T:UnityEngine.GUILayout.VerticalScope">
+			<summary>Disposable helper class for managing BeginVertical / EndVertical.</summary>
+		</member>
+		<member name="T:UnityEngine.GUILayoutOption">
+			<summary>Class internally used to pass layout options into GUILayout functions. You don't use these directly, but construct them with the layouting functions in the GUILayout class.</summary>
+		</member>
+		<member name="T:UnityEngine.ImagePosition">
+			<summary>How image and text is placed inside GUIStyle.</summary>
+		</member>
+		<member name="T:UnityEngine.GUI.GroupScope">
+			<summary>Disposable helper class for managing BeginGroup / EndGroup.</summary>
+		</member>
+		<member name="T:UnityEngine.GUIUtility">
+			<summary>Utility class for making new GUI controls.</summary>
+		</member>
+		<member name="T:UnityEngine.GUIStyle">
+			<summary>Styling information for GUI elements.</summary>
+		</member>
+		<member name="T:UnityEngine.GUI.ScrollViewScope">
+			<summary>Disposable helper class for managing BeginScrollView / EndScrollView.</summary>
+		</member>
+		<member name="T:UnityEngine.GUILayout">
+			<summary>The GUILayout class is the interface for Unity gui with automatic layout.</summary>
+		</member>
+		<member name="P:UnityEngine.GUISettings.doubleClickSelectsWord">
+			<summary>Should double-clicking select words in text fields.</summary>
+		</member>
+		<member name="P:UnityEngine.Event.type">
+			<summary>The type of event.</summary>
+		</member>
+		<member name="T:UnityEngine.EventType">
+			<summary>Types of UnityGUI input and processing events.</summary>
+		</member>
+		<member name="T:UnityEngine.GUISkin">
+			<summary>Defines how GUI looks and behaves.</summary>
+		</member>
+		<member name="M:UnityEngine.GUILayoutUtility.GetRect(UnityEngine.GUIContent,UnityEngine.GUIStyle)">
+			<summary>Reserve layout space for a rectangle for displaying some contents with a specific style.</summary>
+		</member>
+		<member name="M:UnityEngine.GUILayoutUtility.GetRect(UnityEngine.GUIContent,UnityEngine.GUIStyle,UnityEngine.GUILayoutOption[])">
+			<summary>Reserve layout space for a rectangle for displaying some contents with a specific style.</summary>
+		</member>
+		<member name="M:UnityEngine.GUILayoutUtility.GetRect(System.Single,System.Single)">
+			<summary>Reserve layout space for a rectangle for displaying some contents with a specific style.</summary>
+		</member>
+		<member name="M:UnityEngine.GUILayoutUtility.GetRect(System.Single,System.Single,UnityEngine.GUIStyle)">
+			<summary>Reserve layout space for a rectangle for displaying some contents with a specific style.</summary>
+		</member>
+		<member name="P:UnityEngine.GUIUtility.systemCopyBuffer">
+			<summary>Get access to the system-wide pasteboard.</summary>
+		</member>
+		<member name="M:UnityEngine.GUILayoutUtility.GetRect(System.Single,System.Single,UnityEngine.GUILayoutOption[])">
+			<summary>Reserve layout space for a rectangle for displaying some contents with a specific style.</summary>
+		</member>
+		<member name="M:UnityEngine.GUILayoutUtility.GetRect(System.Single,System.Single,UnityEngine.GUIStyle,UnityEngine.GUILayoutOption[])">
+			<summary>Reserve layout space for a rectangle for displaying some contents with a specific style.</summary>
+		</member>
+		<member name="M:UnityEngine.GUILayoutUtility.GetRect(System.Single,System.Single,System.Single,System.Single)">
+			<summary>Reserve layout space for a rectangle for displaying some contents with a specific style.</summary>
+		</member>
+		<member name="M:UnityEngine.GUILayoutUtility.GetRect(System.Single,System.Single,System.Single,System.Single,UnityEngine.GUIStyle)">
+			<summary>Reserve layout space for a rectangle for displaying some contents with a specific style.</summary>
+		</member>
+		<member name="M:UnityEngine.GUILayoutUtility.GetRect(System.Single,System.Single,System.Single,System.Single,UnityEngine.GUILayoutOption[])">
+			<summary>Reserve layout space for a rectangle for displaying some contents with a specific style.</summary>
+		</member>
+		<member name="M:UnityEngine.GUILayoutUtility.GetRect(System.Single,System.Single,System.Single,System.Single,UnityEngine.GUIStyle,UnityEngine.GUILayoutOption[])">
+			<summary>Reserve layout space for a rectangle for displaying some contents with a specific style.</summary>
+		</member>
+		<member name="P:UnityEngine.Event.button">
+			<summary>Which mouse button was pressed.</summary>
+		</member>
+		<member name="M:UnityEngine.GUILayout.Label(UnityEngine.Texture,UnityEngine.GUILayoutOption[])">
+			<summary>Make an auto-layout label.</summary>
+		</member>
+		<member name="M:UnityEngine.GUILayout.Label(System.String,UnityEngine.GUILayoutOption[])">
+			<summary>Make an auto-layout label.</summary>
+		</member>
+		<member name="M:UnityEngine.GUILayout.Label(UnityEngine.GUIContent,UnityEngine.GUILayoutOption[])">
+			<summary>Make an auto-layout label.</summary>
+		</member>
+		<member name="M:UnityEngine.GUILayout.Label(UnityEngine.Texture,UnityEngine.GUIStyle,UnityEngine.GUILayoutOption[])">
+			<summary>Make an auto-layout label.</summary>
+		</member>
+		<member name="P:UnityEngine.GUIStyle.name">
+			<summary>The name of this GUIStyle. Used for getting them based on name.</summary>
+		</member>
+		<member name="M:UnityEngine.GUILayout.Label(System.String,UnityEngine.GUIStyle,UnityEngine.GUILayoutOption[])">
+			<summary>Make an auto-layout label.</summary>
+		</member>
+		<member name="M:UnityEngine.GUILayout.Label(UnityEngine.GUIContent,UnityEngine.GUIStyle,UnityEngine.GUILayoutOption[])">
+			<summary>Make an auto-layout label.</summary>
+		</member>
+		<member name="P:UnityEngine.GUISkin.font">
+			<summary>The default font to use for all styles.</summary>
+		</member>
+		<member name="P:UnityEngine.GUISettings.tripleClickSelectsLine">
+			<summary>Should triple-clicking select whole text in text fields.</summary>
+		</member>
+		<member name="M:UnityEngine.GUILayout.Box(UnityEngine.Texture,UnityEngine.GUILayoutOption[])">
+			<summary>Make an auto-layout box.</summary>
+		</member>
+		<member name="M:UnityEngine.GUILayout.Box(System.String,UnityEngine.GUILayoutOption[])">
+			<summary>Make an auto-layout box.</summary>
+		</member>
+		<member name="M:UnityEngine.GUILayout.Box(UnityEngine.GUIContent,UnityEngine.GUILayoutOption[])">
+			<summary>Make an auto-layout box.</summary>
+		</member>
+		<member name="M:UnityEngine.GUILayout.Box(UnityEngine.Texture,UnityEngine.GUIStyle,UnityEngine.GUILayoutOption[])">
+			<summary>Make an auto-layout box.</summary>
+		</member>
+		<member name="M:UnityEngine.GUILayout.Box(System.String,UnityEngine.GUIStyle,UnityEngine.GUILayoutOption[])">
+			<summary>Make an auto-layout box.</summary>
+		</member>
+		<member name="M:UnityEngine.GUILayout.Box(UnityEngine.GUIContent,UnityEngine.GUIStyle,UnityEngine.GUILayoutOption[])">
+			<summary>Make an auto-layout box.</summary>
+		</member>
+		<member name="P:UnityEngine.GUIUtility.hasModalWindow">
+			<summary>A global property, which is true if a ModalWindow is being displayed, false otherwise.</summary>
+		</member>
+		<member name="M:UnityEngine.GUILayoutUtility.GetLastRect()">
+			<summary>Get the rectangle last used by GUILayout for a control.</summary>
+		</member>
+		<member name="T:UnityEngine.TextClipping">
+			<summary>Different methods for how the GUI system handles text being too large to fit the rectangle allocated.</summary>
+		</member>
+		<member name="P:UnityEngine.GUISkin.box">
+			<summary>Style used by default for GUI.Box controls.</summary>
+		</member>
+		<member name="F:UnityEngine.EventType.MouseDown">
+			<summary>An event that is called when the mouse is clicked.</summary>
+		</member>
+		<member name="M:UnityEngine.GUILayout.Button(UnityEngine.Texture,UnityEngine.GUILayoutOption[])">
+			<summary>Make a single press button.</summary>
+		</member>
+		<member name="M:UnityEngine.GUILayout.Button(System.String,UnityEngine.GUILayoutOption[])">
+			<summary>Make a single press button.</summary>
+		</member>
+		<member name="M:UnityEngine.GUILayout.Button(UnityEngine.GUIContent,UnityEngine.GUILayoutOption[])">
+			<summary>Make a single press button.</summary>
+		</member>
+		<member name="M:UnityEngine.GUILayout.Button(UnityEngine.Texture,UnityEngine.GUIStyle,UnityEngine.GUILayoutOption[])">
+			<summary>Make a single press button.</summary>
+		</member>
+		<member name="M:UnityEngine.GUILayout.Button(System.String,UnityEngine.GUIStyle,UnityEngine.GUILayoutOption[])">
+			<summary>Make a single press button.</summary>
+		</member>
+		<member name="M:UnityEngine.GUILayout.Button(UnityEngine.GUIContent,UnityEngine.GUIStyle,UnityEngine.GUILayoutOption[])">
+			<summary>Make a single press button.</summary>
+		</member>
+		<member name="P:UnityEngine.GUISettings.cursorColor">
+			<summary>The color of the cursor in text fields.</summary>
+		</member>
+		<member name="P:UnityEngine.GUIUtility.hotControl">
+			<summary>The controlID of the current hot control.</summary>
+		</member>
+		<member name="P:UnityEngine.GUIStyle.imagePosition">
+			<summary>How image and text of the GUIContent is combined.</summary>
+		</member>
+		<member name="P:UnityEngine.GUISkin.label">
+			<summary>Style used by default for GUI.Label controls.</summary>
+		</member>
+		<member name="P:UnityEngine.GUISettings.cursorFlashSpeed">
+			<summary>The speed of text field cursor flashes.</summary>
+		</member>
+		<member name="P:UnityEngine.GUIUtility.keyboardControl">
+			<summary>The controlID of the control that has keyboard focus.</summary>
+		</member>
+		<member name="M:UnityEngine.GUILayout.RepeatButton(UnityEngine.Texture,UnityEngine.GUILayoutOption[])">
+			<summary>Make a repeating button. The button returns true as long as the user holds down the mouse.</summary>
+		</member>
+		<member name="M:UnityEngine.GUILayout.RepeatButton(System.String,UnityEngine.GUILayoutOption[])">
+			<summary>Make a repeating button. The button returns true as long as the user holds down the mouse.</summary>
+		</member>
+		<member name="M:UnityEngine.GUILayout.RepeatButton(UnityEngine.GUIContent,UnityEngine.GUILayoutOption[])">
+			<summary>Make a repeating button. The button returns true as long as the user holds down the mouse.</summary>
+		</member>
+		<member name="M:UnityEngine.GUILayout.RepeatButton(UnityEngine.Texture,UnityEngine.GUIStyle,UnityEngine.GUILayoutOption[])">
+			<summary>Make a repeating button. The button returns true as long as the user holds down the mouse.</summary>
+		</member>
+		<member name="M:UnityEngine.GUILayout.RepeatButton(System.String,UnityEngine.GUIStyle,UnityEngine.GUILayoutOption[])">
+			<summary>Make a repeating button. The button returns true as long as the user holds down the mouse.</summary>
+		</member>
+		<member name="M:UnityEngine.GUILayout.RepeatButton(UnityEngine.GUIContent,UnityEngine.GUIStyle,UnityEngine.GUILayoutOption[])">
+			<summary>Make a repeating button. The button returns true as long as the user holds down the mouse.</summary>
+		</member>
+		<member name="P:UnityEngine.GUIStyle.alignment">
+			<summary>Text alignment.</summary>
+		</member>
+		<member name="M:UnityEngine.GUILayoutUtility.GetAspectRect(System.Single)">
+			<summary>Reserve layout space for a rectangle with a specific aspect ratio.</summary>
+		</member>
+		<member name="M:UnityEngine.GUILayoutUtility.GetAspectRect(System.Single,UnityEngine.GUIStyle)">
+			<summary>Reserve layout space for a rectangle with a specific aspect ratio.</summary>
+		</member>
+		<member name="M:UnityEngine.GUILayoutUtility.GetAspectRect(System.Single,UnityEngine.GUILayoutOption[])">
+			<summary>Reserve layout space for a rectangle with a specific aspect ratio.</summary>
+		</member>
+		<member name="M:UnityEngine.GUILayoutUtility.GetAspectRect(System.Single,UnityEngine.GUIStyle,UnityEngine.GUILayoutOption[])">
+			<summary>Reserve layout space for a rectangle with a specific aspect ratio.</summary>
+		</member>
+		<member name="P:UnityEngine.GUISettings.selectionColor">
+			<summary>The color of the selection rect in text fields.</summary>
+		</member>
+		<member name="P:UnityEngine.GUISkin.textField">
+			<summary>Style used by default for GUI.TextField controls.</summary>
+		</member>
+		<member name="F:UnityEngine.EventType.MouseUp">
+			<summary>An event that is called when the mouse is no longer being clicked.</summary>
+		</member>
+		<member name="P:UnityEngine.GUIStyle.wordWrap">
+			<summary>Should the text be wordwrapped?</summary>
+		</member>
+		<member name="F:UnityEngine.EventType.MouseDrag">
+			<summary>An event that is called when the mouse is clicked and dragged.</summary>
+		</member>
+		<member name="T:UnityEngine.GUIStyleState">
+			<summary>Specialized values for the given states used by GUIStyle objects.</summary>
+		</member>
+		<member name="F:UnityEngine.EventType.mouseDown">
+			<summary>An event that is called when the mouse is clicked.</summary>
+		</member>
+		<member name="F:UnityEngine.EventType.mouseUp">
+			<summary>An event that is called when the mouse is no longer being clicked.</summary>
+		</member>
+		<member name="F:UnityEngine.EventType.mouseDrag">
+			<summary>An event that is called when the mouse is clicked and dragged.</summary>
+		</member>
+		<member name="M:UnityEngine.GUIUtility.GetControlID(System.Int32,UnityEngine.FocusType)">
+			<summary>Get a unique ID for a control.</summary>
+		</member>
+		<member name="M:UnityEngine.GUIUtility.GetControlID(UnityEngine.FocusType)">
+			<summary>Get a unique ID for a control.</summary>
+		</member>
+		<member name="M:UnityEngine.GUIUtility.GetControlID(UnityEngine.GUIContent,UnityEngine.FocusType)">
+			<summary>Get a unique ID for a control.</summary>
+		</member>
+		<member name="M:UnityEngine.GUIUtility.GetControlID(UnityEngine.FocusType,UnityEngine.Rect)">
+			<summary>Get a unique ID for a control.</summary>
+		</member>
+		<member name="M:UnityEngine.GUIUtility.GetControlID(System.Int32,UnityEngine.FocusType,UnityEngine.Rect)">
+			<summary>Get a unique ID for a control.</summary>
+		</member>
+		<member name="M:UnityEngine.GUIUtility.GetControlID(UnityEngine.GUIContent,UnityEngine.FocusType,UnityEngine.Rect)">
+			<summary>Get a unique ID for a control.</summary>
+		</member>
+		<member name="P:UnityEngine.GUIStyleState.textColor">
+			<summary>The text color used by GUI elements in this state.</summary>
+		</member>
+		<member name="P:UnityEngine.GUIStyleState.background">
+			<summary>The background image used by GUI elements in this given state.</summary>
+		</member>
+		<member name="P:UnityEngine.GUIStyle.clipping">
+			<summary>What to do when the contents to be rendered is too large to fit within the area given.</summary>
+		</member>
+		<member name="M:UnityEngine.GUIUtility.GetStateObject(System.Type,System.Int32)">
+			<summary>Get a state object from a controlID.</summary>
+		</member>
+		<member name="P:UnityEngine.GUIStyle.contentOffset">
+			<summary>Pixel offset to apply to the content of this GUIstyle.</summary>
+		</member>
+		<member name="P:UnityEngine.GUIStyleState.scaledBackgrounds">
+			<summary>Background images used by this state when on a high-resolution screen. It should either be left empty, or contain a single image that is exactly twice the resolution of background. This is only used by the editor. The field is not copied to player data, and is not accessible from player code.</summary>
+		</member>
+		<member name="M:UnityEngine.GUIUtility.QueryStateObject(System.Type,System.Int32)">
+			<summary>Get an existing state object from a controlID.</summary>
+		</member>
+		<member name="P:UnityEngine.GUIStyle.fixedWidth">
+			<summary>If non-0, any GUI elements rendered with this style will have the width specified here.</summary>
+		</member>
+		<member name="P:UnityEngine.GUISkin.textArea">
+			<summary>Style used by default for GUI.TextArea controls.</summary>
+		</member>
+		<member name="M:UnityEngine.GUIUtility.GUIToScreenPoint(UnityEngine.Vector2)">
+			<summary>Convert a point from GUI position to screen space.</summary>
+		</member>
+		<member name="P:UnityEngine.GUISkin.button">
+			<summary>Style used by default for GUI.Button controls.</summary>
+		</member>
+		<member name="P:UnityEngine.GUIStyle.fixedHeight">
+			<summary>If non-0, any GUI elements rendered with this style will have the height specified here.</summary>
+		</member>
+		<member name="P:UnityEngine.GUISkin.toggle">
+			<summary>Style used by default for GUI.Toggle controls.</summary>
+		</member>
+		<member name="M:UnityEngine.GUIUtility.ScreenToGUIPoint(UnityEngine.Vector2)">
+			<summary>Convert a point from screen space to GUI position.</summary>
+		</member>
+		<member name="P:UnityEngine.GUIStyle.stretchWidth">
+			<summary>Can GUI elements of this style be stretched horizontally for better layouting?</summary>
+		</member>
+		<member name="M:UnityEngine.GUIUtility.RotateAroundPivot(System.Single,UnityEngine.Vector2)">
+			<summary>Helper function to rotate the GUI around a point.</summary>
+		</member>
+		<member name="P:UnityEngine.GUISkin.window">
+			<summary>Style used by default for Window controls (SA GUI.Window).</summary>
+		</member>
+		<member name="P:UnityEngine.GUIStyle.stretchHeight">
+			<summary>Can GUI elements of this style be stretched vertically for better layout?</summary>
+		</member>
+		<member name="M:UnityEngine.GUIUtility.ScaleAroundPivot(UnityEngine.Vector2,UnityEngine.Vector2)">
+			<summary>Helper function to scale the GUI around a point.</summary>
+		</member>
+		<member name="F:UnityEngine.GUIContent.none">
+			<summary>Shorthand for empty content.</summary>
+		</member>
+		<member name="P:UnityEngine.Event.modifiers">
+			<summary>Which modifier keys are held down.</summary>
+		</member>
+		<member name="P:UnityEngine.GUIStyle.fontSize">
+			<summary>The font size to use (for dynamic fonts).</summary>
+		</member>
+		<member name="P:UnityEngine.GUIContent.text">
+			<summary>The text contained.</summary>
+		</member>
+		<member name="P:UnityEngine.Event.clickCount">
+			<summary>How many consecutive mouse clicks have we received.</summary>
+		</member>
+		<member name="P:UnityEngine.GUIStyle.fontStyle">
+			<summary>The font style to use (for dynamic fonts).</summary>
+		</member>
+		<member name="P:UnityEngine.GUIContent.image">
+			<summary>The icon image contained.</summary>
+		</member>
+		<member name="P:UnityEngine.GUISkin.horizontalSlider">
+			<summary>Style used by default for the background part of GUI.HorizontalSlider controls.</summary>
+		</member>
+		<member name="P:UnityEngine.Event.character">
+			<summary>The character typed.</summary>
+		</member>
+		<member name="P:UnityEngine.GUIContent.tooltip">
+			<summary>The tooltip of this element.</summary>
+		</member>
+		<member name="P:UnityEngine.GUISkin.horizontalSliderThumb">
+			<summary>Style used by default for the thumb that is dragged in GUI.HorizontalSlider controls.</summary>
+		</member>
+		<member name="P:UnityEngine.Event.commandName">
+			<summary>The name of an ExecuteCommand or ValidateCommand Event.</summary>
+		</member>
+		<member name="P:UnityEngine.GUISkin.verticalSlider">
+			<summary>Style used by default for the background part of GUI.VerticalSlider controls.</summary>
+		</member>
+		<member name="P:UnityEngine.Event.keyCode">
+			<summary>The raw key code for keyboard events.</summary>
+		</member>
+		<member name="P:UnityEngine.GUISkin.verticalSliderThumb">
+			<summary>Style used by default for the thumb that is dragged in GUI.VerticalSlider controls.</summary>
+		</member>
+		<member name="P:UnityEngine.GUIStyle.richText">
+			<summary>Enable HTML-style tags for Text Formatting Markup.</summary>
+		</member>
+		<member name="P:UnityEngine.Event.displayIndex">
+			<summary>Index of display that the event belongs to.</summary>
+		</member>
+		<member name="P:UnityEngine.GUIStyle.normal">
+			<summary>Rendering settings for when the component is displayed normally.</summary>
+		</member>
+		<member name="P:UnityEngine.Event.mousePosition">
+			<summary>The mouse position.</summary>
+		</member>
+		<member name="P:UnityEngine.GUISkin.horizontalScrollbar">
+			<summary>Style used by default for the background part of GUI.HorizontalScrollbar controls.</summary>
+		</member>
+		<member name="P:UnityEngine.GUIStyle.hover">
+			<summary>Rendering settings for when the mouse is hovering over the control.</summary>
+		</member>
+		<member name="P:UnityEngine.Event.delta">
+			<summary>The relative movement of the mouse compared to last event.</summary>
+		</member>
+		<member name="P:UnityEngine.GUIStyle.active">
+			<summary>Rendering settings for when the control is pressed down.</summary>
+		</member>
+		<member name="P:UnityEngine.GUISkin.horizontalScrollbarThumb">
+			<summary>Style used by default for the thumb that is dragged in GUI.HorizontalScrollbar controls.</summary>
+		</member>
+		<member name="P:UnityEngine.GUIStyle.onNormal">
+			<summary>Rendering settings for when the control is turned on.</summary>
+		</member>
+		<member name="P:UnityEngine.Event.shift">
+			<summary>Is Shift held down? (Read Only)</summary>
+		</member>
+		<member name="M:UnityEngine.GUILayout.TextField(System.String,UnityEngine.GUILayoutOption[])">
+			<summary>Make a single-line text field where the user can edit a string.</summary>
+		</member>
+		<member name="P:UnityEngine.GUISkin.horizontalScrollbarLeftButton">
+			<summary>Style used by default for the left button on GUI.HorizontalScrollbar controls.</summary>
+		</member>
+		<member name="M:UnityEngine.GUILayout.TextField(System.String,System.Int32,UnityEngine.GUILayoutOption[])">
+			<summary>Make a single-line text field where the user can edit a string.</summary>
+		</member>
+		<member name="M:UnityEngine.GUILayout.TextField(System.String,UnityEngine.GUIStyle,UnityEngine.GUILayoutOption[])">
+			<summary>Make a single-line text field where the user can edit a string.</summary>
+		</member>
+		<member name="M:UnityEngine.GUILayout.TextField(System.String,System.Int32,UnityEngine.GUIStyle,UnityEngine.GUILayoutOption[])">
+			<summary>Make a single-line text field where the user can edit a string.</summary>
+		</member>
+		<member name="P:UnityEngine.GUISkin.horizontalScrollbarRightButton">
+			<summary>Style used by default for the right button on GUI.HorizontalScrollbar controls.</summary>
+		</member>
+		<member name="P:UnityEngine.Event.control">
+			<summary>Is Control key held down? (Read Only)</summary>
+		</member>
+		<member name="P:UnityEngine.Event.alt">
+			<summary>Is Alt/Option key held down? (Read Only)</summary>
+		</member>
+		<member name="P:UnityEngine.Event.command">
+			<summary>Is Command/Windows key held down? (Read Only)</summary>
+		</member>
+		<member name="P:UnityEngine.GUISkin.verticalScrollbar">
+			<summary>Style used by default for the background part of GUI.VerticalScrollbar controls.</summary>
+		</member>
+		<member name="M:UnityEngine.GUILayout.PasswordField(System.String,System.Char,UnityEngine.GUILayoutOption[])">
+			<summary>Make a text field where the user can enter a password.</summary>
+		</member>
+		<member name="M:UnityEngine.GUILayout.PasswordField(System.String,System.Char,System.Int32,UnityEngine.GUILayoutOption[])">
+			<summary>Make a text field where the user can enter a password.</summary>
+		</member>
+		<member name="M:UnityEngine.GUILayout.PasswordField(System.String,System.Char,UnityEngine.GUIStyle,UnityEngine.GUILayoutOption[])">
+			<summary>Make a text field where the user can enter a password.</summary>
+		</member>
+		<member name="M:UnityEngine.GUILayout.PasswordField(System.String,System.Char,System.Int32,UnityEngine.GUIStyle,UnityEngine.GUILayoutOption[])">
+			<summary>Make a text field where the user can enter a password.</summary>
+		</member>
+		<member name="P:UnityEngine.Event.capsLock">
+			<summary>Is Caps Lock on? (Read Only)</summary>
+		</member>
+		<member name="P:UnityEngine.Event.numeric">
+			<summary>Is the current keypress on the numeric keyboard? (Read Only)</summary>
+		</member>
+		<member name="M:UnityEngine.GUILayout.TextArea(System.String,UnityEngine.GUILayoutOption[])">
+			<summary>Make a multi-line text field where the user can edit a string.</summary>
+		</member>
+		<member name="M:UnityEngine.GUILayout.TextArea(System.String,System.Int32,UnityEngine.GUILayoutOption[])">
+			<summary>Make a multi-line text field where the user can edit a string.</summary>
+		</member>
+		<member name="M:UnityEngine.GUILayout.TextArea(System.String,UnityEngine.GUIStyle,UnityEngine.GUILayoutOption[])">
+			<summary>Make a multi-line text field where the user can edit a string.</summary>
+		</member>
+		<member name="M:UnityEngine.GUILayout.TextArea(System.String,System.Int32,UnityEngine.GUIStyle,UnityEngine.GUILayoutOption[])">
+			<summary>Make a multi-line text field where the user can edit a string.</summary>
+		</member>
+		<member name="P:UnityEngine.GUISkin.verticalScrollbarThumb">
+			<summary>Style used by default for the thumb that is dragged in GUI.VerticalScrollbar controls.</summary>
+		</member>
+		<member name="P:UnityEngine.Event.functionKey">
+			<summary>Is the current keypress a function key? (Read Only)</summary>
+		</member>
+		<member name="P:UnityEngine.Event.current">
+			<summary>The current event that's being processed right now.</summary>
+		</member>
+		<member name="P:UnityEngine.GUISkin.verticalScrollbarUpButton">
+			<summary>Style used by default for the up button on GUI.VerticalScrollbar controls.</summary>
+		</member>
+		<member name="P:UnityEngine.Event.isKey">
+			<summary>Is this event a keyboard event? (Read Only)</summary>
+		</member>
+		<member name="P:UnityEngine.GUISkin.verticalScrollbarDownButton">
+			<summary>Style used by default for the down button on GUI.VerticalScrollbar controls.</summary>
+		</member>
+		<member name="P:UnityEngine.Event.isMouse">
+			<summary>Is this event a mouse event? (Read Only)</summary>
+		</member>
+		<member name="P:UnityEngine.GUISkin.scrollView">
+			<summary>Style used by default for the background of ScrollView controls (see GUI.BeginScrollView).</summary>
+		</member>
+		<member name="M:UnityEngine.GUILayout.Toggle(System.Boolean,UnityEngine.Texture,UnityEngine.GUILayoutOption[])">
+			<summary>Make an on/off toggle button.</summary>
+		</member>
+		<member name="M:UnityEngine.GUILayout.Toggle(System.Boolean,System.String,UnityEngine.GUILayoutOption[])">
+			<summary>Make an on/off toggle button.</summary>
+		</member>
+		<member name="M:UnityEngine.GUILayout.Toggle(System.Boolean,UnityEngine.GUIContent,UnityEngine.GUILayoutOption[])">
+			<summary>Make an on/off toggle button.</summary>
+		</member>
+		<member name="M:UnityEngine.GUILayout.Toggle(System.Boolean,UnityEngine.Texture,UnityEngine.GUIStyle,UnityEngine.GUILayoutOption[])">
+			<summary>Make an on/off toggle button.</summary>
+		</member>
+		<member name="M:UnityEngine.GUILayout.Toggle(System.Boolean,System.String,UnityEngine.GUIStyle,UnityEngine.GUILayoutOption[])">
+			<summary>Make an on/off toggle button.</summary>
+		</member>
+		<member name="M:UnityEngine.GUILayout.Toggle(System.Boolean,UnityEngine.GUIContent,UnityEngine.GUIStyle,UnityEngine.GUILayoutOption[])">
+			<summary>Make an on/off toggle button.</summary>
+		</member>
+		<member name="M:UnityEngine.Event.GetTypeForControl(System.Int32)">
+			<summary>Get a filtered event type for a given control ID.</summary>
+		</member>
+		<member name="M:UnityEngine.GUILayout.Toolbar(System.Int32,System.String[],UnityEngine.GUILayoutOption[])">
+			<summary>Make a toolbar.</summary>
+		</member>
+		<member name="M:UnityEngine.GUILayout.Toolbar(System.Int32,UnityEngine.Texture[],UnityEngine.GUILayoutOption[])">
+			<summary>Make a toolbar.</summary>
+		</member>
+		<member name="P:UnityEngine.GUISkin.customStyles">
+			<summary>Array of GUI styles for specific needs.</summary>
+		</member>
+		<member name="M:UnityEngine.GUILayout.Toolbar(System.Int32,UnityEngine.GUIContent[],UnityEngine.GUILayoutOption[])">
+			<summary>Make a toolbar.</summary>
+		</member>
+		<member name="M:UnityEngine.Event.PopEvent(UnityEngine.Event)">
+			<summary>Get the next queued [Event] from the event system.</summary>
+		</member>
+		<member name="M:UnityEngine.GUILayout.Toolbar(System.Int32,System.String[],UnityEngine.GUIStyle,UnityEngine.GUILayoutOption[])">
+			<summary>Make a toolbar.</summary>
+		</member>
+		<member name="M:UnityEngine.GUILayout.Toolbar(System.Int32,UnityEngine.Texture[],UnityEngine.GUIStyle,UnityEngine.GUILayoutOption[])">
+			<summary>Make a toolbar.</summary>
+		</member>
+		<member name="M:UnityEngine.GUILayout.Toolbar(System.Int32,System.String[],UnityEngine.GUIStyle,UnityEngine.GUI.ToolbarButtonSize,UnityEngine.GUILayoutOption[])">
+			<summary>Make a toolbar.</summary>
+		</member>
+		<member name="M:UnityEngine.GUILayout.Toolbar(System.Int32,UnityEngine.Texture[],UnityEngine.GUIStyle,UnityEngine.GUI.ToolbarButtonSize,UnityEngine.GUILayoutOption[])">
+			<summary>Make a toolbar.</summary>
+		</member>
+		<member name="M:UnityEngine.GUILayout.Toolbar(System.Int32,UnityEngine.GUIContent[],UnityEngine.GUIStyle,UnityEngine.GUILayoutOption[])">
+			<summary>Make a toolbar.</summary>
+		</member>
+		<member name="M:UnityEngine.GUILayout.Toolbar(System.Int32,UnityEngine.GUIContent[],UnityEngine.GUIStyle,UnityEngine.GUI.ToolbarButtonSize,UnityEngine.GUILayoutOption[])">
+			<summary>Make a toolbar.</summary>
+		</member>
+		<member name="P:UnityEngine.GUIStyle.onHover">
+			<summary>Rendering settings for when the control is turned on and the mouse is hovering it.</summary>
+		</member>
+		<member name="M:UnityEngine.Event.GetEventCount()">
+			<summary>Returns the current number of events that are stored in the event queue.</summary>
+		</member>
+		<member name="M:UnityEngine.Event.KeyboardEvent(System.String)">
+			<summary>Create a keyboard event.</summary>
+		</member>
+		<member name="M:UnityEngine.GUILayout.SelectionGrid(System.Int32,System.String[],System.Int32,UnityEngine.GUILayoutOption[])">
+			<summary>Make a Selection Grid.</summary>
+		</member>
+		<member name="M:UnityEngine.GUILayout.SelectionGrid(System.Int32,UnityEngine.Texture[],System.Int32,UnityEngine.GUILayoutOption[])">
+			<summary>Make a Selection Grid.</summary>
+		</member>
+		<member name="M:UnityEngine.GUILayout.SelectionGrid(System.Int32,UnityEngine.GUIContent[],System.Int32,UnityEngine.GUILayoutOption[])">
+			<summary>Make a Selection Grid.</summary>
+		</member>
+		<member name="M:UnityEngine.GUILayout.SelectionGrid(System.Int32,System.String[],System.Int32,UnityEngine.GUIStyle,UnityEngine.GUILayoutOption[])">
+			<summary>Make a Selection Grid.</summary>
+		</member>
+		<member name="M:UnityEngine.GUILayout.SelectionGrid(System.Int32,UnityEngine.Texture[],System.Int32,UnityEngine.GUIStyle,UnityEngine.GUILayoutOption[])">
+			<summary>Make a Selection Grid.</summary>
+		</member>
+		<member name="M:UnityEngine.GUILayout.SelectionGrid(System.Int32,UnityEngine.GUIContent[],System.Int32,UnityEngine.GUIStyle,UnityEngine.GUILayoutOption[])">
+			<summary>Make a Selection Grid.</summary>
+		</member>
+		<member name="P:UnityEngine.GUISkin.settings">
+			<summary>Generic settings for how controls should behave with this skin.</summary>
+		</member>
+		<member name="M:UnityEngine.Event.Use()">
+			<summary>Use this event.</summary>
+		</member>
+		<member name="M:UnityEngine.GUILayout.HorizontalSlider(System.Single,System.Single,System.Single,UnityEngine.GUILayoutOption[])">
+			<summary>A horizontal slider the user can drag to change a value between a min and a max.</summary>
+		</member>
+		<member name="M:UnityEngine.GUILayout.HorizontalSlider(System.Single,System.Single,System.Single,UnityEngine.GUIStyle,UnityEngine.GUIStyle,UnityEngine.GUILayoutOption[])">
+			<summary>A horizontal slider the user can drag to change a value between a min and a max.</summary>
+		</member>
+		<member name="T:UnityEngine.GUI">
+			<summary>The GUI class is the interface for Unity's GUI with manual positioning.</summary>
+		</member>
+		<member name="M:UnityEngine.GUILayout.VerticalSlider(System.Single,System.Single,System.Single,UnityEngine.GUILayoutOption[])">
+			<summary>A vertical slider the user can drag to change a value between a min and a max.</summary>
+		</member>
+		<member name="M:UnityEngine.GUILayout.VerticalSlider(System.Single,System.Single,System.Single,UnityEngine.GUIStyle,UnityEngine.GUIStyle,UnityEngine.GUILayoutOption[])">
+			<summary>A vertical slider the user can drag to change a value between a min and a max.</summary>
+		</member>
+		<member name="M:UnityEngine.GUISkin.GetStyle(System.String)">
+			<summary>Get a named GUIStyle.</summary>
+		</member>
+		<member name="P:UnityEngine.GUI.color">
+			<summary>Global tinting color for the GUI.</summary>
+		</member>
+		<member name="M:UnityEngine.GUISkin.FindStyle(System.String)">
+			<summary>Try to search for a GUIStyle. This functions returns NULL and does not give an error.</summary>
+		</member>
+		<member name="P:UnityEngine.GUI.backgroundColor">
+			<summary>Global tinting color for all background elements rendered by the GUI.</summary>
+		</member>
+		<member name="M:UnityEngine.GUILayout.HorizontalScrollbar(System.Single,System.Single,System.Single,System.Single,UnityEngine.GUILayoutOption[])">
+			<summary>Make a horizontal scrollbar.</summary>
+		</member>
+		<member name="M:UnityEngine.GUILayout.HorizontalScrollbar(System.Single,System.Single,System.Single,System.Single,UnityEngine.GUIStyle,UnityEngine.GUILayoutOption[])">
+			<summary>Make a horizontal scrollbar.</summary>
+		</member>
+		<member name="P:UnityEngine.GUI.contentColor">
+			<summary>Tinting color for all text rendered by the GUI.</summary>
+		</member>
+		<member name="P:UnityEngine.GUI.changed">
+			<summary>Returns true if any controls changed the value of the input data.</summary>
+		</member>
+		<member name="M:UnityEngine.GUILayout.VerticalScrollbar(System.Single,System.Single,System.Single,System.Single,UnityEngine.GUILayoutOption[])">
+			<summary>Make a vertical scrollbar.</summary>
+		</member>
+		<member name="M:UnityEngine.GUILayout.VerticalScrollbar(System.Single,System.Single,System.Single,System.Single,UnityEngine.GUIStyle,UnityEngine.GUILayoutOption[])">
+			<summary>Make a vertical scrollbar.</summary>
+		</member>
+		<member name="P:UnityEngine.GUI.enabled">
+			<summary>Is the GUI enabled?</summary>
+		</member>
+		<member name="M:UnityEngine.GUILayout.Space(System.Single)">
+			<summary>Insert a space in the current layout group.</summary>
+		</member>
+		<member name="P:UnityEngine.GUIStyle.onActive">
+			<summary>Rendering settings for when the element is turned on and pressed down.</summary>
+		</member>
+		<member name="P:UnityEngine.GUI.depth">
+			<summary>The sorting depth of the currently executing GUI behaviour.</summary>
+		</member>
+		<member name="P:UnityEngine.GUIStyle.focused">
+			<summary>Rendering settings for when the element has keyboard focus.</summary>
+		</member>
+		<member name="P:UnityEngine.GUI.skin">
+			<summary>The global skin to use.</summary>
+		</member>
+		<member name="M:UnityEngine.GUILayout.FlexibleSpace()">
+			<summary>Insert a flexible space element.</summary>
+		</member>
+		<member name="P:UnityEngine.GUIStyle.onFocused">
+			<summary>Rendering settings for when the element has keyboard and is turned on.</summary>
+		</member>
+		<member name="M:UnityEngine.GUILayout.BeginHorizontal(UnityEngine.GUILayoutOption[])">
+			<summary>Begin a Horizontal control group.</summary>
+		</member>
+		<member name="M:UnityEngine.GUILayout.BeginHorizontal(UnityEngine.GUIStyle,UnityEngine.GUILayoutOption[])">
+			<summary>Begin a Horizontal control group.</summary>
+		</member>
+		<member name="M:UnityEngine.GUILayout.BeginHorizontal(System.String,UnityEngine.GUIStyle,UnityEngine.GUILayoutOption[])">
+			<summary>Begin a Horizontal control group.</summary>
+		</member>
+		<member name="M:UnityEngine.GUILayout.BeginHorizontal(UnityEngine.Texture,UnityEngine.GUIStyle,UnityEngine.GUILayoutOption[])">
+			<summary>Begin a Horizontal control group.</summary>
+		</member>
+		<member name="M:UnityEngine.GUILayout.BeginHorizontal(UnityEngine.GUIContent,UnityEngine.GUIStyle,UnityEngine.GUILayoutOption[])">
+			<summary>Begin a Horizontal control group.</summary>
+		</member>
+		<member name="P:UnityEngine.GUIStyle.border">
+			<summary>The borders of all background images.</summary>
+		</member>
+		<member name="P:UnityEngine.GUI.matrix">
+			<summary>The GUI transform matrix.</summary>
+		</member>
+		<member name="M:UnityEngine.GUILayout.EndHorizontal()">
+			<summary>Close a group started with BeginHorizontal.</summary>
+		</member>
+		<member name="P:UnityEngine.GUIStyle.margin">
+			<summary>The margins between elements rendered in this style and any other GUI elements.</summary>
+		</member>
+		<member name="P:UnityEngine.GUI.tooltip">
+			<summary>The tooltip of the control the mouse is currently over, or which has keyboard focus. (Read Only).</summary>
+		</member>
+		<member name="M:UnityEngine.GUILayout.BeginVertical(UnityEngine.GUILayoutOption[])">
+			<summary>Begin a vertical control group.</summary>
+		</member>
+		<member name="M:UnityEngine.GUILayout.BeginVertical(UnityEngine.GUIStyle,UnityEngine.GUILayoutOption[])">
+			<summary>Begin a vertical control group.</summary>
+		</member>
+		<member name="M:UnityEngine.GUILayout.BeginVertical(System.String,UnityEngine.GUIStyle,UnityEngine.GUILayoutOption[])">
+			<summary>Begin a vertical control group.</summary>
+		</member>
+		<member name="M:UnityEngine.GUILayout.BeginVertical(UnityEngine.Texture,UnityEngine.GUIStyle,UnityEngine.GUILayoutOption[])">
+			<summary>Begin a vertical control group.</summary>
+		</member>
+		<member name="M:UnityEngine.GUILayout.BeginVertical(UnityEngine.GUIContent,UnityEngine.GUIStyle,UnityEngine.GUILayoutOption[])">
+			<summary>Begin a vertical control group.</summary>
+		</member>
+		<member name="P:UnityEngine.GUIStyle.padding">
+			<summary>Space from the edge of GUIStyle to the start of the contents.</summary>
+		</member>
+		<member name="M:UnityEngine.GUI.SetNextControlName(System.String)">
+			<summary>Set the name of the next control.</summary>
+		</member>
+		<member name="M:UnityEngine.GUILayout.EndVertical()">
+			<summary>Close a group started with BeginVertical.</summary>
+		</member>
+		<member name="M:UnityEngine.GUI.GetNameOfFocusedControl()">
+			<summary>Get the name of named control that has focus.</summary>
+		</member>
+		<member name="P:UnityEngine.GUIStyle.overflow">
+			<summary>Extra space to be added to the background image.</summary>
+		</member>
+		<member name="M:UnityEngine.GUILayout.BeginArea(UnityEngine.Rect)">
+			<summary>Begin a GUILayout block of GUI controls in a fixed screen area.</summary>
+		</member>
+		<member name="M:UnityEngine.GUILayout.BeginArea(UnityEngine.Rect,System.String)">
+			<summary>Begin a GUILayout block of GUI controls in a fixed screen area.</summary>
+		</member>
+		<member name="M:UnityEngine.GUILayout.BeginArea(UnityEngine.Rect,UnityEngine.Texture)">
+			<summary>Begin a GUILayout block of GUI controls in a fixed screen area.</summary>
+		</member>
+		<member name="M:UnityEngine.GUILayout.BeginArea(UnityEngine.Rect,UnityEngine.GUIContent)">
+			<summary>Begin a GUILayout block of GUI controls in a fixed screen area.</summary>
+		</member>
+		<member name="M:UnityEngine.GUILayout.BeginArea(UnityEngine.Rect,UnityEngine.GUIStyle)">
+			<summary>Begin a GUILayout block of GUI controls in a fixed screen area.</summary>
+		</member>
+		<member name="M:UnityEngine.GUILayout.BeginArea(UnityEngine.Rect,System.String,UnityEngine.GUIStyle)">
+			<summary>Begin a GUILayout block of GUI controls in a fixed screen area.</summary>
+		</member>
+		<member name="M:UnityEngine.GUILayout.BeginArea(UnityEngine.Rect,UnityEngine.Texture,UnityEngine.GUIStyle)">
+			<summary>Begin a GUILayout block of GUI controls in a fixed screen area.</summary>
+		</member>
+		<member name="M:UnityEngine.GUILayout.BeginArea(UnityEngine.Rect,UnityEngine.GUIContent,UnityEngine.GUIStyle)">
+			<summary>Begin a GUILayout block of GUI controls in a fixed screen area.</summary>
+		</member>
+		<member name="P:UnityEngine.GUIStyle.font">
+			<summary>The font to use for rendering. If null, the default font for the current GUISkin is used instead.</summary>
+		</member>
+		<member name="M:UnityEngine.GUI.FocusControl(System.String)">
+			<summary>Move keyboard focus to a named control.</summary>
+		</member>
+		<member name="M:UnityEngine.GUI.DragWindow(UnityEngine.Rect)">
+			<summary>Make a window draggable.</summary>
+		</member>
+		<member name="M:UnityEngine.GUI.BringWindowToFront(System.Int32)">
+			<summary>Bring a specific window to front of the floating windows.</summary>
+		</member>
+		<member name="P:UnityEngine.GUIStyle.lineHeight">
+			<summary>The height of one line of text with this style, measured in pixels. (Read Only)</summary>
+		</member>
+		<member name="M:UnityEngine.GUILayout.EndArea()">
+			<summary>Close a GUILayout block started with BeginArea.</summary>
+		</member>
+		<member name="P:UnityEngine.GUIStyle.none">
+			<summary>Shortcut for an empty GUIStyle.</summary>
+		</member>
+		<member name="M:UnityEngine.GUIStyle.Draw(UnityEngine.Rect,System.Boolean,System.Boolean,System.Boolean,System.Boolean)">
+			<summary>Draw this GUIStyle on to the screen, internal version.</summary>
+		</member>
+		<member name="M:UnityEngine.GUIStyle.Draw(UnityEngine.Rect,System.String,System.Boolean,System.Boolean,System.Boolean,System.Boolean)">
+			<summary>Draw this GUIStyle on to the screen, internal version.</summary>
+		</member>
+		<member name="M:UnityEngine.GUIStyle.Draw(UnityEngine.Rect,UnityEngine.Texture,System.Boolean,System.Boolean,System.Boolean,System.Boolean)">
+			<summary>Draw this GUIStyle on to the screen, internal version.</summary>
+		</member>
+		<member name="M:UnityEngine.GUI.BringWindowToBack(System.Int32)">
+			<summary>Bring a specific window to back of the floating windows.</summary>
+		</member>
+		<member name="M:UnityEngine.GUILayout.BeginScrollView(UnityEngine.Vector2,UnityEngine.GUILayoutOption[])">
+			<summary>Begin an automatically laid out scrollview.</summary>
+		</member>
+		<member name="M:UnityEngine.GUIStyle.Draw(UnityEngine.Rect,UnityEngine.GUIContent,System.Boolean,System.Boolean,System.Boolean,System.Boolean)">
+			<summary>Draw this GUIStyle on to the screen, internal version.</summary>
+		</member>
+		<member name="M:UnityEngine.GUIStyle.Draw(UnityEngine.Rect,UnityEngine.GUIContent,System.Int32)">
+			<summary>Draw this GUIStyle on to the screen, internal version.</summary>
+		</member>
+		<member name="M:UnityEngine.GUILayout.BeginScrollView(UnityEngine.Vector2,System.Boolean,System.Boolean,UnityEngine.GUILayoutOption[])">
+			<summary>Begin an automatically laid out scrollview.</summary>
+		</member>
+		<member name="M:UnityEngine.GUIStyle.Draw(UnityEngine.Rect,UnityEngine.GUIContent,System.Int32,System.Boolean)">
+			<summary>Draw this GUIStyle on to the screen, internal version.</summary>
+		</member>
+		<member name="M:UnityEngine.GUILayout.BeginScrollView(UnityEngine.Vector2,UnityEngine.GUIStyle,UnityEngine.GUIStyle,UnityEngine.GUILayoutOption[])">
+			<summary>Begin an automatically laid out scrollview.</summary>
+		</member>
+		<member name="M:UnityEngine.GUILayout.BeginScrollView(UnityEngine.Vector2,UnityEngine.GUIStyle)">
+			<summary>Begin an automatically laid out scrollview.</summary>
+		</member>
+		<member name="M:UnityEngine.GUILayout.BeginScrollView(UnityEngine.Vector2,UnityEngine.GUIStyle,UnityEngine.GUILayoutOption[])">
+			<summary>Begin an automatically laid out scrollview.</summary>
+		</member>
+		<member name="M:UnityEngine.GUILayout.BeginScrollView(UnityEngine.Vector2,System.Boolean,System.Boolean,UnityEngine.GUIStyle,UnityEngine.GUIStyle,UnityEngine.GUILayoutOption[])">
+			<summary>Begin an automatically laid out scrollview.</summary>
+		</member>
+		<member name="M:UnityEngine.GUILayout.BeginScrollView(UnityEngine.Vector2,System.Boolean,System.Boolean,UnityEngine.GUIStyle,UnityEngine.GUIStyle,UnityEngine.GUIStyle,UnityEngine.GUILayoutOption[])">
+			<summary>Begin an automatically laid out scrollview.</summary>
+		</member>
+		<member name="M:UnityEngine.GUI.FocusWindow(System.Int32)">
+			<summary>Make a window become the active window.</summary>
+		</member>
+		<member name="M:UnityEngine.GUILayout.EndScrollView()">
+			<summary>End a scroll view begun with a call to BeginScrollView.</summary>
+		</member>
+		<member name="M:UnityEngine.GUILayout.EndScrollView(System.Boolean)">
+			<summary>End a scroll view begun with a call to BeginScrollView.</summary>
+		</member>
+		<member name="M:UnityEngine.GUILayout.Window(System.Int32,UnityEngine.Rect,UnityEngine.GUI.WindowFunction,System.String,UnityEngine.GUILayoutOption[])">
+			<summary>Make a popup window that layouts its contents automatically.</summary>
+		</member>
+		<member name="M:UnityEngine.GUILayout.Window(System.Int32,UnityEngine.Rect,UnityEngine.GUI.WindowFunction,UnityEngine.Texture,UnityEngine.GUILayoutOption[])">
+			<summary>Make a popup window that layouts its contents automatically.</summary>
+		</member>
+		<member name="M:UnityEngine.GUILayout.Window(System.Int32,UnityEngine.Rect,UnityEngine.GUI.WindowFunction,UnityEngine.GUIContent,UnityEngine.GUILayoutOption[])">
+			<summary>Make a popup window that layouts its contents automatically.</summary>
+		</member>
+		<member name="M:UnityEngine.GUILayout.Window(System.Int32,UnityEngine.Rect,UnityEngine.GUI.WindowFunction,System.String,UnityEngine.GUIStyle,UnityEngine.GUILayoutOption[])">
+			<summary>Make a popup window that layouts its contents automatically.</summary>
+		</member>
+		<member name="M:UnityEngine.GUILayout.Window(System.Int32,UnityEngine.Rect,UnityEngine.GUI.WindowFunction,UnityEngine.Texture,UnityEngine.GUIStyle,UnityEngine.GUILayoutOption[])">
+			<summary>Make a popup window that layouts its contents automatically.</summary>
+		</member>
+		<member name="M:UnityEngine.GUIStyle.DrawCursor(UnityEngine.Rect,UnityEngine.GUIContent,System.Int32,System.Int32)">
+			<summary>Draw this GUIStyle with selected content.</summary>
+		</member>
+		<member name="M:UnityEngine.GUILayout.Window(System.Int32,UnityEngine.Rect,UnityEngine.GUI.WindowFunction,UnityEngine.GUIContent,UnityEngine.GUIStyle,UnityEngine.GUILayoutOption[])">
+			<summary>Make a popup window that layouts its contents automatically.</summary>
+		</member>
+		<member name="M:UnityEngine.GUIStyle.DrawWithTextSelection(UnityEngine.Rect,UnityEngine.GUIContent,System.Boolean,System.Boolean,System.Int32,System.Int32,System.Boolean)">
+			<summary>Draw this GUIStyle with selected content.</summary>
+		</member>
+		<member name="M:UnityEngine.GUIStyle.DrawWithTextSelection(UnityEngine.Rect,UnityEngine.GUIContent,System.Int32,System.Int32,System.Int32,System.Boolean)">
+			<summary>Draw this GUIStyle with selected content.</summary>
+		</member>
+		<member name="M:UnityEngine.GUIStyle.DrawWithTextSelection(UnityEngine.Rect,UnityEngine.GUIContent,System.Int32,System.Int32,System.Int32)">
+			<summary>Draw this GUIStyle with selected content.</summary>
+		</member>
+		<member name="M:UnityEngine.GUI.UnfocusWindow()">
+			<summary>Remove focus from all windows.</summary>
+		</member>
+		<member name="M:UnityEngine.GUIStyle.GetCursorPixelPosition(UnityEngine.Rect,UnityEngine.GUIContent,System.Int32)">
+			<summary>Get the pixel position of a given string index.</summary>
+		</member>
+		<member name="M:UnityEngine.GUILayout.Width(System.Single)">
+			<summary>Option passed to a control to give it an absolute width.</summary>
+		</member>
+		<member name="M:UnityEngine.GUI.Label(UnityEngine.Rect,System.String)">
+			<summary>Make a text or texture label on screen.</summary>
+		</member>
+		<member name="M:UnityEngine.GUI.Label(UnityEngine.Rect,UnityEngine.Texture)">
+			<summary>Make a text or texture label on screen.</summary>
+		</member>
+		<member name="M:UnityEngine.GUI.Label(UnityEngine.Rect,UnityEngine.GUIContent)">
+			<summary>Make a text or texture label on screen.</summary>
+		</member>
+		<member name="M:UnityEngine.GUI.Label(UnityEngine.Rect,System.String,UnityEngine.GUIStyle)">
+			<summary>Make a text or texture label on screen.</summary>
+		</member>
+		<member name="M:UnityEngine.GUI.Label(UnityEngine.Rect,UnityEngine.Texture,UnityEngine.GUIStyle)">
+			<summary>Make a text or texture label on screen.</summary>
+		</member>
+		<member name="M:UnityEngine.GUI.Label(UnityEngine.Rect,UnityEngine.GUIContent,UnityEngine.GUIStyle)">
+			<summary>Make a text or texture label on screen.</summary>
+		</member>
+		<member name="M:UnityEngine.GUIStyle.GetCursorStringIndex(UnityEngine.Rect,UnityEngine.GUIContent,UnityEngine.Vector2)">
+			<summary>Get the cursor position (indexing into contents.text) when the user clicked at cursorPixelPosition.</summary>
+		</member>
+		<member name="M:UnityEngine.GUI.DrawTexture(UnityEngine.Rect,UnityEngine.Texture)">
+			<summary>Draw a texture within a rectangle.</summary>
+		</member>
+		<member name="M:UnityEngine.GUI.DrawTexture(UnityEngine.Rect,UnityEngine.Texture,UnityEngine.ScaleMode)">
+			<summary>Draw a texture within a rectangle.</summary>
+		</member>
+		<member name="M:UnityEngine.GUI.DrawTexture(UnityEngine.Rect,UnityEngine.Texture,UnityEngine.ScaleMode,System.Boolean)">
+			<summary>Draw a texture within a rectangle.</summary>
+		</member>
+		<member name="M:UnityEngine.GUI.DrawTexture(UnityEngine.Rect,UnityEngine.Texture,UnityEngine.ScaleMode,System.Boolean,System.Single)">
+			<summary>Draw a texture within a rectangle.</summary>
+		</member>
+		<member name="M:UnityEngine.GUI.DrawTexture(UnityEngine.Rect,UnityEngine.Texture,UnityEngine.ScaleMode,System.Boolean,System.Single,UnityEngine.Color,System.Single,System.Single)">
+			<summary>Draw a texture within a rectangle.</summary>
+		</member>
+		<member name="M:UnityEngine.GUI.DrawTexture(UnityEngine.Rect,UnityEngine.Texture,UnityEngine.ScaleMode,System.Boolean,System.Single,UnityEngine.Color,UnityEngine.Vector4,System.Single)">
+			<summary>Draw a texture within a rectangle.</summary>
+		</member>
+		<member name="M:UnityEngine.GUI.DrawTexture(UnityEngine.Rect,UnityEngine.Texture,UnityEngine.ScaleMode,System.Boolean,System.Single,UnityEngine.Color,UnityEngine.Vector4,UnityEngine.Vector4)">
+			<summary>Draw a texture within a rectangle.</summary>
+		</member>
+		<member name="M:UnityEngine.GUI.DrawTextureWithTexCoords(UnityEngine.Rect,UnityEngine.Texture,UnityEngine.Rect)">
+			<summary>Draw a texture within a rectangle with the given texture coordinates.</summary>
+		</member>
+		<member name="M:UnityEngine.GUI.DrawTextureWithTexCoords(UnityEngine.Rect,UnityEngine.Texture,UnityEngine.Rect,System.Boolean)">
+			<summary>Draw a texture within a rectangle with the given texture coordinates.</summary>
+		</member>
+		<member name="M:UnityEngine.GUIStyle.CalcSize(UnityEngine.GUIContent)">
+			<summary>Calculate the size of some content if it is rendered with this style.</summary>
+		</member>
+		<member name="M:UnityEngine.GUILayout.MinWidth(System.Single)">
+			<summary>Option passed to a control to specify a minimum width.</summary>
+		</member>
+		<member name="M:UnityEngine.GUIStyle.CalcScreenSize(UnityEngine.Vector2)">
+			<summary>Calculate the size of an element formatted with this style, and a given space to content.</summary>
+		</member>
+		<member name="M:UnityEngine.GUILayout.MaxWidth(System.Single)">
+			<summary>Option passed to a control to specify a maximum width.</summary>
+		</member>
+		<member name="M:UnityEngine.GUILayout.Height(System.Single)">
+			<summary>Option passed to a control to give it an absolute height.</summary>
+		</member>
+		<member name="M:UnityEngine.GUI.Box(UnityEngine.Rect,System.String)">
+			<summary>Create a Box on the GUI Layer.</summary>
+		</member>
+		<member name="M:UnityEngine.GUI.Box(UnityEngine.Rect,UnityEngine.Texture)">
+			<summary>Create a Box on the GUI Layer.</summary>
+		</member>
+		<member name="M:UnityEngine.GUI.Box(UnityEngine.Rect,UnityEngine.GUIContent)">
+			<summary>Create a Box on the GUI Layer.</summary>
+		</member>
+		<member name="M:UnityEngine.GUI.Box(UnityEngine.Rect,System.String,UnityEngine.GUIStyle)">
+			<summary>Create a Box on the GUI Layer.</summary>
+		</member>
+		<member name="M:UnityEngine.GUI.Box(UnityEngine.Rect,UnityEngine.Texture,UnityEngine.GUIStyle)">
+			<summary>Create a Box on the GUI Layer.</summary>
+		</member>
+		<member name="M:UnityEngine.GUI.Box(UnityEngine.Rect,UnityEngine.GUIContent,UnityEngine.GUIStyle)">
+			<summary>Create a Box on the GUI Layer.</summary>
+		</member>
+		<member name="M:UnityEngine.GUILayout.MinHeight(System.Single)">
+			<summary>Option passed to a control to specify a minimum height.</summary>
+		</member>
+		<member name="M:UnityEngine.GUI.Button(UnityEngine.Rect,System.String)">
+			<summary>Make a single press button. The user clicks them and something happens immediately.</summary>
+		</member>
+		<member name="M:UnityEngine.GUI.Button(UnityEngine.Rect,UnityEngine.Texture)">
+			<summary>Make a single press button. The user clicks them and something happens immediately.</summary>
+		</member>
+		<member name="M:UnityEngine.GUI.Button(UnityEngine.Rect,UnityEngine.GUIContent)">
+			<summary>Make a single press button. The user clicks them and something happens immediately.</summary>
+		</member>
+		<member name="M:UnityEngine.GUI.Button(UnityEngine.Rect,System.String,UnityEngine.GUIStyle)">
+			<summary>Make a single press button. The user clicks them and something happens immediately.</summary>
+		</member>
+		<member name="M:UnityEngine.GUI.Button(UnityEngine.Rect,UnityEngine.Texture,UnityEngine.GUIStyle)">
+			<summary>Make a single press button. The user clicks them and something happens immediately.</summary>
+		</member>
+		<member name="M:UnityEngine.GUI.Button(UnityEngine.Rect,UnityEngine.GUIContent,UnityEngine.GUIStyle)">
+			<summary>Make a single press button. The user clicks them and something happens immediately.</summary>
+		</member>
+		<member name="M:UnityEngine.GUILayout.MaxHeight(System.Single)">
+			<summary>Option passed to a control to specify a maximum height.</summary>
+		</member>
+		<member name="M:UnityEngine.GUI.RepeatButton(UnityEngine.Rect,System.String)">
+			<summary>Make a button that is active as long as the user holds it down.</summary>
+		</member>
+		<member name="M:UnityEngine.GUI.RepeatButton(UnityEngine.Rect,UnityEngine.Texture)">
+			<summary>Make a button that is active as long as the user holds it down.</summary>
+		</member>
+		<member name="M:UnityEngine.GUI.RepeatButton(UnityEngine.Rect,UnityEngine.GUIContent)">
+			<summary>Make a button that is active as long as the user holds it down.</summary>
+		</member>
+		<member name="M:UnityEngine.GUI.RepeatButton(UnityEngine.Rect,System.String,UnityEngine.GUIStyle)">
+			<summary>Make a button that is active as long as the user holds it down.</summary>
+		</member>
+		<member name="M:UnityEngine.GUI.RepeatButton(UnityEngine.Rect,UnityEngine.Texture,UnityEngine.GUIStyle)">
+			<summary>Make a button that is active as long as the user holds it down.</summary>
+		</member>
+		<member name="M:UnityEngine.GUI.RepeatButton(UnityEngine.Rect,UnityEngine.GUIContent,UnityEngine.GUIStyle)">
+			<summary>Make a button that is active as long as the user holds it down.</summary>
+		</member>
+		<member name="M:UnityEngine.GUILayout.ExpandWidth(System.Boolean)">
+			<summary>Option passed to a control to allow or disallow horizontal expansion.</summary>
+		</member>
+		<member name="M:UnityEngine.GUI.TextField(UnityEngine.Rect,System.String)">
+			<summary>Make a single-line text field where the user can edit a string.</summary>
+		</member>
+		<member name="M:UnityEngine.GUI.TextField(UnityEngine.Rect,System.String,System.Int32)">
+			<summary>Make a single-line text field where the user can edit a string.</summary>
+		</member>
+		<member name="M:UnityEngine.GUI.TextField(UnityEngine.Rect,System.String,UnityEngine.GUIStyle)">
+			<summary>Make a single-line text field where the user can edit a string.</summary>
+		</member>
+		<member name="M:UnityEngine.GUI.TextField(UnityEngine.Rect,System.String,System.Int32,UnityEngine.GUIStyle)">
+			<summary>Make a single-line text field where the user can edit a string.</summary>
+		</member>
+		<member name="M:UnityEngine.GUILayout.ExpandHeight(System.Boolean)">
+			<summary>Option passed to a control to allow or disallow vertical expansion.</summary>
+		</member>
+		<member name="M:UnityEngine.GUI.PasswordField(UnityEngine.Rect,System.String,System.Char)">
+			<summary>Make a text field where the user can enter a password.</summary>
+		</member>
+		<member name="M:UnityEngine.GUI.PasswordField(UnityEngine.Rect,System.String,System.Char,System.Int32)">
+			<summary>Make a text field where the user can enter a password.</summary>
+		</member>
+		<member name="M:UnityEngine.GUI.PasswordField(UnityEngine.Rect,System.String,System.Char,UnityEngine.GUIStyle)">
+			<summary>Make a text field where the user can enter a password.</summary>
+		</member>
+		<member name="M:UnityEngine.GUI.PasswordField(UnityEngine.Rect,System.String,System.Char,System.Int32,UnityEngine.GUIStyle)">
+			<summary>Make a text field where the user can enter a password.</summary>
+		</member>
+		<member name="M:UnityEngine.GUIStyle.CalcHeight(UnityEngine.GUIContent,System.Single)">
+			<summary>How tall this element will be when rendered with content and a specific width.</summary>
+		</member>
+		<member name="M:UnityEngine.GUIStyle.CalcMinMaxWidth(UnityEngine.GUIContent,System.Single&,System.Single&)">
+			<summary>Calculate the minimum and maximum widths for this style rendered with content.</summary>
+		</member>
+		<member name="M:UnityEngine.GUI.TextArea(UnityEngine.Rect,System.String)">
+			<summary>Make a Multi-line text area where the user can edit a string.</summary>
+		</member>
+		<member name="M:UnityEngine.GUI.TextArea(UnityEngine.Rect,System.String,System.Int32)">
+			<summary>Make a Multi-line text area where the user can edit a string.</summary>
+		</member>
+		<member name="M:UnityEngine.GUI.TextArea(UnityEngine.Rect,System.String,UnityEngine.GUIStyle)">
+			<summary>Make a Multi-line text area where the user can edit a string.</summary>
+		</member>
+		<member name="M:UnityEngine.GUI.TextArea(UnityEngine.Rect,System.String,System.Int32,UnityEngine.GUIStyle)">
+			<summary>Make a Multi-line text area where the user can edit a string.</summary>
+		</member>
+		<member name="M:UnityEngine.GUI.Toggle(UnityEngine.Rect,System.Boolean,System.String)">
+			<summary>Make an on/off toggle button.</summary>
+		</member>
+		<member name="M:UnityEngine.GUI.Toggle(UnityEngine.Rect,System.Boolean,UnityEngine.Texture)">
+			<summary>Make an on/off toggle button.</summary>
+		</member>
+		<member name="M:UnityEngine.GUI.Toggle(UnityEngine.Rect,System.Boolean,UnityEngine.GUIContent)">
+			<summary>Make an on/off toggle button.</summary>
+		</member>
+		<member name="M:UnityEngine.GUI.Toggle(UnityEngine.Rect,System.Boolean,System.String,UnityEngine.GUIStyle)">
+			<summary>Make an on/off toggle button.</summary>
+		</member>
+		<member name="M:UnityEngine.GUI.Toggle(UnityEngine.Rect,System.Boolean,UnityEngine.Texture,UnityEngine.GUIStyle)">
+			<summary>Make an on/off toggle button.</summary>
+		</member>
+		<member name="M:UnityEngine.GUI.Toggle(UnityEngine.Rect,System.Boolean,UnityEngine.GUIContent,UnityEngine.GUIStyle)">
+			<summary>Make an on/off toggle button.</summary>
+		</member>
+		<member name="M:UnityEngine.GUI.Toggle(UnityEngine.Rect,System.Int32,System.Boolean,UnityEngine.GUIContent,UnityEngine.GUIStyle)">
+			<summary>Make an on/off toggle button.</summary>
+		</member>
+		<member name="M:UnityEngine.GUI.Toolbar(UnityEngine.Rect,System.Int32,System.String[])">
+			<summary>Make a toolbar.</summary>
+		</member>
+		<member name="M:UnityEngine.GUI.Toolbar(UnityEngine.Rect,System.Int32,UnityEngine.Texture[])">
+			<summary>Make a toolbar.</summary>
+		</member>
+		<member name="M:UnityEngine.GUI.Toolbar(UnityEngine.Rect,System.Int32,UnityEngine.GUIContent[])">
+			<summary>Make a toolbar.</summary>
+		</member>
+		<member name="M:UnityEngine.GUI.Toolbar(UnityEngine.Rect,System.Int32,System.String[],UnityEngine.GUIStyle)">
+			<summary>Make a toolbar.</summary>
+		</member>
+		<member name="M:UnityEngine.GUI.Toolbar(UnityEngine.Rect,System.Int32,UnityEngine.Texture[],UnityEngine.GUIStyle)">
+			<summary>Make a toolbar.</summary>
+		</member>
+		<member name="M:UnityEngine.GUI.Toolbar(UnityEngine.Rect,System.Int32,UnityEngine.GUIContent[],UnityEngine.GUIStyle)">
+			<summary>Make a toolbar.</summary>
+		</member>
+		<member name="M:UnityEngine.GUI.Toolbar(UnityEngine.Rect,System.Int32,UnityEngine.GUIContent[],UnityEngine.GUIStyle,UnityEngine.GUI.ToolbarButtonSize)">
+			<summary>Make a toolbar.</summary>
+		</member>
+		<member name="M:UnityEngine.GUI.Toolbar(UnityEngine.Rect,System.Int32,UnityEngine.GUIContent[],System.String[],UnityEngine.GUIStyle,UnityEngine.GUI.ToolbarButtonSize)">
+			<summary>Make a toolbar.</summary>
+		</member>
+		<member name="M:UnityEngine.GUI.SelectionGrid(UnityEngine.Rect,System.Int32,System.String[],System.Int32)">
+			<summary>Make a grid of buttons.</summary>
+		</member>
+		<member name="M:UnityEngine.GUI.SelectionGrid(UnityEngine.Rect,System.Int32,UnityEngine.Texture[],System.Int32)">
+			<summary>Make a grid of buttons.</summary>
+		</member>
+		<member name="M:UnityEngine.GUI.SelectionGrid(UnityEngine.Rect,System.Int32,UnityEngine.GUIContent[],System.Int32)">
+			<summary>Make a grid of buttons.</summary>
+		</member>
+		<member name="M:UnityEngine.GUI.SelectionGrid(UnityEngine.Rect,System.Int32,System.String[],System.Int32,UnityEngine.GUIStyle)">
+			<summary>Make a grid of buttons.</summary>
+		</member>
+		<member name="M:UnityEngine.GUI.SelectionGrid(UnityEngine.Rect,System.Int32,UnityEngine.Texture[],System.Int32,UnityEngine.GUIStyle)">
+			<summary>Make a grid of buttons.</summary>
+		</member>
+		<member name="M:UnityEngine.GUI.SelectionGrid(UnityEngine.Rect,System.Int32,UnityEngine.GUIContent[],System.Int32,UnityEngine.GUIStyle)">
+			<summary>Make a grid of buttons.</summary>
+		</member>
+		<member name="M:UnityEngine.GUI.HorizontalSlider(UnityEngine.Rect,System.Single,System.Single,System.Single)">
+			<summary>A horizontal slider the user can drag to change a value between a min and a max.</summary>
+		</member>
+		<member name="M:UnityEngine.GUI.HorizontalSlider(UnityEngine.Rect,System.Single,System.Single,System.Single,UnityEngine.GUIStyle,UnityEngine.GUIStyle)">
+			<summary>A horizontal slider the user can drag to change a value between a min and a max.</summary>
+		</member>
+		<member name="M:UnityEngine.GUI.VerticalSlider(UnityEngine.Rect,System.Single,System.Single,System.Single)">
+			<summary>A vertical slider the user can drag to change a value between a min and a max.</summary>
+		</member>
+		<member name="M:UnityEngine.GUI.VerticalSlider(UnityEngine.Rect,System.Single,System.Single,System.Single,UnityEngine.GUIStyle,UnityEngine.GUIStyle)">
+			<summary>A vertical slider the user can drag to change a value between a min and a max.</summary>
+		</member>
+		<member name="M:UnityEngine.GUI.HorizontalScrollbar(UnityEngine.Rect,System.Single,System.Single,System.Single,System.Single)">
+			<summary>Make a horizontal scrollbar. Scrollbars are what you use to scroll through a document. Most likely, you want to use scrollViews instead.</summary>
+		</member>
+		<member name="M:UnityEngine.GUI.HorizontalScrollbar(UnityEngine.Rect,System.Single,System.Single,System.Single,System.Single,UnityEngine.GUIStyle)">
+			<summary>Make a horizontal scrollbar. Scrollbars are what you use to scroll through a document. Most likely, you want to use scrollViews instead.</summary>
+		</member>
+		<member name="M:UnityEngine.GUI.VerticalScrollbar(UnityEngine.Rect,System.Single,System.Single,System.Single,System.Single)">
+			<summary>Make a vertical scrollbar. Scrollbars are what you use to scroll through a document. Most likely, you want to use scrollViews instead.</summary>
+		</member>
+		<member name="M:UnityEngine.GUI.VerticalScrollbar(UnityEngine.Rect,System.Single,System.Single,System.Single,System.Single,UnityEngine.GUIStyle)">
+			<summary>Make a vertical scrollbar. Scrollbars are what you use to scroll through a document. Most likely, you want to use scrollViews instead.</summary>
+		</member>
+		<member name="M:UnityEngine.GUI.BeginGroup(UnityEngine.Rect)">
+			<summary>Begin a group. Must be matched with a call to EndGroup.</summary>
+		</member>
+		<member name="M:UnityEngine.GUI.BeginGroup(UnityEngine.Rect,System.String)">
+			<summary>Begin a group. Must be matched with a call to EndGroup.</summary>
+		</member>
+		<member name="M:UnityEngine.GUI.BeginGroup(UnityEngine.Rect,UnityEngine.Texture)">
+			<summary>Begin a group. Must be matched with a call to EndGroup.</summary>
+		</member>
+		<member name="M:UnityEngine.GUI.BeginGroup(UnityEngine.Rect,UnityEngine.GUIContent)">
+			<summary>Begin a group. Must be matched with a call to EndGroup.</summary>
+		</member>
+		<member name="M:UnityEngine.GUI.BeginGroup(UnityEngine.Rect,UnityEngine.GUIStyle)">
+			<summary>Begin a group. Must be matched with a call to EndGroup.</summary>
+		</member>
+		<member name="M:UnityEngine.GUI.BeginGroup(UnityEngine.Rect,System.String,UnityEngine.GUIStyle)">
+			<summary>Begin a group. Must be matched with a call to EndGroup.</summary>
+		</member>
+		<member name="M:UnityEngine.GUI.BeginGroup(UnityEngine.Rect,UnityEngine.Texture,UnityEngine.GUIStyle)">
+			<summary>Begin a group. Must be matched with a call to EndGroup.</summary>
+		</member>
+		<member name="M:UnityEngine.GUI.BeginGroup(UnityEngine.Rect,UnityEngine.GUIContent,UnityEngine.GUIStyle)">
+			<summary>Begin a group. Must be matched with a call to EndGroup.</summary>
+		</member>
+		<member name="M:UnityEngine.GUI.BeginGroup(UnityEngine.Rect,UnityEngine.GUIContent,UnityEngine.GUIStyle,UnityEngine.Vector2)">
+			<summary>Begin a group. Must be matched with a call to EndGroup.</summary>
+		</member>
+		<member name="M:UnityEngine.GUI.EndGroup()">
+			<summary>End a group.</summary>
+		</member>
+		<member name="M:UnityEngine.GUI.BeginScrollView(UnityEngine.Rect,UnityEngine.Vector2,UnityEngine.Rect)">
+			<summary>Begin a scrolling view inside your GUI.</summary>
+		</member>
+		<member name="M:UnityEngine.GUI.BeginScrollView(UnityEngine.Rect,UnityEngine.Vector2,UnityEngine.Rect,System.Boolean,System.Boolean)">
+			<summary>Begin a scrolling view inside your GUI.</summary>
+		</member>
+		<member name="M:UnityEngine.GUI.BeginScrollView(UnityEngine.Rect,UnityEngine.Vector2,UnityEngine.Rect,UnityEngine.GUIStyle,UnityEngine.GUIStyle)">
+			<summary>Begin a scrolling view inside your GUI.</summary>
+		</member>
+		<member name="M:UnityEngine.GUI.BeginScrollView(UnityEngine.Rect,UnityEngine.Vector2,UnityEngine.Rect,System.Boolean,System.Boolean,UnityEngine.GUIStyle,UnityEngine.GUIStyle)">
+			<summary>Begin a scrolling view inside your GUI.</summary>
+		</member>
+		<member name="M:UnityEngine.GUI.BeginScrollView(UnityEngine.Rect,UnityEngine.Vector2,UnityEngine.Rect,System.Boolean,System.Boolean,UnityEngine.GUIStyle,UnityEngine.GUIStyle,UnityEngine.GUIStyle)">
+			<summary>Begin a scrolling view inside your GUI.</summary>
+		</member>
+		<member name="M:UnityEngine.GUI.EndScrollView()">
+			<summary>Ends a scrollview started with a call to BeginScrollView.</summary>
+		</member>
+		<member name="M:UnityEngine.GUI.EndScrollView(System.Boolean)">
+			<summary>Ends a scrollview started with a call to BeginScrollView.</summary>
+		</member>
+		<member name="M:UnityEngine.GUI.ScrollTo(UnityEngine.Rect)">
+			<summary>Scrolls all enclosing scrollviews so they try to make position visible.</summary>
+		</member>
+		<member name="M:UnityEngine.GUI.Window(System.Int32,UnityEngine.Rect,UnityEngine.GUI.WindowFunction,System.String)">
+			<summary>Make a popup window.</summary>
+		</member>
+		<member name="M:UnityEngine.GUI.Window(System.Int32,UnityEngine.Rect,UnityEngine.GUI.WindowFunction,UnityEngine.Texture)">
+			<summary>Make a popup window.</summary>
+		</member>
+		<member name="M:UnityEngine.GUI.Window(System.Int32,UnityEngine.Rect,UnityEngine.GUI.WindowFunction,UnityEngine.GUIContent)">
+			<summary>Make a popup window.</summary>
+		</member>
+		<member name="M:UnityEngine.GUI.Window(System.Int32,UnityEngine.Rect,UnityEngine.GUI.WindowFunction,System.String,UnityEngine.GUIStyle)">
+			<summary>Make a popup window.</summary>
+		</member>
+		<member name="M:UnityEngine.GUI.Window(System.Int32,UnityEngine.Rect,UnityEngine.GUI.WindowFunction,UnityEngine.Texture,UnityEngine.GUIStyle)">
+			<summary>Make a popup window.</summary>
+		</member>
+		<member name="M:UnityEngine.GUI.Window(System.Int32,UnityEngine.Rect,UnityEngine.GUI.WindowFunction,UnityEngine.GUIContent,UnityEngine.GUIStyle)">
+			<summary>Make a popup window.</summary>
+		</member>
+		<member name="M:UnityEngine.GUI.ModalWindow(System.Int32,UnityEngine.Rect,UnityEngine.GUI.WindowFunction,System.String)">
+			<summary>Show a Modal Window.</summary>
+		</member>
+		<member name="M:UnityEngine.GUI.ModalWindow(System.Int32,UnityEngine.Rect,UnityEngine.GUI.WindowFunction,UnityEngine.Texture)">
+			<summary>Show a Modal Window.</summary>
+		</member>
+		<member name="M:UnityEngine.GUI.ModalWindow(System.Int32,UnityEngine.Rect,UnityEngine.GUI.WindowFunction,UnityEngine.GUIContent)">
+			<summary>Show a Modal Window.</summary>
+		</member>
+		<member name="M:UnityEngine.GUI.ModalWindow(System.Int32,UnityEngine.Rect,UnityEngine.GUI.WindowFunction,System.String,UnityEngine.GUIStyle)">
+			<summary>Show a Modal Window.</summary>
+		</member>
+		<member name="M:UnityEngine.GUI.ModalWindow(System.Int32,UnityEngine.Rect,UnityEngine.GUI.WindowFunction,UnityEngine.Texture,UnityEngine.GUIStyle)">
+			<summary>Show a Modal Window.</summary>
+		</member>
+		<member name="M:UnityEngine.GUI.ModalWindow(System.Int32,UnityEngine.Rect,UnityEngine.GUI.WindowFunction,UnityEngine.GUIContent,UnityEngine.GUIStyle)">
+			<summary>Show a Modal Window.</summary>
+		</member>
+		<member name="M:UnityEngine.GUI.DragWindow()">
+			<summary>Make a window draggable.</summary>
+		</member>
+	</members>
+</doc>

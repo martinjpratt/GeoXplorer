@@ -1,0 +1,32 @@
+﻿<?xml version="1.0"?>
+<doc>
+	<assembly>
+		<name>UnityEngine.ImageConversionModule</name>
+	</assembly>
+	<members>
+		<member name="T:UnityEngine.ImageConversion">
+			<summary>Class with utility methods and extension methods to deal with converting image data from or to PNG and JPEG formats.</summary>
+		</member>
+		<member name="M:UnityEngine.ImageConversion.EncodeToPNG(UnityEngine.Texture2D)">
+			<summary>Encodes this texture into PNG format.</summary>
+		</member>
+		<member name="M:UnityEngine.ImageConversion.EncodeToJPG(UnityEngine.Texture2D,System.Int32)">
+			<summary>Encodes this texture into JPG format.</summary>
+		</member>
+		<member name="M:UnityEngine.ImageConversion.EncodeToJPG(UnityEngine.Texture2D)">
+			<summary>Encodes this texture into JPG format.</summary>
+		</member>
+		<member name="M:UnityEngine.ImageConversion.EncodeToEXR(UnityEngine.Texture2D,UnityEngine.Texture2D.EXRFlags)">
+			<summary>Encodes this texture into the EXR format.</summary>
+		</member>
+		<member name="M:UnityEngine.ImageConversion.EncodeToEXR(UnityEngine.Texture2D)">
+			<summary>Encodes this texture into the EXR format.</summary>
+		</member>
+		<member name="M:UnityEngine.ImageConversion.LoadImage(UnityEngine.Texture2D,System.Byte[],System.Boolean)">
+			<summary>Loads PNG/JPG image byte array into a texture.</summary>
+		</member>
+		<member name="M:UnityEngine.ImageConversion.LoadImage(UnityEngine.Texture2D,System.Byte[])">
+			<summary>Loads PNG/JPG image byte array into a texture.</summary>
+		</member>
+	</members>
+</doc>

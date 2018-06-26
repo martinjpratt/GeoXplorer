@@ -1,0 +1,44 @@
+﻿<?xml version="1.0"?>
+<doc>
+	<assembly>
+		<name>UnityEngine.GameCenterModule</name>
+	</assembly>
+	<members>
+		<member name="T:UnityEngine.Social">
+			<summary>Generic access to the Social API.</summary>
+		</member>
+		<member name="P:UnityEngine.Social.localUser">
+			<summary>The local user (potentially not logged in).</summary>
+		</member>
+		<member name="M:UnityEngine.Social.LoadUsers(System.String[],System.Action`1<UnityEngine.SocialPlatforms.IUserProfile[]>)">
+			<summary>Load the user profiles accociated with the given array of user IDs.</summary>
+		</member>
+		<member name="M:UnityEngine.Social.ReportProgress(System.String,System.Double,System.Action`1<System.Boolean>)">
+			<summary>Reports the progress of an achievement.</summary>
+		</member>
+		<member name="M:UnityEngine.Social.LoadAchievementDescriptions(System.Action`1<UnityEngine.SocialPlatforms.IAchievementDescription[]>)">
+			<summary>Loads the achievement descriptions accociated with this application.</summary>
+		</member>
+		<member name="M:UnityEngine.Social.LoadAchievements(System.Action`1<UnityEngine.SocialPlatforms.IAchievement[]>)">
+			<summary>Load the achievements the logged in user has already achieved or reported progress on.</summary>
+		</member>
+		<member name="M:UnityEngine.Social.ReportScore(System.Int64,System.String,System.Action`1<System.Boolean>)">
+			<summary>Report a score to a specific leaderboard.</summary>
+		</member>
+		<member name="M:UnityEngine.Social.LoadScores(System.String,System.Action`1<UnityEngine.SocialPlatforms.IScore[]>)">
+			<summary>Load a default set of scores from the given leaderboard.</summary>
+		</member>
+		<member name="M:UnityEngine.Social.CreateLeaderboard()">
+			<summary>Create an ILeaderboard instance.</summary>
+		</member>
+		<member name="M:UnityEngine.Social.CreateAchievement()">
+			<summary>Create an IAchievement instance.</summary>
+		</member>
+		<member name="M:UnityEngine.Social.ShowAchievementsUI()">
+			<summary>Show a default/system view of the games achievements.</summary>
+		</member>
+		<member name="M:UnityEngine.Social.ShowLeaderboardUI()">
+			<summary>Show a default/system view of the games leaderboards.</summary>
+		</member>
+	</members>
+</doc>

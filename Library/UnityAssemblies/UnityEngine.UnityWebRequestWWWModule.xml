@@ -1,0 +1,116 @@
+﻿<?xml version="1.0"?>
+<doc>
+	<assembly>
+		<name>UnityEngine.UnityWebRequestWWWModule</name>
+	</assembly>
+	<members>
+		<member name="T:UnityEngine.WWW">
+			<summary>Simple access to web pages.</summary>
+		</member>
+		<member name="P:UnityEngine.WWW.assetBundle">
+			<summary>Streams an AssetBundle that can contain any kind of asset from the project folder.</summary>
+		</member>
+		<member name="P:UnityEngine.WWW.audioClip">
+			<summary>Returns a AudioClip generated from the downloaded data (Read Only).</summary>
+		</member>
+		<member name="P:UnityEngine.WWW.bytes">
+			<summary>Returns the contents of the fetched web page as a byte array (Read Only).</summary>
+		</member>
+		<member name="P:UnityEngine.WWW.movie">
+			<summary>Returns a MovieTexture generated from the downloaded data (Read Only).</summary>
+		</member>
+		<member name="P:UnityEngine.WWW.bytesDownloaded">
+			<summary>The number of bytes downloaded by this WWW query (read only).</summary>
+		</member>
+		<member name="P:UnityEngine.WWW.error">
+			<summary>Returns an error message if there was an error during the download (Read Only).</summary>
+		</member>
+		<member name="P:UnityEngine.WWW.isDone">
+			<summary>Is the download already finished? (Read Only)</summary>
+		</member>
+		<member name="P:UnityEngine.WWW.oggVorbis">
+			<summary>Load an Ogg Vorbis file into the audio clip.</summary>
+		</member>
+		<member name="P:UnityEngine.WWW.progress">
+			<summary>How far has the download progressed (Read Only).</summary>
+		</member>
+		<member name="P:UnityEngine.WWW.responseHeaders">
+			<summary>Dictionary of headers returned by the request.</summary>
+		</member>
+		<member name="P:UnityEngine.WWW.text">
+			<summary>Returns the contents of the fetched web page as a string (Read Only).</summary>
+		</member>
+		<member name="P:UnityEngine.WWW.texture">
+			<summary>Returns a Texture2D generated from the downloaded data (Read Only).</summary>
+		</member>
+		<member name="P:UnityEngine.WWW.textureNonReadable">
+			<summary>Returns a non-readable Texture2D generated from the downloaded data (Read Only).</summary>
+		</member>
+		<member name="P:UnityEngine.WWW.threadPriority">
+			<summary>Obsolete, has no effect.</summary>
+		</member>
+		<member name="P:UnityEngine.WWW.uploadProgress">
+			<summary>How far has the upload progressed (Read Only).</summary>
+		</member>
+		<member name="P:UnityEngine.WWW.url">
+			<summary>The URL of this WWW request (Read Only).</summary>
+		</member>
+		<member name="M:UnityEngine.WWW.EscapeURL(System.String)">
+			<summary>Escapes characters in a string to ensure they are URL-friendly.</summary>
+		</member>
+		<member name="M:UnityEngine.WWW.EscapeURL(System.String,System.Text.Encoding)">
+			<summary>Escapes characters in a string to ensure they are URL-friendly.</summary>
+		</member>
+		<member name="M:UnityEngine.WWW.UnEscapeURL(System.String)">
+			<summary>Converts URL-friendly escape sequences back to normal text.</summary>
+		</member>
+		<member name="M:UnityEngine.WWW.UnEscapeURL(System.String,System.Text.Encoding)">
+			<summary>Converts URL-friendly escape sequences back to normal text.</summary>
+		</member>
+		<member name="M:UnityEngine.WWW.LoadFromCacheOrDownload(System.String,System.Int32)">
+			<summary>Loads an AssetBundle with the specified version number from the cache. If the AssetBundle is not currently cached, it will automatically be downloaded and stored in the cache for future retrieval from local storage.</summary>
+		</member>
+		<member name="M:UnityEngine.WWW.LoadFromCacheOrDownload(System.String,System.Int32,System.UInt32)">
+			<summary>Loads an AssetBundle with the specified version number from the cache. If the AssetBundle is not currently cached, it will automatically be downloaded and stored in the cache for future retrieval from local storage.</summary>
+		</member>
+		<member name="M:UnityEngine.WWW.LoadFromCacheOrDownload(System.String,UnityEngine.Hash128)">
+			<summary>Loads an AssetBundle with the specified version number from the cache. If the AssetBundle is not currently cached, it will automatically be downloaded and stored in the cache for future retrieval from local storage.</summary>
+		</member>
+		<member name="M:UnityEngine.WWW.LoadFromCacheOrDownload(System.String,UnityEngine.Hash128,System.UInt32)">
+			<summary>Loads an AssetBundle with the specified version number from the cache. If the AssetBundle is not currently cached, it will automatically be downloaded and stored in the cache for future retrieval from local storage.</summary>
+		</member>
+		<member name="M:UnityEngine.WWW.LoadFromCacheOrDownload(System.String,UnityEngine.CachedAssetBundle,System.UInt32)">
+			<summary>Loads an AssetBundle with the specified version number from the cache. If the AssetBundle is not currently cached, it will automatically be downloaded and stored in the cache for future retrieval from local storage.</summary>
+		</member>
+		<member name="M:UnityEngine.WWW.LoadImageIntoTexture(UnityEngine.Texture2D)">
+			<summary>Replaces the contents of an existing Texture2D with an image from the downloaded data.</summary>
+		</member>
+		<member name="M:UnityEngine.WWW.Dispose()">
+			<summary>Disposes of an existing WWW object.</summary>
+		</member>
+		<member name="M:UnityEngine.WWW.GetAudioClip()">
+			<summary>Returns an AudioClip generated from the downloaded data (Read Only).</summary>
+		</member>
+		<member name="M:UnityEngine.WWW.GetAudioClip(System.Boolean)">
+			<summary>Returns an AudioClip generated from the downloaded data (Read Only).</summary>
+		</member>
+		<member name="M:UnityEngine.WWW.GetAudioClip(System.Boolean,System.Boolean)">
+			<summary>Returns an AudioClip generated from the downloaded data (Read Only).</summary>
+		</member>
+		<member name="M:UnityEngine.WWW.GetAudioClip(System.Boolean,System.Boolean,UnityEngine.AudioType)">
+			<summary>Returns an AudioClip generated from the downloaded data (Read Only).</summary>
+		</member>
+		<member name="M:UnityEngine.WWW.GetAudioClipCompressed()">
+			<summary>Returns an AudioClip generated from the downloaded data that is compressed in memory (Read Only).</summary>
+		</member>
+		<member name="M:UnityEngine.WWW.GetAudioClipCompressed(System.Boolean)">
+			<summary>Returns an AudioClip generated from the downloaded data that is compressed in memory (Read Only).</summary>
+		</member>
+		<member name="M:UnityEngine.WWW.GetAudioClipCompressed(System.Boolean,UnityEngine.AudioType)">
+			<summary>Returns an AudioClip generated from the downloaded data that is compressed in memory (Read Only).</summary>
+		</member>
+		<member name="M:UnityEngine.WWW.GetMovieTexture()">
+			<summary>Returns a MovieTexture generated from the downloaded data (Read Only).</summary>
+		</member>
+	</members>
+</doc>

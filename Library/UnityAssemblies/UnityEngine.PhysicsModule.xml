@@ -1,0 +1,1319 @@
+﻿<?xml version="1.0"?>
+<doc>
+	<assembly>
+		<name>UnityEngine.PhysicsModule</name>
+	</assembly>
+	<members>
+		<member name="T:UnityEngine.Physics">
+			<summary>Global physics properties and helper methods.</summary>
+		</member>
+		<member name="T:UnityEngine.CharacterJoint">
+			<summary>Character Joints are mainly used for Ragdoll effects.</summary>
+		</member>
+		<member name="T:UnityEngine.BoxCollider">
+			<summary>A box-shaped primitive collider.</summary>
+		</member>
+		<member name="T:UnityEngine.FixedJoint">
+			<summary>The Fixed joint groups together 2 rigidbodies, making them stick together in their bound position.</summary>
+		</member>
+		<member name="T:UnityEngine.Collider">
+			<summary>A base class of all colliders.</summary>
+		</member>
+		<member name="T:UnityEngine.HingeJoint">
+			<summary>The HingeJoint groups together 2 rigid bodies, constraining them to move like connected by a hinge.</summary>
+		</member>
+		<member name="T:UnityEngine.PhysicMaterial">
+			<summary>Physics material describes how to handle colliding objects (friction, bounciness).</summary>
+		</member>
+		<member name="T:UnityEngine.SpringJoint">
+			<summary>The spring joint ties together 2 rigid bodies, spring forces will be automatically applied to keep the object at the given distance.</summary>
+		</member>
+		<member name="T:UnityEngine.ConstantForce">
+			<summary>A force applied constantly.</summary>
+		</member>
+		<member name="T:UnityEngine.ForceMode">
+			<summary>Use ForceMode to specify how to apply a force using Rigidbody.AddForce.</summary>
+		</member>
+		<member name="T:UnityEngine.CharacterController">
+			<summary>A CharacterController allows you to easily do movement constrained by collisions without having to deal with a rigidbody.</summary>
+		</member>
+		<member name="T:UnityEngine.JointDrive">
+			<summary>How the joint's movement will behave along its local X axis.</summary>
+		</member>
+		<member name="T:UnityEngine.JointMotor">
+			<summary>The JointMotor is used to motorize a joint.</summary>
+		</member>
+		<member name="T:UnityEngine.RigidbodyConstraints">
+			<summary>Use these flags to constrain motion of Rigidbodies.</summary>
+		</member>
+		<member name="T:UnityEngine.CollisionDetectionMode">
+			<summary>The collision detection mode constants used for Rigidbody.collisionDetectionMode.</summary>
+		</member>
+		<member name="T:UnityEngine.Joint">
+			<summary>Joint is the base class for all joints.</summary>
+		</member>
+		<member name="T:UnityEngine.Rigidbody">
+			<summary>Control of an object's position through physics simulation.</summary>
+		</member>
+		<member name="T:UnityEngine.ConfigurableJoint">
+			<summary>The configurable joint is an extremely flexible joint giving you complete control over rotation and linear motion.</summary>
+		</member>
+		<member name="T:UnityEngine.RigidbodyInterpolation">
+			<summary></summary>
+		</member>
+		<member name="T:UnityEngine.JointDriveMode">
+			<summary>The ConfigurableJoint attempts to attain position / velocity targets based on this flag.</summary>
+		</member>
+		<member name="T:UnityEngine.ConfigurableJointMotion">
+			<summary>Constrains movement for a ConfigurableJoint along the 6 axes.</summary>
+		</member>
+		<member name="T:UnityEngine.ControllerColliderHit">
+			<summary>ControllerColliderHit is used by CharacterController.OnControllerColliderHit to give detailed information about the collision and how to deal with it.</summary>
+		</member>
+		<member name="T:UnityEngine.MeshColliderCookingOptions">
+			<summary>Cooking options that are available with MeshCollider.</summary>
+		</member>
+		<member name="T:UnityEngine.WheelFrictionCurve">
+			<summary>WheelFrictionCurve is used by the WheelCollider to describe friction properties of the wheel tire.</summary>
+		</member>
+		<member name="T:UnityEngine.PhysicMaterialCombine">
+			<summary>Describes how physics materials of the colliding objects are combined.The friction force as well as the residual bounce impulse are applied symmertrically to both of the colliders in contact, so each pair of overlapping colliders must have a single set of friction and bouciness settings. However, one can set arbitrary physics materials to any colliders. For that particular reason, there is a mechanism that allows the combination of two different sets of properties that correspond to each of the colliders in contact into one set to be used in the solver.Specifying Average, Maximum, Minimum or Multiply as the physics material combine mode, you directly set the function that is used to combine the settings corresponding to the two overlapping colliders into one set of settings that can be used to apply the material effect.Note that there is a special case when the two overlapping colliders have physics materials with different combine modes set. In this particular case, the function that has the highest priority is used. The priority order is as follows: Average &lt; Minimum &lt; Multiply &lt; Maximum. For example, if one material has Average set but the other one has Maximum, then the combine function to be used is Maximum, since it has higher priority.</summary>
+		</member>
+		<member name="T:UnityEngine.JointLimits">
+			<summary>JointLimits is used by the HingeJoint to limit the joints angle.</summary>
+		</member>
+		<member name="T:UnityEngine.RotationDriveMode">
+			<summary>Control ConfigurableJoint's rotation with either X &amp; YZ or Slerp Drive.</summary>
+		</member>
+		<member name="T:UnityEngine.JointSpring">
+			<summary>JointSpring is used add a spring force to HingeJoint and PhysicMaterial.</summary>
+		</member>
+		<member name="T:UnityEngine.CapsuleCollider">
+			<summary>A capsule-shaped primitive collider.</summary>
+		</member>
+		<member name="T:UnityEngine.SphereCollider">
+			<summary>A sphere-shaped primitive collider.</summary>
+		</member>
+		<member name="T:UnityEngine.MeshCollider">
+			<summary>A mesh collider allows you to do collision detection between meshes and primitives.</summary>
+		</member>
+		<member name="T:UnityEngine.Collision">
+			<summary>Describes a collision.</summary>
+		</member>
+		<member name="P:UnityEngine.BoxCollider.center">
+			<summary>The center of the box, measured in the object's local space.</summary>
+		</member>
+		<member name="T:UnityEngine.RaycastHit">
+			<summary>Structure used to get information back from a raycast.</summary>
+		</member>
+		<member name="T:UnityEngine.QueryTriggerInteraction">
+			<summary>Overrides the global Physics.queriesHitTriggers.</summary>
+		</member>
+		<member name="P:UnityEngine.CharacterJoint.swingAxis">
+			<summary>The secondary axis around which the joint can rotate.</summary>
+		</member>
+		<member name="P:UnityEngine.Physics.gravity">
+			<summary>The gravity applied to all rigid bodies in the scene.</summary>
+		</member>
+		<member name="T:UnityEngine.SoftJointLimit">
+			<summary>The limits defined by the CharacterJoint.</summary>
+		</member>
+		<member name="P:UnityEngine.HingeJoint.motor">
+			<summary>The motor will apply a force up to a maximum force to achieve the target velocity in degrees per second.</summary>
+		</member>
+		<member name="T:UnityEngine.SoftJointLimitSpring">
+			<summary>The configuration of the spring attached to the joint's limits: linear and angular. Used by CharacterJoint and ConfigurableJoint.</summary>
+		</member>
+		<member name="T:UnityEngine.CollisionFlags">
+			<summary>CollisionFlags is a bitmask returned by CharacterController.Move.</summary>
+		</member>
+		<member name="P:UnityEngine.SpringJoint.spring">
+			<summary>The spring force used to keep the two objects together.</summary>
+		</member>
+		<member name="P:UnityEngine.Collider.enabled">
+			<summary>Enabled Colliders will collide with other Colliders, disabled Colliders won't.</summary>
+		</member>
+		<member name="P:UnityEngine.WheelFrictionCurve.extremumSlip">
+			<summary>Extremum point slip (default 1).</summary>
+		</member>
+		<member name="P:UnityEngine.SoftJointLimitSpring.spring">
+			<summary>The stiffness of the spring limit. When stiffness is zero the limit is hard, otherwise soft.</summary>
+		</member>
+		<member name="P:UnityEngine.CapsuleCollider.center">
+			<summary>The center of the capsule, measured in the object's local space.</summary>
+		</member>
+		<member name="P:UnityEngine.RaycastHit.point">
+			<summary>The impact point in world space where the ray hit the collider.</summary>
+		</member>
+		<member name="F:UnityEngine.JointSpring.spring">
+			<summary>The spring forces used to reach the target position.</summary>
+		</member>
+		<member name="P:UnityEngine.PhysicMaterial.dynamicFriction">
+			<summary>The friction used when already moving.  This value has to be between 0 and 1.</summary>
+		</member>
+		<member name="P:UnityEngine.BoxCollider.size">
+			<summary>The size of the box, measured in the object's local space.</summary>
+		</member>
+		<member name="P:UnityEngine.ConstantForce.force">
+			<summary>The force applied to the rigidbody every frame.</summary>
+		</member>
+		<member name="P:UnityEngine.SphereCollider.center">
+			<summary>The center of the sphere in the object's local space.</summary>
+		</member>
+		<member name="P:UnityEngine.CharacterJoint.twistLimitSpring">
+			<summary>The configuration of the spring attached to the twist limits of the joint.</summary>
+		</member>
+		<member name="P:UnityEngine.CharacterController.isGrounded">
+			<summary>Was the CharacterController touching the ground during the last move?</summary>
+		</member>
+		<member name="P:UnityEngine.ConfigurableJoint.secondaryAxis">
+			<summary>The joint's secondary axis.</summary>
+		</member>
+		<member name="P:UnityEngine.Physics.minPenetrationForPenalty">
+			<summary>The minimum contact penetration value in order to apply a penalty force (default 0.05). Must be positive.</summary>
+		</member>
+		<member name="P:UnityEngine.HingeJoint.limits">
+			<summary>Limit of angular rotation (in degrees) on the hinge joint.</summary>
+		</member>
+		<member name="P:UnityEngine.Rigidbody.velocity">
+			<summary>The velocity vector of the rigidbody.</summary>
+		</member>
+		<member name="P:UnityEngine.JointLimits.min">
+			<summary>The lower angular limit (in degrees) of the joint.</summary>
+		</member>
+		<member name="P:UnityEngine.JointMotor.targetVelocity">
+			<summary>The motor will apply a force up to force to achieve targetVelocity.</summary>
+		</member>
+		<member name="P:UnityEngine.JointDrive.mode">
+			<summary>Whether the drive should attempt to reach position, velocity, both or nothing.</summary>
+		</member>
+		<member name="P:UnityEngine.ControllerColliderHit.controller">
+			<summary>The controller that hit the collider.</summary>
+		</member>
+		<member name="P:UnityEngine.Collision.relativeVelocity">
+			<summary>The relative linear velocity of the two colliding objects (Read Only).</summary>
+		</member>
+		<member name="P:UnityEngine.Collider.attachedRigidbody">
+			<summary>The rigidbody the collider is attached to.</summary>
+		</member>
+		<member name="P:UnityEngine.CapsuleCollider.radius">
+			<summary>The radius of the sphere, measured in the object's local space.</summary>
+		</member>
+		<member name="F:UnityEngine.JointSpring.damper">
+			<summary>The damper force uses to dampen the spring.</summary>
+		</member>
+		<member name="P:UnityEngine.RaycastHit.normal">
+			<summary>The normal of the surface the ray hit.</summary>
+		</member>
+		<member name="P:UnityEngine.MeshCollider.sharedMesh">
+			<summary>The mesh object used for collision detection.</summary>
+		</member>
+		<member name="P:UnityEngine.SoftJointLimitSpring.damper">
+			<summary>The damping of the spring limit. In effect when the stiffness of the sprint limit is not zero.</summary>
+		</member>
+		<member name="P:UnityEngine.PhysicMaterial.staticFriction">
+			<summary>The friction coefficient used when an object is lying on a surface.</summary>
+		</member>
+		<member name="P:UnityEngine.ConstantForce.relativeForce">
+			<summary>The force - relative to the rigid bodies coordinate system - applied every frame.</summary>
+		</member>
+		<member name="P:UnityEngine.SphereCollider.radius">
+			<summary>The radius of the sphere measured in the object's local space.</summary>
+		</member>
+		<member name="P:UnityEngine.CharacterJoint.swingLimitSpring">
+			<summary>The configuration of the spring attached to the swing limits of the joint.</summary>
+		</member>
+		<member name="P:UnityEngine.ConfigurableJoint.xMotion">
+			<summary>Allow movement along the X axis to be Free, completely Locked, or Limited according to Linear Limit.</summary>
+		</member>
+		<member name="P:UnityEngine.WheelFrictionCurve.extremumValue">
+			<summary>Force at the extremum slip (default 20000).</summary>
+		</member>
+		<member name="P:UnityEngine.Rigidbody.angularVelocity">
+			<summary>The angular velocity vector of the rigidbody measured in radians per second.</summary>
+		</member>
+		<member name="P:UnityEngine.HingeJoint.spring">
+			<summary>The spring attempts to reach a target angle by adding spring and damping forces.</summary>
+		</member>
+		<member name="P:UnityEngine.JointLimits.max">
+			<summary>The upper angular limit (in degrees) of the joint.</summary>
+		</member>
+		<member name="P:UnityEngine.CharacterController.velocity">
+			<summary>The current relative velocity of the Character (see notes).</summary>
+		</member>
+		<member name="P:UnityEngine.ControllerColliderHit.collider">
+			<summary>The collider that was hit by the controller.</summary>
+		</member>
+		<member name="P:UnityEngine.JointDrive.positionSpring">
+			<summary>Strength of a rubber-band pull toward the defined direction. Only used if mode includes Position.</summary>
+		</member>
+		<member name="P:UnityEngine.Collision.rigidbody">
+			<summary>The Rigidbody we hit (Read Only). This is null if the object we hit is a collider with no rigidbody attached.</summary>
+		</member>
+		<member name="P:UnityEngine.Collider.isTrigger">
+			<summary>Is the collider a trigger?</summary>
+		</member>
+		<member name="P:UnityEngine.CapsuleCollider.height">
+			<summary>The height of the capsule meased in the object's local space.</summary>
+		</member>
+		<member name="P:UnityEngine.RaycastHit.barycentricCoordinate">
+			<summary>The barycentric coordinate of the triangle we hit.</summary>
+		</member>
+		<member name="P:UnityEngine.MeshCollider.convex">
+			<summary>Use a convex collider from the mesh.</summary>
+		</member>
+		<member name="F:UnityEngine.JointSpring.targetPosition">
+			<summary>The target position the joint attempts to reach.</summary>
+		</member>
+		<member name="P:UnityEngine.JointMotor.force">
+			<summary>The motor will apply a force.</summary>
+		</member>
+		<member name="P:UnityEngine.ConstantForce.torque">
+			<summary>The torque applied to the rigidbody every frame.</summary>
+		</member>
+		<member name="P:UnityEngine.CharacterJoint.lowTwistLimit">
+			<summary>The lower limit around the primary axis of the character joint.</summary>
+		</member>
+		<member name="P:UnityEngine.ConfigurableJoint.yMotion">
+			<summary>Allow movement along the Y axis to be Free, completely Locked, or Limited according to Linear Limit.</summary>
+		</member>
+		<member name="P:UnityEngine.Rigidbody.drag">
+			<summary>The drag of the object.</summary>
+		</member>
+		<member name="P:UnityEngine.WheelFrictionCurve.asymptoteSlip">
+			<summary>Asymptote point slip (default 2).</summary>
+		</member>
+		<member name="P:UnityEngine.HingeJoint.useMotor">
+			<summary>Enables the joint's motor. Disabled by default.</summary>
+		</member>
+		<member name="P:UnityEngine.Collision.collider">
+			<summary>The Collider we hit (Read Only).</summary>
+		</member>
+		<member name="P:UnityEngine.JointLimits.bounciness">
+			<summary>Determines the size of the bounce when the joint hits it's limit. Also known as restitution.</summary>
+		</member>
+		<member name="P:UnityEngine.ControllerColliderHit.rigidbody">
+			<summary>The rigidbody that was hit by the controller.</summary>
+		</member>
+		<member name="P:UnityEngine.CharacterController.collisionFlags">
+			<summary>What part of the capsule collided with the environment during the last CharacterController.Move call.</summary>
+		</member>
+		<member name="P:UnityEngine.Collider.contactOffset">
+			<summary>Contact offset value of this collider.</summary>
+		</member>
+		<member name="P:UnityEngine.CapsuleCollider.direction">
+			<summary>The direction of the capsule.</summary>
+		</member>
+		<member name="P:UnityEngine.MeshCollider.cookingOptions">
+			<summary>Options used to enable or disable certain features in mesh cooking.</summary>
+		</member>
+		<member name="P:UnityEngine.RaycastHit.distance">
+			<summary>The distance from the ray's origin to the impact point.</summary>
+		</member>
+		<member name="P:UnityEngine.RaycastHit.triangleIndex">
+			<summary>The index of the triangle that was hit.</summary>
+		</member>
+		<member name="P:UnityEngine.CharacterController.radius">
+			<summary>The radius of the character's capsule.</summary>
+		</member>
+		<member name="P:UnityEngine.ControllerColliderHit.gameObject">
+			<summary>The game object that was hit by the controller.</summary>
+		</member>
+		<member name="P:UnityEngine.ConstantForce.relativeTorque">
+			<summary>The torque - relative to the rigid bodies coordinate system - applied every frame.</summary>
+		</member>
+		<member name="P:UnityEngine.Collider.material">
+			<summary>The material used by the collider.</summary>
+		</member>
+		<member name="P:UnityEngine.CharacterJoint.highTwistLimit">
+			<summary>The upper limit around the primary axis of the character joint.</summary>
+		</member>
+		<member name="P:UnityEngine.JointMotor.freeSpin">
+			<summary>If freeSpin is enabled the motor will only accelerate but never slow down.</summary>
+		</member>
+		<member name="P:UnityEngine.HingeJoint.useLimits">
+			<summary>Enables the joint's limits. Disabled by default.</summary>
+		</member>
+		<member name="P:UnityEngine.ConfigurableJoint.zMotion">
+			<summary>Allow movement along the Z axis to be Free, completely Locked, or Limited according to Linear Limit.</summary>
+		</member>
+		<member name="P:UnityEngine.JointLimits.bounceMinVelocity">
+			<summary>The minimum impact velocity which will cause the joint to bounce.</summary>
+		</member>
+		<member name="P:UnityEngine.Joint.connectedBody">
+			<summary>A reference to another rigidbody this joint connects to.</summary>
+		</member>
+		<member name="P:UnityEngine.WheelFrictionCurve.asymptoteValue">
+			<summary>Force at the asymptote slip (default 10000).</summary>
+		</member>
+		<member name="P:UnityEngine.Rigidbody.angularDrag">
+			<summary>The angular drag of the object.</summary>
+		</member>
+		<member name="P:UnityEngine.Physics.defaultContactOffset">
+			<summary>The default contact offset of the newly created colliders.</summary>
+		</member>
+		<member name="P:UnityEngine.SoftJointLimit.limit">
+			<summary>The limit position/angle of the joint (in degrees).</summary>
+		</member>
+		<member name="P:UnityEngine.JointDrive.positionDamper">
+			<summary>Resistance strength against the Position Spring. Only used if mode includes Position.</summary>
+		</member>
+		<member name="P:UnityEngine.SpringJoint.damper">
+			<summary>The damper force used to dampen the spring force.</summary>
+		</member>
+		<member name="T:UnityEngine.JointProjectionMode">
+			<summary>Determines how to snap physics joints back to its constrained position when it drifts off too much.</summary>
+		</member>
+		<member name="P:UnityEngine.RaycastHit.textureCoord">
+			<summary>The uv texture coordinate at the collision location.</summary>
+		</member>
+		<member name="P:UnityEngine.HingeJoint.useSpring">
+			<summary>Enables the joint's spring. Disabled by default.</summary>
+		</member>
+		<member name="P:UnityEngine.JointDrive.maximumForce">
+			<summary>Amount of force applied to push the object toward the defined direction.</summary>
+		</member>
+		<member name="P:UnityEngine.CharacterController.height">
+			<summary>The height of the character's capsule.</summary>
+		</member>
+		<member name="P:UnityEngine.Rigidbody.mass">
+			<summary>The mass of the rigidbody.</summary>
+		</member>
+		<member name="P:UnityEngine.SoftJointLimit.spring">
+			<summary>If greater than zero, the limit is soft. The spring will pull the joint back.</summary>
+		</member>
+		<member name="P:UnityEngine.Physics.bounceThreshold">
+			<summary>Two colliding objects with a relative velocity below this will not bounce (default 2). Must be positive.</summary>
+		</member>
+		<member name="P:UnityEngine.JointLimits.contactDistance">
+			<summary>Distance inside the limit value at which the limit will be considered to be active by the solver.</summary>
+		</member>
+		<member name="P:UnityEngine.Joint.axis">
+			<summary>The Direction of the axis around which the body is constrained.</summary>
+		</member>
+		<member name="P:UnityEngine.ConfigurableJoint.angularXMotion">
+			<summary>Allow rotation around the X axis to be Free, completely Locked, or Limited according to Low and High Angular XLimit.</summary>
+		</member>
+		<member name="P:UnityEngine.Collider.sharedMaterial">
+			<summary>The shared physic material of this collider.</summary>
+		</member>
+		<member name="P:UnityEngine.Collision.transform">
+			<summary>The Transform of the object we hit (Read Only).</summary>
+		</member>
+		<member name="P:UnityEngine.CharacterJoint.swing1Limit">
+			<summary>The angular limit of rotation (in degrees) around the primary axis of the character joint.</summary>
+		</member>
+		<member name="P:UnityEngine.PhysicMaterial.bounciness">
+			<summary>How bouncy is the surface? A value of 0 will not bounce. A value of 1 will bounce without any loss of energy.</summary>
+		</member>
+		<member name="P:UnityEngine.Rigidbody.useGravity">
+			<summary>Controls whether gravity affects this rigidbody.</summary>
+		</member>
+		<member name="P:UnityEngine.Physics.sleepVelocity">
+			<summary>The default linear velocity, below which objects start going to sleep (default 0.15). Must be positive.</summary>
+		</member>
+		<member name="P:UnityEngine.SoftJointLimit.damper">
+			<summary>If spring is greater than zero, the limit is soft.</summary>
+		</member>
+		<member name="P:UnityEngine.Joint.anchor">
+			<summary>The Position of the anchor around which the joints motion is constrained.</summary>
+		</member>
+		<member name="P:UnityEngine.Physics.sleepAngularVelocity">
+			<summary>The default angular velocity, below which objects start sleeping (default 0.14). Must be positive.</summary>
+		</member>
+		<member name="P:UnityEngine.PhysicMaterial.frictionDirection2">
+			<summary>The direction of anisotropy. Anisotropic friction is enabled if the vector is not zero.</summary>
+		</member>
+		<member name="P:UnityEngine.Rigidbody.maxDepenetrationVelocity">
+			<summary>Maximum velocity of a rigidbody when moving out of penetrating state.</summary>
+		</member>
+		<member name="P:UnityEngine.CharacterJoint.swing2Limit">
+			<summary>The angular limit of rotation (in degrees) around the primary axis of the character joint.</summary>
+		</member>
+		<member name="P:UnityEngine.CharacterController.center">
+			<summary>The center of the character's capsule relative to the transform's position.</summary>
+		</member>
+		<member name="P:UnityEngine.ConfigurableJoint.angularYMotion">
+			<summary>Allow rotation around the Y axis to be Free, completely Locked, or Limited according to Angular YLimit.</summary>
+		</member>
+		<member name="P:UnityEngine.SpringJoint.minDistance">
+			<summary>The minimum distance between the bodies relative to their initial distance.</summary>
+		</member>
+		<member name="P:UnityEngine.WheelFrictionCurve.stiffness">
+			<summary>Multiplier for the extremumValue and asymptoteValue values (default 1).</summary>
+		</member>
+		<member name="P:UnityEngine.SoftJointLimit.bounciness">
+			<summary>When the joint hits the limit, it can be made to bounce off it.</summary>
+		</member>
+		<member name="P:UnityEngine.Physics.maxAngularVelocity">
+			<summary>The default maximum angular velocity permitted for any rigid bodies (default 7). Must be positive.</summary>
+		</member>
+		<member name="P:UnityEngine.CharacterJoint.enableProjection">
+			<summary>Brings violated constraints back into alignment even when the solver fails.</summary>
+		</member>
+		<member name="P:UnityEngine.PhysicMaterial.dynamicFriction2">
+			<summary>If anisotropic friction is enabled, dynamicFriction2 will be applied along frictionDirection2.</summary>
+		</member>
+		<member name="P:UnityEngine.CharacterController.slopeLimit">
+			<summary>The character controllers slope limit in degrees.</summary>
+		</member>
+		<member name="P:UnityEngine.ConfigurableJoint.angularZMotion">
+			<summary>Allow rotation around the Z axis to be Free, completely Locked, or Limited according to Angular ZLimit.</summary>
+		</member>
+		<member name="P:UnityEngine.Joint.connectedAnchor">
+			<summary>Position of the anchor relative to the connected Rigidbody.</summary>
+		</member>
+		<member name="P:UnityEngine.Rigidbody.isKinematic">
+			<summary>Controls whether physics affects the rigidbody.</summary>
+		</member>
+		<member name="P:UnityEngine.SoftJointLimit.contactDistance">
+			<summary>Determines how far ahead in space the solver can "see" the joint limit.</summary>
+		</member>
+		<member name="P:UnityEngine.SpringJoint.maxDistance">
+			<summary>The maximum distance between the bodies relative to their initial distance.</summary>
+		</member>
+		<member name="P:UnityEngine.Physics.defaultSolverIterations">
+			<summary>The defaultSolverIterations determines how accurately Rigidbody joints and collision contacts are resolved. (default 6). Must be positive.</summary>
+		</member>
+		<member name="P:UnityEngine.CharacterJoint.projectionDistance">
+			<summary>Set the linear tolerance threshold for projection.</summary>
+		</member>
+		<member name="P:UnityEngine.MeshCollider.inflateMesh">
+			<summary>Allow the physics engine to increase the volume of the input mesh in attempt to generate a valid convex mesh.</summary>
+		</member>
+		<member name="P:UnityEngine.Collider.bounds">
+			<summary>The world space bounding volume of the collider.</summary>
+		</member>
+		<member name="P:UnityEngine.ControllerColliderHit.transform">
+			<summary>The transform that was hit by the controller.</summary>
+		</member>
+		<member name="P:UnityEngine.PhysicMaterial.staticFriction2">
+			<summary>If anisotropic friction is enabled, staticFriction2 will be applied along frictionDirection2.</summary>
+		</member>
+		<member name="P:UnityEngine.RaycastHit.textureCoord2">
+			<summary>The secondary uv texture coordinate at the impact point.</summary>
+		</member>
+		<member name="P:UnityEngine.SpringJoint.tolerance">
+			<summary>The maximum allowed error between the current spring length and the length defined by minDistance and maxDistance.</summary>
+		</member>
+		<member name="P:UnityEngine.Joint.autoConfigureConnectedAnchor">
+			<summary>Should the connectedAnchor be calculated automatically?</summary>
+		</member>
+		<member name="P:UnityEngine.MeshCollider.skinWidth">
+			<summary>Used when set to inflateMesh to determine how much inflation is acceptable.</summary>
+		</member>
+		<member name="P:UnityEngine.Rigidbody.freezeRotation">
+			<summary>Controls whether physics will change the rotation of the object.</summary>
+		</member>
+		<member name="P:UnityEngine.HingeJoint.velocity">
+			<summary>The angular velocity of the joint in degrees per second. (Read Only)</summary>
+		</member>
+		<member name="P:UnityEngine.CharacterController.stepOffset">
+			<summary>The character controllers step offset in meters.</summary>
+		</member>
+		<member name="P:UnityEngine.CharacterJoint.projectionAngle">
+			<summary>Set the angular tolerance threshold (in degrees) for projection.</summary>
+		</member>
+		<member name="P:UnityEngine.PhysicMaterial.frictionCombine">
+			<summary>Determines how the friction is combined.</summary>
+		</member>
+		<member name="M:UnityEngine.Collider.ClosestPointOnBounds(UnityEngine.Vector3)">
+			<summary>The closest point to the bounding box of the attached collider.</summary>
+		</member>
+		<member name="P:UnityEngine.RaycastHit.lightmapCoord">
+			<summary>The uv lightmap coordinate at the impact point.</summary>
+		</member>
+		<member name="P:UnityEngine.MeshCollider.smoothSphereCollisions">
+			<summary>Uses interpolated normals for sphere collisions instead of flat polygonal normals.</summary>
+		</member>
+		<member name="P:UnityEngine.Physics.defaultSolverVelocityIterations">
+			<summary>The defaultSolverVelocityIterations affects how accurately the Rigidbody joints and collision contacts are resolved. (default 1). Must be positive.</summary>
+		</member>
+		<member name="P:UnityEngine.HingeJoint.angle">
+			<summary>The current angle in degrees of the joint relative to its rest position. (Read Only)</summary>
+		</member>
+		<member name="P:UnityEngine.ControllerColliderHit.point">
+			<summary>The impact point in world space.</summary>
+		</member>
+		<member name="P:UnityEngine.Rigidbody.constraints">
+			<summary>Controls which degrees of freedom are allowed for the simulation of this Rigidbody.</summary>
+		</member>
+		<member name="P:UnityEngine.PhysicMaterial.bounceCombine">
+			<summary>Determines how the bounciness is combined.</summary>
+		</member>
+		<member name="P:UnityEngine.Physics.sleepThreshold">
+			<summary>The mass-normalized energy threshold, below which objects start going to sleep.</summary>
+		</member>
+		<member name="P:UnityEngine.CharacterController.skinWidth">
+			<summary>The character's collision skin width.</summary>
+		</member>
+		<member name="P:UnityEngine.RaycastHit.collider">
+			<summary>The Collider that was hit.</summary>
+		</member>
+		<member name="P:UnityEngine.RaycastHit.rigidbody">
+			<summary>The Rigidbody of the collider that was hit. If the collider is not attached to a rigidbody then it is null.</summary>
+		</member>
+		<member name="P:UnityEngine.ControllerColliderHit.normal">
+			<summary>The normal of the surface we collided with in world space.</summary>
+		</member>
+		<member name="P:UnityEngine.Joint.breakForce">
+			<summary>The force that needs to be applied for this joint to break.</summary>
+		</member>
+		<member name="P:UnityEngine.Rigidbody.collisionDetectionMode">
+			<summary>The Rigidbody's collision detection mode.</summary>
+		</member>
+		<member name="P:UnityEngine.Physics.queriesHitTriggers">
+			<summary>Specifies whether queries (raycasts, spherecasts, overlap tests, etc.) hit Triggers by default.</summary>
+		</member>
+		<member name="M:UnityEngine.Collider.ClosestPoint(UnityEngine.Vector3)">
+			<summary>Returns a point on the collider that is closest to a given location.</summary>
+		</member>
+		<member name="P:UnityEngine.Joint.breakTorque">
+			<summary>The torque that needs to be applied for this joint to break.</summary>
+		</member>
+		<member name="P:UnityEngine.RaycastHit.transform">
+			<summary>The Transform of the rigidbody or collider that was hit.</summary>
+		</member>
+		<member name="P:UnityEngine.ControllerColliderHit.moveDirection">
+			<summary>The direction the CharacterController was moving in when the collision occured.</summary>
+		</member>
+		<member name="P:UnityEngine.CharacterController.minMoveDistance">
+			<summary>Gets or sets the minimum move distance of the character controller.</summary>
+		</member>
+		<member name="M:UnityEngine.Collider.Raycast(UnityEngine.Ray,UnityEngine.RaycastHit&,System.Single)">
+			<summary>Casts a Ray that ignores all Colliders except this one.</summary>
+		</member>
+		<member name="P:UnityEngine.Rigidbody.centerOfMass">
+			<summary>The center of mass relative to the transform's origin.</summary>
+		</member>
+		<member name="P:UnityEngine.Physics.queriesHitBackfaces">
+			<summary>Whether physics queries should hit back-face triangles.</summary>
+		</member>
+		<member name="P:UnityEngine.ControllerColliderHit.moveLength">
+			<summary>How far the character has travelled until it hit the collider.</summary>
+		</member>
+		<member name="P:UnityEngine.CharacterController.detectCollisions">
+			<summary>Determines whether other rigidbodies or character controllers collide with this character controller (by default this is always enabled).</summary>
+		</member>
+		<member name="P:UnityEngine.Physics.interCollisionDistance">
+			<summary>Sets the minimum separation distance for cloth inter-collision.</summary>
+		</member>
+		<member name="P:UnityEngine.Rigidbody.worldCenterOfMass">
+			<summary>The center of mass of the rigidbody in world space (Read Only).</summary>
+		</member>
+		<member name="P:UnityEngine.Joint.enableCollision">
+			<summary>Enable collision between bodies connected with the joint.</summary>
+		</member>
+		<member name="P:UnityEngine.CharacterController.enableOverlapRecovery">
+			<summary></summary>
+		</member>
+		<member name="P:UnityEngine.Joint.enablePreprocessing">
+			<summary>Toggle preprocessing for this joint.</summary>
+		</member>
+		<member name="P:UnityEngine.Rigidbody.inertiaTensorRotation">
+			<summary>The rotation of the inertia tensor.</summary>
+		</member>
+		<member name="P:UnityEngine.Rigidbody.inertiaTensor">
+			<summary>The diagonal inertia tensor of mass relative to the center of mass.</summary>
+		</member>
+		<member name="P:UnityEngine.Joint.currentForce">
+			<summary>The force applied by the solver to satisfy all constraints.</summary>
+		</member>
+		<member name="P:UnityEngine.Physics.interCollisionStiffness">
+			<summary>Sets the cloth inter-collision stiffness.</summary>
+		</member>
+		<member name="M:UnityEngine.CharacterController.SimpleMove(UnityEngine.Vector3)">
+			<summary>Moves the character with speed.</summary>
+		</member>
+		<member name="P:UnityEngine.Joint.currentTorque">
+			<summary>The torque applied by the solver to satisfy all constraints.</summary>
+		</member>
+		<member name="P:UnityEngine.Rigidbody.detectCollisions">
+			<summary>Should collision detection be enabled? (By default always enabled).</summary>
+		</member>
+		<member name="P:UnityEngine.Physics.autoSimulation">
+			<summary>Sets whether the physics should be simulated automatically or not.</summary>
+		</member>
+		<member name="P:UnityEngine.Joint.massScale">
+			<summary>The scale to apply to the inverse mass and inertia tensor of the body prior to solving the constraints.</summary>
+		</member>
+		<member name="M:UnityEngine.CharacterController.Move(UnityEngine.Vector3)">
+			<summary>A more complex move function taking absolute movement deltas.</summary>
+		</member>
+		<member name="P:UnityEngine.Physics.autoSyncTransforms">
+			<summary>Whether or not to automatically sync transform changes with the physics system whenever a Transform component changes.</summary>
+		</member>
+		<member name="P:UnityEngine.Rigidbody.useConeFriction">
+			<summary>Force cone friction to be used for this rigidbody.</summary>
+		</member>
+		<member name="P:UnityEngine.Joint.connectedMassScale">
+			<summary>The scale to apply to the inverse mass and inertia tensor of the connected body prior to solving the constraints.</summary>
+		</member>
+		<member name="P:UnityEngine.Rigidbody.position">
+			<summary>The position of the rigidbody.</summary>
+		</member>
+		<member name="M:UnityEngine.Physics.Raycast(UnityEngine.Vector3,UnityEngine.Vector3,System.Single,System.Int32)">
+			<summary>Casts a ray, from point origin, in direction direction, of length maxDistance, against all colliders in the scene.</summary>
+		</member>
+		<member name="M:UnityEngine.Physics.Raycast(UnityEngine.Vector3,UnityEngine.Vector3,System.Single)">
+			<summary>Casts a ray, from point origin, in direction direction, of length maxDistance, against all colliders in the scene.</summary>
+		</member>
+		<member name="M:UnityEngine.Physics.Raycast(UnityEngine.Vector3,UnityEngine.Vector3)">
+			<summary>Casts a ray, from point origin, in direction direction, of length maxDistance, against all colliders in the scene.</summary>
+		</member>
+		<member name="M:UnityEngine.Physics.Raycast(UnityEngine.Vector3,UnityEngine.Vector3,System.Single,System.Int32,UnityEngine.QueryTriggerInteraction)">
+			<summary>Casts a ray, from point origin, in direction direction, of length maxDistance, against all colliders in the scene.</summary>
+		</member>
+		<member name="M:UnityEngine.Physics.Raycast(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.RaycastHit&,System.Single,System.Int32)">
+			<summary>Casts a ray, from point origin, in direction direction, of length maxDistance, against all colliders in the scene.</summary>
+		</member>
+		<member name="M:UnityEngine.Physics.Raycast(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.RaycastHit&,System.Single)">
+			<summary>Casts a ray, from point origin, in direction direction, of length maxDistance, against all colliders in the scene.</summary>
+		</member>
+		<member name="M:UnityEngine.Physics.Raycast(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.RaycastHit&)">
+			<summary>Casts a ray, from point origin, in direction direction, of length maxDistance, against all colliders in the scene.</summary>
+		</member>
+		<member name="M:UnityEngine.Physics.Raycast(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.RaycastHit&,System.Single,System.Int32,UnityEngine.QueryTriggerInteraction)">
+			<summary>Casts a ray, from point origin, in direction direction, of length maxDistance, against all colliders in the scene.</summary>
+		</member>
+		<member name="M:UnityEngine.Physics.Raycast(UnityEngine.Ray,System.Single,System.Int32)">
+			<summary>Casts a ray, from point origin, in direction direction, of length maxDistance, against all colliders in the scene.</summary>
+		</member>
+		<member name="M:UnityEngine.Physics.Raycast(UnityEngine.Ray,System.Single)">
+			<summary>Casts a ray, from point origin, in direction direction, of length maxDistance, against all colliders in the scene.</summary>
+		</member>
+		<member name="M:UnityEngine.Physics.Raycast(UnityEngine.Ray)">
+			<summary>Casts a ray, from point origin, in direction direction, of length maxDistance, against all colliders in the scene.</summary>
+		</member>
+		<member name="P:UnityEngine.Collision.gameObject">
+			<summary>The GameObject whose collider you are colliding with. (Read Only).</summary>
+		</member>
+		<member name="M:UnityEngine.Physics.Raycast(UnityEngine.Ray,System.Single,System.Int32,UnityEngine.QueryTriggerInteraction)">
+			<summary>Casts a ray, from point origin, in direction direction, of length maxDistance, against all colliders in the scene.</summary>
+		</member>
+		<member name="M:UnityEngine.Physics.Raycast(UnityEngine.Ray,UnityEngine.RaycastHit&,System.Single,System.Int32)">
+			<summary>Casts a ray, from point origin, in direction direction, of length maxDistance, against all colliders in the scene.</summary>
+		</member>
+		<member name="M:UnityEngine.Physics.Raycast(UnityEngine.Ray,UnityEngine.RaycastHit&,System.Single)">
+			<summary>Casts a ray, from point origin, in direction direction, of length maxDistance, against all colliders in the scene.</summary>
+		</member>
+		<member name="M:UnityEngine.Physics.Raycast(UnityEngine.Ray,UnityEngine.RaycastHit&)">
+			<summary>Casts a ray, from point origin, in direction direction, of length maxDistance, against all colliders in the scene.</summary>
+		</member>
+		<member name="M:UnityEngine.Physics.Raycast(UnityEngine.Ray,UnityEngine.RaycastHit&,System.Single,System.Int32,UnityEngine.QueryTriggerInteraction)">
+			<summary>Casts a ray, from point origin, in direction direction, of length maxDistance, against all colliders in the scene.</summary>
+		</member>
+		<member name="P:UnityEngine.ConfigurableJoint.linearLimitSpring">
+			<summary>The configuration of the spring attached to the linear limit of the joint.</summary>
+		</member>
+		<member name="P:UnityEngine.Rigidbody.rotation">
+			<summary>The rotation of the rigidbody.</summary>
+		</member>
+		<member name="P:UnityEngine.Rigidbody.interpolation">
+			<summary>Interpolation allows you to smooth out the effect of running physics at a fixed frame rate.</summary>
+		</member>
+		<member name="P:UnityEngine.Collision.contacts">
+			<summary>The contact points generated by the physics engine.</summary>
+		</member>
+		<member name="P:UnityEngine.ConfigurableJoint.angularXLimitSpring">
+			<summary>The configuration of the spring attached to the angular X limit of the joint.</summary>
+		</member>
+		<member name="M:UnityEngine.Physics.RaycastAll(UnityEngine.Ray,System.Single,System.Int32)">
+			<summary>Casts a ray through the scene and returns all hits. Note that order is not guaranteed.</summary>
+		</member>
+		<member name="M:UnityEngine.Physics.RaycastAll(UnityEngine.Ray,System.Single)">
+			<summary>Casts a ray through the scene and returns all hits. Note that order is not guaranteed.</summary>
+		</member>
+		<member name="M:UnityEngine.Physics.RaycastAll(UnityEngine.Ray)">
+			<summary>Casts a ray through the scene and returns all hits. Note that order is not guaranteed.</summary>
+		</member>
+		<member name="M:UnityEngine.Physics.RaycastAll(UnityEngine.Ray,System.Single,System.Int32,UnityEngine.QueryTriggerInteraction)">
+			<summary>Casts a ray through the scene and returns all hits. Note that order is not guaranteed.</summary>
+		</member>
+		<member name="M:UnityEngine.Physics.RaycastAll(UnityEngine.Vector3,UnityEngine.Vector3,System.Single,System.Int32,UnityEngine.QueryTriggerInteraction)">
+			<summary>Casts a ray through the scene and returns all hits. Note that order is not guaranteed.</summary>
+		</member>
+		<member name="M:UnityEngine.Physics.RaycastAll(UnityEngine.Vector3,UnityEngine.Vector3,System.Single,System.Int32)">
+			<summary>Casts a ray through the scene and returns all hits. Note that order is not guaranteed.</summary>
+		</member>
+		<member name="M:UnityEngine.Physics.RaycastAll(UnityEngine.Vector3,UnityEngine.Vector3,System.Single)">
+			<summary>Casts a ray through the scene and returns all hits. Note that order is not guaranteed.</summary>
+		</member>
+		<member name="M:UnityEngine.Physics.RaycastAll(UnityEngine.Vector3,UnityEngine.Vector3)">
+			<summary>Casts a ray through the scene and returns all hits. Note that order is not guaranteed.</summary>
+		</member>
+		<member name="P:UnityEngine.ConfigurableJoint.angularYZLimitSpring">
+			<summary>The configuration of the spring attached to the angular Y and angular Z limits of the joint.</summary>
+		</member>
+		<member name="M:UnityEngine.Physics.RaycastNonAlloc(UnityEngine.Ray,UnityEngine.RaycastHit[],System.Single,System.Int32)">
+			<summary>Cast a ray through the scene and store the hits into the buffer.</summary>
+		</member>
+		<member name="M:UnityEngine.Physics.RaycastNonAlloc(UnityEngine.Ray,UnityEngine.RaycastHit[],System.Single)">
+			<summary>Cast a ray through the scene and store the hits into the buffer.</summary>
+		</member>
+		<member name="P:UnityEngine.Collision.impulse">
+			<summary>The total impulse applied to this contact pair to resolve the collision.</summary>
+		</member>
+		<member name="M:UnityEngine.Physics.RaycastNonAlloc(UnityEngine.Ray,UnityEngine.RaycastHit[])">
+			<summary>Cast a ray through the scene and store the hits into the buffer.</summary>
+		</member>
+		<member name="M:UnityEngine.Physics.RaycastNonAlloc(UnityEngine.Ray,UnityEngine.RaycastHit[],System.Single,System.Int32,UnityEngine.QueryTriggerInteraction)">
+			<summary>Cast a ray through the scene and store the hits into the buffer.</summary>
+		</member>
+		<member name="M:UnityEngine.Physics.RaycastNonAlloc(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.RaycastHit[],System.Single,System.Int32,UnityEngine.QueryTriggerInteraction)">
+			<summary>Cast a ray through the scene and store the hits into the buffer.</summary>
+		</member>
+		<member name="M:UnityEngine.Physics.RaycastNonAlloc(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.RaycastHit[],System.Single,System.Int32)">
+			<summary>Cast a ray through the scene and store the hits into the buffer.</summary>
+		</member>
+		<member name="M:UnityEngine.Physics.RaycastNonAlloc(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.RaycastHit[],System.Single)">
+			<summary>Cast a ray through the scene and store the hits into the buffer.</summary>
+		</member>
+		<member name="M:UnityEngine.Physics.RaycastNonAlloc(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.RaycastHit[])">
+			<summary>Cast a ray through the scene and store the hits into the buffer.</summary>
+		</member>
+		<member name="P:UnityEngine.Rigidbody.solverIterations">
+			<summary>The solverIterations determines how accurately Rigidbody joints and collision contacts are resolved. Overrides Physics.defaultSolverIterations. Must be positive.</summary>
+		</member>
+		<member name="P:UnityEngine.ConfigurableJoint.linearLimit">
+			<summary>Boundary defining movement restriction, based on distance from the joint's origin.</summary>
+		</member>
+		<member name="P:UnityEngine.Rigidbody.solverVelocityIterations">
+			<summary>The solverVelocityIterations affects how how accurately Rigidbody joints and collision contacts are resolved. Overrides Physics.defaultSolverVelocityIterations. Must be positive.</summary>
+		</member>
+		<member name="M:UnityEngine.Physics.Linecast(UnityEngine.Vector3,UnityEngine.Vector3,System.Int32)">
+			<summary>Returns true if there is any collider intersecting the line between start and end.</summary>
+		</member>
+		<member name="M:UnityEngine.Physics.Linecast(UnityEngine.Vector3,UnityEngine.Vector3)">
+			<summary>Returns true if there is any collider intersecting the line between start and end.</summary>
+		</member>
+		<member name="M:UnityEngine.Physics.Linecast(UnityEngine.Vector3,UnityEngine.Vector3,System.Int32,UnityEngine.QueryTriggerInteraction)">
+			<summary>Returns true if there is any collider intersecting the line between start and end.</summary>
+		</member>
+		<member name="M:UnityEngine.Physics.Linecast(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.RaycastHit&,System.Int32)">
+			<summary>Returns true if there is any collider intersecting the line between start and end.</summary>
+		</member>
+		<member name="M:UnityEngine.Physics.Linecast(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.RaycastHit&)">
+			<summary>Returns true if there is any collider intersecting the line between start and end.</summary>
+		</member>
+		<member name="M:UnityEngine.Physics.Linecast(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.RaycastHit&,System.Int32,UnityEngine.QueryTriggerInteraction)">
+			<summary>Returns true if there is any collider intersecting the line between start and end.</summary>
+		</member>
+		<member name="P:UnityEngine.ConfigurableJoint.lowAngularXLimit">
+			<summary>Boundary defining lower rotation restriction, based on delta from original rotation.</summary>
+		</member>
+		<member name="M:UnityEngine.Physics.OverlapSphere(UnityEngine.Vector3,System.Single,System.Int32,UnityEngine.QueryTriggerInteraction)">
+			<summary>Returns an array with all colliders touching or inside the sphere.</summary>
+		</member>
+		<member name="M:UnityEngine.Physics.OverlapSphere(UnityEngine.Vector3,System.Single,System.Int32)">
+			<summary>Returns an array with all colliders touching or inside the sphere.</summary>
+		</member>
+		<member name="M:UnityEngine.Physics.OverlapSphere(UnityEngine.Vector3,System.Single)">
+			<summary>Returns an array with all colliders touching or inside the sphere.</summary>
+		</member>
+		<member name="P:UnityEngine.ConfigurableJoint.highAngularXLimit">
+			<summary>Boundary defining upper rotation restriction, based on delta from original rotation.</summary>
+		</member>
+		<member name="P:UnityEngine.Rigidbody.sleepVelocity">
+			<summary>The linear velocity below which objects start going to sleep. (Default 0.14) range { 0, infinity }.</summary>
+		</member>
+		<member name="P:UnityEngine.Rigidbody.sleepAngularVelocity">
+			<summary>The angular velocity below which objects start going to sleep.  (Default 0.14) range { 0, infinity }.</summary>
+		</member>
+		<member name="P:UnityEngine.Rigidbody.sleepThreshold">
+			<summary>The mass-normalized energy threshold, below which objects start going to sleep.</summary>
+		</member>
+		<member name="M:UnityEngine.Physics.OverlapSphereNonAlloc(UnityEngine.Vector3,System.Single,UnityEngine.Collider[],System.Int32,UnityEngine.QueryTriggerInteraction)">
+			<summary>Computes and stores colliders touching or inside the sphere into the provided buffer.</summary>
+		</member>
+		<member name="M:UnityEngine.Physics.OverlapSphereNonAlloc(UnityEngine.Vector3,System.Single,UnityEngine.Collider[],System.Int32)">
+			<summary>Computes and stores colliders touching or inside the sphere into the provided buffer.</summary>
+		</member>
+		<member name="M:UnityEngine.Physics.OverlapSphereNonAlloc(UnityEngine.Vector3,System.Single,UnityEngine.Collider[])">
+			<summary>Computes and stores colliders touching or inside the sphere into the provided buffer.</summary>
+		</member>
+		<member name="P:UnityEngine.ConfigurableJoint.angularYLimit">
+			<summary>Boundary defining rotation restriction, based on delta from original rotation.</summary>
+		</member>
+		<member name="P:UnityEngine.Rigidbody.maxAngularVelocity">
+			<summary>The maximimum angular velocity of the rigidbody. (Default 7) range { 0, infinity }.</summary>
+		</member>
+		<member name="M:UnityEngine.Physics.OverlapCapsule(UnityEngine.Vector3,UnityEngine.Vector3,System.Single,System.Int32,UnityEngine.QueryTriggerInteraction)">
+			<summary>Check the given capsule against the physics world and return all overlapping colliders.</summary>
+		</member>
+		<member name="M:UnityEngine.Physics.OverlapCapsule(UnityEngine.Vector3,UnityEngine.Vector3,System.Single,System.Int32)">
+			<summary>Check the given capsule against the physics world and return all overlapping colliders.</summary>
+		</member>
+		<member name="M:UnityEngine.Physics.OverlapCapsule(UnityEngine.Vector3,UnityEngine.Vector3,System.Single)">
+			<summary>Check the given capsule against the physics world and return all overlapping colliders.</summary>
+		</member>
+		<member name="M:UnityEngine.Rigidbody.SetDensity(System.Single)">
+			<summary>Sets the mass based on the attached colliders assuming a constant density.</summary>
+		</member>
+		<member name="P:UnityEngine.ConfigurableJoint.angularZLimit">
+			<summary>Boundary defining rotation restriction, based on delta from original rotation.</summary>
+		</member>
+		<member name="M:UnityEngine.Physics.OverlapCapsuleNonAlloc(UnityEngine.Vector3,UnityEngine.Vector3,System.Single,UnityEngine.Collider[],System.Int32,UnityEngine.QueryTriggerInteraction)">
+			<summary>Check the given capsule against the physics world and return all overlapping colliders in the user-provided buffer.</summary>
+		</member>
+		<member name="M:UnityEngine.Physics.OverlapCapsuleNonAlloc(UnityEngine.Vector3,UnityEngine.Vector3,System.Single,UnityEngine.Collider[],System.Int32)">
+			<summary>Check the given capsule against the physics world and return all overlapping colliders in the user-provided buffer.</summary>
+		</member>
+		<member name="M:UnityEngine.Physics.OverlapCapsuleNonAlloc(UnityEngine.Vector3,UnityEngine.Vector3,System.Single,UnityEngine.Collider[])">
+			<summary>Check the given capsule against the physics world and return all overlapping colliders in the user-provided buffer.</summary>
+		</member>
+		<member name="M:UnityEngine.Rigidbody.AddForce(UnityEngine.Vector3,UnityEngine.ForceMode)">
+			<summary>Adds a force to the Rigidbody.</summary>
+		</member>
+		<member name="P:UnityEngine.ConfigurableJoint.targetPosition">
+			<summary>The desired position that the joint should move into.</summary>
+		</member>
+		<member name="M:UnityEngine.Rigidbody.AddForce(UnityEngine.Vector3)">
+			<summary>Adds a force to the Rigidbody.</summary>
+		</member>
+		<member name="M:UnityEngine.Rigidbody.AddForce(System.Single,System.Single,System.Single)">
+			<summary>Adds a force to the Rigidbody.</summary>
+		</member>
+		<member name="M:UnityEngine.Rigidbody.AddForce(System.Single,System.Single,System.Single,UnityEngine.ForceMode)">
+			<summary>Adds a force to the Rigidbody.</summary>
+		</member>
+		<member name="M:UnityEngine.Physics.CapsuleCast(UnityEngine.Vector3,UnityEngine.Vector3,System.Single,UnityEngine.Vector3,System.Single,System.Int32)">
+			<summary>Casts a capsule against all colliders in the scene and returns detailed information on what was hit.</summary>
+		</member>
+		<member name="M:UnityEngine.Physics.CapsuleCast(UnityEngine.Vector3,UnityEngine.Vector3,System.Single,UnityEngine.Vector3,System.Single)">
+			<summary>Casts a capsule against all colliders in the scene and returns detailed information on what was hit.</summary>
+		</member>
+		<member name="M:UnityEngine.Physics.CapsuleCast(UnityEngine.Vector3,UnityEngine.Vector3,System.Single,UnityEngine.Vector3)">
+			<summary>Casts a capsule against all colliders in the scene and returns detailed information on what was hit.</summary>
+		</member>
+		<member name="M:UnityEngine.Physics.CapsuleCast(UnityEngine.Vector3,UnityEngine.Vector3,System.Single,UnityEngine.Vector3,System.Single,System.Int32,UnityEngine.QueryTriggerInteraction)">
+			<summary>Casts a capsule against all colliders in the scene and returns detailed information on what was hit.</summary>
+		</member>
+		<member name="M:UnityEngine.Physics.CapsuleCast(UnityEngine.Vector3,UnityEngine.Vector3,System.Single,UnityEngine.Vector3,UnityEngine.RaycastHit&,System.Single,System.Int32)">
+			<summary>Casts a capsule against all colliders in the scene and returns detailed information on what was hit.</summary>
+		</member>
+		<member name="M:UnityEngine.Physics.CapsuleCast(UnityEngine.Vector3,UnityEngine.Vector3,System.Single,UnityEngine.Vector3,UnityEngine.RaycastHit&,System.Single)">
+			<summary>Casts a capsule against all colliders in the scene and returns detailed information on what was hit.</summary>
+		</member>
+		<member name="M:UnityEngine.Physics.CapsuleCast(UnityEngine.Vector3,UnityEngine.Vector3,System.Single,UnityEngine.Vector3,UnityEngine.RaycastHit&)">
+			<summary>Casts a capsule against all colliders in the scene and returns detailed information on what was hit.</summary>
+		</member>
+		<member name="M:UnityEngine.Physics.CapsuleCast(UnityEngine.Vector3,UnityEngine.Vector3,System.Single,UnityEngine.Vector3,UnityEngine.RaycastHit&,System.Single,System.Int32,UnityEngine.QueryTriggerInteraction)">
+			<summary>Casts a capsule against all colliders in the scene and returns detailed information on what was hit.</summary>
+		</member>
+		<member name="P:UnityEngine.ConfigurableJoint.targetVelocity">
+			<summary>The desired velocity that the joint should move along.</summary>
+		</member>
+		<member name="M:UnityEngine.Physics.SphereCast(UnityEngine.Vector3,System.Single,UnityEngine.Vector3,UnityEngine.RaycastHit&,System.Single,System.Int32)">
+			<summary>Casts a sphere along a ray and returns detailed information on what was hit.</summary>
+		</member>
+		<member name="M:UnityEngine.Physics.SphereCast(UnityEngine.Vector3,System.Single,UnityEngine.Vector3,UnityEngine.RaycastHit&,System.Single)">
+			<summary>Casts a sphere along a ray and returns detailed information on what was hit.</summary>
+		</member>
+		<member name="M:UnityEngine.Physics.SphereCast(UnityEngine.Vector3,System.Single,UnityEngine.Vector3,UnityEngine.RaycastHit&)">
+			<summary>Casts a sphere along a ray and returns detailed information on what was hit.</summary>
+		</member>
+		<member name="M:UnityEngine.Physics.SphereCast(UnityEngine.Vector3,System.Single,UnityEngine.Vector3,UnityEngine.RaycastHit&,System.Single,System.Int32,UnityEngine.QueryTriggerInteraction)">
+			<summary>Casts a sphere along a ray and returns detailed information on what was hit.</summary>
+		</member>
+		<member name="M:UnityEngine.Physics.SphereCast(UnityEngine.Ray,System.Single,System.Single,System.Int32)">
+			<summary>Casts a sphere along a ray and returns detailed information on what was hit.</summary>
+		</member>
+		<member name="M:UnityEngine.Physics.SphereCast(UnityEngine.Ray,System.Single,System.Single)">
+			<summary>Casts a sphere along a ray and returns detailed information on what was hit.</summary>
+		</member>
+		<member name="M:UnityEngine.Physics.SphereCast(UnityEngine.Ray,System.Single)">
+			<summary>Casts a sphere along a ray and returns detailed information on what was hit.</summary>
+		</member>
+		<member name="M:UnityEngine.Physics.SphereCast(UnityEngine.Ray,System.Single,System.Single,System.Int32,UnityEngine.QueryTriggerInteraction)">
+			<summary>Casts a sphere along a ray and returns detailed information on what was hit.</summary>
+		</member>
+		<member name="M:UnityEngine.Physics.SphereCast(UnityEngine.Ray,System.Single,UnityEngine.RaycastHit&,System.Single,System.Int32)">
+			<summary>Casts a sphere along a ray and returns detailed information on what was hit.</summary>
+		</member>
+		<member name="M:UnityEngine.Physics.SphereCast(UnityEngine.Ray,System.Single,UnityEngine.RaycastHit&,System.Single)">
+			<summary>Casts a sphere along a ray and returns detailed information on what was hit.</summary>
+		</member>
+		<member name="M:UnityEngine.Physics.SphereCast(UnityEngine.Ray,System.Single,UnityEngine.RaycastHit&)">
+			<summary>Casts a sphere along a ray and returns detailed information on what was hit.</summary>
+		</member>
+		<member name="M:UnityEngine.Physics.SphereCast(UnityEngine.Ray,System.Single,UnityEngine.RaycastHit&,System.Single,System.Int32,UnityEngine.QueryTriggerInteraction)">
+			<summary>Casts a sphere along a ray and returns detailed information on what was hit.</summary>
+		</member>
+		<member name="P:UnityEngine.ConfigurableJoint.xDrive">
+			<summary>Definition of how the joint's movement will behave along its local X axis.</summary>
+		</member>
+		<member name="M:UnityEngine.Physics.CapsuleCastAll(UnityEngine.Vector3,UnityEngine.Vector3,System.Single,UnityEngine.Vector3,System.Single,System.Int32,UnityEngine.QueryTriggerInteraction)">
+			<summary>Like Physics.CapsuleCast, but this function will return all hits the capsule sweep intersects.</summary>
+		</member>
+		<member name="M:UnityEngine.Physics.CapsuleCastAll(UnityEngine.Vector3,UnityEngine.Vector3,System.Single,UnityEngine.Vector3,System.Single,System.Int32)">
+			<summary>Like Physics.CapsuleCast, but this function will return all hits the capsule sweep intersects.</summary>
+		</member>
+		<member name="M:UnityEngine.Physics.CapsuleCastAll(UnityEngine.Vector3,UnityEngine.Vector3,System.Single,UnityEngine.Vector3,System.Single)">
+			<summary>Like Physics.CapsuleCast, but this function will return all hits the capsule sweep intersects.</summary>
+		</member>
+		<member name="M:UnityEngine.Physics.CapsuleCastAll(UnityEngine.Vector3,UnityEngine.Vector3,System.Single,UnityEngine.Vector3)">
+			<summary>Like Physics.CapsuleCast, but this function will return all hits the capsule sweep intersects.</summary>
+		</member>
+		<member name="P:UnityEngine.ConfigurableJoint.yDrive">
+			<summary>Definition of how the joint's movement will behave along its local Y axis.</summary>
+		</member>
+		<member name="M:UnityEngine.Rigidbody.AddRelativeForce(UnityEngine.Vector3,UnityEngine.ForceMode)">
+			<summary>Adds a force to the rigidbody relative to its coordinate system.</summary>
+		</member>
+		<member name="M:UnityEngine.Rigidbody.AddRelativeForce(UnityEngine.Vector3)">
+			<summary>Adds a force to the rigidbody relative to its coordinate system.</summary>
+		</member>
+		<member name="M:UnityEngine.Rigidbody.AddRelativeForce(System.Single,System.Single,System.Single)">
+			<summary>Adds a force to the rigidbody relative to its coordinate system.</summary>
+		</member>
+		<member name="M:UnityEngine.Rigidbody.AddRelativeForce(System.Single,System.Single,System.Single,UnityEngine.ForceMode)">
+			<summary>Adds a force to the rigidbody relative to its coordinate system.</summary>
+		</member>
+		<member name="M:UnityEngine.Physics.CapsuleCastNonAlloc(UnityEngine.Vector3,UnityEngine.Vector3,System.Single,UnityEngine.Vector3,UnityEngine.RaycastHit[],System.Single,System.Int32,UnityEngine.QueryTriggerInteraction)">
+			<summary>Casts a capsule against all colliders in the scene and returns detailed information on what was hit into the buffer.</summary>
+		</member>
+		<member name="P:UnityEngine.ConfigurableJoint.zDrive">
+			<summary>Definition of how the joint's movement will behave along its local Z axis.</summary>
+		</member>
+		<member name="M:UnityEngine.Physics.CapsuleCastNonAlloc(UnityEngine.Vector3,UnityEngine.Vector3,System.Single,UnityEngine.Vector3,UnityEngine.RaycastHit[],System.Single,System.Int32)">
+			<summary>Casts a capsule against all colliders in the scene and returns detailed information on what was hit into the buffer.</summary>
+		</member>
+		<member name="M:UnityEngine.Physics.CapsuleCastNonAlloc(UnityEngine.Vector3,UnityEngine.Vector3,System.Single,UnityEngine.Vector3,UnityEngine.RaycastHit[],System.Single)">
+			<summary>Casts a capsule against all colliders in the scene and returns detailed information on what was hit into the buffer.</summary>
+		</member>
+		<member name="M:UnityEngine.Physics.CapsuleCastNonAlloc(UnityEngine.Vector3,UnityEngine.Vector3,System.Single,UnityEngine.Vector3,UnityEngine.RaycastHit[])">
+			<summary>Casts a capsule against all colliders in the scene and returns detailed information on what was hit into the buffer.</summary>
+		</member>
+		<member name="M:UnityEngine.Physics.SphereCastAll(UnityEngine.Vector3,System.Single,UnityEngine.Vector3,System.Single,System.Int32)">
+			<summary>Like Physics.SphereCast, but this function will return all hits the sphere sweep intersects.</summary>
+		</member>
+		<member name="M:UnityEngine.Physics.SphereCastAll(UnityEngine.Vector3,System.Single,UnityEngine.Vector3,System.Single)">
+			<summary>Like Physics.SphereCast, but this function will return all hits the sphere sweep intersects.</summary>
+		</member>
+		<member name="M:UnityEngine.Physics.SphereCastAll(UnityEngine.Vector3,System.Single,UnityEngine.Vector3)">
+			<summary>Like Physics.SphereCast, but this function will return all hits the sphere sweep intersects.</summary>
+		</member>
+		<member name="M:UnityEngine.Physics.SphereCastAll(UnityEngine.Vector3,System.Single,UnityEngine.Vector3,System.Single,System.Int32,UnityEngine.QueryTriggerInteraction)">
+			<summary>Like Physics.SphereCast, but this function will return all hits the sphere sweep intersects.</summary>
+		</member>
+		<member name="M:UnityEngine.Physics.SphereCastAll(UnityEngine.Ray,System.Single,System.Single,System.Int32)">
+			<summary>Like Physics.SphereCast, but this function will return all hits the sphere sweep intersects.</summary>
+		</member>
+		<member name="M:UnityEngine.Physics.SphereCastAll(UnityEngine.Ray,System.Single,System.Single)">
+			<summary>Like Physics.SphereCast, but this function will return all hits the sphere sweep intersects.</summary>
+		</member>
+		<member name="M:UnityEngine.Physics.SphereCastAll(UnityEngine.Ray,System.Single)">
+			<summary>Like Physics.SphereCast, but this function will return all hits the sphere sweep intersects.</summary>
+		</member>
+		<member name="M:UnityEngine.Physics.SphereCastAll(UnityEngine.Ray,System.Single,System.Single,System.Int32,UnityEngine.QueryTriggerInteraction)">
+			<summary>Like Physics.SphereCast, but this function will return all hits the sphere sweep intersects.</summary>
+		</member>
+		<member name="P:UnityEngine.ConfigurableJoint.targetRotation">
+			<summary>This is a Quaternion. It defines the desired rotation that the joint should rotate into.</summary>
+		</member>
+		<member name="P:UnityEngine.ConfigurableJoint.targetAngularVelocity">
+			<summary>This is a Vector3. It defines the desired angular velocity that the joint should rotate into.</summary>
+		</member>
+		<member name="M:UnityEngine.Physics.SphereCastNonAlloc(UnityEngine.Vector3,System.Single,UnityEngine.Vector3,UnityEngine.RaycastHit[],System.Single,System.Int32)">
+			<summary>Cast sphere along the direction and store the results into buffer.</summary>
+		</member>
+		<member name="M:UnityEngine.Rigidbody.AddTorque(UnityEngine.Vector3,UnityEngine.ForceMode)">
+			<summary>Adds a torque to the rigidbody.</summary>
+		</member>
+		<member name="M:UnityEngine.Rigidbody.AddTorque(UnityEngine.Vector3)">
+			<summary>Adds a torque to the rigidbody.</summary>
+		</member>
+		<member name="M:UnityEngine.Physics.SphereCastNonAlloc(UnityEngine.Vector3,System.Single,UnityEngine.Vector3,UnityEngine.RaycastHit[],System.Single)">
+			<summary>Cast sphere along the direction and store the results into buffer.</summary>
+		</member>
+		<member name="M:UnityEngine.Rigidbody.AddTorque(System.Single,System.Single,System.Single)">
+			<summary>Adds a torque to the rigidbody.</summary>
+		</member>
+		<member name="M:UnityEngine.Physics.SphereCastNonAlloc(UnityEngine.Vector3,System.Single,UnityEngine.Vector3,UnityEngine.RaycastHit[])">
+			<summary>Cast sphere along the direction and store the results into buffer.</summary>
+		</member>
+		<member name="M:UnityEngine.Rigidbody.AddTorque(System.Single,System.Single,System.Single,UnityEngine.ForceMode)">
+			<summary>Adds a torque to the rigidbody.</summary>
+		</member>
+		<member name="M:UnityEngine.Physics.SphereCastNonAlloc(UnityEngine.Vector3,System.Single,UnityEngine.Vector3,UnityEngine.RaycastHit[],System.Single,System.Int32,UnityEngine.QueryTriggerInteraction)">
+			<summary>Cast sphere along the direction and store the results into buffer.</summary>
+		</member>
+		<member name="M:UnityEngine.Physics.SphereCastNonAlloc(UnityEngine.Ray,System.Single,UnityEngine.RaycastHit[],System.Single,System.Int32)">
+			<summary>Cast sphere along the direction and store the results into buffer.</summary>
+		</member>
+		<member name="M:UnityEngine.Physics.SphereCastNonAlloc(UnityEngine.Ray,System.Single,UnityEngine.RaycastHit[],System.Single)">
+			<summary>Cast sphere along the direction and store the results into buffer.</summary>
+		</member>
+		<member name="M:UnityEngine.Rigidbody.AddRelativeTorque(UnityEngine.Vector3,UnityEngine.ForceMode)">
+			<summary>Adds a torque to the rigidbody relative to its coordinate system.</summary>
+		</member>
+		<member name="M:UnityEngine.Physics.SphereCastNonAlloc(UnityEngine.Ray,System.Single,UnityEngine.RaycastHit[])">
+			<summary>Cast sphere along the direction and store the results into buffer.</summary>
+		</member>
+		<member name="M:UnityEngine.Rigidbody.AddRelativeTorque(UnityEngine.Vector3)">
+			<summary>Adds a torque to the rigidbody relative to its coordinate system.</summary>
+		</member>
+		<member name="M:UnityEngine.Physics.SphereCastNonAlloc(UnityEngine.Ray,System.Single,UnityEngine.RaycastHit[],System.Single,System.Int32,UnityEngine.QueryTriggerInteraction)">
+			<summary>Cast sphere along the direction and store the results into buffer.</summary>
+		</member>
+		<member name="M:UnityEngine.Rigidbody.AddRelativeTorque(System.Single,System.Single,System.Single)">
+			<summary>Adds a torque to the rigidbody relative to its coordinate system.</summary>
+		</member>
+		<member name="M:UnityEngine.Rigidbody.AddRelativeTorque(System.Single,System.Single,System.Single,UnityEngine.ForceMode)">
+			<summary>Adds a torque to the rigidbody relative to its coordinate system.</summary>
+		</member>
+		<member name="P:UnityEngine.ConfigurableJoint.rotationDriveMode">
+			<summary>Control the object's rotation with either X &amp; YZ or Slerp Drive by itself.</summary>
+		</member>
+		<member name="M:UnityEngine.Physics.CheckSphere(UnityEngine.Vector3,System.Single,System.Int32,UnityEngine.QueryTriggerInteraction)">
+			<summary>Returns true if there are any colliders overlapping the sphere defined by position and radius in world coordinates.</summary>
+		</member>
+		<member name="M:UnityEngine.Physics.CheckSphere(UnityEngine.Vector3,System.Single,System.Int32)">
+			<summary>Returns true if there are any colliders overlapping the sphere defined by position and radius in world coordinates.</summary>
+		</member>
+		<member name="M:UnityEngine.Physics.CheckSphere(UnityEngine.Vector3,System.Single)">
+			<summary>Returns true if there are any colliders overlapping the sphere defined by position and radius in world coordinates.</summary>
+		</member>
+		<member name="M:UnityEngine.Physics.CheckCapsule(UnityEngine.Vector3,UnityEngine.Vector3,System.Single,System.Int32,UnityEngine.QueryTriggerInteraction)">
+			<summary>Checks if any colliders overlap a capsule-shaped volume in world space.</summary>
+		</member>
+		<member name="M:UnityEngine.Physics.CheckCapsule(UnityEngine.Vector3,UnityEngine.Vector3,System.Single,System.Int32)">
+			<summary>Checks if any colliders overlap a capsule-shaped volume in world space.</summary>
+		</member>
+		<member name="M:UnityEngine.Physics.CheckCapsule(UnityEngine.Vector3,UnityEngine.Vector3,System.Single)">
+			<summary>Checks if any colliders overlap a capsule-shaped volume in world space.</summary>
+		</member>
+		<member name="M:UnityEngine.Rigidbody.AddForceAtPosition(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.ForceMode)">
+			<summary>Applies force at position. As a result this will apply a torque and force on the object.</summary>
+		</member>
+		<member name="M:UnityEngine.Rigidbody.AddForceAtPosition(UnityEngine.Vector3,UnityEngine.Vector3)">
+			<summary>Applies force at position. As a result this will apply a torque and force on the object.</summary>
+		</member>
+		<member name="P:UnityEngine.ConfigurableJoint.angularXDrive">
+			<summary>Definition of how the joint's rotation will behave around its local X axis. Only used if Rotation Drive Mode is Swing &amp; Twist.</summary>
+		</member>
+		<member name="M:UnityEngine.Physics.CheckBox(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Quaternion,System.Int32,UnityEngine.QueryTriggerInteraction)">
+			<summary>Check whether the given box overlaps with other colliders or not.</summary>
+		</member>
+		<member name="M:UnityEngine.Physics.CheckBox(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Quaternion,System.Int32)">
+			<summary>Check whether the given box overlaps with other colliders or not.</summary>
+		</member>
+		<member name="M:UnityEngine.Physics.CheckBox(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Quaternion)">
+			<summary>Check whether the given box overlaps with other colliders or not.</summary>
+		</member>
+		<member name="M:UnityEngine.Physics.CheckBox(UnityEngine.Vector3,UnityEngine.Vector3)">
+			<summary>Check whether the given box overlaps with other colliders or not.</summary>
+		</member>
+		<member name="M:UnityEngine.Rigidbody.AddExplosionForce(System.Single,UnityEngine.Vector3,System.Single,System.Single,UnityEngine.ForceMode)">
+			<summary>Applies a force to a rigidbody that simulates explosion effects.</summary>
+		</member>
+		<member name="M:UnityEngine.Rigidbody.AddExplosionForce(System.Single,UnityEngine.Vector3,System.Single,System.Single)">
+			<summary>Applies a force to a rigidbody that simulates explosion effects.</summary>
+		</member>
+		<member name="M:UnityEngine.Rigidbody.AddExplosionForce(System.Single,UnityEngine.Vector3,System.Single)">
+			<summary>Applies a force to a rigidbody that simulates explosion effects.</summary>
+		</member>
+		<member name="M:UnityEngine.Physics.OverlapBox(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Quaternion,System.Int32,UnityEngine.QueryTriggerInteraction)">
+			<summary>Find all colliders touching or inside of the given box.</summary>
+		</member>
+		<member name="M:UnityEngine.Physics.OverlapBox(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Quaternion,System.Int32)">
+			<summary>Find all colliders touching or inside of the given box.</summary>
+		</member>
+		<member name="M:UnityEngine.Physics.OverlapBox(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Quaternion)">
+			<summary>Find all colliders touching or inside of the given box.</summary>
+		</member>
+		<member name="M:UnityEngine.Physics.OverlapBox(UnityEngine.Vector3,UnityEngine.Vector3)">
+			<summary>Find all colliders touching or inside of the given box.</summary>
+		</member>
+		<member name="P:UnityEngine.ConfigurableJoint.angularYZDrive">
+			<summary>Definition of how the joint's rotation will behave around its local Y and Z axes. Only used if Rotation Drive Mode is Swing &amp; Twist.</summary>
+		</member>
+		<member name="M:UnityEngine.Rigidbody.ClosestPointOnBounds(UnityEngine.Vector3)">
+			<summary>The closest point to the bounding box of the attached colliders.</summary>
+		</member>
+		<member name="M:UnityEngine.Physics.OverlapBoxNonAlloc(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Collider[],UnityEngine.Quaternion,System.Int32,UnityEngine.QueryTriggerInteraction)">
+			<summary>Find all colliders touching or inside of the given box, and store them into the buffer.</summary>
+		</member>
+		<member name="M:UnityEngine.Physics.OverlapBoxNonAlloc(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Collider[],UnityEngine.Quaternion,System.Int32)">
+			<summary>Find all colliders touching or inside of the given box, and store them into the buffer.</summary>
+		</member>
+		<member name="M:UnityEngine.Physics.OverlapBoxNonAlloc(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Collider[],UnityEngine.Quaternion)">
+			<summary>Find all colliders touching or inside of the given box, and store them into the buffer.</summary>
+		</member>
+		<member name="M:UnityEngine.Physics.OverlapBoxNonAlloc(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Collider[])">
+			<summary>Find all colliders touching or inside of the given box, and store them into the buffer.</summary>
+		</member>
+		<member name="P:UnityEngine.ConfigurableJoint.slerpDrive">
+			<summary>Definition of how the joint's rotation will behave around all local axes. Only used if Rotation Drive Mode is Slerp Only.</summary>
+		</member>
+		<member name="P:UnityEngine.ConfigurableJoint.projectionMode">
+			<summary>Brings violated constraints back into alignment even when the solver fails. Projection is not a physical process and does not preserve momentum or respect collision geometry. It is best avoided if practical, but can be useful in improving simulation quality where joint separation results in unacceptable artifacts.</summary>
+		</member>
+		<member name="M:UnityEngine.Rigidbody.GetRelativePointVelocity(UnityEngine.Vector3)">
+			<summary>The velocity relative to the rigidbody at the point relativePoint.</summary>
+		</member>
+		<member name="M:UnityEngine.Physics.BoxCastAll(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Quaternion,System.Single,System.Int32,UnityEngine.QueryTriggerInteraction)">
+			<summary>Like Physics.BoxCast, but returns all hits.</summary>
+		</member>
+		<member name="M:UnityEngine.Physics.BoxCastAll(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Quaternion,System.Single,System.Int32)">
+			<summary>Like Physics.BoxCast, but returns all hits.</summary>
+		</member>
+		<member name="M:UnityEngine.Physics.BoxCastAll(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Quaternion,System.Single)">
+			<summary>Like Physics.BoxCast, but returns all hits.</summary>
+		</member>
+		<member name="M:UnityEngine.Physics.BoxCastAll(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Quaternion)">
+			<summary>Like Physics.BoxCast, but returns all hits.</summary>
+		</member>
+		<member name="M:UnityEngine.Physics.BoxCastAll(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3)">
+			<summary>Like Physics.BoxCast, but returns all hits.</summary>
+		</member>
+		<member name="P:UnityEngine.ConfigurableJoint.projectionDistance">
+			<summary></summary>
+		</member>
+		<member name="P:UnityEngine.ConfigurableJoint.projectionAngle">
+			<summary></summary>
+		</member>
+		<member name="M:UnityEngine.Rigidbody.GetPointVelocity(UnityEngine.Vector3)">
+			<summary>The velocity of the rigidbody at the point worldPoint in global space.</summary>
+		</member>
+		<member name="P:UnityEngine.ConfigurableJoint.configuredInWorldSpace">
+			<summary>If enabled, all Target values will be calculated in world space instead of the object's local space.</summary>
+		</member>
+		<member name="M:UnityEngine.Rigidbody.MovePosition(UnityEngine.Vector3)">
+			<summary>Moves the rigidbody to position.</summary>
+		</member>
+		<member name="P:UnityEngine.ConfigurableJoint.swapBodies">
+			<summary>If enabled, the two connected rigidbodies will be swapped, as if the joint was attached to the other body.</summary>
+		</member>
+		<member name="M:UnityEngine.Rigidbody.MoveRotation(UnityEngine.Quaternion)">
+			<summary>Rotates the rigidbody to rotation.</summary>
+		</member>
+		<member name="M:UnityEngine.Rigidbody.Sleep()">
+			<summary>Forces a rigidbody to sleep at least one frame.</summary>
+		</member>
+		<member name="M:UnityEngine.Rigidbody.IsSleeping()">
+			<summary>Is the rigidbody sleeping?</summary>
+		</member>
+		<member name="M:UnityEngine.Rigidbody.WakeUp()">
+			<summary>Forces a rigidbody to wake up.</summary>
+		</member>
+		<member name="M:UnityEngine.Rigidbody.ResetCenterOfMass()">
+			<summary>Reset the center of mass of the rigidbody.</summary>
+		</member>
+		<member name="M:UnityEngine.Rigidbody.ResetInertiaTensor()">
+			<summary>Reset the inertia tensor value and rotation.</summary>
+		</member>
+		<member name="M:UnityEngine.Rigidbody.SweepTest(UnityEngine.Vector3,UnityEngine.RaycastHit&,System.Single,UnityEngine.QueryTriggerInteraction)">
+			<summary>Tests if a rigidbody would collide with anything, if it was moved through the scene.</summary>
+		</member>
+		<member name="M:UnityEngine.Rigidbody.SweepTest(UnityEngine.Vector3,UnityEngine.RaycastHit&,System.Single)">
+			<summary>Tests if a rigidbody would collide with anything, if it was moved through the scene.</summary>
+		</member>
+		<member name="M:UnityEngine.Rigidbody.SweepTest(UnityEngine.Vector3,UnityEngine.RaycastHit&)">
+			<summary>Tests if a rigidbody would collide with anything, if it was moved through the scene.</summary>
+		</member>
+		<member name="M:UnityEngine.Rigidbody.SweepTestAll(UnityEngine.Vector3,System.Single,UnityEngine.QueryTriggerInteraction)">
+			<summary>Like Rigidbody.SweepTest, but returns all hits.</summary>
+		</member>
+		<member name="M:UnityEngine.Rigidbody.SweepTestAll(UnityEngine.Vector3,System.Single)">
+			<summary>Like Rigidbody.SweepTest, but returns all hits.</summary>
+		</member>
+		<member name="M:UnityEngine.Rigidbody.SweepTestAll(UnityEngine.Vector3)">
+			<summary>Like Rigidbody.SweepTest, but returns all hits.</summary>
+		</member>
+		<member name="M:UnityEngine.Physics.BoxCastNonAlloc(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.RaycastHit[],UnityEngine.Quaternion,System.Single,System.Int32,UnityEngine.QueryTriggerInteraction)">
+			<summary>Cast the box along the direction, and store hits in the provided buffer.</summary>
+		</member>
+		<member name="M:UnityEngine.Physics.BoxCastNonAlloc(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.RaycastHit[],UnityEngine.Quaternion,System.Single,System.Int32)">
+			<summary>Cast the box along the direction, and store hits in the provided buffer.</summary>
+		</member>
+		<member name="M:UnityEngine.Physics.BoxCastNonAlloc(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.RaycastHit[],UnityEngine.Quaternion,System.Single)">
+			<summary>Cast the box along the direction, and store hits in the provided buffer.</summary>
+		</member>
+		<member name="M:UnityEngine.Physics.BoxCastNonAlloc(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.RaycastHit[],UnityEngine.Quaternion)">
+			<summary>Cast the box along the direction, and store hits in the provided buffer.</summary>
+		</member>
+		<member name="M:UnityEngine.Physics.BoxCastNonAlloc(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.RaycastHit[])">
+			<summary>Cast the box along the direction, and store hits in the provided buffer.</summary>
+		</member>
+		<member name="M:UnityEngine.Physics.BoxCast(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Quaternion,System.Single,System.Int32)">
+			<summary>Casts the box along a ray and returns detailed information on what was hit.</summary>
+		</member>
+		<member name="M:UnityEngine.Physics.BoxCast(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Quaternion,System.Single)">
+			<summary>Casts the box along a ray and returns detailed information on what was hit.</summary>
+		</member>
+		<member name="M:UnityEngine.Physics.BoxCast(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Quaternion)">
+			<summary>Casts the box along a ray and returns detailed information on what was hit.</summary>
+		</member>
+		<member name="M:UnityEngine.Physics.BoxCast(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3)">
+			<summary>Casts the box along a ray and returns detailed information on what was hit.</summary>
+		</member>
+		<member name="M:UnityEngine.Physics.BoxCast(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Quaternion,System.Single,System.Int32,UnityEngine.QueryTriggerInteraction)">
+			<summary>Casts the box along a ray and returns detailed information on what was hit.</summary>
+		</member>
+		<member name="M:UnityEngine.Physics.BoxCast(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.RaycastHit&,UnityEngine.Quaternion,System.Single,System.Int32)">
+			<summary>Casts the box along a ray and returns detailed information on what was hit.</summary>
+		</member>
+		<member name="M:UnityEngine.Physics.BoxCast(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.RaycastHit&,UnityEngine.Quaternion,System.Single)">
+			<summary>Casts the box along a ray and returns detailed information on what was hit.</summary>
+		</member>
+		<member name="M:UnityEngine.Physics.BoxCast(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.RaycastHit&,UnityEngine.Quaternion)">
+			<summary>Casts the box along a ray and returns detailed information on what was hit.</summary>
+		</member>
+		<member name="M:UnityEngine.Physics.BoxCast(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.RaycastHit&)">
+			<summary>Casts the box along a ray and returns detailed information on what was hit.</summary>
+		</member>
+		<member name="M:UnityEngine.Physics.BoxCast(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.RaycastHit&,UnityEngine.Quaternion,System.Single,System.Int32,UnityEngine.QueryTriggerInteraction)">
+			<summary>Casts the box along a ray and returns detailed information on what was hit.</summary>
+		</member>
+		<member name="M:UnityEngine.Physics.IgnoreCollision(UnityEngine.Collider,UnityEngine.Collider,System.Boolean)">
+			<summary>Makes the collision detection system ignore all collisions between collider1 and collider2.</summary>
+		</member>
+		<member name="M:UnityEngine.Physics.IgnoreCollision(UnityEngine.Collider,UnityEngine.Collider)">
+			<summary>Makes the collision detection system ignore all collisions between collider1 and collider2.</summary>
+		</member>
+		<member name="M:UnityEngine.Physics.IgnoreLayerCollision(System.Int32,System.Int32,System.Boolean)">
+			<summary>Makes the collision detection system ignore all collisions between any collider in layer1 and any collider in layer2.Note that IgnoreLayerCollision will reset the trigger state of affected colliders, so you might receive OnTriggerExit and OnTriggerEnter messages in response to calling this.</summary>
+		</member>
+		<member name="M:UnityEngine.Physics.IgnoreLayerCollision(System.Int32,System.Int32)">
+			<summary>Makes the collision detection system ignore all collisions between any collider in layer1 and any collider in layer2.Note that IgnoreLayerCollision will reset the trigger state of affected colliders, so you might receive OnTriggerExit and OnTriggerEnter messages in response to calling this.</summary>
+		</member>
+		<member name="M:UnityEngine.Physics.GetIgnoreLayerCollision(System.Int32,System.Int32)">
+			<summary>Are collisions between layer1 and layer2 being ignored?</summary>
+		</member>
+		<member name="M:UnityEngine.Physics.ComputePenetration(UnityEngine.Collider,UnityEngine.Vector3,UnityEngine.Quaternion,UnityEngine.Collider,UnityEngine.Vector3,UnityEngine.Quaternion,UnityEngine.Vector3&,System.Single&)">
+			<summary>Compute the minimal translation required to separate the given colliders apart at specified poses.</summary>
+		</member>
+		<member name="M:UnityEngine.Physics.ClosestPoint(UnityEngine.Vector3,UnityEngine.Collider,UnityEngine.Vector3,UnityEngine.Quaternion)">
+			<summary>Returns a point on the given collider that is closest to the specified location.</summary>
+		</member>
+		<member name="M:UnityEngine.Physics.Simulate(System.Single)">
+			<summary>Simulate physics in the scene.</summary>
+		</member>
+		<member name="M:UnityEngine.Physics.SyncTransforms()">
+			<summary>Apply Transform changes to the physics engine.</summary>
+		</member>
+		<member name="M:UnityEngine.Physics.RebuildBroadphaseRegions(UnityEngine.Bounds,System.Int32)">
+			<summary>Rebuild the broadphase interest regions as well as set the world boundaries.</summary>
+		</member>
+		<member name="T:UnityEngine.ContactPoint">
+			<summary>Describes a contact point where the collision occurs.</summary>
+		</member>
+		<member name="P:UnityEngine.ContactPoint.point">
+			<summary>The point of contact.</summary>
+		</member>
+		<member name="P:UnityEngine.ContactPoint.normal">
+			<summary>Normal of the contact point.</summary>
+		</member>
+		<member name="P:UnityEngine.ContactPoint.thisCollider">
+			<summary>The first collider in contact at the point.</summary>
+		</member>
+		<member name="P:UnityEngine.ContactPoint.otherCollider">
+			<summary>The other collider in contact at the point.</summary>
+		</member>
+		<member name="P:UnityEngine.ContactPoint.separation">
+			<summary>The distance between the colliders at the contact point.</summary>
+		</member>
+	</members>
+</doc>

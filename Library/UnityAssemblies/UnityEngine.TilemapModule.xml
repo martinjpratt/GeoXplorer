@@ -1,0 +1,71 @@
+﻿<?xml version="1.0"?>
+<doc>
+	<assembly>
+		<name>UnityEngine.TilemapModule</name>
+	</assembly>
+	<members>
+		<member name="T:UnityEngine.GridBrushBase.Tool">
+			<summary>Tool mode for the GridBrushBase.</summary>
+		</member>
+		<member name="T:UnityEngine.GridBrushBase.FlipAxis">
+			<summary>Axis to flip tiles in the GridBrushBase by.</summary>
+		</member>
+		<member name="T:UnityEngine.CustomGridBrushAttribute">
+			<summary>Attribute to define the class as a grid brush and to make it available in the palette window.</summary>
+		</member>
+		<member name="T:UnityEngine.GridBrushBase.RotationDirection">
+			<summary>Direction to rotate tiles in the GridBrushBase by.</summary>
+		</member>
+		<member name="P:UnityEngine.CustomGridBrushAttribute.hideAssetInstances">
+			<summary>Hide all asset instances of this brush in the tile palette window.</summary>
+		</member>
+		<member name="P:UnityEngine.CustomGridBrushAttribute.hideDefaultInstance">
+			<summary>Hide the default instance of brush in the tile palette window.</summary>
+		</member>
+		<member name="P:UnityEngine.CustomGridBrushAttribute.defaultBrush">
+			<summary>If set to true, brush will replace Unity built-in brush as the default brush in palette window.Only one class at any one time should set defaultBrush to true.</summary>
+		</member>
+		<member name="P:UnityEngine.CustomGridBrushAttribute.defaultName">
+			<summary>Name of the default instance of this brush.</summary>
+		</member>
+		<member name="T:UnityEngine.GridBrushBase">
+			<summary>Base class for authoring data on a grid with grid painting tools like paint, erase, pick, select and fill.</summary>
+		</member>
+		<member name="M:UnityEngine.GridBrushBase.Paint(UnityEngine.GridLayout,UnityEngine.GameObject,UnityEngine.Vector3Int)">
+			<summary>Paints data into a grid within the given bounds.</summary>
+		</member>
+		<member name="M:UnityEngine.GridBrushBase.Erase(UnityEngine.GridLayout,UnityEngine.GameObject,UnityEngine.Vector3Int)">
+			<summary>Erases data on a grid within the given bounds.</summary>
+		</member>
+		<member name="M:UnityEngine.GridBrushBase.BoxFill(UnityEngine.GridLayout,UnityEngine.GameObject,UnityEngine.BoundsInt)">
+			<summary>Box fills tiles and GameObjects into given bounds within the selected layers.</summary>
+		</member>
+		<member name="M:UnityEngine.GridBrushBase.BoxErase(UnityEngine.GridLayout,UnityEngine.GameObject,UnityEngine.BoundsInt)">
+			<summary>Erases data on a grid within the given bounds.</summary>
+		</member>
+		<member name="M:UnityEngine.GridBrushBase.Select(UnityEngine.GridLayout,UnityEngine.GameObject,UnityEngine.BoundsInt)">
+			<summary>Select an area of a grid.</summary>
+		</member>
+		<member name="M:UnityEngine.GridBrushBase.FloodFill(UnityEngine.GridLayout,UnityEngine.GameObject,UnityEngine.Vector3Int)">
+			<summary>Flood fills data onto a grid given the starting coordinates of the cell.</summary>
+		</member>
+		<member name="M:UnityEngine.GridBrushBase.Rotate(UnityEngine.GridBrushBase.RotationDirection,UnityEngine.GridLayout.CellLayout)">
+			<summary>Rotates all tiles on the grid brush with the given RotationDirection.</summary>
+		</member>
+		<member name="M:UnityEngine.GridBrushBase.Flip(UnityEngine.GridBrushBase.FlipAxis,UnityEngine.GridLayout.CellLayout)">
+			<summary>Flips the grid brush in the given FlipAxis.</summary>
+		</member>
+		<member name="M:UnityEngine.GridBrushBase.Pick(UnityEngine.GridLayout,UnityEngine.GameObject,UnityEngine.BoundsInt,UnityEngine.Vector3Int)">
+			<summary>Picks data from a grid given the coordinates of the cells.</summary>
+		</member>
+		<member name="M:UnityEngine.GridBrushBase.Move(UnityEngine.GridLayout,UnityEngine.GameObject,UnityEngine.BoundsInt,UnityEngine.BoundsInt)">
+			<summary>Move is called when user moves the area previously selected with the selection marquee.</summary>
+		</member>
+		<member name="M:UnityEngine.GridBrushBase.MoveStart(UnityEngine.GridLayout,UnityEngine.GameObject,UnityEngine.BoundsInt)">
+			<summary>MoveEnd is called when user starts moving the area previously selected with the selection marquee.</summary>
+		</member>
+		<member name="M:UnityEngine.GridBrushBase.MoveEnd(UnityEngine.GridLayout,UnityEngine.GameObject,UnityEngine.BoundsInt)">
+			<summary>MoveEnd is called when user has ended the move of the area previously selected with the selection marquee.</summary>
+		</member>
+	</members>
+</doc>

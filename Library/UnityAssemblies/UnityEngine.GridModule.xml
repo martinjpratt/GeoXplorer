@@ -1,0 +1,86 @@
+﻿<?xml version="1.0"?>
+<doc>
+	<assembly>
+		<name>UnityEngine.GridModule</name>
+	</assembly>
+	<members>
+		<member name="T:UnityEngine.GridLayout">
+			<summary>An abstract class that defines a grid layout.</summary>
+		</member>
+		<member name="T:UnityEngine.GridLayout.CellSwizzle">
+			<summary>Swizzles cell positions to other positions.</summary>
+		</member>
+		<member name="T:UnityEngine.Grid">
+			<summary>Grid is the base class for plotting a layout of uniformly spaced points and lines.</summary>
+		</member>
+		<member name="T:UnityEngine.GridLayout.CellLayout">
+			<summary>The layout of the GridLayout.</summary>
+		</member>
+		<member name="P:UnityEngine.Grid.cellSize">
+			<summary>The size of each cell in the Grid.</summary>
+		</member>
+		<member name="P:UnityEngine.GridLayout.cellSize">
+			<summary>The size of each cell in the layout.</summary>
+		</member>
+		<member name="P:UnityEngine.GridLayout.cellGap">
+			<summary>The size of the gap between each cell in the layout.</summary>
+		</member>
+		<member name="P:UnityEngine.Grid.cellGap">
+			<summary>The size of the gap between each cell in the Grid.</summary>
+		</member>
+		<member name="P:UnityEngine.GridLayout.CellLayout UnityEngine.GridLayout.cellLayout">
+			<summary>The layout of the cells.</summary>
+		</member>
+		<member name="P:UnityEngine.GridLayout.CellLayout UnityEngine.Grid.cellLayout">
+			<summary>The layout of the cells in the Grid.</summary>
+		</member>
+		<member name="P:UnityEngine.GridLayout.CellSwizzle UnityEngine.GridLayout.cellSwizzle">
+			<summary>The cell swizzle for the layout.</summary>
+		</member>
+		<member name="M:UnityEngine.GridLayout.GetBoundsLocal(UnityEngine.Vector3Int)">
+			<summary>Returns the local bounds for a cell at the location.</summary>
+		</member>
+		<member name="P:UnityEngine.GridLayout.CellSwizzle UnityEngine.Grid.cellSwizzle">
+			<summary>The cell swizzle for the Grid.</summary>
+		</member>
+		<member name="M:UnityEngine.Grid.GetCellCenterLocal(UnityEngine.Vector3Int)">
+			<summary>Get the logical center coordinate of a grid cell in local space.</summary>
+		</member>
+		<member name="M:UnityEngine.GridLayout.CellToLocal(UnityEngine.Vector3Int)">
+			<summary>Converts a cell position to local position space.</summary>
+		</member>
+		<member name="M:UnityEngine.GridLayout.LocalToCell(UnityEngine.Vector3)">
+			<summary>Converts a local position to cell position.</summary>
+		</member>
+		<member name="M:UnityEngine.Grid.GetCellCenterWorld(UnityEngine.Vector3Int)">
+			<summary>Get the logical center coordinate of a grid cell in world space.</summary>
+		</member>
+		<member name="M:UnityEngine.GridLayout.CellToLocalInterpolated(UnityEngine.Vector3)">
+			<summary>Converts an interpolated cell position in floats to local position space.</summary>
+		</member>
+		<member name="M:UnityEngine.Grid.Swizzle(UnityEngine.GridLayout.CellSwizzle,UnityEngine.Vector3)">
+			<summary>Swizzles the given position with the given swizzle order.</summary>
+		</member>
+		<member name="M:UnityEngine.GridLayout.LocalToCellInterpolated(UnityEngine.Vector3)">
+			<summary>Converts a local position to cell position.</summary>
+		</member>
+		<member name="M:UnityEngine.Grid.InverseSwizzle(UnityEngine.GridLayout.CellSwizzle,UnityEngine.Vector3)">
+			<summary>Does the inverse swizzle of the given position for given swizzle order.</summary>
+		</member>
+		<member name="M:UnityEngine.GridLayout.CellToWorld(UnityEngine.Vector3Int)">
+			<summary>Converts a cell position to world position space.</summary>
+		</member>
+		<member name="M:UnityEngine.GridLayout.WorldToCell(UnityEngine.Vector3)">
+			<summary>Converts a world position to cell position.</summary>
+		</member>
+		<member name="M:UnityEngine.GridLayout.LocalToWorld(UnityEngine.Vector3)">
+			<summary>Converts a local position to world position.</summary>
+		</member>
+		<member name="M:UnityEngine.GridLayout.WorldToLocal(UnityEngine.Vector3)">
+			<summary>Converts a world position to local position.</summary>
+		</member>
+		<member name="M:UnityEngine.GridLayout.GetLayoutCellCenter()">
+			<summary>Get the default center coordinate of a cell for the set layout of the Grid.</summary>
+		</member>
+	</members>
+</doc>

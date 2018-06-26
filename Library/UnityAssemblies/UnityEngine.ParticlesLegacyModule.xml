@@ -1,0 +1,176 @@
+﻿<?xml version="1.0"?>
+<doc>
+	<assembly>
+		<name>UnityEngine.ParticlesLegacyModule</name>
+	</assembly>
+	<members>
+		<member name="T:UnityEngine.ParticleAnimator">
+			<summary>(Legacy Particles) Particle animators move your particles over time, you use them to apply wind, drag &amp; color cycling to your particle emitters.</summary>
+		</member>
+		<member name="T:UnityEngine.Particle">
+			<summary>(Legacy Particle system).</summary>
+		</member>
+		<member name="T:UnityEngine.MeshParticleEmitter">
+			<summary>Class used to allow GameObject.AddComponent / GameObject.GetComponent to be used.</summary>
+		</member>
+		<member name="T:UnityEngine.ParticleRenderer">
+			<summary>(Legacy Particles) Renders particles on to the screen.</summary>
+		</member>
+		<member name="T:UnityEngine.ParticleRenderMode">
+			<summary>The rendering mode for legacy particles.</summary>
+		</member>
+		<member name="T:UnityEngine.ParticleEmitter">
+			<summary>(Legacy Particles) Script interface for particle emitters.</summary>
+		</member>
+		<member name="T:UnityEngine.EllipsoidParticleEmitter">
+			<summary>Class used to allow GameObject.AddComponent / GameObject.GetComponent to be used.</summary>
+		</member>
+		<member name="P:UnityEngine.ParticleEmitter.emit">
+			<summary>Should particles be automatically emitted each frame?</summary>
+		</member>
+		<member name="P:UnityEngine.ParticleRenderer.particleRenderMode">
+			<summary>How particles are drawn.</summary>
+		</member>
+		<member name="P:UnityEngine.ParticleAnimator.doesAnimateColor">
+			<summary>Do particles cycle their color over their lifetime?</summary>
+		</member>
+		<member name="P:UnityEngine.Particle.position">
+			<summary>The position of the particle.</summary>
+		</member>
+		<member name="P:UnityEngine.ParticleRenderer.lengthScale">
+			<summary>How much are the particles stretched in their direction of motion.</summary>
+		</member>
+		<member name="P:UnityEngine.ParticleEmitter.minSize">
+			<summary>The minimum size each particle can be at the time when it is spawned.</summary>
+		</member>
+		<member name="P:UnityEngine.ParticleAnimator.worldRotationAxis">
+			<summary>World space axis the particles rotate around.</summary>
+		</member>
+		<member name="P:UnityEngine.ParticleEmitter.maxSize">
+			<summary>The maximum size each particle can be at the time when it is spawned.</summary>
+		</member>
+		<member name="P:UnityEngine.ParticleRenderer.velocityScale">
+			<summary>How much are the particles strectched depending on "how fast they move".</summary>
+		</member>
+		<member name="P:UnityEngine.ParticleEmitter.minEnergy">
+			<summary>The minimum lifetime of each particle, measured in seconds.</summary>
+		</member>
+		<member name="P:UnityEngine.ParticleAnimator.localRotationAxis">
+			<summary>Local space axis the particles rotate around.</summary>
+		</member>
+		<member name="P:UnityEngine.ParticleRenderer.cameraVelocityScale">
+			<summary>How much are the particles strected depending on the Camera's speed.</summary>
+		</member>
+		<member name="P:UnityEngine.ParticleEmitter.maxEnergy">
+			<summary>The maximum lifetime of each particle, measured in seconds.</summary>
+		</member>
+		<member name="P:UnityEngine.ParticleRenderer.maxParticleSize">
+			<summary>Clamp the maximum particle size.</summary>
+		</member>
+		<member name="P:UnityEngine.ParticleEmitter.minEmission">
+			<summary>The minimum number of particles that will be spawned every second.</summary>
+		</member>
+		<member name="P:UnityEngine.ParticleEmitter.maxEmission">
+			<summary>The maximum number of particles that will be spawned every second.</summary>
+		</member>
+		<member name="P:UnityEngine.Particle.velocity">
+			<summary>The velocity of the particle.</summary>
+		</member>
+		<member name="P:UnityEngine.ParticleAnimator.sizeGrow">
+			<summary>How the particle sizes grow over their lifetime.</summary>
+		</member>
+		<member name="P:UnityEngine.ParticleRenderer.uvAnimationXTile">
+			<summary>Set horizontal tiling count.</summary>
+		</member>
+		<member name="P:UnityEngine.ParticleEmitter.emitterVelocityScale">
+			<summary>The amount of the emitter's speed that the particles inherit.</summary>
+		</member>
+		<member name="P:UnityEngine.ParticleRenderer.uvAnimationYTile">
+			<summary>Set vertical tiling count.</summary>
+		</member>
+		<member name="P:UnityEngine.Particle.energy">
+			<summary>The energy of the particle.</summary>
+		</member>
+		<member name="P:UnityEngine.ParticleEmitter.worldVelocity">
+			<summary>The starting speed of particles in world space, along X, Y, and Z.</summary>
+		</member>
+		<member name="P:UnityEngine.ParticleAnimator.rndForce">
+			<summary>A random force added to particles every frame.</summary>
+		</member>
+		<member name="P:UnityEngine.Particle.startEnergy">
+			<summary>The starting energy of the particle.</summary>
+		</member>
+		<member name="P:UnityEngine.ParticleRenderer.uvAnimationCycles">
+			<summary>Set uv animation cycles.</summary>
+		</member>
+		<member name="P:UnityEngine.ParticleAnimator.force">
+			<summary>The force being applied to particles every frame.</summary>
+		</member>
+		<member name="P:UnityEngine.ParticleEmitter.localVelocity">
+			<summary>The starting speed of particles along X, Y, and Z, measured in the object's orientation.</summary>
+		</member>
+		<member name="P:UnityEngine.Particle.size">
+			<summary>The size of the particle.</summary>
+		</member>
+		<member name="P:UnityEngine.ParticleAnimator.damping">
+			<summary>How much particles are slowed down every frame.</summary>
+		</member>
+		<member name="P:UnityEngine.ParticleEmitter.rndVelocity">
+			<summary>A random speed along X, Y, and Z that is added to the velocity.</summary>
+		</member>
+		<member name="P:UnityEngine.ParticleEmitter.useWorldSpace">
+			<summary>If enabled, the particles don't move when the emitter moves. If false, when you move the emitter, the particles follow it around.</summary>
+		</member>
+		<member name="P:UnityEngine.Particle.rotation">
+			<summary>The rotation of the particle.</summary>
+		</member>
+		<member name="P:UnityEngine.ParticleEmitter.rndRotation">
+			<summary>If enabled, the particles will be spawned with random rotations.</summary>
+		</member>
+		<member name="P:UnityEngine.Particle.angularVelocity">
+			<summary>The angular velocity of the particle.</summary>
+		</member>
+		<member name="P:UnityEngine.ParticleEmitter.angularVelocity">
+			<summary>The angular velocity of new particles in degrees per second.</summary>
+		</member>
+		<member name="P:UnityEngine.Particle.color">
+			<summary>The color of the particle.</summary>
+		</member>
+		<member name="P:UnityEngine.ParticleAnimator.autodestruct">
+			<summary>Does the GameObject of this particle animator auto destructs?</summary>
+		</member>
+		<member name="P:UnityEngine.ParticleEmitter.rndAngularVelocity">
+			<summary>A random angular velocity modifier for new particles.</summary>
+		</member>
+		<member name="P:UnityEngine.ParticleAnimator.colorAnimation">
+			<summary>Colors the particles will cycle through over their lifetime.</summary>
+		</member>
+		<member name="P:UnityEngine.ParticleEmitter.particles">
+			<summary>Returns a copy of all particles and assigns an array of all particles to be the current particles.</summary>
+		</member>
+		<member name="P:UnityEngine.ParticleEmitter.particleCount">
+			<summary>The current number of particles (Read Only).</summary>
+		</member>
+		<member name="P:UnityEngine.ParticleEmitter.enabled">
+			<summary>Turns the ParticleEmitter on or off.</summary>
+		</member>
+		<member name="M:UnityEngine.ParticleEmitter.ClearParticles()">
+			<summary>Removes all particles from the particle emitter.</summary>
+		</member>
+		<member name="M:UnityEngine.ParticleEmitter.Emit()">
+			<summary>Emit a number of particles.</summary>
+		</member>
+		<member name="M:UnityEngine.ParticleEmitter.Emit(System.Int32)">
+			<summary>Emit a number of particles.</summary>
+		</member>
+		<member name="M:UnityEngine.ParticleEmitter.Emit(UnityEngine.Vector3,UnityEngine.Vector3,System.Single,System.Single,UnityEngine.Color)">
+			<summary>Emit a number of particles.</summary>
+		</member>
+		<member name="M:UnityEngine.ParticleEmitter.Emit(UnityEngine.Vector3,UnityEngine.Vector3,System.Single,System.Single,UnityEngine.Color,System.Single,System.Single)">
+			<summary>Emit a number of particles.</summary>
+		</member>
+		<member name="M:UnityEngine.ParticleEmitter.Simulate(System.Single)">
+			<summary>Advance particle simulation by given time.</summary>
+		</member>
+	</members>
+</doc>
