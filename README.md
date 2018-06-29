@@ -1,10 +1,11 @@
-![Alt text](/RepoFiles/VEscreenshot.PNG?raw=true "TitleScreenshot")
+﻿![Alt text](/RepoFiles/VEscreenshot.PNG?raw=true "TitleScreenshot")
 
 GeoXplorer (GeoExplorer)
 
 Using the HoloLens to display 3D photogrammetry and 3D GIS scenes
 
 Why
+
 The Earth and planetary sciences inhabit a three-dimensional environment. As such it makes sense to represent many related data as a 3D structure or model. The current convention is to use 2D screens, which have the advantage of having access to large processing and graphical power, to visualize 3D data. However, there can be visual problems projecting a 3D object on a 2D screen (think map projections) where the observer may misinterpret, or be obscured from, relevant and potentially important structure. This problem is particularly noticeable in the way science research is currently communicated: conferences employ poster sessions and PowerPoint (for example) presentations, and scientists will use 3D graphics within them. It would seem prudent to explore how emerging technologies that allow for an immersive, more realistic 3D visualization system and investigate how these systems can potentially improve communication and teaching of Earth and Planetary science.
 There has been a significant interest in the development of head-mounted displays (HMD). These include both virtual reality (VR: Oculus Rift, Go; HTC Vive; Google Cardboard, etc.) and augmented reality (AR: Microsoft HoloLens, Meta 2, Apple ARKit, etc.) headsets. VR HMD are now becoming reasonably widespread with a number of gaming developers utilizing their immersive capabilities. AR HMD are less developed as they require environment-sensing capabilities in order to have virtual holograms interact with real world objects.
 
