@@ -33,6 +33,7 @@ namespace HoloToolkit.Unity
 
         // Cache the MeshRenderer for the on-cursor indicator since it will be enabled and disabled frequently.
         private Renderer directionIndicatorRenderer;
+        private Renderer directionIndicatorChildRenderer;
 
         // Cache the Material to prevent material leak.
         private Material indicatorMaterial;
@@ -57,7 +58,8 @@ namespace HoloToolkit.Unity
 
             // Instantiate the direction indicator.
             DirectionIndicatorObject = InstantiateDirectionIndicator(DirectionIndicatorObject);
-
+            DirectionIndicatorObject.GetComponentInChildren<TextMesh>().text = this.tag;
+            DirectionIndicatorObject.GetComponentInChildren<TextMesh>().color = DirectionIndicatorColor;
             if (DirectionIndicatorObject == null)
             {
                 Debug.LogError("Direction Indicator failed to instantiate.");
@@ -84,9 +86,12 @@ namespace HoloToolkit.Unity
             // Set local variables for the indicator.
             directionIndicatorDefaultRotation = indicator.transform.rotation;
             directionIndicatorRenderer = indicator.GetComponent<Renderer>();
+            directionIndicatorChildRenderer = indicator.transform.GetChild(0).GetComponent<Renderer>();
+
 
             // Start with the indicator disabled.
             directionIndicatorRenderer.enabled = false;
+            directionIndicatorChildRenderer.enabled = false;
 
             // Remove any colliders and rigidbodies so the indicators do not interfere with Unity's physics system.
             foreach (Collider indicatorCollider in indicator.GetComponents<Collider>())
@@ -120,10 +125,12 @@ namespace HoloToolkit.Unity
             // The cursor indicator should only be visible if the target is not visible.
             isDirectionIndicatorVisible = !IsTargetVisible(mainCamera);
             directionIndicatorRenderer.enabled = isDirectionIndicatorVisible;
+            directionIndicatorChildRenderer.enabled = isDirectionIndicatorVisible;
 
             if (sceneObjectsRenderer.enabled == false)
             {
                 directionIndicatorRenderer.enabled = false;
+                directionIndicatorChildRenderer.enabled = false;
             }
 
             if (isDirectionIndicatorVisible)

@@ -9,3 +9,5 @@ Moeraki Boulders	170.826362	-45.345356	1	Moeraki	moeraki-bundle	1	#
 Alpine Fault	170.322214	-43.316131	1	AlpineFault	alpinefault-bundle	1	#
 Gothic Cave	-86.1210358	37.1940813	1	gothic	gothiccave-bundle	1	#
 Meteor Crater	-111.0266621	35.0277194	1	meteorCrater1	meteorcrater-bundle	1	#
+Beavertail	-71.399305	41.448946	1	beavertail	beavertail-bundle	1	#
+Hawaii	-155.508259	19.579424	1	Hawaii	bigisland-bundle	1	#

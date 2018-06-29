@@ -88,7 +88,10 @@ public class CreateIcons : MonoBehaviour
                         newMenuPrefab.GetComponentInChildren<TapResponderWithComponent>().assetBundleName = dataList[(j*4)+6];
                         
                     }
-                    
+                    if (this.name == "Mars")
+                    {
+                        newMenuPrefab.GetComponentInChildren<TapResponderWithComponent>().enabled = false;
+                    }
                 }
             }
             else
@@ -103,6 +106,12 @@ public class CreateIcons : MonoBehaviour
                     newIconPrefab.GetComponentInChildren<TapResponderWithComponent>().assetName = dataList[4];
                     newIconPrefab.GetComponentInChildren<TapResponderWithComponent>().assetBundleName = dataList[5];
                 }
+
+                if (this.name == "Mars")
+                {
+                    newIconPrefab.GetComponentInChildren<TapResponderWithComponent>().enabled = false;
+                }
+
             }
             }
     }

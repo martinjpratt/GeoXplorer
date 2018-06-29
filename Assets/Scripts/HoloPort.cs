@@ -34,7 +34,7 @@ public class HoloPort : MonoBehaviour, IHoldHandler {
         journeyLength = Vector3.Distance(holoportPosition, cameraPosition);
         GameObject parentObject = GameObject.FindGameObjectWithTag("scalable");
         startTransforms = parentObject.GetComponentsInChildren<Transform>();
-
+        
         Vector3[] startpos = new Vector3[startTransforms.Length];
 
         for (int i = 0; i < startTransforms.Length; i++)

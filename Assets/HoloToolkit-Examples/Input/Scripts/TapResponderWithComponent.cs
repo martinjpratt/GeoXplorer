@@ -80,7 +80,7 @@ namespace HoloToolkit.Unity.InputModule.Tests
             //}
             //else
             //{
-            //    StartCoroutine(modelDownloader.GetComponent<LoadOutcropAssets>().DownloadOutcropAsset(assetBundleName,assetName));
+            StartCoroutine(modelDownloader.GetComponent<LoadOutcropAssets>().DownloadOutcropAsset(assetBundleName,assetName));
                 //StartCoroutine(modelDownloader.GetComponent<TestAssetBundleDownloader>().GetBundle(assetBundleName, assetName));
             //}
             
