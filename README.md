@@ -1,6 +1,6 @@
 ﻿![Alt text](/RepoFiles/VEscreenshot.PNG?raw=true "TitleScreenshot")
 
-GeoXplorer (GeoExplorer)
+<b>GeoXplorer (GeoExplorer)</b>
 
 Using the HoloLens to display 3D photogrammetry and 3D GIS scenes
 
