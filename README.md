@@ -45,6 +45,7 @@ Mars
 The succesful landing sites are labeled (plus the upcoming InSight landing location, fingers crossed). DEMs are in the process of being developed and if you visit WashU we can show you one of the MSL Curiosity scenes used for rover path planning.
 
 Earth Interior
+
 Clicking on this button will replace the Earth with a semi-transparent surface where alpha is controlled by the surface elevation (the higher, the more opaque). This way we can see the continents for reference but also have a clear view of the Earth's interior. You will also notice 2 smaller spheres that denote the Earth's outer (liquid) and inner (solid) cores. A number of buttons will appear below the original button with the following labels:
 1.	Plate Boundaries: Downloads the tectonic plate boundaries and represents them as red (rift or strike-slip segments) or white (subduction zone) lines.
 2.	Recent Earthquakes: Downloads the last 30 days of M4.5+ earthquake locations from the USGS and plots them in 3D. They are colored by depth and the size of the sphere represents the earthquake magnitude.
