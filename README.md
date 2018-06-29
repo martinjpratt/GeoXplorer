@@ -20,12 +20,14 @@ Many of the models seen withing the application are created using structure-from
 App Capabilities
 
 Intro Scene
+
 When the user first loads the application (and select that they need to select microphone capabilities) they are greated with a view of the Earth as it appeared yesterday. The user may rotate the Earth using AirTap-and-drag, and moving closer to the Earth will remove the cloud layer and the user can see an image of the surface of the Earth and the seafloor. A number of labels also will appear with AirTappable text. These will increase over time as more models get added to the remote server. Also in this scene are the Moon and Mars. These can be brought to the center of the scene by clicking on them. After doing so, similar AirTappable icons will appear and you can rotate the planetary body as you could do with the Earth, however currently most of these do not work (only Apollo 17 on the Moon), they will in furture updates! Finally there is also a button next to the app title labelled "Earth Interior". It's best to select this when the Earth is in the center of the scene.
 
 The Earth
+
 By clicking on the Airtappable labels one of two things will happen:
-	1: a drop down of more Airtabble labels will appear
-	2: the Earth and other planets will disappear and you will see "loading model" pulse above the Gaze Cursor.
+1.	a drop down of more Airtabble labels will appear
+2.	the Earth and other planets will disappear and you will see "loading model" pulse above the Gaze Cursor.
 When the model is loading you will also see a model title appear, along with a set of voice commands. Below those is a slider that can be AirTapped-and-dragged to scale the loaded model from 1:1 which is the loaded scale to 1:10 which reduces the model size by 10 (this is a slider that is part of the MixedRealityToolkit so while gazing at it the user can say min, center or max to move the scale slider as well.
 
 By now the model should have loaded and it's best to move around and see where to view the model best from. The models are set in orientation and so currently we do not allow for full manipulation of the objects. If the user wants to move the model to a more convenient position there is a functionality to 'teleport' along the model. Gaze at the model and AirTap-and-hold, you should see a floating ring appear, and on release the model will move so that the gazed position moves to beneath your feet.
@@ -35,18 +37,20 @@ AirTapping on the model also causes flags to fly out into the model...it's a "de
 Next to the title there is an AirTappable 'Back' button that will take you back to the Intro Scene.
 
 The Moon
+
 Currently only Apollo 17 has an associated model (the landing site DTM and LROC image), however, all other landing sites are labeled.
 
 Mars
+
 The succesful landing sites are labeled (plus the upcoming InSight landing location, fingers crossed). DEMs are in the process of being developed and if you visit WashU we can show you one of the MSL Curiosity scenes used for rover path planning.
 
 Earth Interior
 Clicking on this button will replace the Earth with a semi-transparent surface where alpha is controlled by the surface elevation (the higher, the more opaque). This way we can see the continents for reference but also have a clear view of the Earth's interior. You will also notice 2 smaller spheres that denote the Earth's outer (liquid) and inner (solid) cores. A number of buttons will appear below the original button with the following labels:
-	1. Plate Boundaries: Downloads the tectonic plate boundaries and represents them as red (rift or strike-slip segments) or white (subduction zone) lines.
-	2. Recent Earthquakes: Downloads the last 30 days of M4.5+ earthquake locations from the USGS and plots them in 3D. They are colored by depth and the size of the sphere represents the earthquake magnitude.
-		There is an added extra with this button that allows you to search the entire earthquake catalog from 1970 to present for a region of the Earth. To the opposite side of the Earth you will see a series of sliderbars that you can set to define a range of Time, Depth and Magnitude. You will need to also define a region on the Earth's surface by AirTapping it to define one corner of a bounding rectangle and then the AirTapping to define the opposite corner. After all these values are set you can click the Fetch Earthquakes button, the Earth will be replaced by a curved surface of the bounded area you selected and the earthquakes within the user-defined ranges will appear (again colored by depth and scaled by magnitude). The user may click on any of the earthquake spheres to bring up some more information about that particular event. It is best to go back systematically and clearing the menus before making any new selection.
-	3. Hotspots: Plots the location of notable intraplate hotspots (e.g. Hawaii) as cones on the Earth's surface.
-	4. LLSVP: The Large Low Shear Velocity Provinces are the so-called 'superplumes' in the lower mantle. These regions of low seismic shear velocity are thought to be chemically distinct from the rest of the mantle, potentially spawning mantle upwellings that we see as volcanic hotspots.
+1.	Plate Boundaries: Downloads the tectonic plate boundaries and represents them as red (rift or strike-slip segments) or white (subduction zone) lines.
+2.	Recent Earthquakes: Downloads the last 30 days of M4.5+ earthquake locations from the USGS and plots them in 3D. They are colored by depth and the size of the sphere represents the earthquake magnitude.
+	There is an added extra with this button that allows you to search the entire earthquake catalog from 1970 to present for a region of the Earth. To the opposite side of the Earth you will see a series of sliderbars that you can set to define a range of Time, Depth and Magnitude. You will need to also define a region on the Earth's surface by AirTapping it to define one corner of a bounding rectangle and then the AirTapping to define the opposite corner. After all these values are set you can click the Fetch Earthquakes button, the Earth will be replaced by a curved surface of the bounded area you selected and the earthquakes within the user-defined ranges will appear (again colored by depth and scaled by magnitude). The user may click on any of the earthquake spheres to bring up some more information about that particular event. It is best to go back systematically and clearing the menus before making any new selection.
+3.	Hotspots: Plots the location of notable intraplate hotspots (e.g. Hawaii) as cones on the Earth's surface.
+4.	LLSVP: The Large Low Shear Velocity Provinces are the so-called 'superplumes' in the lower mantle. These regions of low seismic shear velocity are thought to be chemically distinct from the rest of the mantle, potentially spawning mantle upwellings that we see as volcanic hotspots.
 
 Coming soon:
 Sharing capability
