@@ -34,8 +34,9 @@ public class ArrangePlanets : MonoBehaviour {
                 if (DateTime.Now.AddDays(-orbitPeriod[i]) < DateTime.Parse("1900-01-08"))
                 {
                     startTime = "1900-01-09";
-                }
+				}
                 timeStep = 1+ (orbitPeriod[i] / 100);
+
             }
             else
             {
@@ -43,10 +44,12 @@ public class ArrangePlanets : MonoBehaviour {
                 timeStep = 1;
             }
             
+			//print ("https://ssd.jpl.nasa.gov/horizons_batch.cgi?batch=1&COMMAND=%27" + planetCode [i] + "%27&CENTER=%27500@0%27&MAKE_EPHEM=%27YES%27&TABLE_TYPE=%27VECTOR%27&START_TIME=%27" + startTime + "%27&STOP_TIME=%27" + todaysDate + "%27&STEP_SIZE=%27" + timeStep.ToString () + "%20d%27&QUANTITIES=%2718,19%27&CSV_FORMAT=%27YES%27");
             using (WWW w = new WWW("https://ssd.jpl.nasa.gov/horizons_batch.cgi?batch=1&COMMAND=%27" + planetCode[i] + "%27&CENTER=%27500@0%27&MAKE_EPHEM=%27YES%27&TABLE_TYPE=%27VECTOR%27&START_TIME=%27" + startTime +"%27&STOP_TIME=%27" + todaysDate + "%27&STEP_SIZE=%27" + timeStep.ToString() + "%20d%27&QUANTITIES=%2718,19%27&CSV_FORMAT=%27YES%27"))
             {
                 yield return w;
-                string[] stringSeparators0 = new string[] { "$$SOE\n" };
+				//print (w.text);
+				string[] stringSeparators0 = new string[] { "$$SOE\n" };
                 string[] stringSeparators1 = new string[] { "$$EOE" };
                 string[] firstSplit = w.text.Split(stringSeparators0, StringSplitOptions.None);
                 string[] secondSplit = firstSplit[1].Split(stringSeparators1, StringSplitOptions.None);
