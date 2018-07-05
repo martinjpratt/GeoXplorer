@@ -59,7 +59,7 @@ namespace HoloToolkit.Unity.InputModule.Utilities.Interactions
 
         [SerializeField]
         [Tooltip("What manipulation will two hands perform?")]
-        private TwoHandedManipulation ManipulationMode = TwoHandedManipulation.Scale;
+        private TwoHandedManipulation ManipulationMode = TwoHandedManipulation.MoveRotateScale;
 
         [SerializeField]
         [Tooltip("Constrain rotation along an axis")]
