@@ -31,6 +31,8 @@ TagManager:
   - infoText
   - scaleController
   - label
+  - planet
+  - sun
   layers:
   - Default
   - TransparentFX
