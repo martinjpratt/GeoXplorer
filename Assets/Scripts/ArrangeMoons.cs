@@ -9,44 +9,72 @@ public class ArrangeMoons : MonoBehaviour {
 	public GameObject[] moonObject;
 	public GameObject[] moonTrailObject;
 	public string[] moonCode;
+	public TimeOption orbitTimeOption;
 	public int[] orbitPeriod;
 	public Color[] planetColor;
 	public float hostPlanetRadiusKm;
 	string todaysDate;
+	string timeStepString;
+
+	public enum TimeOption{
+		Days,
+		Hours,
+		Minutes
+	};
+
 
 
 	// Use this for initialization
 	void Start () {
-		todaysDate = DateTime.Now.ToString("yyyy-MM-dd");
+		string todaysDate1 = DateTime.Now.ToString("yyyy-MM-dd");
+		string todaysDate2 = DateTime.Now.ToString("HH:mm");
+		todaysDate = todaysDate1 + "%20" + todaysDate2;
 
 		StartCoroutine(fetchPlanetLocations(moonObject, moonCode, hostPlanetCode));
 	}
 
 	private IEnumerator fetchPlanetLocations(GameObject[] planetObject, string[] planetCode, string hostPlanetCode)
 	{
+		
+
+
 
 		for (int i = 0; i < planetCode.Length; i++)
 		{
+			if (orbitTimeOption == TimeOption.Days) {
+				timeStepString = "d";
+			}
+			if (orbitTimeOption == TimeOption.Hours) {
+				timeStepString = "h";
+			}
+			if (orbitTimeOption == TimeOption.Minutes) {
+				timeStepString = "m";
+			}
+
+
 			string startTime;
 
 			int timeStep;
-			if (orbitPeriod[i] > 100)
-			{
-				startTime = DateTime.Now.AddDays(-orbitPeriod[i]).ToString("yyyy-MM-dd");
-				if (DateTime.Now.AddDays(-orbitPeriod[i]) < DateTime.Parse("1900-01-08"))
-				{
-					startTime = "1900-01-09";
+
+			startTime = DateTime.Now.AddDays(-orbitPeriod[i]).ToString("yyyy-MM-dd");
+			timeStep = 1;
+
+			if (orbitTimeOption == TimeOption.Hours) {
+				string startTime1 = DateTime.Now.AddHours(-orbitPeriod[i]).ToString("yyyy-MM-dd");
+				string startTime2 = DateTime.Now.AddHours(-orbitPeriod[i]).ToString("HH:mm");
+				startTime = startTime1 + "%20" + startTime2;
+				timeStep = 1; 	
+				if (orbitPeriod[i] < 50) {
+					timeStep = 20;
+					timeStepString = "m";
 				}
-				timeStep = 1+ (orbitPeriod[i] / 100);
-			}
-			else
-			{
-				startTime = DateTime.Now.AddDays(-orbitPeriod[i]).ToString("yyyy-MM-dd");
-				timeStep = 1;
 			}
 
-			print ("https://ssd.jpl.nasa.gov/horizons_batch.cgi?batch=1&COMMAND=%27" + planetCode [i] + "%27&CENTER=%27" + hostPlanetCode + "%27&MAKE_EPHEM=%27YES%27&TABLE_TYPE=%27VECTOR%27&START_TIME=%27" + startTime + "%27&STOP_TIME=%27" + todaysDate + "%27&STEP_SIZE=%27" + timeStep.ToString () + "%20d%27&QUANTITIES=%2718,19%27&CSV_FORMAT=%27YES%27");
-			using (WWW w = new WWW("https://ssd.jpl.nasa.gov/horizons_batch.cgi?batch=1&COMMAND=%27" + planetCode[i] + "%27&CENTER=%27" + hostPlanetCode + "%27&MAKE_EPHEM=%27YES%27&TABLE_TYPE=%27VECTOR%27&START_TIME=%27" + startTime +"%27&STOP_TIME=%27" + todaysDate + "%27&STEP_SIZE=%27" + timeStep.ToString() + "%20d%27&QUANTITIES=%2718,19%27&CSV_FORMAT=%27YES%27"))
+
+
+
+			print ("https://ssd.jpl.nasa.gov/horizons_batch.cgi?batch=1&COMMAND=%27" + planetCode [i] + "%27&CENTER=%27" + hostPlanetCode + "%27&MAKE_EPHEM=%27YES%27&TABLE_TYPE=%27VECTOR%27&START_TIME=%27" + startTime + "%27&STOP_TIME=%27" + todaysDate + "%27&STEP_SIZE=%27" + timeStep.ToString() + "%20" + timeStepString + "%27&QUANTITIES=%2718,19%27&CSV_FORMAT=%27YES%27");
+			using (WWW w = new WWW("https://ssd.jpl.nasa.gov/horizons_batch.cgi?batch=1&COMMAND=%27" + planetCode[i] + "%27&CENTER=%27" + hostPlanetCode + "%27&MAKE_EPHEM=%27YES%27&TABLE_TYPE=%27VECTOR%27&START_TIME=%27" + startTime +"%27&STOP_TIME=%27" + todaysDate + "%27&STEP_SIZE=%27" + timeStep.ToString() + "%20" + timeStepString + "%27&QUANTITIES=%2718,19%27&CSV_FORMAT=%27YES%27"))
 			{
 				yield return w;
 				string[] stringSeparators0 = new string[] { "$$SOE\n" };
@@ -56,6 +84,7 @@ public class ArrangeMoons : MonoBehaviour {
 				string[] thirdSplit = secondSplit[0].Split("\n"[0]);
 
 				LineRenderer lr = moonTrailObject[i].GetComponent<LineRenderer>();
+				lr.positionCount = thirdSplit.Length - 1;
 				lr.startColor = planetColor[i];
 				lr.endColor = planetColor[i];
 				for (int j = 0; j < thirdSplit.Length - 2; j++)
@@ -66,16 +95,17 @@ public class ArrangeMoons : MonoBehaviour {
 
 
 				string[] fourthSplit = thirdSplit[thirdSplit.Length - 2].Split(","[0]);
-
 				planetObject[i].transform.localPosition = new Vector3(float.Parse(fourthSplit[2]) / hostPlanetRadiusKm, float.Parse(fourthSplit[4]) / hostPlanetRadiusKm, float.Parse(fourthSplit[3]) / hostPlanetRadiusKm);
-				if (thirdSplit.Length - 2 < 100)
-				{
-					for (int k = thirdSplit.Length - 2; k < 100; k++)
-					{
-						lr.SetPosition(k, new Vector3(float.Parse(fourthSplit[2]) / hostPlanetRadiusKm, float.Parse(fourthSplit[4]) / hostPlanetRadiusKm, float.Parse(fourthSplit[3]) / hostPlanetRadiusKm));
-					}
+				lr.SetPosition (thirdSplit.Length - 2, new Vector3 (float.Parse (fourthSplit [2]) / hostPlanetRadiusKm, float.Parse (fourthSplit [4]) / hostPlanetRadiusKm, float.Parse (fourthSplit [3]) / hostPlanetRadiusKm));
 
-				}
+				//if (thirdSplit.Length - 2 < 100)
+				//{
+				//	for (int k = thirdSplit.Length - 2; k < 100; k++)
+				//	{
+				//		lr.SetPosition(k, new Vector3(float.Parse(fourthSplit[2]) / hostPlanetRadiusKm, float.Parse(fourthSplit[4]) / hostPlanetRadiusKm, float.Parse(fourthSplit[3]) / hostPlanetRadiusKm));
+				//	}
+				//
+				//}
 
 
 			}
