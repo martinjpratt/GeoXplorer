@@ -33,12 +33,17 @@ namespace HoloToolkit.Unity.InputModule.Tests
 
         public void OnFocusEnter()
         {
-            cachedMaterial.SetColor("_Color", Color.red);
+			if (cachedMaterial.color.a == 1) {
+				cachedMaterial.SetColor("_Color", Color.red);				
+			}
+
         }
 
         public void OnFocusExit()
         {
-            cachedMaterial.SetColor("_Color", Color.white);
+			if (cachedMaterial.color.a == 1) {
+				cachedMaterial.SetColor ("_Color", Color.white);
+			}
         }
 
         public void OnInputClicked(InputClickedEventData eventData)

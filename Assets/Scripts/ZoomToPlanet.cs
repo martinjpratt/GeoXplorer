@@ -46,6 +46,30 @@ public class ZoomToPlanet : MonoBehaviour {
 	}
 
 	public void zoomToPlanet (string planetName){
+		float planetScaleValue = 0.033f;
+
+		if (planetName == "Mercury") {
+			planetScaleValue = 0.7f;
+		} else if (planetName == "Venus") {
+			planetScaleValue = 0.7f;
+		} else if (planetName == "Earth") {
+			planetScaleValue = 0.033f;
+		} else if (planetName == "Mars") {
+			planetScaleValue = 0.256f;
+		} else if (planetName == "Jupiter") {
+			planetScaleValue = 0.074f;
+		} else if (planetName == "Saturn") {
+			planetScaleValue = 0.02375f;
+		} else if (planetName == "Uranus") {
+			planetScaleValue = 0.0871f;
+		} else if (planetName == "Neptune") {
+			planetScaleValue = 0.139f;
+		} else if (planetName == "Pluto") {
+			planetScaleValue = 0.0369f;
+		}
+
+
+
 		sunCorona.SetActive (false);
 		isGoingToSolarSystem = false;
 		sun.GetComponent<Renderer> ().enabled = false;
@@ -63,7 +87,7 @@ public class ZoomToPlanet : MonoBehaviour {
 				planet.GetComponent<Collider> ().enabled = false;
 				planet.GetComponent<LineRenderer> ().enabled = false;
 			} else {
-				targetScale = new Vector3 (0.033f, 0.033f, 0.033f);
+				targetScale = new Vector3 (planetScaleValue, planetScaleValue, planetScaleValue);
 				targetPlanetTransform = planet.transform;
 				startPosition = targetPlanetTransform.position;
 				targetPosition = Vector3.zero;

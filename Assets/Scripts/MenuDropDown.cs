@@ -15,7 +15,6 @@ public class MenuDropDown : MonoBehaviour, IInputClickHandler, IFocusable
     bool selected = false;
     Material cachedMaterial;
     Color originalColor;
-    Animator anim;
 
     private void Awake()
     {
@@ -25,12 +24,13 @@ public class MenuDropDown : MonoBehaviour, IInputClickHandler, IFocusable
 
     public void OnFocusEnter()
     {
-        cachedMaterial.SetColor("_Color", Color.red);
+			cachedMaterial.SetColor("_Color", Color.red);
+        
     }
 
     public void OnFocusExit()
     {
-        cachedMaterial.SetColor("_Color", Color.white);
+			cachedMaterial.SetColor("_Color", Color.white);
     }
 
     public void OnInputClicked(InputClickedEventData eventData)
@@ -39,21 +39,18 @@ public class MenuDropDown : MonoBehaviour, IInputClickHandler, IFocusable
         {
             foreach (var item in iList)
             {
-                item.SetActive(true);
-                anim = item.GetComponent<Animator>();
-                anim.Play("FadeIn");
-
+				item.GetComponent<MenuAnimationController> ().dropDownMenu ();
+				item.GetComponent<Collider> ().enabled = true;
             }
             GazeAudio.Instance.PlayClickSound();
-            cachedMaterial.SetColor("_Color", originalColor);
             selected = true;
         }
         else
         {
             foreach (var item in iList)
             {
-                anim = item.GetComponent<Animator>();
-                anim.Play("FadeOut");
+				item.GetComponent<Collider> ().enabled = false;
+				item.GetComponent<MenuAnimationController> ().dropDownMenu ();
             }
             selected = false;
         }

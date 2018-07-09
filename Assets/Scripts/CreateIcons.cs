@@ -76,7 +76,8 @@ public class CreateIcons : MonoBehaviour
                     newMenuPrefab.name = (dataList[(j * 4) + 4] + "Button");
                     newMenuPrefab.GetComponent<MenuAnimationController>().distanceDown = -14 * (j + 1);
                     newMenuPrefab.GetComponent<TextMesh>().text = dataList[(j*4) + 4];
-                    newMenuPrefab.AddComponent<BoxCollider>();
+					newMenuPrefab.AddComponent<BoxCollider>().enabled = false;
+					newMenuPrefab.GetComponent<Renderer> ().material.color = new Color (0, 0, 0, 0);
                     newMenuPrefab.GetComponentInChildren<TapResponderWithComponent>().GoToObject = navTools;
                     newMenuPrefab.GetComponentInChildren<TapResponderWithComponent>().TurnOffObject = this.transform.parent.gameObject;
                     newMenuPrefab.GetComponentInChildren<TapResponderWithComponent>().modelDownloader = modelDownloader;
