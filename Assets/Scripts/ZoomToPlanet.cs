@@ -59,7 +59,7 @@ public class ZoomToPlanet : MonoBehaviour {
 		} else if (planetName == "Jupiter") {
 			planetScaleValue = 0.074f;
 		} else if (planetName == "Saturn") {
-			planetScaleValue = 0.02375f;
+			planetScaleValue = 0.0475f;
 		} else if (planetName == "Uranus") {
 			planetScaleValue = 0.0871f;
 		} else if (planetName == "Neptune") {
