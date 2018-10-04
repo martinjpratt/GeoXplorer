@@ -1,0 +1,557 @@
+﻿109-m diameter crater on north polar layered deposits	DTEPC_045318_2680_045346_2680_A01	87.8	120.7	2017-Jul-11	University of Arizona
+20-km crater in Meridiani Planum exposing layers	DTEED_029804_1770_029092_1770_A01	-3.0	353.7	2015-Jul-06	University of Arizona
+60-m diameter crater on north polar layered deposits	DTEPC_044872_2655_044728_2655_A01	85.6	58.6	2016-Sep-22	University of Arizona
+8-kilometer diameter rayed crater	DTEED_007757_1605_016196_1605_A01	-19.3	348.8	2017-Jan-13	University of Arizona
+80-m crater on north polar layered deposits	DTEPC_044862_2635_045034_2635_A01	83.5	346.8	2017-Jan-13	University of Arizona
+Active dune gullies	DTEPC_022756_1095_022822_1095_A01	-70.3	178.2	2015-Dec-10	University of Arizona
+Active dune gullies in Kaiser Crater	DTEED_016907_1330_016973_1330_U01	-46.7	20.1	2013-Jul-25	USGS
+Active dune monitoring in Ganges Chasma	DTEEC_035172_1725_034671_1725_A01	-7.6	314.8	2015-May-18	University of Arizona
+Alluvial fan in Arabia Terra	DTEEC_003195_1985_002694_1985_L01	18.2	335.9	2018-Mar-30	L
+Apron of material in Columbus Crater	DTEEC_010492_1510_045278_1510_A01	-28.9	194.3	2017-Jul-17	University of Arizona
+Ares 3 landing site	DTEEC_041277_2115_040776_2115_A01	31.4	331.4	2015-Jul-02	University of Arizona
+Atypical dome-like structure in Terra Sirenum	DTEED_033977_1385_037445_1385_A01	-41.2	187.2	2015-Jul-06	University of Arizona
+Avalanche features on Kaiser Crater dune slip face in MOC image R06-00380	DTEEC_006899_1330_006965_1330_U01	-46.7	20.1	2010-Nov-03	USGS
+Awesome gullies in Newton Basin	DTEEC_005943_1380_011428_1380_A01	-41.6	202.3	2011-Apr-01	University of Arizona
+Banded terrain in Hellas Planitia	DTEED_026360_1415_026426_1415_A01	-38.0	57.5	2013-Jul-16	University of Arizona
+Banded terrain in Hellas region	DTEEC_025437_1410_025147_1410_U01	-38.5	55.3	2013-Mar-28	USGS
+Basal exposure of south polar layered deposits	DTEPD_013145_1070_013277_1070_A01	-73.1	133.5	2012-Aug-16	University of Arizona
+Basal unit and dunes	DTEPC_009913_2635_010019_2635_A01	83.5	118.5	2011-Apr-18	University of Arizona
+Becquerel Crater dune changes	DTEEC_034419_2015_033707_2015_A01	21.2	351.5	2015-Nov-03	University of Arizona
+Bedrock exposed in the central uplift of a unnamed crater	DTEEC_025700_2005_025766_2005_A01	20.2	69.4	2014-Jun-17	University of Arizona
+Bedrock exposure in landslide scarp	DTEED_020879_1670_021657_1670_A01	-12.9	293.5	2013-Nov-19	University of Arizona
+Breached impact crater in Elysium Planitia	DTEEC_004151_1810_020963_1810_U01	0.9	160.7	2016-Mar-11	USGS
+Bright and dark fans in region dubbed Manhattan	DTEPD_040311_0940_040193_0940_A01	-85.8	106.2	2015-Dec-22	University of Arizona
+Bright dunes in Syria Planum	DTEEC_032814_1670_032880_1670_A01	-12.9	254.2	2013-Dec-18	University of Arizona
+Bright fine layers in Juventae Chasma	DTEEC_004291_1755_003790_1755_U01	-4.6	296.9	2012-Jul-16	USGS
+Bright gully deposit	DTEEC_013639_1415_013850_1415_A01	-38.2	317.4	2010-Oct-04	University of Arizona
+Bright gully deposits in western Hale Crater	DTEEC_013019_1450_012874_1450_A01	-34.9	322.5	2016-May-19	University of Arizona
+Bright gully fans	DTEED_007429_2440_008141_2440_O01	63.8	292.3	2018-Jun-12	Ohio State
+Bright layers in Columbus Crater	DTEEC_005429_1510_005851_1510_A01	-28.5	194.0	2010-Jan-09	University of Arizona
+Bullseye Crater of Medusae Fossae formation over platy-ridged lava	DTEEC_003543_1910_003398_1910_A01	11.0	198.0	2012-May-31	University of Arizona
+Candidate ExoMars landing site in Hypanis Valles	DTEEC_041937_1920_042003_1920_L01	11.9	314.3	2018-Jul-06	L
+Candidate ExoMars landing site near Aram Dorsum	DTEEC_039470_1880_039536_1880_L01	8.0	348.3	2018-Apr-18	L
+Candidate ExoMars landing site near Hypanis Valles	DTEEC_037651_1920_037717_1920_L01	11.7	314.4	2018-Apr-19	L
+Candidate ExoMars landing site near Hypanis Valles	DTEEC_040658_1920_039735_1920_L01	11.9	314.2	2018-Jul-06	L
+Candidate future landing site	DTEEC_036925_1985_037558_1985_L01	18.2	335.6	2018-Mar-30	L
+Candidate future landing site	DTEEC_035640_1845_036906_1845_U01	4.4	136.3	2017-Oct-02	USGS
+Candidate landing site for 2020 mission	DTEEC_045318_1655_044962_1655_U01	-14.6	175.6	2017-Jul-03	USGS
+Candidate landing site for 2020 mission in Gusev Crater	DTEEC_036087_1655_035164_1655_U01	-14.6	175.6	2017-Jul-03	USGS
+Candidate landing site for 2020 mission in Jezero Crater	DTEEC_048842_1985_048908_1985_U01	18.5	77.5	2017-Jul-21	USGS
+Candidate landing site for 2020 mission in Jezero Crater	DTEEC_045994_1985_046060_1985_U01	18.4	77.4	2017-Jul-21	USGS
+Candidate landing site for 2020 mission in Melas Chasma	DTEEC_044325_1700_044180_1700_U01	-9.8	283.6	2017-Jul-11	USGS
+Candidate landing site for 2020 mission in Nili Fossae	DTEEC_045071_2015_045137_2015_U01	21.0	74.3	2017-Jul-03	USGS
+Candidate landing site for 2020 mission near Sabrina Vallis	DTEEC_040513_1920_040157_1920_L01	11.8	313.5	2018-Jun-22	L
+Candidate landing site for InSight	DTEEC_035785_1840_036062_1840_U01	4.1	138.2	2017-Oct-05	USGS
+Candidate MSL landing site in Holden Crater	DTEEC_019612_1535_019678_1535_U01	-26.4	325.3	2011-Feb-19	USGS
+Candidate MSL landing site in northeast Syrtis Major	DTEEC_017076_1980_016931_1980_U01	17.8	77.0	2017-Jul-18	USGS
+Candidate new gully flow formed between 15 May 2009 and 3 March 2011	DTEEC_021914_1475_022336_1475_U01	-32.3	118.6	2017-Jul-06	USGS
+Capen Crater dune changes	DTEEC_026757_1865_026823_1865_A01	6.3	14.0	2015-Aug-07	University of Arizona
+Carbonates in Libya Montes	DTEEC_016034_1835_017089_1835_A01	3.5	85.1	2010-May-03	University of Arizona
+Cataracts in Kasei Valles	DTEEC_002814_2055_003513_2055_U01	25.1	298.6	2014-Oct-29	USGS
+Central peak of Elorza Crater	DTEEC_021551_1710_005649_1710_A01	-8.8	304.8	2012-Mar-15	University of Arizona
+Central peak of multi-ringed Lyot Crater	DTEEC_008823_2310_009245_2310_A01	50.5	29.4	2014-Sep-18	University of Arizona
+Central peak with layered bedrock	DTEEC_011458_1640_005683_1640_A01	-15.8	96.9	2015-Jan-23	University of Arizona
+Central pit and floor of Toro Crater	DTEED_005842_1970_011538_1970_A01	17.0	71.9	2010-Oct-04	University of Arizona
+Central pit gullies in Asimov Crater	DTEEC_013268_1330_013123_1330_A01	-46.8	4.9	2016-Oct-20	University of Arizona
+Central pit of an impact crater	DTEED_019204_1570_018703_1570_A01	-22.6	303.4	2015-Apr-09	University of Arizona
+Central pit of an impact crater with layered bedrock	DTEED_022962_1570_022672_1570_A01	-22.6	303.5	2015-Apr-09	University of Arizona
+Central structure and layered bedrock in 25-kilometer diameter crater	DTEED_017147_1535_017002_1535_A01	-26.0	303.9	2013-Oct-07	University of Arizona
+Central structure of a large impact crater	DTEED_021494_1610_013134_1610_A01	-18.7	62.7	2014-Apr-02	University of Arizona
+Central structure of large crater in northern plains	DTEEC_018048_2360_009332_2360_A01	55.6	171.4	2014-Apr-03	University of Arizona
+Central structure of Leighton Crater	DTEED_025661_1830_025806_1830_A01	3.0	57.7	2013-Mar-10	University of Arizona
+Central structure of Verlaine Crater	DTEED_013213_1705_013635_1705_A01	-9.2	64.1	2014-Feb-22	University of Arizona
+Central uplift in Runanga Crater	DTEED_010549_1530_006620_1530_A01	-26.7	75.9	2016-Nov-17	University of Arizona
+Central uplift of a 30-km diameter crater in Noachis Terra	DTEED_030808_1535_031230_1535_A01	-26.0	303.8	2013-Oct-07	University of Arizona
+Central uplift of a northern plains impact crater	DTEEC_024969_2315_017453_2315_A01	51.0	220.9	2014-Apr-04	University of Arizona
+Central uplift of an impact crater	DTEEC_011523_1695_012367_1695_A01	-10.6	123.1	2012-May-04	University of Arizona
+Central uplift of an impact crater	DTEEC_002353_1585_003408_1585_A01	-21.4	290.7	2010-May-21	University of Arizona
+Central uplift of impact crater in Syrtis Major	DTEEC_014096_1975_020043_1975_A01	17.1	73.1	2011-May-11	University of Arizona
+Central uplift of Ritchey Crater	DTEEC_002682_1510_011635_1510_A01	-28.5	309.1	2013-Mar-11	University of Arizona
+Central uplift of Ritchey Crater	DTEEC_011635_1510_029542_1510_A01	-28.5	309.0	2013-Mar-13	University of Arizona
+Central uplift of well-exposed Taytay Crater	DTEED_012939_1875_012794_1875_A01	7.4	340.4	2012-May-30	University of Arizona
+Central uplift with layers and clays	DTEED_021688_1325_021754_1325_A01	-47.3	170.9	2011-Jun-14	University of Arizona
+Change detection in Aeolis Planum	DTEEC_019038_1740_019882_1740_A01	-6.1	153.7	2016-Oct-22	University of Arizona
+Channelized lava flow though a constriction with well-preserved highstands	DTEEC_019235_2050_018945_2050_U01	24.8	171.2	2013-Mar-29	USGS
+Channels south of the base of Ascraeus Mons	DTEEC_002486_1860_001985_1860_U01	6.0	254.5	2013-Mar-29	USGS
+Characterize surface hazards and science of MSL rover landing site	DTEEC_008272_1560_010474_1560_U01	-23.9	326.7	2010-Feb-11	USGS
+Characterize surface hazards and science of possible MSL rover landing site	DTEEC_009505_1755_009571_1755_U01	-4.5	137.5	2010-Feb-11	USGS
+Characterize surface hazards and science of possible MSL rover landing site	DTEEC_009650_1755_009716_1755_U01	-4.6	137.3	2010-Feb-11	USGS
+Characterize surface hazards and science of possible MSL rover landing site	DTEEC_007191_1535_007903_1535_U01	-26.3	325.0	2010-Feb-11	USGS
+Characterize surface hazards and science of possible MSL rover landing site	DTEEC_010540_1535_010685_1535_U01	-26.2	325.1	2010-Feb-12	USGS
+Characterize surface hazards and science of possible MSL rover landing site	DTEEC_008469_2040_008825_2040_U01	24.0	341.0	2010-Feb-26	USGS
+Characterize surface hazards and science of possible MSL rover landing site	DTEEC_006676_2045_007612_2045_U01	24.0	341.2	2010-Apr-08	USGS
+Chloride salt deposits in Terra Sirenum	DTEED_009318_1465_017243_1465_A01	-33.4	205.5	2012-May-30	University of Arizona
+Circular feature and cone cluster in platy lavas in Cerberus Palus	DTEEC_027372_1850_027649_1850_A01	5.1	146.7	2014-Jul-14	University of Arizona
+Clay bearing unit in western Arabia region	DTEEC_009880_1985_009735_1985_L01	18.2	335.5	2018-Apr-19	L
+Clay diversity on Mawrth Vallis flank	DTEEC_017897_2045_018530_2045_A01	24.1	341.5	2015-Dec-23	University of Arizona
+Clays exposed in channels along west Ladon Valles	DTEED_010342_1600_034552_1600_A01	-19.7	327.8	2014-Jul-01	University of Arizona
+Clusters of buttes and mesas among flows south of western Cerberus Fossae	DTEED_026040_1880_025684_1885_U01	7.8	149.3	2016-Aug-29	USGS
+Collapse features on Hrad Vallis mudflow	DTEEC_016467_2155_016533_2155_A01	35.1	141.7	2015-Dec-29	University of Arizona
+Colorful layered bedrock in eroded crater in Terra Sirenum	DTEEC_041282_1520_047150_1520_A01	-27.8	203.2	2016-Dec-14	University of Arizona
+Columnar jointing exposed in an impact crater in Marte Vallis	DTEEC_006774_2020_007341_2020_A01	21.6	184.3	2011-Jun-20	University of Arizona
+Columnar jointing in wall of impact crater	DTEEC_012451_1505_012662_1505_A01	-29.3	351.4	2017-Oct-04	University of Arizona
+Complex banded terrain on floor of Hellas Planitia	DTEED_010563_1410_006278_1410_U01	-38.8	55.5	2013-Mar-28	USGS
+Compositional diversity in northern Hellas region	DTEED_029815_1530_030092_1530_A01	-26.8	55.2	2014-Jan-10	University of Arizona
+Cones amoung the Tartarus Montes	DTEEC_007671_2065_007882_2065_U01	26.0	170.9	2013-Mar-29	USGS
+Constriction in Kasei Valles	DTEED_032193_1990_031837_1990_A01	18.7	286.1	2014-Oct-13	University of Arizona
+Contact between two different units in Ganges Mensa	DTEEC_007666_1725_008022_1725_A01	-7.6	311.9	2017-Jan-19	University of Arizona
+Contacts between yardang-forming material and platy flow material	DTEEC_026541_1840_026607_1840_A01	3.8	152.0	2017-Jan-23	University of Arizona
+Coprates region falling dunes and landslide scarps	DTEED_043599_1650_043098_1650_A01	-15.0	303.0	2016-Jan-11	University of Arizona
+Cracks around spider features in ice-free Manhattan	DTEPC_022259_0935_022339_0935_A01	-86.3	99.2	2016-Aug-31	University of Arizona
+Crater cut by Coprates Chasma	DTEED_014114_1665_005148_1665_A01	-13.6	303.8	2016-Jan-07	University of Arizona
+Crater fault in Margaritifer Terra	DTEEC_037281_1775_036213_1775_A01	-2.6	337.4	2016-Oct-22	University of Arizona
+Crater in Utopia Planitia	DTEED_028719_2290_037646_2290_A01	48.5	89.4	2015-Jun-18	University of Arizona
+Crater in western Arabia Terra with stair-stepped hills and dark dunes	DTEEC_002047_1890_001902_1890_U01	8.8	359.0	2012-Jul-16	USGS
+Crater on Valles Marineris floor	DTEEC_027802_1685_028501_1685_A01	-11.5	290.3	2013-Jan-18	University of Arizona
+Crater southwest of Herschel Crater with dune field	DTEEC_004350_1635_003638_1635_A01	-16.4	128.3	2015-Jul-06	University of Arizona
+Crater with dark center at Pavonis Mons	DTEEC_023531_1840_023953_1840_A01	3.7	248.5	2013-Apr-30	University of Arizona
+Crater with trough	DTEEC_032965_2315_033809_2315_A01	51.1	84.7	2014-Dec-10	University of Arizona
+Crater with unusual yet original morphology	DTEEC_003964_1910_004241_1910_U01	10.6	224.7	2012-Jul-26	USGS
+Crater within Kasei Valles	DTEEC_034830_2025_036241_2025_U01	22.1	290.2	2018-May-03	USGS
+Crater within Schiaparelli Crater filled with layered rock	DTEEC_017118_1790_016406_1790_A01	-0.9	13.9	2017-Feb-10	University of Arizona
+Dark dunes in Becquerel Crater	DTEEC_045140_2015_044784_2015_A01	21.5	351.8	2016-May-17	University of Arizona
+Dark dunes in Herschel Crater	DTEEC_002860_1650_003572_1650_U01	-14.8	127.9	2010-Sep-24	USGS
+Debris flow	DTEEC_019503_2210_019213_2210_A01	40.9	51.4	2017-Jan-24	University of Arizona
+Deformation of north polar layered deposit strata	DTEPC_027537_2640_027643_2640_A01	83.7	283.9	2016-Mar-17	University of Arizona
+Depositional fan in Jezero Crater	DTEEC_002387_1985_003798_1985_A01	18.5	77.4	2013-Jun-07	University of Arizona
+Depression at the base of a hill in the Hibes Montes	DTEED_008884_1845_020000_1845_A01	4.3	170.6	2016-Sep-28	University of Arizona
+Dissected wall of Mojave Crater	DTEEC_001481_1875_002167_1880_U01	7.8	326.6	2010-Jan-07	USGS
+Distrubutary channel south of Ascraeus Mons	DTEEC_011373_1865_010872_1865_U01	6.2	254.6	2013-Mar-29	USGS
+Diverse lithologies in central uplift of Stokes Crater	DTEED_019604_2360_019380_2360_A01	55.6	171.3	2014-Jun-04	University of Arizona
+Dune changes	DTEPC_018525_2565_018011_2565_U01	76.2	95.4	2016-Mar-11	USGS
+Dune changes in Green Crater	DTEEC_022855_1270_023145_1270_A01	-52.7	351.5	2016-Aug-27	University of Arizona
+Dune changes west of Meroe Patera	DTEEC_038214_1875_038280_1875_A01	7.2	67.8	2015-Jun-22	University of Arizona
+Dune interaction with topography in Ganges Chasma	DTEEC_008536_1725_009604_1725_A01	-7.4	314.8	2015-May-18	University of Arizona
+Dunes	DTEEC_023928_1205_024060_1205_U01	-59.1	218.0	2016-Dec-09	USGS
+Dunes and slopes in crater southwest of Xainza Crater	DTEEC_043742_1800_043597_1800_A01	-0.2	355.6	2016-Feb-08	University of Arizona
+Dunes in Herschel Crater	DTEEC_017417_1655_016916_1655_A01	-14.1	129.7	2013-Jun-12	University of Arizona
+Dunes in Syrtis Major region crater	DTEEC_020135_2000_019845_2000_A01	19.8	79.4	2013-Apr-09	University of Arizona
+East Coprates Chasma dune fields and wall rock	DTEEC_025731_1655_025164_1655_U01	-14.2	306.6	2013-May-17	USGS
+East Coprates Montes dark fans	DTEEC_046619_1665_045907_1665_A01	-13.4	297.2	2016-Nov-19	University of Arizona
+East Endeavour Crater dune field	DTEEC_042674_1775_042740_1775_A01	-2.3	354.8	2016-Jan-27	University of Arizona
+East Melas Chasma landslide scarp	DTEEC_036307_1665_035951_1665_A01	-13.1	290.7	2014-Dec-19	University of Arizona
+East portion of flow in Harmakhis Vallis	DTEEC_012579_1420_012434_1420_U01	-37.7	95.6	2017-Jul-05	USGS
+East slope of Asimov Crater central pit	DTEEC_013835_1330_013189_1330_A01	-46.9	5.1	2016-Dec-09	University of Arizona
+Eastern edge of Eberswalde Crater delta in possible MSL rover landing site	DTEEC_019757_1560_020034_1560_U01	-23.9	326.5	2011-Feb-20	USGS
+Eastern rim and ejecta of crater in Margaritifer Terra	DTEEC_026402_1605_026257_1605_A01	-19.3	348.9	2017-Jan-13	University of Arizona
+Eastern Valles Marineris	DTEED_054160_1775_053870_1775_A01	-2.2	327.5	2018-May-24	University of Arizona
+Eastern wall of Chasma Australe along margin of Promethei Lingula	DTEPD_032530_0975_023590_0975_A01	-82.4	101.1	2016-Feb-29	University of Arizona
+Eberswalde Crater deposits	DTEEC_019190_1560_019335_1560_U01	-23.9	326.8	2011-Feb-23	USGS
+Endeavour Crater western rim	DTEEC_018701_1775_018846_1775_U01	-2.3	354.6	2010-Oct-27	USGS
+Eroded scallops with layers	DTEEC_001938_2265_002439_2265_U01	46.0	92.1	2010-Jan-05	USGS
+Exhumed light-toned deposit along Coprates Catena floor	DTEEC_019270_1645_019903_1645_A01	-15.2	301.2	2015-Nov-16	University of Arizona
+Explosion crater in lahar from Hrad Vallis	DTEEC_005813_2150_005879_2150_A01	34.8	141.9	2015-Oct-19	University of Arizona
+Exposed bedrock in crater central uplift off Thaumasia Planum	DTEED_027485_1610_026496_1610_A01	-19.0	304.4	2013-Oct-31	University of Arizona
+Exposure of north polar layered deposits	DTEPC_035909_2650_035567_2650_A01	84.9	294.1	2016-Sep-22	University of Arizona
+Exposure of north polar layered deposits	DTEPC_035869_2660_035949_2660_A01	85.8	311.3	2014-Dec-18	University of Arizona
+Exposure of north polar layered deposits	DTEPC_036132_2665_035777_2665_A01	86.7	318.4	2014-Dec-19	University of Arizona
+Exposure of north polar layered deposits	DTEPC_036013_2660_035605_2660_A01	85.9	329.1	2014-Dec-19	University of Arizona
+Exposure of north polar layered deposits	DTEPC_009980_2660_009967_2660_A01	85.9	102.5	2015-May-06	University of Arizona
+Exposure of north polar layered deposits for stratigraphic analysis	DTEPC_010198_2645_010014_2645_A01	84.4	253.1	2013-Jun-12	University of Arizona
+Exposure of polar layered deposits on ridges and troughs	DTEPC_010008_2630_009969_2630_A01	82.9	40.9	2013-Apr-03	University of Arizona
+Exposure of polar layered deposits with unconformities	DTEPC_001472_2785_001710_2785_U01	81.2	44.8	2010-Jan-05	USGS
+Exposure of south polar layered deposit	DTEPD_003406_0935_003341_0935_A01	-86.4	9.3	2013-Apr-16	University of Arizona
+Exposure of south polar layered deposits	DTEPD_031959_0960_031788_0960_A01	-84.1	225.2	2016-Sep-22	University of Arizona
+Exposures of layered bedrock northwest of Hellas region	DTEEC_013688_1540_012620_1540_A01	-25.6	55.5	2013-Jun-27	University of Arizona
+Falling dunes along eastern Coprates Chasma massif	DTEEC_034856_1655_035278_1655_A01	-14.3	303.8	2016-Jan-20	University of Arizona
+Fan emanating from young fluvial channel on floor of Lyot Crater	DTEEC_024831_2300_019372_2300_A01	49.7	30.8	2016-Jun-07	University of Arizona
+Fan surfaces in west Holden Crater	DTEEC_002088_1530_002154_1530_U01	-26.6	325.2	2010-Jul-07	USGS
+Fan/deltaic landform in west Eberswalde Crater	DTEEC_001336_1560_001534_1560_U01	-23.8	326.4	2012-Jul-16	USGS
+Faulted layers in Danielson Crater	DTEEC_002878_1880_002733_1880_U01	8.1	353.2	2012-Jul-16	USGS
+Faulting within the layered deposits in Candor Chasma	DTEEC_002063_1735_001641_1735_U01	-6.7	284.2	2015-Jun-29	USGS
+Faults in south polar layered deposits Promethei Lingula region	DTEPC_023616_1005_024025_1005_A01	-79.5	111.8	2016-Oct-22	University of Arizona
+Field of cones in the Tartarus Montes	DTEEC_009675_2060_008528_2060_U01	25.8	170.6	2013-Mar-29	USGS
+Fissure and channel southeast of Olympus Mons	DTEED_036098_1975_036375_1975_A01	17.4	233.3	2016-Jan-08	University of Arizona
+Floor and central uplift of Mazamba Crater in Thaumasia Planum	DTEEC_007100_1520_033248_1520_A01	-27.5	290.3	2017-May-24	University of Arizona
+Floor of crater within Schiaparelli Crater	DTEED_042014_1760_042647_1760_A01	-4.0	15.2	2015-Sep-14	University of Arizona
+Floor of Uzboi Vallis south of Nirgal Vallis	DTEEC_042016_1495_042082_1495_A01	-30.1	322.6	2016-Aug-31	University of Arizona
+Flow boundary in Elysium Planitia	DTEEC_028149_2085_028215_2085_A01	28.3	172.8	2015-Apr-17	University of Arizona
+Flow boundary in Elysium Planitia	DTEEC_026461_2080_026738_2080_A01	27.8	173.0	2015-Jun-02	University of Arizona
+Flow boundary in Elysium Planitia	DTEEC_028360_2085_028993_2085_A01	28.4	172.4	2016-Oct-13	University of Arizona
+Flow boundary in Elysium Planitia	DTEEC_026105_2085_026593_2085_A01	28.0	172.4	2014-Sep-19	University of Arizona
+Flow boundary in Phlegra Dorsa	DTEEC_034109_2085_033608_2085_A01	28.3	172.7	2015-Apr-17	University of Arizona
+Flow-banded deformed terrain of Hellas Basin floor	DTEEC_007491_1405_007201_1405_U01	-39.0	54.9	2013-Mar-28	USGS
+Flows into the Isidis Basin	DTEEC_007727_1830_008808_1830_A01	3.2	85.9	2011-Aug-09	University of Arizona
+Fractures in Utopia Planitia	DTEED_046072_2170_046138_2170_A01	36.4	103.2	2016-Dec-09	University of Arizona
+Fresh 1-km impact crater in Arcadia Planitia	DTEEC_025735_2185_025801_2185_A01	38.2	191.6	2012-Aug-30	University of Arizona
+Fresh 6-kilometer diameter crater with gullied slopes	DTEEC_006663_1425_011436_1425_A01	-37.0	343.4	2016-Sep-23	University of Arizona
+Fresh crater in north polar layered deposits	DTEPC_001462_2630_001580_2630_U01	83.0	94.8	2010-Jul-07	USGS
+Fresh crater on northern plains	DTEEC_025366_2305_025498_2305_A01	50.2	184.5	2013-Jul-16	University of Arizona
+Fresh crater with lots of gullies	DTEEC_011817_1395_011672_1395_O01	-40.3	20.1	2017-May-05	Ohio State
+Fresh double layer ejecta crater in northern plains	DTEEC_007736_2345_008303_2345_A01	54.4	190.9	2014-Jul-31	University of Arizona
+Fresh double-layered crater with possible ponded materials	DTEEC_007235_2350_006945_2350_A01	54.6	190.7	2014-Jul-31	University of Arizona
+Fresh double-layered ejecta crater	DTEEC_007947_2350_009160_2350_A01	54.5	190.6	2014-Jul-31	University of Arizona
+Fresh impact crater	DTEEC_005837_1965_005903_1965_A01	16.4	209.7	2010-Aug-24	University of Arizona
+Fresh impact crater formed between February 2005 and July 2005	DTEEC_012282_1775_011425_1775_A01	-2.4	278.3	2013-Jun-19	University of Arizona
+Fresh impact crater with gullies and bedrock	DTEEC_020884_1410_020950_1410_A01	-38.5	159.4	2016-Dec-09	University of Arizona
+Fresh shallow valley	DTEEC_031817_1410_031751_1410_A01	-38.8	118.3	2013-Jul-15	University of Arizona
+Fresh-looking gullies	DTEEC_002659_1420_002514_1420_U01	-37.9	217.9	2013-Sep-17	USGS
+Fretted terrain-like aprons near Reull Vallis	DTEEC_013146_1415_013001_1415_A01	-38.4	97.4	2013-Apr-09	University of Arizona
+Gale Crater dunes and Curiosity rover	DTEEC_040770_1755_039280_1755_U01	-4.7	137.4	2016-Oct-01	USGS
+Gale Crater dunes and Curiosity rover	DTEEC_040770_1755_039280_1755_A01	-4.7	137.4	2016-Oct-05	University of Arizona
+Gale Crater filled channel and fan deposit	DTEEC_009149_1750_009294_1750_U01	-4.8	137.4	2010-Jul-09	USGS
+Gasa Crater	DTEED_014081_1440_014147_1440_A01	-35.7	129.4	2010-Feb-09	University of Arizona
+Gasa Crater gully monitoring	DTEEC_021584_1440_022217_1440_A01	-35.7	129.4	2011-Nov-21	University of Arizona
+Giza region unfrosted	DTEPC_004736_0950_005119_0950_A01	-84.8	65.8	2016-Aug-31	University of Arizona
+Gorgonum Chaos	DTEEC_016004_1425_006906_1425_A01	-37.2	188.3	2017-May-02	University of Arizona
+Gullied crater	DTEEC_040607_1345_040251_1345_A01	-45.1	274.2	2016-Dec-14	University of Arizona
+Gullied crater in Kaiser Crater dune field	DTEEC_007110_1325_006820_1325_A01	-47.0	18.8	2012-Feb-17	University of Arizona
+Gullies	DTEEC_016213_2315_016714_2315_A01	51.4	234.3	2013-Apr-10	University of Arizona
+Gullies in Dunkassa Crater	DTEEC_039488_1420_039343_1420_A01	-37.5	222.9	2016-Nov-21	University of Arizona
+Gullies in Hale Crater central peak	DTEEC_012241_1440_012663_1440_A01	-35.6	323.6	2013-Jul-23	University of Arizona
+Gullies in light-toned rock	DTEEC_012795_1395_013507_1395_A01	-40.3	319.7	2010-Apr-05	University of Arizona
+Gullies in Selevac Crater	DTEEC_005731_1425_005586_1425_A01	-37.4	228.9	2016-Nov-29	University of Arizona
+Gullies on central uplift of Lyot Crater	DTEEC_027376_2310_027297_2310_A01	50.5	29.4	2014-Sep-16	University of Arizona
+Gullies on eastern side of crater in Newton Crater	DTEED_023546_1375_023612_1375_A01	-42.2	202.2	2016-Nov-11	University of Arizona
+Gullies on hills in center of Hale Crater	DTEEC_030715_1440_030570_1440_A01	-35.7	323.5	2013-Jul-23	University of Arizona
+Gullies on southwest slope of Asimov Crater	DTEEC_012912_1320_012767_1320_A01	-47.5	4.4	2017-Aug-03	University of Arizona
+Gullies with extensive debris aprons	DTEEC_006261_1410_014093_1410_A01	-38.8	159.5	2010-Feb-26	University of Arizona
+Gullies within central pit of Bamberg Crater	DTEEC_010301_2200_006794_2200_A01	39.7	356.9	2015-Jun-14	University of Arizona
+Gully fans with age constraint	DTEEC_012459_1450_012314_1450_A01	-34.8	131.0	2014-Oct-02	University of Arizona
+Gully in crater wall	DTEEC_011877_1410_012510_1410_A01	-38.9	182.2	2016-Dec-09	University of Arizona
+Gully monitoring site	DTEEC_022108_1410_022385_1410_A01	-38.9	223.7	2012-Aug-09	University of Arizona
+Hellas Planitia	DTEEC_007781_1410_008137_1410_U01	-38.5	55.8	2013-Mar-28	USGS
+Hellas Planitia terrain	DTEED_017644_1420_025925_1420_A01	-37.8	56.8	2016-Mar-10	University of Arizona
+Hematite in Eos Chasma	DTEEC_008958_1665_009380_1665_P01	-13.2	312.5	2012-Oct-16	P
+Herschel Crater dunes change detection	DTEEC_037948_1645_038291_1645_A01	-15.1	131.9	2014-Dec-19	University of Arizona
+High-angle layers in central uplift of Oudemans Crater	DTEEC_002446_1700_001602_1700_U01	-9.9	268.1	2016-Oct-11	USGS
+High-latitude exposure of north polar layered deposits	DTEPC_027034_2680_027246_2680_A01	88.0	354.1	2014-Dec-18	University of Arizona
+High-latitude exposure of north polar layered deposits	DTEPC_009352_2680_009618_2680_A01	88.0	258.0	2015-Jul-09	University of Arizona
+High-lava mark in Kasei Valles	DTEED_033617_1990_034316_1990_A01	18.6	286.0	2014-Oct-21	University of Arizona
+Hypanis Valles region	DTEEC_037295_1920_037005_1920_L01	11.9	314.1	2018-Apr-19	L
+Impact crater exposing bedrock in Thaumasia Planum	DTEED_019323_1565_018611_1565_A01	-23.5	294.9	2015-Dec-17	University of Arizona
+Impact crater with active slope processes	DTEEC_024099_1415_023809_1415_U01	-38.1	224.0	2013-Sep-18	USGS
+Impact crater with central pit on floor of larger crater	DTEED_025240_1690_025728_1690_A01	-10.7	32.0	2013-Jun-27	University of Arizona
+Inca City ice-free	DTEPC_022699_0985_022607_0985_A01	-81.4	295.8	2013-Feb-19	University of Arizona
+Incipient scalloped terrain in mid-latitude mantle at Peneus Patera	DTEEC_013029_1235_013306_1235_A01	-56.2	54.7	2017-Aug-02	University of Arizona
+Inflation features in Phlegra Dorsa	DTEEC_035243_2080_034386_2080_A01	27.7	173.2	2016-Jan-19	University of Arizona
+InSight mission candidate landing site	DTEEC_035996_1835_036840_1835_U01	3.3	138.0	2017-Sep-01	USGS
+InSight mission candidate landing site	DTEEC_034862_1835_035139_1835_U01	3.3	137.3	2017-Sep-01	USGS
+InSight mission candidate landing site	DTEEC_035218_1835_035284_1835_U01	3.3	137.4	2017-Sep-01	USGS
+InSight mission candidate landing site	DTEEC_036484_1835_037051_1835_U01	3.3	137.8	2017-Sep-01	USGS
+InSight mission candidate landing site	DTEEC_034717_1840_035561_1840_U01	3.8	137.1	2017-Aug-04	USGS
+InSight mission candidate landing site	DTEEC_038449_1845_037961_1845_U01	4.6	135.9	2017-Aug-05	USGS
+InSight mission candidate landing site	DTEEC_037684_1845_037328_1845_U01	4.3	135.3	2017-Aug-05	USGS
+InSight mission candidate landing site	DTEEC_037262_1845_036761_1845_U01	4.4	135.6	2017-Aug-05	USGS
+InSight mission candidate landing site	DTEEC_034928_1850_034783_1850_U01	4.7	136.1	2017-Aug-05	USGS
+InSight mission candidate landing site	DTEEC_036695_1850_036405_1850_U01	4.7	136.4	2017-Aug-06	USGS
+InSight mission candidate landing site	DTEEC_043183_1845_043671_1845_U01	4.4	136.0	2017-Aug-04	USGS
+InSight mission candidate landing site	DTEEC_036207_1840_036273_1840_U01	4.1	137.9	2017-Oct-03	USGS
+InSight mission candidate landing site	DTEEC_037196_1840_037473_1840_U01	4.1	137.6	2017-Oct-03	USGS
+InSight mission candidate landing site	DTEEC_035073_1840_036550_1840_U01	3.8	136.5	2017-Oct-05	USGS
+Intact layered rocks uplifted in unnamed crater off of Solis Dorsa	DTEEC_016805_1565_017583_1565_A01	-23.2	281.4	2013-Apr-17	University of Arizona
+Intra-crater dunes in Iaxartes Tholus	DTEPC_018938_2520_018925_2520_U01	71.9	344.7	2013-Jul-25	USGS
+Intracrater dune changes	DTEEC_026609_1655_026675_1655_U01	-14.5	97.8	2016-Sep-13	USGS
+Intracrater dunes	DTEEC_023261_2065_023327_2065_A01	26.1	57.0	2016-Dec-15	University of Arizona
+Intracrater dunes superposed on ridges on fan surface	DTEEC_025625_1580_024913_1580_A01	-21.6	320.4	2015-Oct-06	University of Arizona
+Inverted channel and terminal fan	DTEEC_034394_1920_034249_1920_L01	11.9	315.0	2018-Jun-21	L
+Inverted channel floor in CTX image P01_001395_1742_XN_05S205W_061113	DTEED_019394_1745_019249_1745_A01	-5.8	154.6	2015-Jun-02	University of Arizona
+Inverted streams in Aeolis region	DTEED_002424_1765_019803_1765_A01	-3.6	150.1	2015-Sep-13	University of Arizona
+Inverted streams west of Juventae Chasma	DTEEC_007627_1765_008563_1765_U01	-3.7	297.3	2011-May-19	USGS
+Isidis Basin stratigraphy in Hashir Crater	DTEEC_002756_1830_002822_1830_A01	3.2	85.0	2012-Feb-28	University of Arizona
+Ithaca region defrostings	DTEPC_003308_0945_003309_0945_U01	-85.2	181.6	2011-Feb-24	USGS
+Junction of Olympica Fossae and Jovis Fossae	DTEEC_002315_2030_002592_2030_A01	22.9	242.9	2017-Apr-12	University of Arizona
+Junction of three polar troughs	DTEPC_010030_2670_010532_2670_A01	86.8	163.0	2013-Jul-16	University of Arizona
+Kaiser Crater dunes with channels	DTEEC_013017_1325_013083_1325_U01	-47.2	19.5	2011-Feb-24	USGS
+Knobs near Arrhenius region	DTEEC_002478_1365_003678_1365_U01	-43.0	120.8	2014-Apr-01	USGS
+Landforms in the Tartarus Colles region	DTEEC_012444_2065_014000_2065_U01	26.0	173.9	2013-Mar-29	USGS
+Landforms in Utopia Planitia	DTEED_045769_2110_045479_2110_A01	30.7	97.6	2017-Jul-20	University of Arizona
+Landforms in Utopia Planitia	DTEEC_046666_2125_046521_2125_A01	32.4	87.3	2016-Oct-22	University of Arizona
+Landslide scarp	DTEED_007785_1645_008141_1645_A01	-15.1	303.3	2013-Nov-14	University of Arizona
+Large dated impact crater	DTEEC_032881_1855_032736_1855_A01	5.5	224.4	2013-Nov-18	University of Arizona
+Lava filling a large crater in Elysium Planitia	DTEEC_009610_1880_008753_1880_A01	7.9	148.6	2015-Nov-11	University of Arizona
+Lava flow spilling into crater in southwestern Daedalia Planum	DTEEC_024877_1465_024587_1465_P01	-33.2	222.7	2017-Nov-20	P
+Lava vent in impact crater in Elysium Planitia	DTEEC_028532_1790_028387_1790_A01	-1.0	159.8	2015-Dec-22	University of Arizona
+Layered bedrock in central uplift	DTEEC_020873_1640_020161_1640_A01	-15.8	96.9	2014-Dec-29	University of Arizona
+Layered deposits and dunes in Arabia Terra	DTEEC_035895_1965_036172_1965_A01	16.1	13.1	2014-Dec-22	University of Arizona
+Layered deposits in crater in Arabia Terra	DTEEC_008520_2085_009232_2085_A01	28.0	27.9	2014-Aug-22	University of Arizona
+Layered deposits in impact crater in Utopia Planitia	DTEEC_007041_2240_006606_2240_A01	43.8	89.5	2012-Sep-06	University of Arizona
+Layered deposits in impact crater in Utopia Planitia	DTEEC_002175_2210_001410_2210_A01	40.8	99.5	2012-Aug-29	University of Arizona
+Layered floor of Noctis Labyrinthus	DTEEC_027526_1685_027592_1685_A01	-11.3	263.6	2015-Mar-06	University of Arizona
+Layered mesa in Coprates Chasm	DTEEC_003104_1655_002036_1655_A01	-14.4	304.2	2015-Oct-26	University of Arizona
+Layered outcrop in Gale Crater	DTEEC_001488_1750_001752_1750_U02	-4.8	137.3	2012-Jan-23	USGS
+Layered pit in Noctis Labyrinthus	DTEEC_005980_1725_019891_1725_A01	-7.7	267.2	2015-Jul-20	University of Arizona
+Layered rock outcrops in southwest Candor Chasma	DTEEC_001918_1735_001984_1735_U01	-6.5	283.1	2010-Jan-05	USGS
+Layered sinuous ridge in Argyre Planitia	DTEEC_003816_1245_004106_1245_A01	-55.2	314.3	2009-Nov-24	University of Arizona
+Layered terrain in Aeolis and Zephyria regions	DTEEC_017825_1760_018458_1760_A01	-3.8	149.9	2015-Oct-06	University of Arizona
+Layering and dark mantle along tributary to Mawrth Vallis	DTEEC_002074_2025_002140_2025_U01	22.5	341.8	2010-Jan-05	USGS
+Layering in crater in Mawrth Vallis	DTEEC_028855_2045_020297_2045_A01	24.2	341.3	2016-Oct-31	University of Arizona
+Layering in Galle Crater	DTEEC_003934_1275_003855_1275_A01	-52.0	330.0	2012-Apr-23	University of Arizona
+Layering in north polar layered deposits	DTEPC_001390_2660_001563_2660_U01	86.2	232.4	2010-Oct-26	USGS
+Layering in north polar layered deposits	DTEPC_001652_2640_001640_2640_A01	83.8	276.7	2014-Dec-19	University of Arizona
+Layers exposed in central peak-pit of unnamed crater	DTEEC_005201_1640_005913_1640_A01	-15.9	296.2	2010-Jun-16	University of Arizona
+Layers in fan deposit	DTEEC_022434_1920_021577_1920_L01	11.7	314.8	2018-Jul-09	L
+Layers in Olympus Mons basal scarp	DTEEC_001432_2015_001630_2015_U01	21.5	222.4	2010-Jan-05	USGS
+Layers on northern rim of Hellas basin	DTEED_031911_1500_024408_1500_A01	-29.5	70.8	2015-Oct-28	University of Arizona
+Light-tone material crater wall in CTX image G02_019002_1586_XN_21S300W	DTEEC_026861_1555_027349_1555_A01	-24.0	59.5	2014-Apr-03	University of Arizona
+Light-toned deposit and gullies in Selevac Crater	DTEEC_003252_1425_003674_1425_A01	-37.4	229.0	2016-Nov-30	University of Arizona
+Light-toned gully materials on Hale Crater wall	DTEEC_002932_1445_003209_1445_A01	-35.2	324.7	2015-Nov-04	University of Arizona
+Light-toned gully materials on Hale Crater wall	DTEEC_002932_1445_003209_1445_U02	-35.2	324.7	2017-Jul-10	USGS
+Light-toned layered deposit on floor of pit trough west of Juventae Chasma	DTEEC_009842_1755_009130_1755_A01	-4.5	296.2	2012-Aug-16	University of Arizona
+Light-toned layered deposits at contact between Ladon Valles and basin	DTEEC_032864_1595_032930_1595_A01	-20.2	330.0	2014-Jun-04	University of Arizona
+Light-toned layered deposits in uplands west of Ladon Valles basin	DTEED_033352_1605_033774_1605_A01	-19.4	327.3	2014-Jun-30	University of Arizona
+Light-toned layered rock exposure in Holden Crater secondary crater	DTEEC_029515_1590_030293_1590_A01	-20.6	325.9	2013-Jun-28	University of Arizona
+Light-toned layered sediments exposed within pit at Noctis Labyrinthus	DTEEC_022436_1705_022502_1705_A01	-9.4	263.3	2012-Jan-13	University of Arizona
+Light-toned layering in Coprates Catena trough	DTEEC_017569_1645_016857_1645_A01	-15.2	301.1	2012-Nov-15	University of Arizona
+Light-toned layering in Labyrinthus Noctis pit	DTEEC_003910_1685_005400_1685_U01	-11.2	261.9	2011-Mar-21	USGS
+Light-toned layering in Noctis region pit	DTEEC_017399_1680_027236_1680_A01	-11.9	263.2	2014-Oct-15	University of Arizona
+Light-toned layering in plains west of Juventae Chasma	DTEEC_003434_1755_003579_1755_U01	-4.7	296.4	2010-Jan-06	USGS
+Light-toned layering in Uzboi Vallis	DTEEC_008338_1525_010329_1525_U01	-27.4	324.7	2012-Oct-29	USGS
+Light-toned layers in Orson Welles Crater	DTEEC_008391_1790_028566_1790_A01	-1.0	314.0	2016-Oct-08	University of Arizona
+Light-toned material along Coprates Chasma ridge	DTEEC_025349_1670_024993_1670_A01	-12.8	295.5	2013-May-13	University of Arizona
+Light-toned material along Coprates Chasma wallrock	DTEEC_025441_1650_027973_1650_A01	-14.7	304.6	2013-Aug-22	University of Arizona
+Light-toned outcrops in crater wall in Mawrth Vallis	DTEEC_012873_2045_004052_2045_A01	24.3	340.7	2011-Jun-21	University of Arizona
+Light-toned outcrops in Noctis Labyrinthus	DTEEC_009118_1665_028080_1665_A01	-13.4	263.4	2015-Nov-02	University of Arizona
+Light-toned outcrops in Noctis region	DTEEC_019469_1725_019324_1725_A01	-7.6	266.8	2016-Aug-31	University of Arizona
+Light-toned outcrops in western Valles Marineris	DTEEC_016845_1715_017412_1715_A01	-8.2	267.8	2015-Jun-04	University of Arizona
+Light-toned rock	DTEEC_020946_1450_020234_1450_A01	-34.7	266.0	2016-Apr-28	University of Arizona
+Light-toned rock in central peak of Alga Crater	DTEEC_007573_1555_007929_1555_A01	-24.3	333.3	2010-Apr-27	University of Arizona
+Light-toned sedimentary rocks exposed in Syrtis Major region scarp	DTEEC_021757_1975_021612_1975_C01	17.1	76.7	2017-Aug-15	CalTech
+Light-toned stratified materials in Melas Chasma	DTEED_031125_1670_031903_1670_A01	-13.1	289.1	2015-Oct-08	University of Arizona
+Light-toned unit along Coprates Chasma floor	DTEEC_018347_1660_026417_1660_A01	-13.9	301.0	2016-Sep-20	University of Arizona
+Light-toned unit along Noctis Labyrinthus plains	DTEED_024137_1700_023425_1700_A01	-10.1	264.4	2016-Jan-08	University of Arizona
+Lineated valley fill in Deuteronilus Mensae	DTEEC_007795_2175_009588_2175_U01	37.3	24.6	2012-Jun-20	USGS
+Lobate debris apron with ridge-like structures in Tempe Terra	DTEED_009064_2315_009341_2315_A01	51.2	288.9	2013-Jul-17	University of Arizona
+Lobate flow front in Kasei Valles	DTEED_019231_1905_018730_1905_A01	10.5	282.1	2014-Oct-13	University of Arizona
+Lobate form at intersection of short valley and crater wall	DTEEC_042666_1720_007696_1720_A01	-7.9	213.4	2016-Mar-01	University of Arizona
+Longitudinally aligned cones	DTEEC_018747_2065_018457_2065_U01	26.3	173.6	2013-Mar-29	USGS
+Loose cluster of Zunil Crater secondary craters	DTEEC_004375_1815_003874_1815_A01	1.3	162.9	2012-Apr-13	University of Arizona
+Louth Crater ice mound	DTEPC_045439_2505_045887_2505_A01	70.2	103.3	2016-Aug-24	University of Arizona
+Low albedo slopes along Coprates Chasma ridge	DTEEC_034619_1670_034830_1670_A01	-12.9	295.4	2014-Feb-11	University of Arizona
+Low albedo wall spurs in Coprates Chasma	DTEEC_041305_1670_040949_1670_A01	-13.0	294.5	2016-Apr-10	University of Arizona
+Lower northwest portion of mound in Gale Crater	DTEEC_019698_1750_019988_1750_U01	-4.9	137.4	2012-Mar-26	USGS
+Lower of two inner channels in southeast Kasei Valles	DTEEC_027670_2015_026536_2015_U01	21.0	287.7	2016-Mar-11	USGS
+Mass movement on wall of crater in Lyot Crater ejecta blanket	DTEED_027231_2340_019438_2340_O01	53.5	26.3	2017-Oct-19	Ohio State
+Matara Crater large dune gully	DTEEC_022115_1300_022392_1300_U01	-49.5	34.8	2013-Jul-25	USGS
+Material on crater ejecta	DTEED_046487_1880_045419_1880_A01	8.0	299.0	2016-Dec-09	University of Arizona
+Mawrth region crater with possible sedimentary features	DTEEC_025123_2045_026811_2045_A01	24.2	340.8	2015-Dec-28	University of Arizona
+Mawrth Vallis phillosilicate layers	DTEEC_005819_2050_006742_2050_A01	24.7	339.1	2015-Aug-05	University of Arizona
+Mawrth Vallis phyllosilicates	DTEEC_007599_2020_007454_2020_U01	21.7	337.8	2017-Jul-21	USGS
+Mawrth Vallis region	DTEEC_036305_2025_035804_2025_L01	22.2	341.6	2018-Mar-03	L
+Mawrth Vallis strata with interesting geometry exposed in small crater	DTEEC_022288_2035_022354_2035_A01	23.4	340.0	2012-Feb-17	University of Arizona
+Mawrth Vallis variations in mineralogy	DTEEC_005964_2045_011884_2045_U01	24.0	341.1	2010-Feb-12	USGS
+McLaughlin Crater dunes	DTEEC_036859_2020_036569_2020_A01	21.7	337.4	2014-Dec-04	University of Arizona
+Megablocks of light-toned bedrock in Mawrth Vallis	DTEEC_019387_2055_019453_2055_A01	25.4	341.3	2016-Nov-11	University of Arizona
+Megabreccia on floor of Stokes Crater	DTEEC_016980_2360_017257_2360_A01	55.6	171.6	2014-Apr-03	University of Arizona
+Meroe Patera dune monitoring	DTEEC_051084_1875_050939_1875_A01	7.2	67.8	2017-Aug-16	University of Arizona
+Modified crater on northern plains	DTEEC_027027_2325_027370_2325_A01	52.3	197.1	2013-May-17	University of Arizona
+Monitor dune avalanche slopes	DTEEC_032979_2070_032333_2070_A01	26.6	62.8	2016-Aug-29	University of Arizona
+Monitor seasonal changes at south polar cracked and gullied site	DTEPD_031213_0980_031266_0980_A01	-81.7	66.3	2017-Apr-01	University of Arizona
+Monitor slopes in Coprates Chasma	DTEEC_029938_1660_030505_1660_A01	-13.9	296.8	2013-Jun-28	University of Arizona
+Monitor slopes in Coprates Chasma	DTEEC_030426_1685_030281_1685_A01	-11.5	291.6	2014-Jun-18	University of Arizona
+Monitor slopes in Eos Chasma	DTEEC_039788_1645_039854_1645_A01	-15.4	309.5	2016-Aug-30	University of Arizona
+Monitor slopes in Juventae Chasma	DTEEC_030373_1755_030795_1755_A01	-4.7	298.6	2013-Oct-31	University of Arizona
+Monitor slopes on ridge in Coprates Chasm	DTEEC_034197_1670_033485_1670_A01	-13.1	295.2	2014-Apr-17	University of Arizona
+Mound on Nili Patera floor	DTEED_013582_1895_020940_1895_A01	9.1	67.3	2012-Jun-01	University of Arizona
+MSL landing site in Gale Crater	DTEEC_023957_1755_024023_1755_U01	-4.6	137.5	2012-Jan-20	USGS
+MSL rover landing site in Gale Crater	DTEEC_024234_1755_024300_1755_U01	-4.6	137.2	2012-Jan-20	USGS
+Multiple levels of gullies as seen in MOC	DTEEC_002620_1410_002686_1410_A01	-38.5	202.9	2009-Dec-04	University of Arizona
+New impact site	DTEEC_036481_1835_036336_1835_A01	3.3	219.4	2014-Oct-02	University of Arizona
+Nili Fossae and northeast Syrtis region phyllosilicate-sulfate stratigraphy	DTEEC_030025_1975_013041_1975_C01	17.4	76.9	2017-Aug-07	CalTech
+Nili Fossae mound and erosional features	DTEEC_002888_2025_002176_2025_A01	22.2	77.1	2015-Jul-06	University of Arizona
+Nili Patera ripples	DTEEC_017762_1890_018039_1890_A01	8.8	67.3	2011-Feb-09	University of Arizona
+North flank of Apollinaris Patera	DTEEC_002634_1725_001645_1725_P01	-7.3	174.8	2017-Nov-20	P
+North polar escarpment dune field activity monitoring	DTEPC_036176_2640_035926_2640_A01	83.9	233.7	2015-Jul-21	University of Arizona
+North polar gypsum dune changes	DTEPC_027739_2615_027713_2615_A01	81.6	178.9	2013-Jun-04	University of Arizona
+North polar layered deposit exposure	DTEPD_035572_2665_036008_2665_A01	86.6	138.4	2014-Dec-16	University of Arizona
+North polar layered deposit trough	DTEPC_019210_2665_019158_2665_A01	86.5	80.2	2013-Jun-12	University of Arizona
+North polar layered deposits	DTEPC_018870_2625_018910_2625_A01	82.4	34.1	2010-Dec-22	University of Arizona
+North polar layered deposits exposure	DTEPC_035652_2660_035943_2660_A01	85.9	122.4	2016-Apr-07	University of Arizona
+North polar layered deposits exposure	DTEPC_035628_2660_035919_2660_A01	86.2	46.5	2014-Dec-04	University of Arizona
+North polar trough with curved exposure	DTEPC_001738_2670_001871_2670_U01	87.1	92.7	2010-Jan-06	USGS
+North-central Endeavour Crater	DTEEC_028815_1780_028670_1780_A01	-2.2	354.8	2014-Apr-07	University of Arizona
+Northeast Melas Chasma dune fields and wall rock	DTEEC_028857_1700_028923_1700_A01	-10.0	290.0	2013-Apr-05	University of Arizona
+Northern Hellas Planitia layered bedrock	DTEEC_031120_1505_031898_1505_A01	-29.0	67.3	2016-Jun-07	University of Arizona
+Northern plains crater modification substrate effects	DTEED_034384_2300_033738_2300_A01	49.7	219.4	2014-Dec-09	University of Arizona
+Northern plains craters	DTEEC_027158_2305_026446_2305_A01	50.1	219.5	2013-Feb-12	University of Arizona
+Northern plains sample	DTEPC_001959_2485_002091_2485_U01	68.2	232.6	2010-Mar-26	USGS
+Northern plains sample	DTEPC_001919_2470_001932_2470_U01	66.7	247.8	2010-Apr-02	USGS
+Northern plains sample	DTEPC_001945_2515_002077_2515_U01	71.1	252.9	2010-Apr-02	USGS
+Northern residual cap crater	DTEPC_001406_2680_001922_2680_U01	88.0	135.1	2010-Sep-24	USGS
+Northwest Hellas region landforms	DTEED_007570_1415_006779_1415_A01	-38.3	56.2	2014-Dec-12	University of Arizona
+Northwest of Crommelin Crater	DTEEC_036529_1880_035962_1880_A01	7.9	348.6	2015-Sep-21	University of Arizona
+Oblique impact exposing bedrock within a Libya Montes massif	DTEEC_013766_1845_005934_1845_A01	4.3	82.0	2012-Jan-25	University of Arizona
+Olivine-rich light-toned mound in Ganges Chasma	DTEEC_017173_1715_018518_1715_U01	-8.4	313.3	2012-Jul-16	USGS
+Olympia Undae monitoring	DTEPC_036099_2615_036073_2615_A01	81.7	178.7	2016-Nov-29	University of Arizona
+Oudemans Crater central peak	DTEEC_026273_1700_008340_1700_U01	-9.8	268.3	2016-Oct-11	USGS
+Oudemans Crater central uplift	DTEEC_011676_1700_028449_1700_A01	-9.9	268.0	2012-Nov-05	University of Arizona
+Oudemans Crater layered central uplift	DTEEC_026339_1700_026194_1700_U01	-9.9	268.2	2016-Oct-11	USGS
+Outlet breach in crater wall	DTEED_053958_1835_053668_1835_A01	3.3	82.2	2018-Jun-25	University of Arizona
+Oxia Palus	DTEEC_037030_1880_036740_1880_A01	7.8	348.5	2015-Sep-21	University of Arizona
+Pasted-on material on crater ejecta	DTEED_045353_1890_044720_1890_A01	8.9	299.1	2016-Aug-31	University of Arizona
+Pasted-on material on streamlined island	DTEED_044509_1865_045274_1865_A01	6.8	298.6	2016-Sep-28	University of Arizona
+Phoenix lander landing site	DTEPC_008591_2485_008644_2485_U01	68.2	234.3	2010-Apr-02	USGS
+Phyllosilicate deposits of possible hydrothermal origins in exhumed terrain	DTEEC_027270_1530_027758_1530_A01	-26.5	55.1	2014-Feb-18	University of Arizona
+Phyllosilicates in bedrock of eastern Coprates Chasma	DTEED_020259_1670_020681_1670_A01	-12.9	301.0	2015-Nov-22	University of Arizona
+Pits and craters	DTEED_017875_2305_018007_2305_A01	50.0	219.2	2014-Dec-12	University of Arizona
+Pits in Hydrae Chasma	DTEEC_013745_1730_013033_1730_A01	-6.8	298.0	2013-Jun-11	University of Arizona
+Pits north of Alba Patera	DTEEC_016581_2310_016080_2310_A01	50.6	264.6	2015-Dec-23	University of Arizona
+Pitted cones in Melas Chasma	DTEEC_043850_1685_043916_1685_A01	-11.5	290.6	2016-Dec-01	University of Arizona
+Pitted cones in Utopia Planitia	DTEED_045268_2120_044424_2120_A01	31.7	95.3	2016-Sep-03	University of Arizona
+Pitted terrain north of Hrad Vallis	DTEEC_018168_2160_019012_2160_A01	35.6	141.9	2015-Oct-26	University of Arizona
+Polar layers exposed on Promethei Lingula surface	DTEPD_022983_0980_023102_0980_A01	-82.0	111.3	2014-Dec-04	University of Arizona
+Ponded and pitted materials in Corinto Crater	DTEEC_003611_1970_004244_1970_A01	16.9	141.7	2010-Mar-17	University of Arizona
+Positive chaos in Parana Basin	DTEEC_002786_1580_002074_1580_A01	-21.9	348.3	2017-Feb-11	University of Arizona
+Possibily Opportunity Rover landing site	DTEEC_001414_1780_001612_1780_U01	-2.1	354.5	2010-Jan-05	USGS
+Possible carbonate-rich terrain in central stucture of Leighton Crater	DTEED_020492_1830_021481_1830_A01	3.0	57.8	2013-Mar-10	University of Arizona
+Possible carbonate-rich terrain in Libya Montes	DTEED_043264_1835_042763_1835_A01	3.5	85.0	2017-Aug-01	University of Arizona
+Possible chloride salt deposit	DTEEC_007058_1745_016354_1745_U01	-5.6	353.9	2017-Jul-10	USGS
+Possible chloride salt deposits observed in THEMIS	DTEEC_010597_1470_007380_1470_U01	-32.7	205.9	2013-Mar-28	USGS
+Possible evaporites near fan in Coprates Chasma	DTEEC_030518_1650_022949_1650_A01	-14.9	299.7	2013-Nov-27	University of Arizona
+Possible fan in crater	DTEED_028274_2160_044388_2160_A01	35.9	0.4	2017-Jan-24	University of Arizona
+Possible fissure source for floodwaters	DTEEC_010361_1955_006788_1955_U01	15.3	163.3	2013-Mar-29	USGS
+Possible future landing site in Mawrth Vallis	DTEEC_028011_2055_028288_2055_A01	25.3	339.8	2013-Dec-20	University of Arizona
+Possible future landing site in Sabrina Vallis delta	DTEEC_034605_1920_026601_1920_L01	11.7	313.2	2018-Apr-19	L
+Possible future landing site in southern Mawrth Vallis	DTEEC_023567_2000_023422_2000_A01	19.7	342.5	2015-Feb-19	University of Arizona
+Possible glacier on mesa wall in Protonilus Mensae	DTEEC_019358_2225_018857_2225_U01	42.2	50.5	2017-Jul-07	USGS
+Possible hematite in Capri Chasma	DTEEC_020575_1665_019652_1665_P01	-13.3	312.4	2012-Oct-16	P
+Possible landing site for InSight mission	DTEEC_042827_1845_042537_1845_U01	4.2	135.7	2017-Aug-05	USGS
+Possible landing site for MSL rover in northeast Syrtis region	DTEEC_016509_1980_016575_1980_U01	17.8	77.2	2017-Jul-20	USGS
+Possible location of Spirit Rover in Columbia Hills	DTEEC_001513_1655_001777_1650_U01	-14.6	175.5	2010-Jan-06	USGS
+Possible Mars landing site in layers on east mound of Terby Crater	DTEEC_021942_1520_021797_1520_A01	-27.7	74.7	2016-Sep-28	University of Arizona
+Possible MSL landing site - Eberswalde west side of ellipse	DTEEC_010052_1560_010553_1560_U01	-23.9	326.6	2010-Feb-11	USGS
+Possible MSL landing site in Gale Crater	DTEEC_010573_1755_010639_1755_U01	-4.5	137.4	2010-Feb-11	USGS
+Possible MSL landing site in Gale Crater	DTEEC_011417_1755_011562_1755_U01	-4.4	137.6	2011-Feb-21	USGS
+Possible MSL landing site in Gale Crater	DTEEC_018854_1755_018920_1755_U01	-4.6	137.4	2011-Feb-19	USGS
+Possible MSL landing site in Holden Crater	DTEEC_015999_1535_016276_1535_U01	-26.4	325.2	2010-Jul-07	USGS
+Possible MSL landing site in Mawrth Vallis	DTEEC_015985_2040_016262_2040_U01	23.8	341.1	2010-Jul-07	USGS
+Possible MSL landing site in northeast Syrtis Major	DTEEC_016443_1980_015942_1980_U01	17.8	77.1	2017-Feb-14	USGS
+Possible MSL landing site in Syrtis Major	DTEEC_016364_1980_016219_1980_U01	17.9	77.3	2017-Jul-18	USGS
+Possible MSL landing site Mawrth Vallis	DTEEC_010816_2040_010882_2040_U01	24.0	340.9	2010-Feb-26	USGS
+Possible MSL rover landing site - Mawrth Vallis	DTEEC_006887_2050_007823_2050_U01	24.9	339.5	2010-Mar-25	USGS
+Possible MSL rover landing site - Nili Fossae	DTEEC_006633_2010_007556_2010_U01	21.0	74.5	2017-Jul-03	USGS
+Possible MSL rover landing site - northeast Syrtis region	DTEEC_006000_1965_002809_1965_C01	16.5	76.6	2018-Mar-02	CalTech
+Possible MSL rover landing site - southwest Arabia Terra	DTEEC_011844_1855_002812_1855_A01	5.6	355.6	2012-Feb-23	University of Arizona
+Possible MSL rover landing site Eberswalde Crater	DTEEC_011265_1560_011331_1560_U01	-23.8	326.8	2010-Feb-11	USGS
+Possible MSL rover landing site Holden Crater	DTEEC_019045_1530_019322_1530_U01	-26.6	325.1	2011-Feb-19	USGS
+Possible MSL rover landing site in Holden Crater	DTEEC_019823_1530_019889_1530_U01	-26.6	325.0	2011-Feb-19	USGS
+Possible Phoenix landing site	DTEPC_008143_2480_008301_2480_U01	68.0	234.9	2010-Apr-02	USGS
+Possible pyroclastic deposits from fissure by Tharsis Tholus	DTEED_030440_1945_030862_1945_A01	14.1	268.1	2014-Oct-02	University of Arizona
+Possible submarine fan in eastern portion of small Melas Chasma basin	DTEEC_007377_1700_008379_1700_U01	-9.9	283.8	2013-Jul-26	USGS
+Possible sulfates in Coprates Chasma	DTEEC_007205_1660_024505_1660_A01	-13.9	301.1	2014-Mar-03	University of Arizona
+Possible terraced bullseye-like crater in Arcadia Planitia	DTEEC_035690_2240_035189_2240_A01	43.8	206.2	2014-Apr-18	University of Arizona
+Possible terraced bullseye-like crater in Arcadia Planitia	DTEEC_034082_2260_033014_2260_A01	45.6	188.6	2013-Nov-12	University of Arizona
+Possible terraced bullseye-like crater in Arcadia Planitia	DTEEC_034108_2245_034174_2245_A01	44.2	199.2	2014-Jun-18	University of Arizona
+Possible terraced bullseye-like crater in Arcadia Planitia	DTEEC_034240_2275_033950_2275_A01	47.2	193.7	2014-Jul-14	University of Arizona
+Possible terraced bullseye-like crater in Arcadia Planitia	DTEEC_034095_2285_033805_2285_A01	47.9	191.9	2013-Nov-20	University of Arizona
+Possible terraced crater in Arcadia Planitia	DTEEC_035914_2280_035624_2280_A01	47.7	208.7	2014-Apr-17	University of Arizona
+Possible terraced crater in Arcadia Planitia	DTEEC_033963_2230_033818_2230_A01	42.5	197.6	2014-Jun-27	University of Arizona
+Possible Viking Lander 1 landing site	DTEEC_001521_2025_001719_2025_U01	22.3	312.0	2013-Jul-25	USGS
+Possibly fresh 4-kilometer diameter crater	DTEPC_025901_2460_026455_2460_A01	65.8	334.8	2016-Nov-17	University of Arizona
+Potential 50-m crater on north polar layered deposits	DTEPC_045885_2685_045754_2685_A01	88.5	111.7	2016-Oct-20	University of Arizona
+Potential MSL landing site in Eberswalde Crater	DTEEC_016065_1560_016210_1560_U01	-23.9	326.9	2010-Jul-07	USGS
+Potential MSL landing site in Eberswalde Crater	DTEEC_020324_1555_020390_1555_U01	-24.1	326.5	2011-Mar-22	USGS
+Potential new gully bright deposits	DTEEC_001714_1415_001846_1415_U01	-38.4	96.8	2010-Jan-05	USGS
+Primary cavity of rayed Gratteri Crater	DTEEC_011507_1620_005732_1620_A01	-17.7	200.0	2016-Aug-31	University of Arizona
+Proctor Crater dune field	DTEEC_003800_1325_004077_1325_U01	-47.0	30.7	2011-Apr-27	USGS
+Proposed landing site in Jezero Crater	DTEEC_023524_1985_023379_1985_U01	18.3	77.5	2017-Jul-21	USGS
+Proposed landing site in Mawrth Vallis	DTEEC_023488_2050_023554_2050_A01	24.5	339.0	2016-Feb-23	University of Arizona
+Proposed MSL rover landing site in Nili Fossae trough	DTEEC_005776_2010_012039_2010_U01	20.9	74.4	2017-Jul-03	USGS
+Proposed MSR landing site in Jezero Crater	DTEEC_023247_1985_022957_1985_U01	18.4	77.6	2017-Jul-21	USGS
+Proposed site for future exploration in Ladon Valles	DTEED_024728_1595_024227_1595_A01	-20.5	330.0	2016-Mar-08	University of Arizona
+Putative polyhydrated sulfate deposits in east Melas Chasma	DTEEC_003487_1670_040936_1670_A01	-12.6	290.4	2016-Oct-05	University of Arizona
+Putative salt deposits in Terra Sirenum	DTEEC_005811_1470_006668_1470_A01	-32.7	205.6	2010-Jan-07	University of Arizona
+Raised polygonal ridges and light-toned material in Syrtis region	DTEEC_019133_1975_018065_1975_C01	17.5	76.4	2018-Mar-03	CalTech
+Rayed crater in Arcadia region in THEMIS V35985012	DTEEC_019590_2265_020078_2265_A01	46.3	197.1	2014-Mar-04	University of Arizona
+Rayed crater with central pit in Arcadia Planitia in THEMIS V28811007	DTEEC_018522_2270_019010_2270_A01	46.6	194.9	2013-Jul-03	University of Arizona
+Recent gullies in a crater in Noachis Terra	DTEEC_013222_1410_013288_1410_A01	-38.8	182.1	2016-Dec-09	University of Arizona
+Recent sharp streamlined features and channels over broad region	DTEED_005609_1470_005754_1470_A01	-32.6	320.5	2010-Jan-06	University of Arizona
+Recurring slope linea formation in a well-preserved crater	DTEEC_023586_1425_024008_1425_A01	-37.1	192.1	2013-Mar-05	University of Arizona
+Relatively light-toned deposits in Shalbatana Vallis	DTEEC_007455_1785_033458_1785_A01	-1.5	313.4	2016-Nov-11	University of Arizona
+Reticulate bedform and recent impact crater	DTEEC_025152_1945_025007_1945_A01	14.5	268.9	2013-Dec-12	University of Arizona
+Rim of Lederberg Crater	DTEEC_034816_1925_036293_1925_L01	12.2	313.9	2018-Mar-02	L
+Ring and cone structures plus dunes and other landforms in Athabasca Valles	DTEEC_002661_1895_003294_1895_U01	9.6	156.3	2010-Jan-07	USGS
+Ritchey Crater - potential MSL landing site	DTEEC_005372_1515_006005_1515_A02	-28.5	309.1	2013-Mar-08	University of Arizona
+Ritchey Crater central uplift	DTEED_029964_1510_029542_1510_A01	-28.5	309.0	2013-Mar-08	University of Arizona
+Rocky central uplift of 80-kilometer diameter crater	DTEEC_007978_2005_024487_2005_A01	20.2	69.5	2014-Jun-16	University of Arizona
+Rotational landslides or slumps along walls of Bahram Vallis	DTEEC_003460_2015_003605_2015_U01	21.3	303.5	2010-Jan-05	USGS
+Russell Crater dunes	DTEEC_007018_1255_007229_1255_A01	-54.3	12.9	2009-Dec-01	University of Arizona
+Scalloped depressions in Utopia Planitia	DTEEC_025277_2275_025620_2275_U01	47.1	93.8	2013-Sep-18	USGS
+Scarp	DTEPC_019047_2640_019298_2640_A01	83.9	235.1	2012-Sep-04	University of Arizona
+Scarp on Ceti Mensa layered deposit	DTEEC_051986_1750_051841_1750_U01	-5.2	283.8	2018-Jun-11	USGS
+Seasonal sublimation	DTEPC_013990_0930_014123_0930_A01	-87.0	127.2	2016-Oct-31	University of Arizona
+Sinuos ridges in eastern Peta Crater	DTEED_019466_1585_019954_1585_A01	-21.2	351.4	2016-Dec-14	University of Arizona
+Sinuous ridges among yardangs in Aeolis region	DTEEC_016058_1740_006894_1740_A01	-5.9	151.6	2015-Jul-02	University of Arizona
+Sinuous ridges and plains margins in west Peta Crater	DTEEC_019677_1585_019743_1585_A01	-21.1	350.4	2016-Dec-09	University of Arizona
+Sinuous ridges with scroll-bar deposits	DTEEC_020673_1750_020528_1750_A01	-5.1	154.9	2015-Oct-24	University of Arizona
+Sinuous troughs and ridges near Sirenum Fossae	DTEED_017784_1425_026276_1425_A01	-37.3	193.7	2017-May-31	University of Arizona
+Slope monitoring	DTEEC_036209_1720_035642_1720_A01	-7.8	86.1	2016-Nov-04	University of Arizona
+Slope monitoring	DTEEC_034934_2155_034499_2155_A01	35.2	327.9	2014-Jun-12	University of Arizona
+Slope streak with topographic relief seen in MOC images	DTEEC_003542_2035_005599_2035_U01	23.3	223.8	2010-Jan-06	USGS
+Slopes south of large crater in Coprates Chasma	DTEEC_032206_1675_031850_1675_A01	-12.6	294.7	2014-Jan-09	University of Arizona
+Small buttes and dunes in Meridiani Planum	DTEEC_042951_1820_043017_1820_A01	2.2	352.5	2015-Nov-17	University of Arizona
+Small crater filled by deltaic deposits	DTEEC_006954_1885_016250_1885_A01	8.5	312.0	2017-Apr-10	University of Arizona
+Small crater on north polar deposits	DTEPC_027496_2620_027470_2620_A01	81.8	333.1	2014-Nov-12	University of Arizona
+Small crater on the north polar deposits	DTEPC_009404_2635_010221_2635_A01	83.5	346.8	2010-May-01	University of Arizona
+Small crater on the north polar deposits	DTEPC_009689_2645_010084_2645_A01	84.3	120.4	2010-Jun-16	University of Arizona
+Small fresh crater on northern plains	DTEEC_026076_2320_026419_2320_A01	51.7	236.7	2012-Sep-05	University of Arizona
+Small knob on south polar layered deposits	DTEPD_032053_0920_032276_0920_A01	-87.9	245.5	2013-Nov-12	University of Arizona
+Source area for channel network near Gigas Sulci	DTEED_029716_1980_029426_1980_A01	17.8	232.5	2013-Jun-19	University of Arizona
+South Coprates Chasma dune changes	DTEEC_027182_1660_026905_1660_A01	-14.1	296.9	2012-Nov-05	University of Arizona
+South polar layered deposits	DTEPD_040073_1005_040126_1005_A01	-79.6	102.4	2015-Jul-26	University of Arizona
+South polar layered deposits exposed in bend in trough wall	DTEPD_014027_0940_013830_0940_A01	-85.7	171.2	2012-Aug-16	University of Arizona
+South polar layered deposits exposed in Chasma Australe wall	DTEPD_014360_0985_022694_0985_A01	-81.4	95.9	2013-Apr-03	University of Arizona
+South polar layered deposits exposed in Promethei Lingula	DTEPC_013647_0975_013832_0975_A01	-82.6	112.5	2014-Dec-17	University of Arizona
+South polar residual cap in late summer	DTEPD_032538_0910_032565_0910_A01	-89.0	280.5	2015-Nov-19	University of Arizona
+Southern part of Nili Fossae	DTEEC_027625_1975_009217_1975_C01	17.3	77.1	2017-Aug-07	CalTech
+Spacing and arrangement of barchan dunes in Oyama Crater	DTEED_042714_2035_042424_2035_A01	23.2	339.6	2016-Aug-27	University of Arizona
+Starburst araneiform terrain	DTEPC_014281_0980_014255_0980_A01	-81.7	75.7	2015-Dec-29	University of Arizona
+Strange feature	DTEEC_003695_1250_004183_1250_A01	-54.6	17.5	2016-Nov-21	University of Arizona
+Stratigraphy of Kasimov Crater fill	DTEEC_023119_1550_022473_1550_A01	-24.9	337.2	2013-Dec-12	University of Arizona
+Stratigraphy of potential hydrothermal system in Cross Crater	DTEEC_010228_1490_016320_1490_A01	-30.7	202.2	2010-Jul-02	University of Arizona
+Streamlined landforms in Granicus Valles	DTEED_018564_2115_018630_2115_A01	31.2	131.3	2016-Aug-30	University of Arizona
+Striped ground and dunes	DTEPC_026839_2550_027248_2550_U01	74.9	279.4	2014-Sep-30	USGS
+Sulfate and clay strata in Gale Crater	DTEEC_012551_1750_012841_1750_U01	-4.8	137.2	2012-Mar-28	USGS
+Sulfates and valley system in Melas Chasma basin	DTEEC_008669_1705_009025_1705_A01	-9.5	283.3	2010-Apr-20	University of Arizona
+Syrtis Major region	DTEEC_027269_1970_042671_1970_C01	17.0	76.9	2017-Aug-16	CalTech
+Syrtis Major terrain sample	DTEEC_027902_1975_026280_1975_C01	17.5	76.8	2018-Mar-06	CalTech
+Terraced bullseye-like crater in Arcadia Planitia	DTEEC_035862_2195_035928_2195_A01	39.1	192.9	2014-Jun-19	University of Arizona
+Terraced bullseye-like crater in Arcadia Planitia	DTEEC_037352_2245_037418_2245_A01	44.4	193.9	2014-Dec-04	University of Arizona
+Terraced crater	DTEEC_035057_2335_034767_2335_A01	53.2	205.3	2014-Feb-11	University of Arizona
+Terraced slopes as seen in CTX image B17_016176_1902	DTEED_025459_1895_026514_1895_A01	9.5	169.7	2014-Jun-30	University of Arizona
+Terrain in Oxia Palus	DTEEC_036384_1880_037162_1880_A01	7.8	348.5	2015-Sep-21	University of Arizona
+Terrain in Promethei Terra	DTEEC_021466_1230_021954_1230_A01	-56.6	114.1	2017-May-09	University of Arizona
+Tivat Crater	DTEEC_012991_1335_013624_1335_A02	-45.9	9.5	2017-Apr-12	University of Arizona
+Tomini Crater	DTEEC_001871_1965_024419_1965_A01	16.3	125.9	2016-Nov-01	University of Arizona
+Tomini Crater western ejecta	DTEEC_005985_1965_005695_1965_A01	16.3	125.8	2016-Nov-01	University of Arizona
+Tongue-shaped features within alcoves on south mid-latitude crater wall	DTEEC_014335_1450_014058_1450_A01	-34.5	37.2	2016-Oct-08	University of Arizona
+Tooting Crater rim and interior	DTEEC_005771_2035_003569_2035_U01	23.2	207.6	2012-Jul-27	USGS
+Topography in region dubbed Ithaca	DTEPD_040189_0950_040216_0950_A01	-85.2	181.2	2016-Sep-02	University of Arizona
+Transition between Medusae Fossae Formation and clusters of aligned cones	DTEEC_009175_1810_009808_1810_A01	1.2	145.9	2016-Sep-10	University of Arizona
+Unnamed well-preserved crater south of Hypanis Valles	DTEEC_010105_1890_009393_1890_A01	9.0	313.4	2013-Dec-18	University of Arizona
+Unusual and pristine crater morphology	DTEEC_012429_1910_011717_1910_U01	10.6	224.8	2012-Jul-26	USGS
+Uplift of layered materials from the intersection of two craters	DTEEC_022580_1560_023213_1560_A01	-23.6	295.0	2015-Dec-17	University of Arizona
+Valles Marineris bedrock stratigraphy	DTEEC_010277_1650_010699_1650_A02	-14.7	302.4	2015-Jan-23	University of Arizona
+Valles Marineris bedrock stratigraphy	DTEEC_010277_1650_010699_1650_U01	-14.6	302.4	2012-Jul-16	USGS
+Varied crater morphologies	DTEEC_025470_2325_025391_2325_A01	52.2	220.4	2014-Mar-11	University of Arizona
+Vertically tilted blocks of layers in Becquerel Crater	DTEEC_025782_2020_025637_2020_A01	22.0	351.8	2012-May-31	University of Arizona
+Very bright and sun-facing gully deposits in Hale Crater	DTEEC_014153_1430_014008_1430_A01	-36.5	322.7	2016-Jan-01	University of Arizona
+Very long sequence of layering in Becquerel Crater	DTEEC_001546_2015_001955_2015_U01	21.4	351.9	2012-Jul-26	USGS
+Very well-preserved 12-kilometer diameter crater	DTEEC_016846_2320_016569_2320_A01	51.4	234.6	2013-Apr-10	University of Arizona
+Very well-preserved 9-kilometer diameter impact crater	DTEEC_016490_2315_016780_2315_A01	51.4	234.4	2013-Apr-17	University of Arizona
+Victoria Crater	DTEEC_021747_1780_022380_1780_U01	-2.0	354.5	2014-Aug-18	USGS
+Volatiles and gullies	DTEPC_013097_1115_013585_1115_U01	-68.5	1.3	2013-Jan-28	USGS
+Wall of Corozal Crater with gullies at multiple elevations	DTEEC_013948_1410_013236_1410_A01	-38.7	159.4	2015-Jun-14	University of Arizona
+Well preserved crater in Terra Cimmeria	DTEEC_021689_1475_020832_1475_A01	-32.0	140.8	2011-May-18	University of Arizona
+Well-exposed fractured bedrock in central uplift of crater	DTEEC_021639_1610_020782_1610_A01	-18.7	62.6	2014-Apr-02	University of Arizona
+Well-exposed scarp of Noachian phyllosilicates along Nili Fossae	DTEEC_007200_2005_016153_2005_A01	20.0	73.7	2012-Apr-12	University of Arizona
+Well-preserved 10-kilometer diameter impact crater	DTEED_018046_2375_017822_2375_A01	57.4	225.7	2013-Apr-16	University of Arizona
+Well-preserved 3-kilometer diameter impact crater	DTEEC_012991_1335_013624_1335_A01	-45.9	9.5	2011-Nov-02	University of Arizona
+Well-preserved 3-kilometer diameter impact crater	DTEEC_014011_1315_014288_1315_A01	-48.1	242.4	2011-Apr-27	University of Arizona
+Well-preserved 6-kilometer diameter impact crater	DTEED_017413_2300_017334_2300_A01	49.7	230.9	2012-Oct-19	University of Arizona
+West Coprates Chasma dunes and slip face streaks	DTEEC_031929_1660_031995_1660_A01	-14.1	296.8	2015-Jan-14	University of Arizona
+Western edge of Marth Crater	DTEED_042753_1930_042252_1930_A01	12.6	355.7	2015-Sep-25	University of Arizona
+Western Elysium Planitia boundary	DTEEC_008015_1840_009940_1840_U01	4.1	141.2	2018-May-09	USGS
+Western Iani Chaos	DTEEC_016183_1770_016816_1770_A01	-3.0	340.5	2016-Oct-20	University of Arizona
+Western Mawrth Vallis phyllosilicates	DTEEC_008245_2045_016394_2045_A01	24.4	338.9	2016-Apr-18	University of Arizona
+Western portion of central structure in Mazamba Crater	DTEEC_029846_1520_029134_1520_A01	-27.5	290.4	2017-May-21	University of Arizona
+Western rim and ejecta of fresh 8-km crater in Margaritifer Terra	DTEEC_043861_1605_044349_1605_A01	-19.3	348.7	2017-Apr-21	University of Arizona
+Western rim of Palikir Crater	DTEEC_039502_1380_039779_1380_A01	-41.6	202.0	2016-Feb-12	University of Arizona
+Western slope of Asimov Crater	DTEEC_013611_1325_013110_1325_A01	-47.1	4.2	2016-Dec-02	University of Arizona
+Western wall of crater in Kaiser Crater dune field	DTEED_039245_1325_039944_1325_A01	-47.0	18.8	2016-Aug-31	University of Arizona
+Wirtz Crater dune changes	DTEEC_021893_1315_021603_1315_A01	-48.2	334.7	2012-Jun-21	University of Arizona
+Wrinkle ridges in west Meridiani Planum	DTEEC_054001_1805_053856_1805_A01	0.3	349.9	2018-Jul-02	University of Arizona
+Xanthe Terra crater	DTEEC_033326_1780_006598_1780_A01	-2.2	313.2	2016-Oct-20	University of Arizona
+Xanthe Terra region	DTEEC_036161_1920_036227_1920_L01	11.8	314.5	2018-Jul-09	L
+Young crater	DTEEC_006588_1615_011572_1615_U01	-18.5	228.5	2012-Jul-27	USGS
+Zumba Crater: fresh crater with impressive ejecta/ray pattern	DTEEC_002118_1510_003608_1510_A01	-28.7	226.9	2010-Jun-16	University of Arizona

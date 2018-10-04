@@ -6,6 +6,7 @@
 using System.Collections;
 using UnityEngine;
 using HoloToolkit.Unity.InputModule.Tests;
+using HoloToolkit.Examples.InteractiveElements;
 
 public class CreateIcons : MonoBehaviour
 {
@@ -79,9 +80,10 @@ public class CreateIcons : MonoBehaviour
 					newMenuPrefab.AddComponent<BoxCollider>().enabled = false;
 					newMenuPrefab.GetComponent<Renderer> ().material.color = new Color (0, 0, 0, 0);
                     newMenuPrefab.GetComponentInChildren<TapResponderWithComponent>().GoToObject = navTools;
-                    newMenuPrefab.GetComponentInChildren<TapResponderWithComponent>().TurnOffObject = this.transform.parent.gameObject;
+                    newMenuPrefab.GetComponentInChildren<TapResponderWithComponent>().TurnOffObject = GameObject.FindGameObjectWithTag("Finish");
                     newMenuPrefab.GetComponentInChildren<TapResponderWithComponent>().modelDownloader = modelDownloader;
                     newMenuPrefab.GetComponentInChildren<TapResponderWithComponent>().assetTitle = dataList[(j * 4) + 4];
+                    newMenuPrefab.GetComponentInChildren<TapResponderWithComponent>().sharingSelected = GameObject.FindGameObjectWithTag("sharingToggle").GetComponent<InteractiveToggle>().HasSelection;
                     if (dataList[(j*4) + 7] == "1")
                     {
                         newMenuPrefab.GetComponentInChildren<TapResponderWithComponent>().isAssetBundle = true;
@@ -89,18 +91,19 @@ public class CreateIcons : MonoBehaviour
                         newMenuPrefab.GetComponentInChildren<TapResponderWithComponent>().assetBundleName = dataList[(j*4)+6];
                         
                     }
-                    if (this.name == "Mars")
-                    {
-                        newMenuPrefab.GetComponentInChildren<TapResponderWithComponent>().enabled = false;
-                    }
+                    //if (this.name == "Mars")
+                    //{
+                    //    newMenuPrefab.GetComponentInChildren<TapResponderWithComponent>().enabled = false;
+                    //}
                 }
             }
             else
             {
                 newIconPrefab.GetComponentInChildren<TapResponderWithComponent>().GoToObject = navTools;
-                newIconPrefab.GetComponentInChildren<TapResponderWithComponent>().TurnOffObject = this.transform.parent.gameObject;
+                newIconPrefab.GetComponentInChildren<TapResponderWithComponent>().TurnOffObject = GameObject.FindGameObjectWithTag("Finish");
                 newIconPrefab.GetComponentInChildren<TapResponderWithComponent>().modelDownloader = modelDownloader;
                 newIconPrefab.GetComponentInChildren<TapResponderWithComponent>().assetTitle = dataList[0];
+                newIconPrefab.GetComponentInChildren<TapResponderWithComponent>().sharingSelected = GameObject.FindGameObjectWithTag("sharingToggle").GetComponent<InteractiveToggle>().HasSelection;
                 if (dataList[6] == "1")
                 {
                     newIconPrefab.GetComponentInChildren<TapResponderWithComponent>().isAssetBundle = true;
@@ -108,10 +111,10 @@ public class CreateIcons : MonoBehaviour
                     newIconPrefab.GetComponentInChildren<TapResponderWithComponent>().assetBundleName = dataList[5];
                 }
 
-                if (this.name == "Mars")
-                {
-                    newIconPrefab.GetComponentInChildren<TapResponderWithComponent>().enabled = false;
-                }
+                //if (this.name == "Mars")
+                //{
+                //    newIconPrefab.GetComponentInChildren<TapResponderWithComponent>().enabled = false;
+                //}
 
             }
             }

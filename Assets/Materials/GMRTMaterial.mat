@@ -1,0 +1,313 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: GMRTMaterial
+  m_Shader: {fileID: 4800000, guid: a4c7c55efb4f3e14ba5619278bec2263, type: 3}
+  m_ShaderKeywords: _BORDER_LIGHT_USES_HOVER_COLOR _DIRECTIONAL_LIGHT _DISABLE_ALBEDO_MAP
+    _HOVER_LIGHT _SPECULARHIGHLIGHTS_ON _SPECULAR_HIGHLIGHTS _USEAMBIENT_ON _USEDIFFUSE_ON
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BumpMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _CubeMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailAlbedoMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailMask:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailNormalMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _EmissionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _GlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MetallicGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NormalMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _OcclusionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ParallaxMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SpecularMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _AlbedoAlphaMode: 0
+    - _AlphaTest: 0
+    - _Amount: 0
+    - _Amplitude: 0
+    - _BlendOp: 0
+    - _BorderLight: 0
+    - _BorderLightOpaque: 0
+    - _BorderLightUsesHoverColor: 1
+    - _BorderMinValue: 0.1
+    - _BorderWidth: 0.1
+    - _BumpScale: 1
+    - _CalibrationSpaceReflections: 0
+    - _ClippingPlane: 0
+    - _ClippingPlaneBorder: 0
+    - _ClippingPlaneBorderWidth: 0.025
+    - _ColorWriteMask: 15
+    - _CullMode: 0
+    - _CustomMode: 0
+    - _Cutoff: 0.5
+    - _DetailNormalMapScale: 1
+    - _DirectionalLight: 1
+    - _DstBlend: 0
+    - _EdgeSmoothingValue: 0.002
+    - _EnableEmission: 0
+    - _EnableHoverColorOpaqueOverride: 0
+    - _EnableHoverColorOverride: 0
+    - _EnableNormalMap: 0
+    - _EnvironmentColorIntensity: 0.5
+    - _EnvironmentColorThreshold: 1.5
+    - _EnvironmentColoring: 0
+    - _FadeBeginDistance: 0.85
+    - _FadeCompleteDistance: 0.5
+    - _First: 30
+    - _ForcePerPixel: 0
+    - _Fourth: -10
+    - _Frequency: 0
+    - _Gloss: 1
+    - _GlossMapScale: 1
+    - _Glossiness: 0.5
+    - _GlossyReflections: 1
+    - _HP1: 0.029619928
+    - _HP10: 0.021020595
+    - _HP11: 0.020065114
+    - _HP12: 0.019109633
+    - _HP13: 0.018154152
+    - _HP14: 0.017198669
+    - _HP15: 0.016243188
+    - _HP16: 0.015287706
+    - _HP17: 0.014332224
+    - _HP18: 0.013376743
+    - _HP19: 0.012421261
+    - _HP2: 0.028664447
+    - _HP20: 0.011465779
+    - _HP21: 0.0105102975
+    - _HP22: 0.0095548155
+    - _HP23: 0.008599334
+    - _HP24: 0.007643853
+    - _HP25: 0.0066883718
+    - _HP26: 0.0057328893
+    - _HP27: 0.0047774087
+    - _HP28: 0.0038219264
+    - _HP29: 0.0028664456
+    - _HP3: 0.027708966
+    - _HP30: 0.0019109632
+    - _HP31: 0.0009554824
+    - _HP32: 0
+    - _HP33: 0
+    - _HP34: -0.00009044384
+    - _HP35: -0.00018088768
+    - _HP36: -0.00027133155
+    - _HP37: -0.00036177537
+    - _HP38: -0.00045221925
+    - _HP39: -0.0005426631
+    - _HP4: 0.026753485
+    - _HP40: -0.0006331069
+    - _HP41: -0.00072355074
+    - _HP42: -0.0008139946
+    - _HP43: -0.0009044385
+    - _HP44: -0.0009948823
+    - _HP45: -0.0010853262
+    - _HP46: -0.0011757701
+    - _HP47: -0.0012662138
+    - _HP48: -0.0013566577
+    - _HP49: -0.0014471015
+    - _HP5: 0.025798004
+    - _HP50: -0.0015375455
+    - _HP51: -0.0016279892
+    - _HP52: -0.0017184332
+    - _HP53: -0.001808877
+    - _HP54: -0.0018993209
+    - _HP55: -0.0019897646
+    - _HP56: -0.0020802086
+    - _HP57: -0.0021706524
+    - _HP58: -0.0022610961
+    - _HP59: -0.0023515401
+    - _HP6: 0.024842521
+    - _HP60: -0.002441984
+    - _HP61: -0.0025324277
+    - _HP62: -0.0026228714
+    - _HP63: -0.0027133154
+    - _HP64: -0.0028037594
+    - _HP7: 0.02388704
+    - _HP8: 0.022931559
+    - _HP9: 0.021976078
+    - _HeightMax: 1
+    - _HeightMin: -1
+    - _HoverLight: 1
+    - _HoverLightOpaque: 0
+    - _InnerGlow: 0
+    - _Intensity: 200
+    - _Metallic: 0
+    - _Mode: 0
+    - _NearPlaneFade: 0
+    - _OcclusionStrength: 1
+    - _Parallax: 0.02
+    - _ReflectionScale: 2
+    - _Reflections: 0
+    - _Refraction: 0
+    - _RefractiveIndex: 0
+    - _RenderQueueOverride: -1
+    - _RimLight: 0
+    - _RimPower: 0.7
+    - _RoundCornerMargin: 0
+    - _RoundCornerRadius: 0.25
+    - _RoundCorners: 0
+    - _Second: 20
+    - _Shade4: 0
+    - _Smoothness: 0.5
+    - _SmoothnessTextureChannel: 0
+    - _Specular: 10
+    - _SpecularHighlights: 1
+    - _Speed: 0
+    - _SrcBlend: 1
+    - _Third: 0
+    - _UVSec: 0
+    - _UseAmbient: 1
+    - _UseBumpMap: 0
+    - _UseDiffuse: 1
+    - _UseEmissionColor: 0
+    - _UseEmissionMap: 0
+    - _UseGlossMap: 0
+    - _UseMainColor: 0
+    - _UseMainTex: 0
+    - _UseOcclusionMap: 0
+    - _UseReflections: 0
+    - _UseRimLighting: 0
+    - _UseSpecularMap: 0
+    - _UseVertexColor: 0
+    - _ZTest: 4
+    - _ZWrite: 1
+    - _tintAmount: 0.5
+    m_Colors:
+    - _C1: {r: 1, g: 1, b: 0.4, a: 1}
+    - _C10: {r: 0.70980394, g: 0.85490197, b: 0.4, a: 1}
+    - _C11: {r: 0.6784314, g: 0.84313726, b: 0.4, a: 1}
+    - _C12: {r: 0.64705884, g: 0.8235294, b: 0.4, a: 1}
+    - _C13: {r: 0.6117647, g: 0.80784315, b: 0.4, a: 1}
+    - _C14: {r: 0.5803922, g: 0.7921569, b: 0.4, a: 1}
+    - _C15: {r: 0.54901963, g: 0.77254903, b: 0.4, a: 1}
+    - _C16: {r: 0.5176471, g: 0.75686276, b: 0.4, a: 1}
+    - _C17: {r: 0.48235294, g: 0.7411765, b: 0.4, a: 1}
+    - _C18: {r: 0.4509804, g: 0.7254902, b: 0.4, a: 1}
+    - _C19: {r: 0.41960785, g: 0.70980394, b: 0.4, a: 1}
+    - _C2: {r: 0.96862745, g: 0.9843137, b: 0.4, a: 1}
+    - _C20: {r: 0.3882353, g: 0.69411767, b: 0.4, a: 1}
+    - _C21: {r: 0.3529412, g: 0.6784314, b: 0.4, a: 1}
+    - _C22: {r: 0.32156864, g: 0.6627451, b: 0.4, a: 1}
+    - _C23: {r: 0.2901961, g: 0.64705884, b: 0.4, a: 1}
+    - _C24: {r: 0.25882354, g: 0.627451, b: 0.4, a: 1}
+    - _C25: {r: 0.22745098, g: 0.6117647, b: 0.4, a: 1}
+    - _C26: {r: 0.19215687, g: 0.59607846, b: 0.4, a: 1}
+    - _C27: {r: 0.16078432, g: 0.5803922, b: 0.4, a: 1}
+    - _C28: {r: 0.12941177, g: 0.5647059, b: 0.4, a: 1}
+    - _C29: {r: 0.09803922, g: 0.54901963, b: 0.4, a: 1}
+    - _C3: {r: 0.9372549, g: 0.96862745, b: 0.4, a: 1}
+    - _C30: {r: 0.0627451, g: 0.53333336, b: 0.4, a: 1}
+    - _C31: {r: 0.03137255, g: 0.5176471, b: 0.4, a: 1}
+    - _C32: {r: 0, g: 0.5019608, b: 0.4, a: 1}
+    - _C33: {r: 1, g: 1, b: 1, a: 1}
+    - _C34: {r: 0.95686275, g: 0.972549, b: 0.972549, a: 1}
+    - _C35: {r: 0.9137255, g: 0.94509804, b: 0.94509804, a: 1}
+    - _C36: {r: 0.8666667, g: 0.9137255, b: 0.9137255, a: 1}
+    - _C37: {r: 0.8235294, g: 0.8862745, b: 0.8862745, a: 1}
+    - _C38: {r: 0.78039217, g: 0.85882354, b: 0.85882354, a: 1}
+    - _C39: {r: 0.7372549, g: 0.83137256, b: 0.83137256, a: 1}
+    - _C4: {r: 0.9019608, g: 0.9529412, b: 0.4, a: 1}
+    - _C40: {r: 0.69411767, g: 0.8039216, b: 0.8039216, a: 1}
+    - _C41: {r: 0.6509804, g: 0.77254903, b: 0.77254903, a: 1}
+    - _C42: {r: 0.61960787, g: 0.7372549, b: 0.74509805, a: 1}
+    - _C43: {r: 0.5921569, g: 0.69803923, b: 0.7176471, a: 1}
+    - _C44: {r: 0.5647059, g: 0.65882355, b: 0.6901961, a: 1}
+    - _C45: {r: 0.5372549, g: 0.61960787, b: 0.6627451, a: 1}
+    - _C46: {r: 0.50980395, g: 0.5803922, b: 0.6313726, a: 1}
+    - _C47: {r: 0.47843137, g: 0.5411765, b: 0.6039216, a: 1}
+    - _C48: {r: 0.4509804, g: 0.5019608, b: 0.5764706, a: 1}
+    - _C49: {r: 0.42352942, g: 0.46666667, b: 0.54901963, a: 1}
+    - _C5: {r: 0.87058824, g: 0.9372549, b: 0.4, a: 1}
+    - _C50: {r: 0.39607844, g: 0.42745098, b: 0.52156866, a: 1}
+    - _C51: {r: 0.36862746, g: 0.3882353, b: 0.49019608, a: 1}
+    - _C52: {r: 0.3372549, g: 0.34901962, b: 0.4627451, a: 1}
+    - _C53: {r: 0.30980393, g: 0.30980393, b: 0.43529412, a: 1}
+    - _C54: {r: 0.28235295, g: 0.28235295, b: 0.39607844, a: 1}
+    - _C55: {r: 0.25490198, g: 0.25490198, b: 0.35686275, a: 1}
+    - _C56: {r: 0.22745098, g: 0.22745098, b: 0.31764707, a: 1}
+    - _C57: {r: 0.19607843, g: 0.19607843, b: 0.28235295, a: 1}
+    - _C58: {r: 0.16862746, g: 0.16862746, b: 0.24313726, a: 1}
+    - _C59: {r: 0.14117648, g: 0.14117648, b: 0.20392157, a: 1}
+    - _C6: {r: 0.8392157, g: 0.91764706, b: 0.4, a: 1}
+    - _C60: {r: 0.11372549, g: 0.11372549, b: 0.16470589, a: 1}
+    - _C61: {r: 0.08627451, g: 0.08627451, b: 0.1254902, a: 1}
+    - _C62: {r: 0.05490196, g: 0.05490196, b: 0.08627451, a: 1}
+    - _C63: {r: 0.02745098, g: 0.02745098, b: 0.050980393, a: 1}
+    - _C64: {r: 0, g: 0, b: 0.011764706, a: 1}
+    - _C7: {r: 0.80784315, g: 0.9019608, b: 0.4, a: 1}
+    - _C8: {r: 0.77254903, g: 0.8862745, b: 0.4, a: 1}
+    - _C9: {r: 0.7411765, g: 0.87058824, b: 0.4, a: 1}
+    - _ClipPlane: {r: 0, g: 1, b: 0, a: 0}
+    - _ClippingPlaneBorderColor: {r: 1, g: 0.2, b: 0, a: 1}
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _ColorA: {r: 1, g: 1, b: 1, a: 1}
+    - _ColorB: {r: 0, g: 0, b: 0, a: 1}
+    - _ColorMax: {r: 1, g: 1, b: 1, a: 1}
+    - _ColorMin: {r: 0, g: 0, b: 0, a: 1}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _EmissiveColor: {r: 0, g: 0, b: 0, a: 1}
+    - _EnvironmentColorX: {r: 1, g: 0, b: 0, a: 1}
+    - _EnvironmentColorY: {r: 0, g: 1, b: 0, a: 1}
+    - _EnvironmentColorZ: {r: 0, g: 0, b: 1, a: 1}
+    - _FifthC: {r: 0.26274514, g: 0.5822853, b: 0.8078432, a: 1}
+    - _FirstC: {r: 1, g: 1, b: 1, a: 1}
+    - _FourthC: {r: 0.26167822, g: 0.74090207, b: 0.8088235, a: 1}
+    - _HoverColorOpaqueOverride: {r: 1, g: 1, b: 1, a: 1}
+    - _HoverColorOverride: {r: 1, g: 1, b: 1, a: 1}
+    - _InnerGlowColor: {r: 1, g: 1, b: 1, a: 0.75}
+    - _RimColor: {r: 1, g: 1, b: 1, a: 1}
+    - _SecondC: {r: 0.5147059, g: 0.40946785, b: 0.27627596, a: 1}
+    - _SpecColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+    - _TextureScaleOffset: {r: 1, g: 1, b: 0, a: 0}
+    - _ThirdC: {r: 0.3529412, g: 0.5137255, b: 0.27450982, a: 1}

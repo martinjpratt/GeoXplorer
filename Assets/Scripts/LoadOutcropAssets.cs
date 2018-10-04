@@ -7,6 +7,7 @@
 using UnityEngine;
 using System.Collections;
 using AssetBundles;
+using UnityEngine.Networking;
 
 public class LoadOutcropAssets : MonoBehaviour
 {
@@ -16,61 +17,27 @@ public class LoadOutcropAssets : MonoBehaviour
     public GameObject LoadingText;
     public TextMesh AnchorDebugText;
     public GameObject gameHoloPoint;
+    public bool isHirise = false;
+    AssetBundleRequest downloadedAsset;
+    public GameObject textureButton;
+
+    string uri;
 
     // Use this for initialization
     public IEnumerator DownloadOutcropAsset(string assetBundleName, string assetName)
     {
-        yield return StartCoroutine(Initialize());
 
+        //uri = "http://epsc.wustl.edu/~martinpratt/AssetBundles2017/Windows/";
+        uri = "https://fossett.blob.core.windows.net/outcrops/";
+        if (isHirise)
+        {
+            uri = "https://fossett.blob.core.windows.net/fossett-lab/";
+        }
+        
         // Load asset.
         yield return StartCoroutine(InstantiateGameObjectAsync(assetBundleName, assetName));
     }
-
-    // Initialize the downloading URL.
-    // eg. Development server / iOS ODR / web URL
-    void InitializeSourceURL()
-    {
-        //AssetBundleManager.SetSourceAssetBundleURL("http://epsc.wustl.edu/~martinpratt/AssetBundles2017");
-        //return;
-
-        // If ODR is available and enabled, then use it and let Xcode handle download requests.
-#if ENABLE_IOS_ON_DEMAND_RESOURCES
-        if (UnityEngine.iOS.OnDemandResources.enabled)
-        {
-            AssetBundleManager.SetSourceAssetBundleURL("odr://");
-            return;
-        }
-#endif
-//#if DEVELOPMENT_BUILD || UNITY_EDITOR
-        // With this code, when in-editor or using a development builds: Always use the AssetBundle Server
-        // (This is very dependent on the production workflow of the project.
-        //      Another approach would be to make this configurable in the standalone player.)
-//        AssetBundleManager.SetDevelopmentAssetBundleServer();
-//        return;
-//#else
-        // Use the following code if AssetBundles are embedded in the project for example via StreamingAssets folder etc:
-        //AssetBundleManager.SetSourceAssetBundleURL(Application.dataPath + "/");
-        // Or customize the URL based on your deployment or configuration
-        AssetBundleManager.SetSourceAssetBundleURL("http://epsc.wustl.edu/~martinpratt/AssetBundles2017/");
-        return;
-//#endif
-    }
     
-
-
-    // Initialize the downloading url and AssetBundleManifest object.
-    protected IEnumerator Initialize()
-    {
-        // Don't destroy this gameObject as we depend on it to run the loading script.
-        DontDestroyOnLoad(gameObject);
-
-        InitializeSourceURL();
-
-        // Initialize AssetBundleManifest which loads the AssetBundleManifest object.
-        var request = AssetBundleManager.Initialize();
-        if (request != null)
-            yield return StartCoroutine(request);
-    }
 
     protected IEnumerator InstantiateGameObjectAsync(string assetBundleName, string assetName)
     {
@@ -78,32 +45,64 @@ public class LoadOutcropAssets : MonoBehaviour
         float startTime = Time.realtimeSinceStartup;
 
         LoadingText.SetActive(true);
-        // Load asset from assetBundle.
-        AssetBundleLoadAssetOperation request = AssetBundleManager.LoadAssetAsync(assetBundleName, assetName, typeof(GameObject));
-        if (request == null)
-            yield break;
-        yield return StartCoroutine(request);
 
-        // Get the asset.
-        GameObject prefab = request.GetAsset<GameObject>();
+        UnityWebRequest request = UnityWebRequest.GetAssetBundle(uri + assetBundleName, 0);
+        print(request.url);
+        yield return request.SendWebRequest();
+        AssetBundle bundle = DownloadHandlerAssetBundle.GetContent(request);
+        downloadedAsset = bundle.LoadAssetAsync(assetName, typeof(GameObject));
+        yield return downloadedAsset;
+        GameObject obj = downloadedAsset.asset as GameObject;
+        GameObject newObject = Instantiate(obj);
+        /*
+        if (newObject.GetComponent<MeshCollider>() == null)
+        {
+            newObject.AddComponent<MeshCollider>();
+            if (isHirise)
+            {
+                newObject.GetComponent<MeshCollider>().sharedMesh = newObject.GetComponent<MeshFilter>().mesh;
+            }
+        }
+        else
+        {
+            newObject.GetComponent<MeshCollider>().sharedMesh = newObject.GetComponent<MeshFilter>().mesh;
+        }
+        */
 
-        if (prefab != null)
-            go = GameObject.Instantiate(prefab);
 
-        go.transform.parent = ParentObj.transform;
+        newObject.transform.parent = ParentObj.transform;
+        //newObject.transform.localPosition = new Vector3(0, 0, 0);
+        bundle.Unload(false);
+        request.Dispose();
 
-        go.transform.localPosition = go.transform.position;
-        go.transform.localEulerAngles = go.transform.eulerAngles;
-        go.tag = "scalable";
-        Collider[] goChildren = go.GetComponentsInChildren<MeshCollider>();
+        newObject.transform.localPosition = newObject.transform.position;
+        newObject.transform.localEulerAngles = newObject.transform.eulerAngles;
+        newObject.tag = "scalable";
+        Collider[] goChildren = newObject.GetComponentsInChildren<MeshCollider>();
         foreach (var gos in goChildren)
         {
             gos.gameObject.AddComponent<HoloPort>().holoPoint = gameHoloPoint;
         }
+        
 
         // Calculate and display the elapsed time.
         float elapsedTime = Time.realtimeSinceStartup - startTime;
         LoadingText.SetActive(false);
-        Debug.Log(assetName + (prefab == null ? " was not" : " was") + " loaded successfully in " + elapsedTime + " seconds");
+
+        if (isHirise)
+        {
+            textureButton.SetActive(true);
+            newObject.AddComponent<UVMapper>();
+            newObject.GetComponent<UVMapper>().meshName = assetName;
+            newObject.GetComponent<UVMapper>().surfaceType = "sb";
+            newObject.GetComponent<UVMapper>().FetchTexture();
+        }
+        else
+        {
+            textureButton.SetActive(false);
+        }
+
+
+        Debug.Log(assetName + " was" + " loaded successfully in " + elapsedTime + " seconds");
     }
 }

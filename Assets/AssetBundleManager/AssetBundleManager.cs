@@ -146,8 +146,8 @@ namespace AssetBundles
             {
                 if (m_SimulateAssetBundleInEditor == -1)
                     m_SimulateAssetBundleInEditor = EditorPrefs.GetBool(kSimulateAssetBundles, true) ? 1 : 0;
-
-                return m_SimulateAssetBundleInEditor == 0;   //mjp disabled simulation mode so able to download bundles
+                
+                return m_SimulateAssetBundleInEditor != 0;   //mjp disabled simulation mode so able to download bundles
             }
             set
             {
@@ -198,7 +198,7 @@ namespace AssetBundles
                 absolutePath += "/";
             }
 
-            BaseDownloadingURL = absolutePath + "Windows" + "/";
+            BaseDownloadingURL = absolutePath;// + "Windows" + "/";
             Debug.Log(BaseDownloadingURL);
         }
 

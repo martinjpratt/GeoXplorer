@@ -54,6 +54,19 @@ namespace HoloToolkit.Sharing.Tests
             spawnManager.Spawn(spawnedObject, position, rotation, spawnParentTransform.gameObject, "SpawnTestSphere", false);
         }
 
+        public void SpawnAssetBundle(string bundleName, string prefabName, string locationURL)
+        {
+            Vector3 position = new Vector3(0, 0, 0);
+            Quaternion rotation = Quaternion.identity;
+
+            var spawnedObject = new SyncAssetBundle();
+            spawnedObject.bundleName.Value = bundleName;
+            spawnedObject.prefabName.Value = prefabName;
+            spawnedObject.locationURL.Value = locationURL;
+
+            spawnManager.Spawn(spawnedObject, position, rotation, spawnParentTransform.gameObject, "SpawnedAssetBundle", false);
+        }
+
         /// <summary>
         /// Deletes any sync object that inherits from SyncSpawnObject.
         /// </summary>
@@ -63,6 +76,17 @@ namespace HoloToolkit.Sharing.Tests
             if (hitObject != null)
             {
                 var syncModelAccessor = hitObject.GetComponent<DefaultSyncModelAccessor>();
+                //Check the parent
+                if (syncModelAccessor == null)
+                {
+                    syncModelAccessor = hitObject.transform.parent.gameObject.GetComponent<DefaultSyncModelAccessor>();
+
+                    if (syncModelAccessor == null)
+                    {
+                        syncModelAccessor = hitObject.transform.parent.transform.parent.gameObject.GetComponent<DefaultSyncModelAccessor>();
+                    }
+                }
+
                 if (syncModelAccessor != null)
                 {
                     var syncSpawnObject = (SyncSpawnedObject)syncModelAccessor.SyncModel;

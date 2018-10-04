@@ -6,9 +6,13 @@ using HoloToolkit.Unity.InputModule.Utilities.Interactions;
 
 public class MakeManipulatable : MonoBehaviour {
 
+    Vector3 originalRotation;
+    
 
 	public void AddManipulation(){
 		GameObject manipulatableObject = GameObject.FindGameObjectWithTag ("scalable");
+        originalRotation = manipulatableObject.transform.localEulerAngles;
+
 		manipulatableObject.AddComponent<TwoHandManipulatable>();
 		HoloPort[] holoporter = manipulatableObject.GetComponentsInChildren<HoloPort> ();
 		foreach (var hp in holoporter) {
@@ -22,6 +26,7 @@ public class MakeManipulatable : MonoBehaviour {
 	public void ResetManipulation(){
 		GameObject manipulatableObject = GameObject.FindGameObjectWithTag ("scalable");
 		Destroy(manipulatableObject.GetComponent<TwoHandManipulatable>());
+        manipulatableObject.transform.localEulerAngles = originalRotation;
 		HoloPort[] holoporter = manipulatableObject.GetComponentsInChildren<HoloPort> ();
 		foreach (var hp in holoporter) {
 			hp.enabled = true;

@@ -15,5 +15,18 @@ namespace HoloToolkit.Sharing.Tests
         [SyncData]
         public SyncFloat TestFloat;
     }
+
+    [SyncDataClass]
+    public class SyncAssetBundle : SyncSpawnedObject
+    {
+        [SyncData]
+        public SyncFloat TestFloat;
+        [SyncData]
+        public SyncString prefabName;
+        [SyncData]
+        public SyncString bundleName;
+        [SyncData]
+        public SyncString locationURL;
+    }
 }
 

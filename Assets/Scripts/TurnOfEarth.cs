@@ -4,6 +4,7 @@
 //June 2018
 
 using UnityEngine;
+using System;
 
 public class TurnOfEarth : MonoBehaviour {
 
@@ -11,20 +12,12 @@ public class TurnOfEarth : MonoBehaviour {
 
     public void SwitchCurrentEarthOff()
     {
-        GameObject earth = GameObject.FindGameObjectWithTag("Earth");
+        GameObject earth = GameObject.FindGameObjectWithTag("Earths");
+        
         if (earth)
         {
-            earth.SetActive(false);
-        }
-        GameObject intEarth = GameObject.FindGameObjectWithTag("InteriorEarth");
-        if (intEarth)
-        {
-            intEarth.SetActive(false);
-        }
-        GameObject NASAGIBSEarth = GameObject.FindGameObjectWithTag("NASAGIBSEarth");
-        if (NASAGIBSEarth)
-        {
-            NASAGIBSEarth.SetActive(false);
+            Vector3 newPosition = earth.transform.localPosition;
+            earth.GetComponent<MoveToMars>().GetLocations(newPosition);
         }
     }
     

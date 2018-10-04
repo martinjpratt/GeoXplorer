@@ -33,10 +33,10 @@ public class MoveToMars : MonoBehaviour, IInputClickHandler {
     public void OnInputClicked(InputClickedEventData eventData)
     {
         newPostition = GazeManager.Instance.HitObject.transform.localPosition;
-        GetLocations(); 
+        GetLocations(newPostition); 
     }
 
-    private void GetLocations()
+    public void GetLocations(Vector3 newPostition)
     {
         thisTransform = this.transform;
         otherPlanet1Transform = otherPlanet1.transform;
@@ -48,6 +48,7 @@ public class MoveToMars : MonoBehaviour, IInputClickHandler {
         earthScale = this.transform.localScale;
         moonScale = otherPlanet1.transform.localScale;
         marsScale = otherPlanet2.transform.localScale;
+
 
         journeyLength = Vector3.Distance(centralPostition, newPostition);
         startTime = Time.time;
@@ -70,13 +71,14 @@ public class MoveToMars : MonoBehaviour, IInputClickHandler {
             if (fracJourney > 1)
             {
                 isStarted = false;
-                this.GetComponent<CreateIcons>().enabled = true;
+                
                 this.GetComponent<MoveToMars>().enabled = false;
-                this.GetComponent<HandRotate>().enabled = true;
-                otherPlanet1.GetComponent<HandRotate>().enabled = false;
+                this.GetComponentInChildren<HandRotate>().enabled = true;
+                otherPlanet1.GetComponentInChildren<HandRotate>().enabled = false;
                 otherPlanet1.GetComponent<MoveToMars>().enabled = true;
                 otherPlanet2.GetComponent<HandRotate>().enabled = false;
                 otherPlanet2.GetComponent<MoveToMars>().enabled = true;
+                this.GetComponentInChildren<CreateIcons>().enabled = true;
             }
         }
     }

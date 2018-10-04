@@ -5,6 +5,7 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 using HoloToolkit.Unity;
+using HoloToolkit.Sharing.Tests;
 
 namespace HoloToolkit.Sharing.Spawning
 {
@@ -109,6 +110,16 @@ namespace HoloToolkit.Sharing.Spawning
                 Debug.LogErrorFormat("Trying to instantiate an object from unregistered data model {0}.", dataModelTypeName);
                 return null;
             }
+
+            if (dataModel is SyncAssetBundle)
+            {
+                SyncAssetBundle newModel = (SyncAssetBundle)dataModel;
+                prefabToSpawn.GetComponent<LoadNewAssetBundle>().assetBundleName = newModel.bundleName.Value;
+                prefabToSpawn.GetComponent<LoadNewAssetBundle>().assetName = newModel.prefabName.Value;
+                prefabToSpawn.GetComponent<LoadNewAssetBundle>().locationURL = newModel.locationURL.Value;
+            }
+
+
             return prefabToSpawn;
         }
 

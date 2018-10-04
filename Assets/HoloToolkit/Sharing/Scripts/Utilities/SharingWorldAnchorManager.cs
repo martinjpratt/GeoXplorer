@@ -533,6 +533,11 @@ namespace HoloToolkit.Sharing
                     AnchorDebugText.text += string.Format("\nAttempting to export anchor \"{0}\".", anchor.name);
                 }
 
+                if (CursorText != null)
+                {
+                    CursorText.text = string.Format("\nPlease wait. Uploading anchor: \"{0}\".", anchor.name);
+                }
+
                 if (currentAnchorTransferBatch == null)
                 {
                     currentAnchorTransferBatch = new WorldAnchorTransferBatch();
