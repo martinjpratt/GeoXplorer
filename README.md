@@ -1,4 +1,4 @@
-﻿![Alt text](/RepoFiles/GeoXscreenshot.PNG?raw=true "TitleScreenshot")
+﻿![Alt text](/RepoFiles/GeoXscreenshot_2.0.PNG?raw=true "TitleScreenshot")
 
 <b>GeoXplorer (GeoExplorer)</b>
 
