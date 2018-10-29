@@ -5,9 +5,9 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
+  - enabled: 1
     path: Assets/EarthView.unity
     guid: e561c99b2449b0d4cb0bcd8bc684b54f
-  - enabled: 1
+  - enabled: 0
     path: Assets/SolarSystem.unity
     guid: 6190b853680dc3b43a0119b82fd84bd4

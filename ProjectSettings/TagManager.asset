@@ -33,6 +33,20 @@ TagManager:
   - label
   - planet
   - sun
+  - hiriseLocation
+  - hiriseIcon
+  - textureButton
+  - GMRTtile
+  - syncObjectSpawner
+  - Earths
+  - cursorDisc
+  - sharingToggle
+  - ZoomIndicator
+  - MapTile
+  - infoMarker
+  - outcropLocation
+  - contextStage
+  - authorName
   layers:
   - Default
   - TransparentFX
