@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/SolarSystem.unity
+- path: Assets/EarthView.unity
   isLoaded: 1
   isActive: 1

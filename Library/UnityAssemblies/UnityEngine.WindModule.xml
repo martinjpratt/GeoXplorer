@@ -4,11 +4,11 @@
 		<name>UnityEngine.WindModule</name>
 	</assembly>
 	<members>
-		<member name="T:UnityEngine.WindZone">
-			<summary>Wind Zones add realism to the trees you create by making them wave their branches and leaves as if blown by the wind.</summary>
-		</member>
 		<member name="T:UnityEngine.WindZoneMode">
 			<summary>Modes a Wind Zone can have, either Spherical or Directional.</summary>
+		</member>
+		<member name="T:UnityEngine.WindZone">
+			<summary>Wind Zones add realism to the trees you create by making them wave their branches and leaves as if blown by the wind.</summary>
 		</member>
 		<member name="P:UnityEngine.WindZone.mode">
 			<summary>Defines the type of wind zone to be used (Spherical or Directional).</summary>

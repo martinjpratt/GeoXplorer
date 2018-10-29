@@ -4,344 +4,407 @@
 		<name>UnityEngine.AnimationModule</name>
 	</assembly>
 	<members>
-		<member name="T:UnityEngine.AnimatorUpdateMode">
-			<summary>The update mode of the Animator.</summary>
-		</member>
-		<member name="T:UnityEngine.PlayMode">
-			<summary>Used by Animation.Play function.</summary>
-		</member>
-		<member name="T:UnityEngine.AnimatorClipInfo">
-			<summary>Information about clip being played and blended by the Animator.</summary>
-		</member>
-		<member name="T:UnityEngine.AnimationClip">
-			<summary>Stores keyframe based animations.</summary>
-		</member>
-		<member name="T:UnityEngine.DurationUnit">
-			<summary>Describe the unit of a duration.</summary>
-		</member>
-		<member name="T:UnityEngine.AnimationState">
-			<summary>The AnimationState gives full control over animation blending.</summary>
-		</member>
-		<member name="T:UnityEngine.HumanTrait">
-			<summary>Details of all the human bone and muscle types defined by Mecanim.</summary>
-		</member>
-		<member name="T:UnityEngine.Animation">
-			<summary>The animation component is used to play back animations.</summary>
-		</member>
-		<member name="T:UnityEditorInternal.AnimatorControllerParameter">
-			<summary>Used to communicate between scripting and the controller. Some parameters can be set in scripting and used by the controller, while other parameters are based on Custom Curves in Animation Clips and can be sampled using the scripting API.</summary>
-		</member>
-		<member name="T:UnityEngine.HumanLimit">
-			<summary>This class stores the rotation limits that define the muscle for a single human bone.</summary>
-		</member>
-		<member name="T:UnityEngine.AvatarIKGoal">
-			<summary>IK Goal.</summary>
-		</member>
-		<member name="T:UnityEngine.HumanDescription">
-			<summary>Class that holds humanoid avatar parameters to pass to the AvatarBuilder.BuildHumanAvatar function.</summary>
-		</member>
-		<member name="T:UnityEngine.AnimationInfo">
-			<summary>Information about what animation clips is played and its weight.</summary>
-		</member>
-		<member name="T:UnityEditorInternal.AnimatorControllerParameterType">
-			<summary>The type of the parameter.</summary>
-		</member>
-		<member name="T:UnityEngine.AnimatorControllerParameterType">
-			<summary>The type of the parameter.</summary>
-		</member>
-		<member name="T:UnityEngine.AnimationCullingType">
-			<summary>This enum controlls culling of Animation component.</summary>
-		</member>
-		<member name="T:UnityEngine.AnimatorCullingMode">
-			<summary>Culling mode for the Animator.</summary>
-		</member>
-		<member name="T:UnityEngine.QueueMode">
-			<summary>Used by Animation.Play function.</summary>
-		</member>
-		<member name="T:UnityEngine.AnimatorTransitionInfo">
-			<summary>Information about the current transition.</summary>
-		</member>
-		<member name="T:UnityEngine.AnimatorStateInfo">
-			<summary>Information about the current or next state.</summary>
-		</member>
-		<member name="T:UnityEngine.HumanBodyBones">
-			<summary>Human Body Bones.</summary>
-		</member>
-		<member name="T:UnityEngine.AnimatorRecorderMode">
-			<summary>The mode of the Animator's recorder.</summary>
-		</member>
-		<member name="T:UnityEngine.Avatar">
-			<summary>Avatar definition.</summary>
-		</member>
-		<member name="T:UnityEngine.AnimatorUtility">
-			<summary>Various utilities for animator manipulation.</summary>
-		</member>
-		<member name="T:UnityEngine.AvatarMaskBodyPart">
-			<summary>Avatar body part.</summary>
-		</member>
-		<member name="P:UnityEngine.AnimationClip.length">
-			<summary>Animation length in seconds. (Read Only)</summary>
-		</member>
-		<member name="T:UnityEngine.AnimationBlendMode">
-			<summary>Used by Animation.Play function.</summary>
-		</member>
 		<member name="T:UnityEngine.AnimationEvent">
 			<summary>AnimationEvent lets you call a script function similar to SendMessage as part of playing back an animation.</summary>
-		</member>
-		<member name="P:UnityEngine.AnimatorClipInfo.clip">
-			<summary>Returns the animation clip played by the Animator.</summary>
-		</member>
-		<member name="T:UnityEngine.StateMachineBehaviour">
-			<summary>StateMachineBehaviour is a component that can be added to a state machine state. It's the base class every script on a state derives from.</summary>
-		</member>
-		<member name="M:UnityEngine.HumanTrait.MuscleFromBone(System.Int32,System.Int32)">
-			<summary>Obtain the muscle index for a particular bone index and "degree of freedom".</summary>
-		</member>
-		<member name="P:UnityEngine.Animation.clip">
-			<summary>The default animation.</summary>
-		</member>
-		<member name="F:UnityEngine.HumanDescription.human">
-			<summary>Mapping between Mecanim bone names and bone names in the rig.</summary>
-		</member>
-		<member name="P:UnityEngine.AnimatorClipInfo.weight">
-			<summary>Returns the blending weight used by the Animator to blend this clip.</summary>
-		</member>
-		<member name="P:UnityEngine.AnimatorTransitionInfo.fullPathHash">
-			<summary>The hash name of the Transition.</summary>
-		</member>
-		<member name="T:UnityEngine.AvatarIKHint">
-			<summary>IK Hint.</summary>
-		</member>
-		<member name="M:UnityEngine.AnimatorUtility.OptimizeTransformHierarchy(UnityEngine.GameObject,System.String[])">
-			<summary>This function will remove all transform hierarchy under GameObject, the animator will write directly transform matrices into the skin mesh matrices saving alot of CPU cycles.</summary>
-		</member>
-		<member name="P:UnityEngine.HumanLimit.useDefaultValues">
-			<summary>Should this limit use the default values?</summary>
-		</member>
-		<member name="P:UnityEngine.AnimationState.enabled">
-			<summary>Enables / disables the animation.</summary>
-		</member>
-		<member name="P:UnityEngine.AnimatorStateInfo.fullPathHash">
-			<summary>The full path hash for this state.</summary>
-		</member>
-		<member name="P:UnityEngine.Avatar.isValid">
-			<summary>Return true if this avatar is a valid mecanim avatar. It can be a generic avatar or a human avatar.</summary>
-		</member>
-		<member name="T:UnityEngine.AvatarMask">
-			<summary>AvatarMask is used to mask out humanoid body parts and transforms.</summary>
-		</member>
-		<member name="P:UnityEngine.AnimationClip.frameRate">
-			<summary>Frame rate at which keyframes are sampled. (Read Only)</summary>
-		</member>
-		<member name="M:UnityEngine.AnimatorUtility.DeoptimizeTransformHierarchy(UnityEngine.GameObject)">
-			<summary>This function will recreate all transform hierarchy under GameObject.</summary>
-		</member>
-		<member name="F:UnityEngine.HumanDescription.skeleton">
-			<summary>List of bone Transforms to include in the model.</summary>
-		</member>
-		<member name="P:UnityEngine.AnimatorTransitionInfo.nameHash">
-			<summary>The simplified name of the Transition.</summary>
-		</member>
-		<member name="M:UnityEngine.HumanTrait.BoneFromMuscle(System.Int32)">
-			<summary>Return the bone to which a particular muscle is connected.</summary>
-		</member>
-		<member name="P:UnityEngine.HumanLimit.min">
-			<summary>The maximum negative rotation away from the initial value that this muscle can apply.</summary>
-		</member>
-		<member name="M:UnityEngine.StateMachineBehaviour.OnStateEnter(UnityEngine.Animator,UnityEngine.AnimatorStateInfo,System.Int32)">
-			<summary>Called on the first Update frame when a statemachine evaluate this state.</summary>
-		</member>
-		<member name="P:UnityEngine.Animation.playAutomatically">
-			<summary>Should the default animation clip (the Animation.clip property) automatically start playing on startup?</summary>
-		</member>
-		<member name="P:UnityEngine.AnimatorStateInfo.nameHash">
-			<summary>The hashed name of the State.</summary>
-		</member>
-		<member name="P:UnityEngine.AnimationState.weight">
-			<summary>The weight of animation.</summary>
-		</member>
-		<member name="P:UnityEngine.AvatarMask.transformCount">
-			<summary>Number of transforms.</summary>
-		</member>
-		<member name="M:UnityEngine.HumanTrait.RequiredBone(System.Int32)">
-			<summary>Is the bone a member of the minimal set of bones that Mecanim requires for a human model?</summary>
-		</member>
-		<member name="P:UnityEngine.AnimationInfo.clip">
-			<summary>Animation clip that is played.</summary>
-		</member>
-		<member name="P:UnityEngine.HumanDescription.upperArmTwist">
-			<summary>Defines how the lower arm's roll/twisting is distributed between the shoulder and elbow joints.</summary>
-		</member>
-		<member name="P:UnityEngine.HumanLimit.max">
-			<summary>The maximum rotation away from the initial value that this muscle can apply.</summary>
-		</member>
-		<member name="P:UnityEngine.Avatar.isHuman">
-			<summary>Return true if this avatar is a valid human avatar.</summary>
-		</member>
-		<member name="M:UnityEngine.StateMachineBehaviour.OnStateUpdate(UnityEngine.Animator,UnityEngine.AnimatorStateInfo,System.Int32)">
-			<summary>Called at each Update frame except for the first and last frame.</summary>
-		</member>
-		<member name="P:UnityEngine.AnimationState.wrapMode">
-			<summary>Wrapping mode of the animation.</summary>
-		</member>
-		<member name="P:UnityEngine.AnimationClip.wrapMode">
-			<summary>Sets the default wrap mode used in the animation state.</summary>
-		</member>
-		<member name="P:UnityEngine.AnimatorTransitionInfo.userNameHash">
-			<summary>The user-specified name of the Transition.</summary>
-		</member>
-		<member name="P:UnityEngine.AnimationInfo.weight">
-			<summary>The weight of the animation clip.</summary>
-		</member>
-		<member name="P:UnityEngine.HumanLimit.center">
-			<summary>The default orientation of a bone when no muscle action is applied.</summary>
-		</member>
-		<member name="M:UnityEngine.StateMachineBehaviour.OnStateExit(UnityEngine.Animator,UnityEngine.AnimatorStateInfo,System.Int32)">
-			<summary>Called on the last update frame when a statemachine evaluate this state.</summary>
-		</member>
-		<member name="P:UnityEngine.AnimatorStateInfo.shortNameHash">
-			<summary>The hash is generated using Animator::StringToHash. The string to pass doest not include the parent layer's name.</summary>
-		</member>
-		<member name="P:UnityEngine.HumanDescription.lowerArmTwist">
-			<summary>Defines how the lower arm's roll/twisting is distributed between the elbow and wrist joints.</summary>
-		</member>
-		<member name="P:UnityEngine.AnimationClip.localBounds">
-			<summary>AABB of this Animation Clip in local space of Animation component that it is attached too.</summary>
-		</member>
-		<member name="P:UnityEngine.HumanLimit.axisLength">
-			<summary>Length of the bone to which the limit is applied.</summary>
-		</member>
-		<member name="M:UnityEngine.HumanTrait.GetMuscleDefaultMin(System.Int32)">
-			<summary>Get the default minimum value of rotation for a muscle in degrees.</summary>
-		</member>
-		<member name="P:UnityEngine.HumanDescription.upperLegTwist">
-			<summary>Defines how the upper leg's roll/twisting is distributed between the thigh and knee joints.</summary>
-		</member>
-		<member name="T:UnityEngine.HumanBone">
-			<summary>The mapping between a bone in the model and the conceptual bone in the Mecanim human anatomy.</summary>
-		</member>
-		<member name="T:UnityEngine.SharedBetweenAnimatorsAttribute">
-			<summary>SharedBetweenAnimatorsAttribute is an attribute that specify that this StateMachineBehaviour should be instantiate only once and shared among all Animator instance. This attribute reduce the memory footprint for each controller instance.</summary>
-		</member>
-		<member name="P:UnityEngine.AnimationClip.legacy">
-			<summary>Set to true if the AnimationClip will be used with the Legacy Animation component ( instead of the Animator ).</summary>
-		</member>
-		<member name="M:UnityEngine.HumanTrait.GetMuscleDefaultMax(System.Int32)">
-			<summary>Get the default maximum value of rotation for a muscle in degrees.</summary>
-		</member>
-		<member name="P:UnityEngine.HumanDescription.lowerLegTwist">
-			<summary>Defines how the lower leg's roll/twisting is distributed between the knee and ankle.</summary>
-		</member>
-		<member name="P:UnityEngine.AnimationClip.humanMotion">
-			<summary>Returns true if the animation contains curve that drives a humanoid rig.</summary>
-		</member>
-		<member name="M:UnityEngine.HumanTrait.GetParentBone(System.Int32)">
-			<summary>Returns parent humanoid bone index of a bone.</summary>
-		</member>
-		<member name="M:UnityEngine.AvatarMask.GetHumanoidBodyPartActive(UnityEngine.AvatarMaskBodyPart)">
-			<summary>Returns true if the humanoid body part at the given index is active.</summary>
-		</member>
-		<member name="P:UnityEngine.AnimationState.time">
-			<summary>The current time of the animation.</summary>
-		</member>
-		<member name="P:UnityEngine.AnimatorTransitionInfo.durationUnit">
-			<summary>The unit of the transition duration.</summary>
-		</member>
-		<member name="M:UnityEngine.StateMachineBehaviour.OnStateMove(UnityEngine.Animator,UnityEngine.AnimatorStateInfo,System.Int32)">
-			<summary>Called right after MonoBehaviour.OnAnimatorMove.</summary>
-		</member>
-		<member name="P:UnityEngine.HumanDescription.armStretch">
-			<summary>Amount by which the arm's length is allowed to stretch when using IK.</summary>
-		</member>
-		<member name="F:UnityEngine.HumanBone.limit">
-			<summary>The rotation limits that define the muscle for this bone.</summary>
-		</member>
-		<member name="P:UnityEngine.AnimationClip.empty">
-			<summary>Returns true if the animation clip has no curves and no events.</summary>
-		</member>
-		<member name="P:UnityEngine.AnimatorTransitionInfo.duration">
-			<summary>Duration of the transition.</summary>
-		</member>
-		<member name="P:UnityEngine.HumanBone.boneName">
-			<summary>The name of the bone to which the Mecanim human bone is mapped.</summary>
-		</member>
-		<member name="P:UnityEngine.AnimationClip.events">
-			<summary>Animation Events for this animation clip.</summary>
-		</member>
-		<member name="P:UnityEngine.AnimatorStateInfo.normalizedTime">
-			<summary>Normalized time of the State.</summary>
 		</member>
 		<member name="P:UnityEngine.AnimationEvent.stringParameter">
 			<summary>String parameter that is stored in the event and will be sent to the function.</summary>
 		</member>
-		<member name="P:UnityEngine.AnimationState.normalizedTime">
-			<summary>The normalized time of the animation.</summary>
+		<member name="P:UnityEngine.AnimationEvent.floatParameter">
+			<summary>Float parameter that is stored in the event and will be sent to the function.</summary>
 		</member>
-		<member name="P:UnityEngine.AnimatorTransitionInfo.normalizedTime">
-			<summary>Normalized time of the Transition.</summary>
+		<member name="P:UnityEngine.AnimationEvent.intParameter">
+			<summary>Int parameter that is stored in the event and will be sent to the function.</summary>
 		</member>
-		<member name="M:UnityEngine.StateMachineBehaviour.OnStateIK(UnityEngine.Animator,UnityEngine.AnimatorStateInfo,System.Int32)">
-			<summary>Called right after MonoBehaviour.OnAnimatorIK.</summary>
+		<member name="P:UnityEngine.AnimationEvent.objectReferenceParameter">
+			<summary>Object reference parameter that is stored in the event and will be sent to the function.</summary>
 		</member>
-		<member name="P:UnityEngine.HumanDescription.legStretch">
-			<summary>Amount by which the leg's length is allowed to stretch when using IK.</summary>
+		<member name="P:UnityEngine.AnimationEvent.functionName">
+			<summary>The name of the function that will be called.</summary>
+		</member>
+		<member name="P:UnityEngine.AnimationEvent.time">
+			<summary>The time at which the event will be fired off.</summary>
+		</member>
+		<member name="P:UnityEngine.AnimationEvent.messageOptions">
+			<summary>Function call options.</summary>
+		</member>
+		<member name="P:UnityEngine.AnimationEvent.isFiredByLegacy">
+			<summary>Returns true if this Animation event has been fired by an Animation component.</summary>
+		</member>
+		<member name="P:UnityEngine.AnimationEvent.isFiredByAnimator">
+			<summary>Returns true if this Animation event has been fired by an Animator component.</summary>
+		</member>
+		<member name="T:UnityEngine.AnimationClip">
+			<summary>Stores keyframe based animations.</summary>
+		</member>
+		<member name="T:UnityEngine.AnimatorCullingMode">
+			<summary>Culling mode for the Animator.</summary>
+		</member>
+		<member name="T:UnityEngine.AnimatorClipInfo">
+			<summary>Information about clip being played and blended by the Animator.</summary>
+		</member>
+		<member name="T:UnityEngine.HumanBodyBones">
+			<summary>Human Body Bones.</summary>
+		</member>
+		<member name="P:UnityEngine.AnimationEvent.animationState">
+			<summary>The animation state that fired this event (Read Only).</summary>
+		</member>
+		<member name="T:UnityEngine.Avatar">
+			<summary>Avatar definition.</summary>
+		</member>
+		<member name="P:UnityEngine.AnimationClip.length">
+			<summary>Animation length in seconds. (Read Only)</summary>
+		</member>
+		<member name="T:UnityEngine.AnimationInfo">
+			<summary>Information about what animation clips is played and its weight.</summary>
+		</member>
+		<member name="T:UnityEditorInternal.AnimatorControllerParameter">
+			<summary>Used to communicate between scripting and the controller. Some parameters can be set in scripting and used by the controller, while other parameters are based on Custom Curves in Animation Clips and can be sampled using the scripting API.</summary>
+		</member>
+		<member name="P:UnityEngine.AnimatorClipInfo.clip">
+			<summary>Returns the animation clip played by the Animator.</summary>
+		</member>
+		<member name="T:UnityEngine.PlayMode">
+			<summary>Used by Animation.Play function.</summary>
+		</member>
+		<member name="P:UnityEngine.Avatar.isValid">
+			<summary>Return true if this avatar is a valid mecanim avatar. It can be a generic avatar or a human avatar.</summary>
+		</member>
+		<member name="T:UnityEngine.AnimatorUpdateMode">
+			<summary>The update mode of the Animator.</summary>
+		</member>
+		<member name="P:UnityEngine.AnimationEvent.animatorStateInfo">
+			<summary>The animator state info related to this event (Read Only).</summary>
 		</member>
 		<member name="T:UnityEngine.SkeletonBone">
 			<summary>Details of the Transform name mapped to a model's skeleton bone and its default position and rotation in the T-pose.</summary>
 		</member>
-		<member name="M:UnityEngine.AnimationClip.SampleAnimation(UnityEngine.GameObject,System.Single)">
-			<summary>Samples an animation at a given time for any animated properties.</summary>
+		<member name="T:UnityEngine.AnimatorStateInfo">
+			<summary>Information about the current or next state.</summary>
 		</member>
-		<member name="P:UnityEngine.HumanBone.humanName">
-			<summary>The name of the Mecanim human bone to which the bone from the model is mapped.</summary>
+		<member name="P:UnityEngine.AnimationEvent.animatorClipInfo">
+			<summary>The animator clip info related to this event (Read Only).</summary>
 		</member>
-		<member name="M:UnityEngine.AvatarMask.SetHumanoidBodyPartActive(UnityEngine.AvatarMaskBodyPart,System.Boolean)">
-			<summary>Sets the humanoid body part at the given index to active or not.</summary>
+		<member name="T:UnityEngine.QueueMode">
+			<summary>Used by Animation.Play function.</summary>
 		</member>
-		<member name="P:UnityEngine.AnimationState.speed">
-			<summary>The playback speed of the animation. 1 is normal playback speed.</summary>
+		<member name="P:UnityEngine.Avatar.isHuman">
+			<summary>Return true if this avatar is a valid human avatar.</summary>
 		</member>
-		<member name="P:UnityEngine.AnimatorStateInfo.length">
-			<summary>Current duration of the state.</summary>
+		<member name="P:UnityEngine.AnimationClip.frameRate">
+			<summary>Frame rate at which keyframes are sampled. (Read Only)</summary>
 		</member>
-		<member name="M:UnityEngine.AvatarMask.AddTransformPath(UnityEngine.Transform)">
-			<summary>Adds a transform path into the AvatarMask.</summary>
-		</member>
-		<member name="M:UnityEngine.AvatarMask.AddTransformPath(UnityEngine.Transform,System.Boolean)">
-			<summary>Adds a transform path into the AvatarMask.</summary>
-		</member>
-		<member name="P:UnityEngine.AnimatorTransitionInfo.anyState">
-			<summary>Returns true if the transition is from an AnyState node, or from Animator.CrossFade().</summary>
+		<member name="P:UnityEngine.AnimationInfo.clip">
+			<summary>Animation clip that is played.</summary>
 		</member>
 		<member name="F:UnityEngine.SkeletonBone.name">
 			<summary>The name of the Transform mapped to the bone.</summary>
 		</member>
-		<member name="M:UnityEngine.StateMachineBehaviour.OnStateMachineEnter(UnityEngine.Animator,System.Int32)">
-			<summary>Called on the first Update frame when making a transition to a StateMachine. This is not called when making a transition into a StateMachine sub-state.</summary>
+		<member name="T:UnityEngine.AnimationCullingType">
+			<summary>This enum controlls culling of Animation component.</summary>
 		</member>
-		<member name="P:UnityEngine.AnimationEvent.floatParameter">
-			<summary>Float parameter that is stored in the event and will be sent to the function.</summary>
+		<member name="P:UnityEngine.AnimatorClipInfo.weight">
+			<summary>Returns the blending weight used by the Animator to blend this clip.</summary>
 		</member>
-		<member name="P:UnityEngine.HumanDescription.feetSpacing">
-			<summary>Modification to the minimum distance between the feet of a humanoid model.</summary>
+		<member name="P:UnityEngine.AnimatorStateInfo.fullPathHash">
+			<summary>The full path hash for this state.</summary>
+		</member>
+		<member name="T:UnityEngine.AnimationBlendMode">
+			<summary>Used by Animation.Play function.</summary>
+		</member>
+		<member name="T:UnityEditorInternal.AnimatorControllerParameterType">
+			<summary>The type of the parameter.</summary>
+		</member>
+		<member name="T:UnityEngine.HumanTrait">
+			<summary>Details of all the human bone and muscle types defined by Mecanim.</summary>
+		</member>
+		<member name="P:UnityEngine.AnimationInfo.weight">
+			<summary>The weight of the animation clip.</summary>
+		</member>
+		<member name="P:UnityEngine.AnimationClip.wrapMode">
+			<summary>Sets the default wrap mode used in the animation state.</summary>
+		</member>
+		<member name="T:UnityEngine.AvatarTarget">
+			<summary>Target.</summary>
+		</member>
+		<member name="P:UnityEngine.AnimatorStateInfo.nameHash">
+			<summary>The hashed name of the State.</summary>
+		</member>
+		<member name="F:UnityEngine.SkeletonBone.position">
+			<summary>The T-pose position of the bone in local space.</summary>
+		</member>
+		<member name="T:UnityEngine.DurationUnit">
+			<summary>Describe the unit of a duration.</summary>
+		</member>
+		<member name="P:UnityEngine.AnimationClip.localBounds">
+			<summary>AABB of this Animation Clip in local space of Animation component that it is attached too.</summary>
+		</member>
+		<member name="T:UnityEngine.Animation">
+			<summary>The animation component is used to play back animations.</summary>
+		</member>
+		<member name="T:UnityEngine.MatchTargetWeightMask">
+			<summary>To specify position and rotation weight mask for Animator::MatchTarget.</summary>
+		</member>
+		<member name="M:UnityEngine.HumanTrait.MuscleFromBone(System.Int32,System.Int32)">
+			<summary>Obtain the muscle index for a particular bone index and "degree of freedom".</summary>
+		</member>
+		<member name="F:UnityEngine.SkeletonBone.rotation">
+			<summary>The T-pose rotation of the bone in local space.</summary>
+		</member>
+		<member name="T:UnityEngine.SharedBetweenAnimatorsAttribute">
+			<summary>SharedBetweenAnimatorsAttribute is an attribute that specify that this StateMachineBehaviour should be instantiate only once and shared among all Animator instance. This attribute reduce the memory footprint for each controller instance.</summary>
+		</member>
+		<member name="P:UnityEngine.Animation.clip">
+			<summary>The default animation.</summary>
+		</member>
+		<member name="P:UnityEngine.AnimatorStateInfo.shortNameHash">
+			<summary>The hash is generated using Animator::StringToHash. The string to pass doest not include the parent layer's name.</summary>
+		</member>
+		<member name="T:UnityEngine.AnimatorTransitionInfo">
+			<summary>Information about the current transition.</summary>
+		</member>
+		<member name="P:UnityEngine.AnimationClip.legacy">
+			<summary>Set to true if the AnimationClip will be used with the Legacy Animation component ( instead of the Animator ).</summary>
+		</member>
+		<member name="T:UnityEngine.AvatarIKGoal">
+			<summary>IK Goal.</summary>
+		</member>
+		<member name="F:UnityEngine.SkeletonBone.scale">
+			<summary>The T-pose scaling of the bone in local space.</summary>
+		</member>
+		<member name="P:UnityEngine.MatchTargetWeightMask.positionXYZWeight">
+			<summary>Position XYZ weight.</summary>
+		</member>
+		<member name="M:UnityEngine.HumanTrait.BoneFromMuscle(System.Int32)">
+			<summary>Return the bone to which a particular muscle is connected.</summary>
+		</member>
+		<member name="P:UnityEngine.AnimationClip.humanMotion">
+			<summary>Returns true if the animation contains curve that drives a humanoid rig.</summary>
+		</member>
+		<member name="P:UnityEngine.MatchTargetWeightMask.rotationWeight">
+			<summary>Rotation weight.</summary>
+		</member>
+		<member name="P:UnityEngine.AnimationClip.empty">
+			<summary>Returns true if the animation clip has no curves and no events.</summary>
+		</member>
+		<member name="T:UnityEngine.AvatarIKHint">
+			<summary>IK Hint.</summary>
+		</member>
+		<member name="T:UnityEngine.AnimatorControllerParameterType">
+			<summary>The type of the parameter.</summary>
+		</member>
+		<member name="M:UnityEngine.HumanTrait.RequiredBone(System.Int32)">
+			<summary>Is the bone a member of the minimal set of bones that Mecanim requires for a human model?</summary>
+		</member>
+		<member name="P:UnityEngine.AnimatorStateInfo.normalizedTime">
+			<summary>Normalized time of the State.</summary>
+		</member>
+		<member name="P:UnityEngine.AnimatorTransitionInfo.fullPathHash">
+			<summary>The hash name of the Transition.</summary>
+		</member>
+		<member name="P:UnityEngine.Animation.playAutomatically">
+			<summary>Should the default animation clip (the Animation.clip property) automatically start playing on startup?</summary>
+		</member>
+		<member name="T:UnityEngine.StateMachineBehaviour">
+			<summary>StateMachineBehaviour is a component that can be added to a state machine state. It's the base class every script on a state derives from.</summary>
+		</member>
+		<member name="T:UnityEngine.HumanLimit">
+			<summary>This class stores the rotation limits that define the muscle for a single human bone.</summary>
+		</member>
+		<member name="P:UnityEngine.AnimationClip.events">
+			<summary>Animation Events for this animation clip.</summary>
+		</member>
+		<member name="T:UnityEngine.AnimatorRecorderMode">
+			<summary>The mode of the Animator's recorder.</summary>
+		</member>
+		<member name="M:UnityEngine.HumanTrait.GetMuscleDefaultMin(System.Int32)">
+			<summary>Get the default minimum value of rotation for a muscle in degrees.</summary>
+		</member>
+		<member name="P:UnityEngine.AnimatorStateInfo.length">
+			<summary>Current duration of the state.</summary>
+		</member>
+		<member name="P:UnityEngine.HumanLimit.useDefaultValues">
+			<summary>Should this limit use the default values?</summary>
+		</member>
+		<member name="P:UnityEngine.Animation.wrapMode">
+			<summary>How should time beyond the playback range of the clip be treated?</summary>
+		</member>
+		<member name="T:UnityEngine.Animator">
+			<summary>Interface to control the Mecanim animation system.</summary>
+		</member>
+		<member name="P:UnityEngine.AnimatorTransitionInfo.nameHash">
+			<summary>The simplified name of the Transition.</summary>
+		</member>
+		<member name="M:UnityEngine.HumanTrait.GetMuscleDefaultMax(System.Int32)">
+			<summary>Get the default maximum value of rotation for a muscle in degrees.</summary>
+		</member>
+		<member name="M:UnityEngine.AnimationClip.SampleAnimation(UnityEngine.GameObject,System.Single)">
+			<summary>Samples an animation at a given time for any animated properties.</summary>
+		</member>
+		<member name="T:UnityEngine.AnimationClipPair">
+			<summary>This class defines a pair of clips used by AnimatorOverrideController.</summary>
+		</member>
+		<member name="M:UnityEngine.StateMachineBehaviour.OnStateEnter(UnityEngine.Animator,UnityEngine.AnimatorStateInfo,System.Int32)">
+			<summary>Called on the first Update frame when a statemachine evaluate this state.</summary>
+		</member>
+		<member name="P:UnityEngine.HumanLimit.min">
+			<summary>The maximum negative rotation away from the initial value that this muscle can apply.</summary>
+		</member>
+		<member name="P:UnityEngine.AnimatorStateInfo.speed">
+			<summary>The playback speed of the animation. 1 is the normal playback speed.</summary>
+		</member>
+		<member name="P:UnityEngine.Animation.isPlaying">
+			<summary>Are we playing any animations?</summary>
+		</member>
+		<member name="P:UnityEngine.AnimatorTransitionInfo.userNameHash">
+			<summary>The user-specified name of the Transition.</summary>
 		</member>
 		<member name="M:UnityEngine.AnimationClip.SetCurve(System.String,System.Type,System.String,UnityEngine.AnimationCurve)">
 			<summary>Assigns the curve to animate a specific property.</summary>
 		</member>
-		<member name="P:UnityEngine.AnimationState.normalizedSpeed">
-			<summary>The normalized playback speed.</summary>
+		<member name="P:UnityEngine.Animator.isOptimizable">
+			<summary>Returns true if the current rig is optimizable with AnimatorUtility.OptimizeTransformHierarchy.</summary>
 		</member>
-		<member name="P:UnityEngine.HumanDescription.hasTranslationDoF">
-			<summary>True for any human that has a translation Degree of Freedom (DoF). It is set to false by default.</summary>
+		<member name="M:UnityEngine.HumanTrait.GetParentBone(System.Int32)">
+			<summary>Returns parent humanoid bone index of a bone.</summary>
+		</member>
+		<member name="F:UnityEngine.AnimationClipPair.originalClip">
+			<summary>The original clip from the controller.</summary>
+		</member>
+		<member name="P:UnityEngine.HumanLimit.max">
+			<summary>The maximum rotation away from the initial value that this muscle can apply.</summary>
+		</member>
+		<member name="M:UnityEngine.StateMachineBehaviour.OnStateUpdate(UnityEngine.Animator,UnityEngine.AnimatorStateInfo,System.Int32)">
+			<summary>Called at each Update frame except for the first and last frame.</summary>
+		</member>
+		<member name="P:UnityEngine.AnimatorStateInfo.speedMultiplier">
+			<summary>The speed multiplier for this state.</summary>
+		</member>
+		<member name="P:UnityEngine.HumanLimit.center">
+			<summary>The default orientation of a bone when no muscle action is applied.</summary>
+		</member>
+		<member name="P:UnityEngine.HumanLimit.axisLength">
+			<summary>Length of the bone to which the limit is applied.</summary>
+		</member>
+		<member name="P:UnityEngine.AnimatorTransitionInfo.durationUnit">
+			<summary>The unit of the transition duration.</summary>
 		</member>
 		<member name="M:UnityEngine.AnimationClip.EnsureQuaternionContinuity()">
 			<summary>Realigns quaternion keys to ensure shortest interpolation paths.</summary>
+		</member>
+		<member name="P:UnityEngine.AnimatorStateInfo.tagHash">
+			<summary>The Tag of the State.</summary>
+		</member>
+		<member name="P:UnityEngine.Animator.isHuman">
+			<summary>Returns true if the current rig is humanoid, false if it is generic.</summary>
+		</member>
+		<member name="M:UnityEngine.StateMachineBehaviour.OnStateExit(UnityEngine.Animator,UnityEngine.AnimatorStateInfo,System.Int32)">
+			<summary>Called on the last update frame when a statemachine evaluate this state.</summary>
+		</member>
+		<member name="P:UnityEngine.Animation.animatePhysics">
+			<summary>When turned on, animations will be executed in the physics loop. This is only useful in conjunction with kinematic rigidbodies.</summary>
+		</member>
+		<member name="F:UnityEngine.AnimationClipPair.overrideClip">
+			<summary>The override animation clip.</summary>
+		</member>
+		<member name="T:UnityEngine.AvatarBuilder">
+			<summary>Class to build avatars from user scripts.</summary>
+		</member>
+		<member name="P:UnityEngine.AnimatorTransitionInfo.duration">
+			<summary>Duration of the transition.</summary>
+		</member>
+		<member name="M:UnityEngine.AnimationClip.ClearCurves()">
+			<summary>Clears all curves from the clip.</summary>
+		</member>
+		<member name="P:UnityEngine.AnimatorStateInfo.loop">
+			<summary>Is the state looping.</summary>
+		</member>
+		<member name="T:UnityEngine.HumanBone">
+			<summary>The mapping between a bone in the model and the conceptual bone in the Mecanim human anatomy.</summary>
+		</member>
+		<member name="M:UnityEngine.StateMachineBehaviour.OnStateMove(UnityEngine.Animator,UnityEngine.AnimatorStateInfo,System.Int32)">
+			<summary>Called right after MonoBehaviour.OnAnimatorMove.</summary>
+		</member>
+		<member name="P:UnityEngine.Animation.animateOnlyIfVisible">
+			<summary>When turned on, Unity might stop animating if it thinks that the results of the animation won't be visible to the user.</summary>
+		</member>
+		<member name="M:UnityEngine.AvatarBuilder.BuildHumanAvatar(UnityEngine.GameObject,UnityEngine.HumanDescription)">
+			<summary>Create a humanoid avatar.</summary>
+		</member>
+		<member name="T:UnityEngine.AnimatorOverrideController">
+			<summary>Interface to control Animator Override Controller.</summary>
+		</member>
+		<member name="M:UnityEngine.AnimationClip.AddEvent(UnityEngine.AnimationEvent)">
+			<summary>Adds an animation event to the clip.</summary>
+		</member>
+		<member name="P:UnityEngine.Animator.hasRootMotion">
+			<summary>Returns true if the current rig has root motion.</summary>
+		</member>
+		<member name="P:UnityEngine.AnimatorTransitionInfo.normalizedTime">
+			<summary>Normalized time of the Transition.</summary>
+		</member>
+		<member name="P:UnityEngine.Animation.cullingType">
+			<summary>Controls culling of this Animation component.</summary>
+		</member>
+		<member name="T:UnityEngine.HumanPoseHandler">
+			<summary>A handler that lets you read or write a HumanPose from or to a humanoid avatar skeleton hierarchy.</summary>
+		</member>
+		<member name="P:UnityEngine.Animator.humanScale">
+			<summary>Returns the scale of the current Avatar for a humanoid rig, (1 by default if the rig is generic).</summary>
+		</member>
+		<member name="P:UnityEngine.AnimatorOverrideController.runtimeAnimatorController">
+			<summary>The Runtime Animator Controller that the Animator Override Controller overrides.</summary>
+		</member>
+		<member name="M:UnityEngine.StateMachineBehaviour.OnStateIK(UnityEngine.Animator,UnityEngine.AnimatorStateInfo,System.Int32)">
+			<summary>Called right after MonoBehaviour.OnAnimatorIK.</summary>
+		</member>
+		<member name="M:UnityEngine.AvatarBuilder.BuildGenericAvatar(UnityEngine.GameObject,System.String)">
+			<summary>Create a new generic avatar.</summary>
+		</member>
+		<member name="M:UnityEngine.AnimatorStateInfo.IsName(System.String)">
+			<summary>Does name match the name of the active state in the statemachine?</summary>
+		</member>
+		<member name="M:UnityEngine.AnimatorStateInfo.IsTag(System.String)">
+			<summary>Does tag match the tag of the active state in the statemachine.</summary>
+		</member>
+		<member name="P:UnityEngine.AnimatorOverrideController.overridesCount">
+			<summary>Returns the count of overrides.</summary>
+		</member>
+		<member name="M:UnityEngine.HumanPoseHandler.GetHumanPose(UnityEngine.HumanPose&)">
+			<summary>Gets a human pose from the handled avatar skeleton.</summary>
+		</member>
+		<member name="P:UnityEngine.Animator.isInitialized">
+			<summary>Returns whether the animator is initialized successfully.</summary>
+		</member>
+		<member name="P:UnityEngine.AnimatorTransitionInfo.anyState">
+			<summary>Returns true if the transition is from an AnyState node, or from Animator.CrossFade().</summary>
+		</member>
+		<member name="P:UnityEngine.Animation.localBounds">
+			<summary>AABB of this Animation animation component in local space.</summary>
+		</member>
+		<member name="F:UnityEngine.HumanBone.limit">
+			<summary>The rotation limits that define the muscle for this bone.</summary>
+		</member>
+		<member name="M:UnityEngine.StateMachineBehaviour.OnStateMachineEnter(UnityEngine.Animator,System.Int32)">
+			<summary>Called on the first Update frame when making a transition to a StateMachine. This is not called when making a transition into a StateMachine sub-state.</summary>
+		</member>
+		<member name="T:UnityEngine.AvatarMaskBodyPart">
+			<summary>Avatar body part.</summary>
+		</member>
+		<member name="M:UnityEngine.HumanPoseHandler.SetHumanPose(UnityEngine.HumanPose&)">
+			<summary>Sets a human pose on the handled avatar skeleton.</summary>
 		</member>
 		<member name="M:UnityEngine.StateMachineBehaviour.OnStateMachineExit(UnityEngine.Animator,System.Int32)">
 			<summary>Called on the last Update frame when making a transition out of a StateMachine. This is not called when making a transition into a StateMachine sub-state.</summary>
 		</member>
 		<member name="M:UnityEngine.AnimatorTransitionInfo.IsName(System.String)">
 			<summary>Does name match the name of the active Transition.</summary>
+		</member>
+		<member name="P:UnityEngine.AnimatorOverrideController.clips">
+			<summary>Returns the list of orignal Animation Clip from the controller and their override Animation Clip.</summary>
+		</member>
+		<member name="T:UnityEngine.RuntimeAnimatorController">
+			<summary>Runtime representation of the AnimatorController. It can be used to change the Animator's controller during runtime.</summary>
 		</member>
 		<member name="M:UnityEngine.StateMachineBehaviour.OnStateEnter(UnityEngine.Animator,UnityEngine.AnimatorStateInfo,System.Int32,UnityEngine.Animations.AnimatorControllerPlayable)">
 			<summary>Called on the first Update frame when a statemachine evaluate this state.</summary>
@@ -364,254 +427,116 @@
 		<member name="M:UnityEngine.StateMachineBehaviour.OnStateMachineExit(UnityEngine.Animator,System.Int32,UnityEngine.Animations.AnimatorControllerPlayable)">
 			<summary>Called on the last Update frame when making a transition out of a StateMachine. This is not called when making a transition into a StateMachine sub-state.</summary>
 		</member>
-		<member name="M:UnityEngine.AvatarMask.RemoveTransformPath(UnityEngine.Transform)">
-			<summary>Removes a transform path from the AvatarMask.</summary>
+		<member name="M:UnityEngine.AnimatorOverrideController.GetOverrides(System.Collections.Generic.List`1<System.Collections.Generic.KeyValuePair`2<UnityEngine.AnimationClip,UnityEngine.AnimationClip>>)">
+			<summary>Gets the list of Animation Clip overrides currently defined in this Animator Override Controller.</summary>
 		</member>
-		<member name="M:UnityEngine.AvatarMask.RemoveTransformPath(UnityEngine.Transform,System.Boolean)">
-			<summary>Removes a transform path from the AvatarMask.</summary>
+		<member name="T:UnityEngine.AvatarMask">
+			<summary>AvatarMask is used to mask out humanoid body parts and transforms.</summary>
 		</member>
-		<member name="P:UnityEngine.AnimationEvent.intParameter">
-			<summary>Int parameter that is stored in the event and will be sent to the function.</summary>
-		</member>
-		<member name="M:UnityEngine.AnimatorTransitionInfo.IsUserName(System.String)">
-			<summary>Does userName match the name of the active Transition.</summary>
-		</member>
-		<member name="P:UnityEngine.AnimationState.length">
-			<summary>The length of the animation clip in seconds.</summary>
-		</member>
-		<member name="M:UnityEngine.AnimationClip.ClearCurves()">
-			<summary>Clears all curves from the clip.</summary>
-		</member>
-		<member name="T:UnityEngine.AvatarBuilder">
-			<summary>Class to build avatars from user scripts.</summary>
-		</member>
-		<member name="M:UnityEngine.AvatarMask.GetTransformPath(System.Int32)">
-			<summary>Returns the path of the transform at the given index.</summary>
-		</member>
-		<member name="M:UnityEngine.AnimationClip.AddEvent(UnityEngine.AnimationEvent)">
-			<summary>Adds an animation event to the clip.</summary>
-		</member>
-		<member name="T:UnityEngine.MatchTargetWeightMask">
-			<summary>To specify position and rotation weight mask for Animator::MatchTarget.</summary>
-		</member>
-		<member name="M:UnityEngine.AvatarBuilder.BuildHumanAvatar(UnityEngine.GameObject,UnityEngine.HumanDescription)">
-			<summary>Create a humanoid avatar.</summary>
-		</member>
-		<member name="M:UnityEngine.AvatarMask.SetTransformPath(System.Int32,System.String)">
-			<summary>Sets the path of the transform at the given index.</summary>
-		</member>
-		<member name="P:UnityEngine.AnimationEvent.objectReferenceParameter">
-			<summary>Object reference parameter that is stored in the event and will be sent to the function.</summary>
-		</member>
-		<member name="P:UnityEngine.AnimationState.clip">
-			<summary>The clip that is being played by this animation state.</summary>
-		</member>
-		<member name="P:UnityEngine.AnimationEvent.functionName">
-			<summary>The name of the function that will be called.</summary>
-		</member>
-		<member name="P:UnityEngine.MatchTargetWeightMask.positionXYZWeight">
-			<summary>Position XYZ weight.</summary>
-		</member>
-		<member name="M:UnityEngine.AvatarBuilder.BuildGenericAvatar(UnityEngine.GameObject,System.String)">
-			<summary>Create a new generic avatar.</summary>
-		</member>
-		<member name="P:UnityEngine.MatchTargetWeightMask.rotationWeight">
-			<summary>Rotation weight.</summary>
-		</member>
-		<member name="M:UnityEngine.AvatarMask.GetTransformActive(System.Int32)">
-			<summary>Returns true if the transform at the given index is active.</summary>
-		</member>
-		<member name="P:UnityEngine.AnimationState.name">
-			<summary>The name of the animation.</summary>
-		</member>
-		<member name="M:UnityEngine.AvatarMask.SetTransformActive(System.Int32,System.Boolean)">
-			<summary>Sets the tranform at the given index to active or not.</summary>
-		</member>
-		<member name="P:UnityEngine.AnimationState.blendMode">
-			<summary>Which blend mode should be used?</summary>
-		</member>
-		<member name="T:UnityEngine.Animator">
-			<summary>Interface to control the Mecanim animation system.</summary>
-		</member>
-		<member name="T:UnityEngine.HumanPose">
-			<summary>Retargetable humanoid pose.</summary>
-		</member>
-		<member name="P:UnityEngine.AnimationEvent.time">
-			<summary>The time at which the event will be fired off.</summary>
-		</member>
-		<member name="M:UnityEngine.AnimationState.AddMixingTransform(UnityEngine.Transform,System.Boolean)">
-			<summary>Adds a transform which should be animated. This allows you to reduce the number of animations you have to create.</summary>
-		</member>
-		<member name="M:UnityEngine.AnimationState.AddMixingTransform(UnityEngine.Transform)">
-			<summary>Adds a transform which should be animated. This allows you to reduce the number of animations you have to create.</summary>
-		</member>
-		<member name="P:UnityEngine.AnimationEvent.messageOptions">
-			<summary>Function call options.</summary>
-		</member>
-		<member name="P:UnityEngine.Animator.isOptimizable">
-			<summary>Returns true if the current rig is optimizable with AnimatorUtility.OptimizeTransformHierarchy.</summary>
-		</member>
-		<member name="P:UnityEngine.AnimationEvent.isFiredByLegacy">
-			<summary>Returns true if this Animation event has been fired by an Animation component.</summary>
-		</member>
-		<member name="F:UnityEngine.HumanPose.bodyPosition">
-			<summary>The human body position for that pose.</summary>
-		</member>
-		<member name="M:UnityEngine.AnimationState.RemoveMixingTransform(UnityEngine.Transform)">
-			<summary>Removes a transform which should be animated.</summary>
-		</member>
-		<member name="P:UnityEngine.AnimationEvent.isFiredByAnimator">
-			<summary>Returns true if this Animation event has been fired by an Animator component.</summary>
-		</member>
-		<member name="P:UnityEngine.Animator.isHuman">
-			<summary>Returns true if the current rig is humanoid, false if it is generic.</summary>
-		</member>
-		<member name="T:UnityEngine.AvatarTarget">
-			<summary>Target.</summary>
-		</member>
-		<member name="P:UnityEngine.AnimationEvent.animationState">
-			<summary>The animation state that fired this event (Read Only).</summary>
-		</member>
-		<member name="F:UnityEngine.HumanPose.bodyRotation">
-			<summary>The human body orientation for that pose.</summary>
-		</member>
-		<member name="F:UnityEngine.HumanPose.muscles">
-			<summary>The array of muscle values for that pose.</summary>
-		</member>
-		<member name="P:UnityEngine.Animator.hasRootMotion">
-			<summary>Returns true if the current rig has root motion.</summary>
-		</member>
-		<member name="P:UnityEngine.AnimatorStateInfo.speed">
-			<summary>The playback speed of the animation. 1 is the normal playback speed.</summary>
-		</member>
-		<member name="P:UnityEngine.AnimatorStateInfo.speedMultiplier">
-			<summary>The speed multiplier for this state.</summary>
-		</member>
-		<member name="P:UnityEngine.AnimationEvent.animatorStateInfo">
-			<summary>The animator state info related to this event (Read Only).</summary>
-		</member>
-		<member name="T:UnityEngine.HumanPoseHandler">
-			<summary>A handler that lets you read or write a HumanPose from or to a humanoid avatar skeleton hierarchy.</summary>
-		</member>
-		<member name="P:UnityEngine.Animation.wrapMode">
-			<summary>How should time beyond the playback range of the clip be treated?</summary>
-		</member>
-		<member name="P:UnityEngine.AnimationEvent.animatorClipInfo">
-			<summary>The animator clip info related to this event (Read Only).</summary>
-		</member>
-		<member name="P:UnityEngine.Animator.humanScale">
-			<summary>Returns the scale of the current Avatar for a humanoid rig, (1 by default if the rig is generic).</summary>
-		</member>
-		<member name="M:UnityEngine.HumanPoseHandler.GetHumanPose(UnityEngine.HumanPose&)">
-			<summary>Gets a human pose from the handled avatar skeleton.</summary>
-		</member>
-		<member name="P:UnityEngine.Animator.isInitialized">
-			<summary>Returns whether the animator is initialized successfully.</summary>
-		</member>
-		<member name="P:UnityEngine.Animation.isPlaying">
-			<summary>Are we playing any animations?</summary>
-		</member>
-		<member name="P:UnityEngine.AnimatorStateInfo.tagHash">
-			<summary>The Tag of the State.</summary>
-		</member>
-		<member name="M:UnityEngine.HumanPoseHandler.SetHumanPose(UnityEngine.HumanPose&)">
-			<summary>Sets a human pose on the handled avatar skeleton.</summary>
-		</member>
-		<member name="P:UnityEngine.AnimatorStateInfo.loop">
-			<summary>Is the state looping.</summary>
-		</member>
-		<member name="M:UnityEngine.AnimatorStateInfo.IsName(System.String)">
-			<summary>Does name match the name of the active state in the statemachine?</summary>
-		</member>
-		<member name="T:UnityEngine.Motion">
-			<summary>Base class for AnimationClips and BlendTrees.</summary>
+		<member name="P:UnityEngine.HumanBone.boneName">
+			<summary>The name of the bone to which the Mecanim human bone is mapped.</summary>
 		</member>
 		<member name="P:UnityEngine.Animator.deltaPosition">
 			<summary>Gets the avatar delta position for the last evaluated frame.</summary>
 		</member>
-		<member name="M:UnityEngine.AnimatorStateInfo.IsTag(System.String)">
-			<summary>Does tag match the tag of the active state in the statemachine.</summary>
-		</member>
-		<member name="P:UnityEngine.Animation.animatePhysics">
-			<summary>When turned on, animations will be executed in the physics loop. This is only useful in conjunction with kinematic rigidbodies.</summary>
-		</member>
-		<member name="P:UnityEngine.Animator.deltaRotation">
-			<summary>Gets the avatar delta rotation for the last evaluated frame.</summary>
-		</member>
-		<member name="P:UnityEngine.Animation.animateOnlyIfVisible">
-			<summary>When turned on, Unity might stop animating if it thinks that the results of the animation won't be visible to the user.</summary>
-		</member>
-		<member name="T:UnityEngine.RuntimeAnimatorController">
-			<summary>Runtime representation of the AnimatorController. It can be used to change the Animator's controller during runtime.</summary>
-		</member>
-		<member name="P:UnityEngine.Animation.cullingType">
-			<summary>Controls culling of this Animation component.</summary>
-		</member>
-		<member name="P:UnityEngine.RuntimeAnimatorController.animationClips">
-			<summary>Retrieves all AnimationClip used by the controller.</summary>
-		</member>
-		<member name="P:UnityEngine.Animator.velocity">
-			<summary>Gets the avatar velocity  for the last evaluated frame.</summary>
-		</member>
-		<member name="P:UnityEngine.Animation.localBounds">
-			<summary>AABB of this Animation animation component in local space.</summary>
-		</member>
 		<member name="M:UnityEngine.Animation.Stop()">
 			<summary>Stops all playing animations that were started with this Animation.</summary>
-		</member>
-		<member name="P:UnityEngine.Animator.angularVelocity">
-			<summary>Gets the avatar angular velocity for the last evaluated frame.</summary>
 		</member>
 		<member name="M:UnityEngine.Animation.Stop(System.String)">
 			<summary>Stops all playing animations that were started with this Animation.</summary>
 		</member>
-		<member name="F:UnityEngine.SkeletonBone.position">
-			<summary>The T-pose position of the bone in local space.</summary>
+		<member name="P:UnityEngine.RuntimeAnimatorController.animationClips">
+			<summary>Retrieves all AnimationClip used by the controller.</summary>
+		</member>
+		<member name="T:UnityEngine.Motion">
+			<summary>Base class for AnimationClips and BlendTrees.</summary>
+		</member>
+		<member name="M:UnityEngine.AnimatorTransitionInfo.IsUserName(System.String)">
+			<summary>Does userName match the name of the active Transition.</summary>
+		</member>
+		<member name="M:UnityEngine.AnimatorOverrideController.ApplyOverrides(System.Collections.Generic.IList`1<System.Collections.Generic.KeyValuePair`2<UnityEngine.AnimationClip,UnityEngine.AnimationClip>>)">
+			<summary>Applies the list of overrides on this Animator Override Controller.</summary>
+		</member>
+		<member name="P:UnityEngine.Animator.deltaRotation">
+			<summary>Gets the avatar delta rotation for the last evaluated frame.</summary>
+		</member>
+		<member name="P:UnityEngine.HumanBone.humanName">
+			<summary>The name of the Mecanim human bone to which the bone from the model is mapped.</summary>
 		</member>
 		<member name="M:UnityEngine.Animation.Rewind(System.String)">
 			<summary>Rewinds the animation named name.</summary>
 		</member>
-		<member name="P:UnityEngine.Animator.rootPosition">
-			<summary>The root position, the position of the game object.</summary>
-		</member>
 		<member name="M:UnityEngine.Animation.Rewind()">
 			<summary>Rewinds the animation named name.</summary>
 		</member>
-		<member name="F:UnityEngine.SkeletonBone.rotation">
-			<summary>The T-pose rotation of the bone in local space.</summary>
+		<member name="T:UnityEngine.HumanDescription">
+			<summary>Class that holds humanoid avatar parameters to pass to the AvatarBuilder.BuildHumanAvatar function.</summary>
 		</member>
-		<member name="P:UnityEngine.Animator.rootRotation">
-			<summary>The root rotation, the rotation of the game object.</summary>
+		<member name="P:UnityEngine.AvatarMask.transformCount">
+			<summary>Number of transforms.</summary>
+		</member>
+		<member name="T:UnityEngine.AnimatorUtility">
+			<summary>Various utilities for animator manipulation.</summary>
 		</member>
 		<member name="M:UnityEngine.Animation.Sample()">
 			<summary>Samples animations at the current state.</summary>
 		</member>
-		<member name="P:UnityEngine.Animator.applyRootMotion">
-			<summary>Should root motion be applied?</summary>
+		<member name="M:UnityEngine.AnimatorUtility.OptimizeTransformHierarchy(UnityEngine.GameObject,System.String[])">
+			<summary>This function will remove all transform hierarchy under GameObject, the animator will write directly transform matrices into the skin mesh matrices saving alot of CPU cycles.</summary>
+		</member>
+		<member name="F:UnityEngine.HumanDescription.human">
+			<summary>Mapping between Mecanim bone names and bone names in the rig.</summary>
+		</member>
+		<member name="M:UnityEngine.AvatarMask.GetHumanoidBodyPartActive(UnityEngine.AvatarMaskBodyPart)">
+			<summary>Returns true if the humanoid body part at the given index is active.</summary>
+		</member>
+		<member name="M:UnityEngine.AnimatorUtility.DeoptimizeTransformHierarchy(UnityEngine.GameObject)">
+			<summary>This function will recreate all transform hierarchy under GameObject.</summary>
+		</member>
+		<member name="M:UnityEngine.AvatarMask.SetHumanoidBodyPartActive(UnityEngine.AvatarMaskBodyPart,System.Boolean)">
+			<summary>Sets the humanoid body part at the given index to active or not.</summary>
+		</member>
+		<member name="F:UnityEngine.HumanDescription.skeleton">
+			<summary>List of bone Transforms to include in the model.</summary>
+		</member>
+		<member name="M:UnityEngine.AvatarMask.AddTransformPath(UnityEngine.Transform)">
+			<summary>Adds a transform path into the AvatarMask.</summary>
+		</member>
+		<member name="M:UnityEngine.AvatarMask.AddTransformPath(UnityEngine.Transform,System.Boolean)">
+			<summary>Adds a transform path into the AvatarMask.</summary>
 		</member>
 		<member name="M:UnityEngine.Animation.IsPlaying(System.String)">
 			<summary>Is the animation named name playing?</summary>
 		</member>
-		<member name="F:UnityEngine.SkeletonBone.scale">
-			<summary>The T-pose scaling of the bone in local space.</summary>
-		</member>
-		<member name="P:UnityEngine.Animator.linearVelocityBlending">
-			<summary>When linearVelocityBlending is set to true, the root motion velocity and angular velocity will be blended linearly.</summary>
+		<member name="P:UnityEngine.HumanDescription.upperArmTwist">
+			<summary>Defines how the lower arm's roll/twisting is distributed between the shoulder and elbow joints.</summary>
 		</member>
 		<member name="M:UnityEngine.Animation.Play()">
 			<summary>Plays an animation without any blending.</summary>
 		</member>
-		<member name="P:UnityEngine.Animator.animatePhysics">
-			<summary>When turned on, animations will be executed in the physics loop. This is only useful in conjunction with kinematic rigidbodies.</summary>
+		<member name="M:UnityEngine.AvatarMask.RemoveTransformPath(UnityEngine.Transform)">
+			<summary>Removes a transform path from the AvatarMask.</summary>
 		</member>
 		<member name="M:UnityEngine.Animation.Play(UnityEngine.PlayMode)">
 			<summary>Plays an animation without any blending.</summary>
+		</member>
+		<member name="M:UnityEngine.AvatarMask.RemoveTransformPath(UnityEngine.Transform,System.Boolean)">
+			<summary>Removes a transform path from the AvatarMask.</summary>
 		</member>
 		<member name="M:UnityEngine.Animation.Play(System.String,UnityEngine.PlayMode)">
 			<summary>Plays an animation without any blending.</summary>
 		</member>
 		<member name="M:UnityEngine.Animation.Play(System.String)">
 			<summary>Plays an animation without any blending.</summary>
+		</member>
+		<member name="P:UnityEngine.HumanDescription.lowerArmTwist">
+			<summary>Defines how the lower arm's roll/twisting is distributed between the elbow and wrist joints.</summary>
+		</member>
+		<member name="P:UnityEngine.HumanDescription.upperLegTwist">
+			<summary>Defines how the upper leg's roll/twisting is distributed between the thigh and knee joints.</summary>
+		</member>
+		<member name="P:UnityEngine.HumanDescription.lowerLegTwist">
+			<summary>Defines how the lower leg's roll/twisting is distributed between the knee and ankle.</summary>
 		</member>
 		<member name="M:UnityEngine.Animation.CrossFade(System.String,System.Single,UnityEngine.PlayMode)">
 			<summary>Fades the animation with name animation in over a period of time seconds and fades other animations out.</summary>
@@ -622,11 +547,8 @@
 		<member name="M:UnityEngine.Animation.CrossFade(System.String)">
 			<summary>Fades the animation with name animation in over a period of time seconds and fades other animations out.</summary>
 		</member>
-		<member name="P:UnityEngine.Animator.updateMode">
-			<summary>Specifies the update mode of the Animator.</summary>
-		</member>
-		<member name="P:UnityEngine.Animator.hasTransformHierarchy">
-			<summary>Returns true if the object has a transform hierarchy.</summary>
+		<member name="M:UnityEngine.AvatarMask.GetTransformPath(System.Int32)">
+			<summary>Returns the path of the transform at the given index.</summary>
 		</member>
 		<member name="M:UnityEngine.Animation.Blend(System.String,System.Single,System.Single)">
 			<summary>Blends the animation named animation towards targetWeight over the next time seconds.</summary>
@@ -637,11 +559,23 @@
 		<member name="M:UnityEngine.Animation.Blend(System.String)">
 			<summary>Blends the animation named animation towards targetWeight over the next time seconds.</summary>
 		</member>
+		<member name="P:UnityEngine.HumanDescription.armStretch">
+			<summary>Amount by which the arm's length is allowed to stretch when using IK.</summary>
+		</member>
+		<member name="M:UnityEngine.AvatarMask.SetTransformPath(System.Int32,System.String)">
+			<summary>Sets the path of the transform at the given index.</summary>
+		</member>
+		<member name="P:UnityEngine.Animator.velocity">
+			<summary>Gets the avatar velocity  for the last evaluated frame.</summary>
+		</member>
+		<member name="P:UnityEngine.Animator.angularVelocity">
+			<summary>Gets the avatar angular velocity for the last evaluated frame.</summary>
+		</member>
 		<member name="M:UnityEngine.Animation.CrossFadeQueued(System.String,System.Single,UnityEngine.QueueMode,UnityEngine.PlayMode)">
 			<summary>Cross fades an animation after previous animations has finished playing.</summary>
 		</member>
-		<member name="P:UnityEngine.Animator.gravityWeight">
-			<summary>The current gravity weight based on current animations that are played.</summary>
+		<member name="P:UnityEngine.HumanDescription.legStretch">
+			<summary>Amount by which the leg's length is allowed to stretch when using IK.</summary>
 		</member>
 		<member name="M:UnityEngine.Animation.CrossFadeQueued(System.String,System.Single,UnityEngine.QueueMode)">
 			<summary>Cross fades an animation after previous animations has finished playing.</summary>
@@ -652,8 +586,8 @@
 		<member name="M:UnityEngine.Animation.CrossFadeQueued(System.String)">
 			<summary>Cross fades an animation after previous animations has finished playing.</summary>
 		</member>
-		<member name="P:UnityEngine.Animator.bodyPosition">
-			<summary>The position of the body center of mass.</summary>
+		<member name="M:UnityEngine.AvatarMask.GetTransformActive(System.Int32)">
+			<summary>Returns true if the transform at the given index is active.</summary>
 		</member>
 		<member name="M:UnityEngine.Animation.PlayQueued(System.String,UnityEngine.QueueMode,UnityEngine.PlayMode)">
 			<summary>Plays an animation after previous animations has finished playing.</summary>
@@ -664,8 +598,11 @@
 		<member name="M:UnityEngine.Animation.PlayQueued(System.String)">
 			<summary>Plays an animation after previous animations has finished playing.</summary>
 		</member>
-		<member name="P:UnityEngine.Animator.bodyRotation">
-			<summary>The rotation of the body center of mass.</summary>
+		<member name="M:UnityEngine.AvatarMask.SetTransformActive(System.Int32,System.Boolean)">
+			<summary>Sets the tranform at the given index to active or not.</summary>
+		</member>
+		<member name="P:UnityEngine.Animator.rootPosition">
+			<summary>The root position, the position of the game object.</summary>
 		</member>
 		<member name="M:UnityEngine.Animation.AddClip(UnityEngine.AnimationClip,System.String)">
 			<summary>Adds a clip to the animation with name newName.</summary>
@@ -676,14 +613,29 @@
 		<member name="M:UnityEngine.Animation.AddClip(UnityEngine.AnimationClip,System.String,System.Int32,System.Int32)">
 			<summary>Adds a clip to the animation with name newName.</summary>
 		</member>
+		<member name="P:UnityEngine.HumanDescription.feetSpacing">
+			<summary>Modification to the minimum distance between the feet of a humanoid model.</summary>
+		</member>
 		<member name="M:UnityEngine.Animation.RemoveClip(UnityEngine.AnimationClip)">
 			<summary>Remove clip from the animation list.</summary>
 		</member>
 		<member name="M:UnityEngine.Animation.RemoveClip(System.String)">
 			<summary>Remove clip from the animation list.</summary>
 		</member>
-		<member name="P:UnityEngine.Animator.stabilizeFeet">
-			<summary>Automatic stabilization of feet during transition and blending.</summary>
+		<member name="P:UnityEngine.Animator.rootRotation">
+			<summary>The root rotation, the rotation of the game object.</summary>
+		</member>
+		<member name="P:UnityEngine.HumanDescription.hasTranslationDoF">
+			<summary>True for any human that has a translation Degree of Freedom (DoF). It is set to false by default.</summary>
+		</member>
+		<member name="T:UnityEngine.HumanPose">
+			<summary>Retargetable humanoid pose.</summary>
+		</member>
+		<member name="F:UnityEngine.HumanPose.bodyPosition">
+			<summary>The human body position for that pose.</summary>
+		</member>
+		<member name="P:UnityEngine.Animator.applyRootMotion">
+			<summary>Should root motion be applied?</summary>
 		</member>
 		<member name="M:UnityEngine.Animation.GetClipCount()">
 			<summary>Get the number of clips currently assigned to this animation.</summary>
@@ -694,8 +646,74 @@
 		<member name="M:UnityEngine.Animation.Play(System.String,UnityEngine.AnimationPlayMode)">
 			<summary>Plays an animation without any blending.</summary>
 		</member>
+		<member name="F:UnityEngine.HumanPose.bodyRotation">
+			<summary>The human body orientation for that pose.</summary>
+		</member>
+		<member name="T:UnityEngine.AnimationState">
+			<summary>The AnimationState gives full control over animation blending.</summary>
+		</member>
+		<member name="P:UnityEngine.Animator.linearVelocityBlending">
+			<summary>When linearVelocityBlending is set to true, the root motion velocity and angular velocity will be blended linearly.</summary>
+		</member>
+		<member name="P:UnityEngine.Animator.animatePhysics">
+			<summary>When turned on, animations will be executed in the physics loop. This is only useful in conjunction with kinematic rigidbodies.</summary>
+		</member>
+		<member name="P:UnityEngine.AnimationState.enabled">
+			<summary>Enables / disables the animation.</summary>
+		</member>
+		<member name="F:UnityEngine.HumanPose.muscles">
+			<summary>The array of muscle values for that pose.</summary>
+		</member>
+		<member name="P:UnityEngine.AnimationState.weight">
+			<summary>The weight of animation.</summary>
+		</member>
+		<member name="P:UnityEngine.Animator.updateMode">
+			<summary>Specifies the update mode of the Animator.</summary>
+		</member>
+		<member name="P:UnityEngine.Animator.hasTransformHierarchy">
+			<summary>Returns true if the object has a transform hierarchy.</summary>
+		</member>
+		<member name="P:UnityEngine.AnimationState.wrapMode">
+			<summary>Wrapping mode of the animation.</summary>
+		</member>
+		<member name="P:UnityEngine.AnimationState.time">
+			<summary>The current time of the animation.</summary>
+		</member>
+		<member name="P:UnityEngine.Animator.gravityWeight">
+			<summary>The current gravity weight based on current animations that are played.</summary>
+		</member>
+		<member name="P:UnityEngine.AnimationState.normalizedTime">
+			<summary>The normalized time of the animation.</summary>
+		</member>
+		<member name="P:UnityEngine.AnimationState.speed">
+			<summary>The playback speed of the animation. 1 is normal playback speed.</summary>
+		</member>
+		<member name="P:UnityEngine.Animator.bodyPosition">
+			<summary>The position of the body center of mass.</summary>
+		</member>
+		<member name="P:UnityEngine.Animator.bodyRotation">
+			<summary>The rotation of the body center of mass.</summary>
+		</member>
+		<member name="P:UnityEngine.AnimationState.normalizedSpeed">
+			<summary>The normalized playback speed.</summary>
+		</member>
+		<member name="P:UnityEngine.AnimationState.length">
+			<summary>The length of the animation clip in seconds.</summary>
+		</member>
+		<member name="P:UnityEngine.Animator.stabilizeFeet">
+			<summary>Automatic stabilization of feet during transition and blending.</summary>
+		</member>
+		<member name="P:UnityEngine.AnimationState.clip">
+			<summary>The clip that is being played by this animation state.</summary>
+		</member>
 		<member name="P:UnityEngine.Animator.layerCount">
 			<summary>Returns the number of layers in the controller.</summary>
+		</member>
+		<member name="P:UnityEngine.AnimationState.name">
+			<summary>The name of the animation.</summary>
+		</member>
+		<member name="P:UnityEngine.AnimationState.blendMode">
+			<summary>Which blend mode should be used?</summary>
 		</member>
 		<member name="P:UnityEngine.Animator.parameters">
 			<summary>Read only acces to the AnimatorControllerParameters used by the animator.</summary>
@@ -703,8 +721,17 @@
 		<member name="P:UnityEngine.Animator.parameterCount">
 			<summary>Returns the number of parameters in the controller.</summary>
 		</member>
+		<member name="M:UnityEngine.AnimationState.AddMixingTransform(UnityEngine.Transform,System.Boolean)">
+			<summary>Adds a transform which should be animated. This allows you to reduce the number of animations you have to create.</summary>
+		</member>
+		<member name="M:UnityEngine.AnimationState.AddMixingTransform(UnityEngine.Transform)">
+			<summary>Adds a transform which should be animated. This allows you to reduce the number of animations you have to create.</summary>
+		</member>
 		<member name="P:UnityEngine.Animator.feetPivotActive">
 			<summary>Blends pivot point between body center of mass and feet pivot. At 0%, the blending point is body center of mass. At 100%, the blending point is feet pivot.</summary>
+		</member>
+		<member name="M:UnityEngine.AnimationState.RemoveMixingTransform(UnityEngine.Transform)">
+			<summary>Removes a transform which should be animated.</summary>
 		</member>
 		<member name="P:UnityEngine.Animator.pivotWeight">
 			<summary>Gets the pivot weight.</summary>
@@ -1116,33 +1143,6 @@
 		</member>
 		<member name="P:UnityEngine.AnimatorControllerParameter.defaultBool">
 			<summary>The default bool value for the parameter.</summary>
-		</member>
-		<member name="T:UnityEngine.AnimationClipPair">
-			<summary>This class defines a pair of clips used by AnimatorOverrideController.</summary>
-		</member>
-		<member name="F:UnityEngine.AnimationClipPair.originalClip">
-			<summary>The original clip from the controller.</summary>
-		</member>
-		<member name="F:UnityEngine.AnimationClipPair.overrideClip">
-			<summary>The override animation clip.</summary>
-		</member>
-		<member name="T:UnityEngine.AnimatorOverrideController">
-			<summary>Interface to control Animator Override Controller.</summary>
-		</member>
-		<member name="P:UnityEngine.AnimatorOverrideController.runtimeAnimatorController">
-			<summary>The Runtime Animator Controller that the Animator Override Controller overrides.</summary>
-		</member>
-		<member name="P:UnityEngine.AnimatorOverrideController.overridesCount">
-			<summary>Returns the count of overrides.</summary>
-		</member>
-		<member name="P:UnityEngine.AnimatorOverrideController.clips">
-			<summary>Returns the list of orignal Animation Clip from the controller and their override Animation Clip.</summary>
-		</member>
-		<member name="M:UnityEngine.AnimatorOverrideController.GetOverrides(System.Collections.Generic.List`1<System.Collections.Generic.KeyValuePair`2<UnityEngine.AnimationClip,UnityEngine.AnimationClip>>)">
-			<summary>Gets the list of Animation Clip overrides currently defined in this Animator Override Controller.</summary>
-		</member>
-		<member name="M:UnityEngine.AnimatorOverrideController.ApplyOverrides(System.Collections.Generic.IList`1<System.Collections.Generic.KeyValuePair`2<UnityEngine.AnimationClip,UnityEngine.AnimationClip>>)">
-			<summary>Applies the list of overrides on this Animator Override Controller.</summary>
 		</member>
 	</members>
 </doc>

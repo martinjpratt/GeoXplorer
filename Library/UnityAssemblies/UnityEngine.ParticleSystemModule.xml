@@ -4,11 +4,59 @@
 		<name>UnityEngine.ParticleSystemModule</name>
 	</assembly>
 	<members>
-		<member name="T:UnityEngine.ParticleSystemRenderMode">
-			<summary>The rendering mode for particle systems (Shuriken).</summary>
+		<member name="T:UnityEngine.ParticleSystemStopBehavior">
+			<summary>The behavior to apply when calling Stop.</summary>
+		</member>
+		<member name="T:UnityEngine.ParticleSystem.ExternalForcesModule">
+			<summary>Script interface for the External Forces module.</summary>
+		</member>
+		<member name="T:UnityEngine.ParticleSystemCollisionMode">
+			<summary>Whether to use 2D or 3D colliders for particle collisions.</summary>
+		</member>
+		<member name="T:UnityEngine.ParticleSystem.LimitVelocityOverLifetimeModule">
+			<summary>Script interface for the Limit Velocity Over Lifetime module.</summary>
+		</member>
+		<member name="T:UnityEngine.ParticleSystemSimulationSpace">
+			<summary>The space to simulate particles in.</summary>
+		</member>
+		<member name="T:UnityEngine.ParticleSystem.LightsModule">
+			<summary>Access the ParticleSystem Lights Module.</summary>
 		</member>
 		<member name="T:UnityEngine.ParticleSystemStopAction">
 			<summary>The action to perform when the Particle System stops.</summary>
+		</member>
+		<member name="T:UnityEngine.ParticleSystem.NoiseModule">
+			<summary>Script interface for the Noise Module.The Noise Module allows you to apply turbulence to the movement of your particles. Use the low quality settings to create computationally efficient Noise, or simulate smoother, richer Noise with the higher quality settings. You can also choose to define the behavior of the Noise individually for each axis.</summary>
+		</member>
+		<member name="T:UnityEngine.ParticleSystemVertexStreams">
+			<summary>All possible particle system vertex shader inputs.</summary>
+		</member>
+		<member name="T:UnityEngine.ParticleSystemCustomData">
+			<summary>Which stream of custom particle data to set.</summary>
+		</member>
+		<member name="T:UnityEngine.ParticleSystemVertexStream">
+			<summary>All possible particle system vertex shader inputs.</summary>
+		</member>
+		<member name="T:UnityEngine.ParticleSystem.VelocityOverLifetimeModule">
+			<summary>Script interface for the Velocity Over Lifetime module.</summary>
+		</member>
+		<member name="T:UnityEngine.ParticleSystemCustomDataMode">
+			<summary>Which mode the Custom Data module uses to generate its data.</summary>
+		</member>
+		<member name="T:UnityEngine.ParticleSystemRenderSpace">
+			<summary>How particles are aligned when rendered.</summary>
+		</member>
+		<member name="T:UnityEngine.ParticleSystem">
+			<summary>Script interface for particle systems (Shuriken).</summary>
+		</member>
+		<member name="T:UnityEngine.ParticleSystem.MinMaxCurve">
+			<summary>Script interface for a Min-Max Curve.</summary>
+		</member>
+		<member name="T:UnityEngine.ParticleSystem.EmissionModule">
+			<summary>Script interface for the Emission module.</summary>
+		</member>
+		<member name="T:UnityEngine.ParticleSystem.MinMaxGradient">
+			<summary></summary>
 		</member>
 		<member name="T:UnityEngine.ParticleSystem.Burst">
 			<summary>Script interface for a Burst.</summary>
@@ -16,134 +64,131 @@
 		<member name="T:UnityEngine.ParticlePhysicsExtensions">
 			<summary>Method extension for Physics in Particle System.</summary>
 		</member>
-		<member name="T:UnityEngine.ParticleSystemCollisionQuality">
-			<summary>Quality of world collisions. Medium and low quality are approximate and may leak particles.</summary>
-		</member>
-		<member name="T:UnityEngine.ParticleSystem.ExternalForcesModule">
-			<summary>Script interface for the External Forces module.</summary>
-		</member>
-		<member name="T:UnityEngine.ParticleSystem.MinMaxCurve">
-			<summary>Script interface for a Min-Max Curve.</summary>
-		</member>
-		<member name="T:UnityEngine.ParticleSystem.RotationBySpeedModule">
-			<summary>Script interface for the Rotation By Speed module.</summary>
-		</member>
-		<member name="T:UnityEngine.ParticleSystem.MinMaxGradient">
-			<summary></summary>
-		</member>
-		<member name="T:UnityEngine.ParticleSystemEmitterVelocityMode">
-			<summary>Control how a Particle System calculates its velocity.</summary>
-		</member>
-		<member name="T:UnityEngine.ParticleSystemStopBehavior">
-			<summary>The behavior to apply when calling Stop.</summary>
-		</member>
-		<member name="T:UnityEngine.ParticleSystemEmissionType">
-			<summary>The mode in which particles are emitted.</summary>
-		</member>
 		<member name="T:UnityEngine.ParticleSystemCurveMode">
 			<summary>The particle curve mode (Shuriken).</summary>
-		</member>
-		<member name="T:UnityEngine.ParticleSystem">
-			<summary>Script interface for particle systems (Shuriken).</summary>
-		</member>
-		<member name="T:UnityEngine.ParticleSystemInheritVelocityMode">
-			<summary>How to apply emitter velocity to particles.</summary>
-		</member>
-		<member name="T:UnityEngine.ParticleSystemRenderSpace">
-			<summary>How particles are aligned when rendered.</summary>
-		</member>
-		<member name="T:UnityEngine.ParticleSystemScalingMode">
-			<summary>Control how particle systems apply transform scale.</summary>
-		</member>
-		<member name="T:UnityEngine.ParticleSystemCollisionType">
-			<summary>The type of collisions to use for a given particle system.</summary>
-		</member>
-		<member name="T:UnityEngine.ParticleSystemGradientMode">
-			<summary>The particle gradient mode (Shuriken).</summary>
-		</member>
-		<member name="T:UnityEngine.ParticleSystem.TriggerModule">
-			<summary>Script interface for the Trigger module.</summary>
-		</member>
-		<member name="T:UnityEngine.ParticleSystemAnimationType">
-			<summary>The animation type.</summary>
-		</member>
-		<member name="T:UnityEngine.ParticleSystemShapeType">
-			<summary>The emission shape (Shuriken).</summary>
-		</member>
-		<member name="T:UnityEngine.ParticleSystem.EmissionModule">
-			<summary>Script interface for the Emission module.</summary>
-		</member>
-		<member name="T:UnityEngine.ParticleSystemVertexStreams">
-			<summary>All possible particle system vertex shader inputs.</summary>
-		</member>
-		<member name="T:UnityEngine.ParticleSystem.NoiseModule">
-			<summary>Script interface for the Noise Module.The Noise Module allows you to apply turbulence to the movement of your particles. Use the low quality settings to create computationally efficient Noise, or simulate smoother, richer Noise with the higher quality settings. You can also choose to define the behavior of the Noise individually for each axis.</summary>
-		</member>
-		<member name="T:UnityEngine.ParticleSystemMeshShapeType">
-			<summary>The mesh emission type.</summary>
-		</member>
-		<member name="T:UnityEngine.ParticleSystem.LightsModule">
-			<summary>Access the ParticleSystem Lights Module.</summary>
 		</member>
 		<member name="T:UnityEngine.ParticleSystem.ShapeModule">
 			<summary>Script interface for the Shape module.</summary>
 		</member>
-		<member name="T:UnityEngine.ParticleSystemOverlapAction">
-			<summary>What action to perform when the particle trigger module passes a test.</summary>
-		</member>
-		<member name="T:UnityEngine.ParticleSystemCollisionMode">
-			<summary>Whether to use 2D or 3D colliders for particle collisions.</summary>
-		</member>
-		<member name="T:UnityEngine.ParticleSystem.VelocityOverLifetimeModule">
-			<summary>Script interface for the Velocity Over Lifetime module.</summary>
-		</member>
-		<member name="T:UnityEngine.ParticleSystem.MainModule">
-			<summary>Script interface for the main module.</summary>
-		</member>
-		<member name="T:UnityEngine.ParticleSystemVertexStream">
-			<summary>All possible particle system vertex shader inputs.</summary>
-		</member>
-		<member name="T:UnityEngine.ParticleSystem.CollisionModule">
-			<summary>Script interface for the Collision module.</summary>
-		</member>
-		<member name="T:UnityEngine.ParticleSystemTriggerEventType">
-			<summary>The different types of particle triggers.</summary>
-		</member>
-		<member name="T:UnityEngine.ParticleSystemCustomData">
-			<summary>Which stream of custom particle data to set.</summary>
-		</member>
 		<member name="T:UnityEngine.ParticleSystem.TextureSheetAnimationModule">
 			<summary>Script interface for the Texture Sheet Animation module.</summary>
 		</member>
-		<member name="T:UnityEngine.ParticleSystemSimulationSpace">
-			<summary>The space to simulate particles in.</summary>
-		</member>
-		<member name="T:UnityEngine.ParticleSystem.SubEmittersModule">
-			<summary>Script interface for the Sub Emitters module.</summary>
+		<member name="T:UnityEngine.ParticleSystemCollisionQuality">
+			<summary>Quality of world collisions. Medium and low quality are approximate and may leak particles.</summary>
 		</member>
 		<member name="T:UnityEngine.ParticleSystem.TrailModule">
 			<summary>Access the particle system trails module.</summary>
 		</member>
-		<member name="T:UnityEngine.ParticleSystemSortMode">
-			<summary>The sorting mode for particle systems.</summary>
+		<member name="T:UnityEngine.ParticleSystem.RotationBySpeedModule">
+			<summary>Script interface for the Rotation By Speed module.</summary>
 		</member>
 		<member name="T:UnityEngine.ParticleSystemNoiseQuality">
 			<summary>The quality of the generated noise.</summary>
 		</member>
-		<member name="T:UnityEngine.ParticleSystem.ForceOverLifetimeModule">
-			<summary>Script interface for the Force Over Lifetime module.</summary>
+		<member name="T:UnityEngine.ParticleSystemScalingMode">
+			<summary>Control how particle systems apply transform scale.</summary>
 		</member>
-		<member name="T:UnityEngine.ParticleSystem.LimitVelocityOverLifetimeModule">
-			<summary>Script interface for the Limit Velocity Over Lifetime module.</summary>
+		<member name="T:UnityEngine.ParticleSystemRenderMode">
+			<summary>The rendering mode for particle systems (Shuriken).</summary>
 		</member>
-		<member name="T:UnityEngine.ParticleSystemSubEmitterProperties">
-			<summary>The properties of sub-emitter particles.</summary>
+		<member name="T:UnityEngine.ParticleSystemOverlapAction">
+			<summary>What action to perform when the particle trigger module passes a test.</summary>
+		</member>
+		<member name="T:UnityEngine.ParticleSystemTriggerEventType">
+			<summary>The different types of particle triggers.</summary>
+		</member>
+		<member name="T:UnityEngine.ParticleSystemInheritVelocityMode">
+			<summary>How to apply emitter velocity to particles.</summary>
+		</member>
+		<member name="T:UnityEngine.ParticleSystem.SubEmittersModule">
+			<summary>Script interface for the Sub Emitters module.</summary>
+		</member>
+		<member name="T:UnityEngine.ParticleSystemGradientMode">
+			<summary>The particle gradient mode (Shuriken).</summary>
+		</member>
+		<member name="T:UnityEngine.ParticleSystemAnimationMode">
+			<summary>The animation mode.</summary>
+		</member>
+		<member name="T:UnityEngine.ParticleSystem.TriggerModule">
+			<summary>Script interface for the Trigger module.</summary>
+		</member>
+		<member name="T:UnityEngine.ParticleSystemMeshShapeType">
+			<summary>The mesh emission type.</summary>
+		</member>
+		<member name="T:UnityEngine.ParticleSystemCollisionType">
+			<summary>The type of collisions to use for a given particle system.</summary>
+		</member>
+		<member name="T:UnityEngine.ParticleSystemEmitterVelocityMode">
+			<summary>Control how a Particle System calculates its velocity.</summary>
+		</member>
+		<member name="T:UnityEngine.ParticleSystemAnimationType">
+			<summary>The animation type.</summary>
+		</member>
+		<member name="T:UnityEngine.ParticleSystemEmissionType">
+			<summary>The mode in which particles are emitted.</summary>
 		</member>
 		<member name="T:UnityEngine.ParticleSystemTrailTextureMode">
 			<summary>Choose how textures are applied to Particle Trails.</summary>
 		</member>
+		<member name="T:UnityEngine.ParticleSystemShapeType">
+			<summary>The emission shape (Shuriken).</summary>
+		</member>
+		<member name="T:UnityEngine.ParticleSystem.ColorOverLifetimeModule">
+			<summary>Script interface for the Color Over Lifetime module.</summary>
+		</member>
+		<member name="T:UnityEngine.ParticleSystem.MainModule">
+			<summary>Script interface for the main module.</summary>
+		</member>
+		<member name="T:UnityEngine.ParticleSystem.CollisionModule">
+			<summary>Script interface for the Collision module.</summary>
+		</member>
+		<member name="P:UnityEngine.ParticleSystem.startDelay">
+			<summary>Start delay in seconds.</summary>
+		</member>
+		<member name="T:UnityEngine.ParticleSystemSubEmitterProperties">
+			<summary>The properties of sub-emitter particles.</summary>
+		</member>
+		<member name="T:UnityEngine.ParticleSystemSortMode">
+			<summary>The sorting mode for particle systems.</summary>
+		</member>
+		<member name="T:UnityEngine.ParticleSystem.EmitParams">
+			<summary>Script interface for particle emission parameters.</summary>
+		</member>
 		<member name="T:UnityEngine.ParticleSystemRenderer">
 			<summary>Renders particles on to the screen (Shuriken).</summary>
+		</member>
+		<member name="T:UnityEngine.ParticleSystem.InheritVelocityModule">
+			<summary>The Inherit Velocity Module controls how the velocity of the emitter is transferred to the particles as they are emitted.</summary>
+		</member>
+		<member name="T:UnityEngine.ParticleSystem.SizeOverLifetimeModule">
+			<summary>Script interface for the Size Over Lifetime module.</summary>
+		</member>
+		<member name="T:UnityEngine.ParticleSystem.RotationOverLifetimeModule">
+			<summary>Script interface for the Rotation Over Lifetime module.</summary>
+		</member>
+		<member name="T:UnityEngine.ParticleSystem.CustomDataModule">
+			<summary>Script interface for the Custom Data module.</summary>
+		</member>
+		<member name="M:UnityEngine.ParticlePhysicsExtensions.GetSafeCollisionEventSize(UnityEngine.ParticleSystem)">
+			<summary>Safe array size for use with ParticleSystem.GetCollisionEvents.</summary>
+		</member>
+		<member name="T:UnityEngine.ParticleSystemShapeMultiModeValue">
+			<summary>The mode used to generate new points in a shape (Shuriken).</summary>
+		</member>
+		<member name="P:UnityEngine.ParticleSystem.isPlaying">
+			<summary>Is the particle system playing right now ?</summary>
+		</member>
+		<member name="T:UnityEngine.ParticleSystem.ColorBySpeedModule">
+			<summary>Script interface for the Color By Speed module.</summary>
+		</member>
+		<member name="T:UnityEngine.ParticleSystemTrailMode">
+			<summary>Choose how Particle Trails are generated.</summary>
+		</member>
+		<member name="M:UnityEngine.ParticlePhysicsExtensions.GetCollisionEvents(UnityEngine.ParticleSystem,UnityEngine.GameObject,System.Collections.Generic.List`1<UnityEngine.ParticleCollisionEvent>)">
+			<summary>Get the particle collision events for a GameObject. Returns the number of events written to the array.</summary>
+		</member>
+		<member name="M:UnityEngine.ParticlePhysicsExtensions.GetCollisionEvents(UnityEngine.ParticleSystem,UnityEngine.GameObject,UnityEngine.ParticleCollisionEvent[])">
+			<summary>Get the particle collision events for a GameObject. Returns the number of events written to the array.</summary>
 		</member>
 		<member name="T:UnityEngine.ParticleSystem.Particle">
 			<summary>Script interface for a Particle.</summary>
@@ -154,14 +199,8 @@
 		<member name="P:UnityEngine.ParticleSystem.Particle.velocity">
 			<summary>The velocity of the particle.</summary>
 		</member>
-		<member name="P:UnityEngine.ParticleSystem.startDelay">
-			<summary>Start delay in seconds.</summary>
-		</member>
 		<member name="P:UnityEngine.ParticleSystem.Particle.rotation">
 			<summary>The rotation of the particle.</summary>
-		</member>
-		<member name="M:UnityEngine.ParticlePhysicsExtensions.GetSafeCollisionEventSize(UnityEngine.ParticleSystem)">
-			<summary>Safe array size for use with ParticleSystem.GetCollisionEvents.</summary>
 		</member>
 		<member name="P:UnityEngine.ParticleSystem.Particle.angularVelocity">
 			<summary>The angular velocity of the particle.</summary>
@@ -172,74 +211,38 @@
 		<member name="P:UnityEngine.ParticleSystem.Particle.color">
 			<summary>The color of the particle.</summary>
 		</member>
-		<member name="T:UnityEngine.ParticleSystem.SizeBySpeedModule">
-			<summary>Script interface for the Size By Speed module.</summary>
-		</member>
-		<member name="T:UnityEngine.ParticleCollisionEvent">
-			<summary>Information about a particle collision.</summary>
-		</member>
-		<member name="T:UnityEngine.ParticleSystem.ColorBySpeedModule">
-			<summary>Script interface for the Color By Speed module.</summary>
-		</member>
-		<member name="T:UnityEngine.ParticleSystemCustomDataMode">
-			<summary>Which mode the Custom Data module uses to generate its data.</summary>
-		</member>
-		<member name="P:UnityEngine.ParticleSystem.isPlaying">
-			<summary>Is the particle system playing right now ?</summary>
-		</member>
-		<member name="T:UnityEngine.ParticleSystem.ColorOverLifetimeModule">
-			<summary>Script interface for the Color Over Lifetime module.</summary>
-		</member>
 		<member name="P:UnityEngine.ParticleSystemRenderer.renderMode">
 			<summary>How particles are drawn.</summary>
-		</member>
-		<member name="T:UnityEngine.ParticleSystem.EmitParams">
-			<summary>Script interface for particle emission parameters.</summary>
-		</member>
-		<member name="P:UnityEngine.ParticleCollisionEvent.intersection">
-			<summary>Intersection point of the collision in world coordinates.</summary>
-		</member>
-		<member name="T:UnityEngine.ParticleSystemTrailMode">
-			<summary>Choose how Particle Trails are generated.</summary>
-		</member>
-		<member name="T:UnityEngine.ParticleSystem.SizeOverLifetimeModule">
-			<summary>Script interface for the Size Over Lifetime module.</summary>
-		</member>
-		<member name="T:UnityEngine.ParticleSystem.CustomDataModule">
-			<summary>Script interface for the Custom Data module.</summary>
-		</member>
-		<member name="T:UnityEngine.ParticleSystemSubEmitterType">
-			<summary>The events that cause new particles to be spawned.</summary>
-		</member>
-		<member name="M:UnityEngine.ParticlePhysicsExtensions.GetCollisionEvents(UnityEngine.ParticleSystem,UnityEngine.GameObject,System.Collections.Generic.List`1<UnityEngine.ParticleCollisionEvent>)">
-			<summary>Get the particle collision events for a GameObject. Returns the number of events written to the array.</summary>
-		</member>
-		<member name="M:UnityEngine.ParticlePhysicsExtensions.GetCollisionEvents(UnityEngine.ParticleSystem,UnityEngine.GameObject,UnityEngine.ParticleCollisionEvent[])">
-			<summary>Get the particle collision events for a GameObject. Returns the number of events written to the array.</summary>
 		</member>
 		<member name="P:UnityEngine.ParticleSystem.isEmitting">
 			<summary>Is the particle system currently emitting particles? A particle system may stop emitting when its emission module has finished, it has been paused or if the system has been stopped using Stop with the StopEmitting flag. Resume emitting by calling Play.</summary>
 		</member>
-		<member name="M:UnityEngine.ParticlePhysicsExtensions.GetSafeTriggerParticlesSize(UnityEngine.ParticleSystem,UnityEngine.ParticleSystemTriggerEventType)">
-			<summary>Safe array size for use with ParticleSystem.GetTriggerParticles.</summary>
+		<member name="T:UnityEngine.ParticleSystem.SizeBySpeedModule">
+			<summary>Script interface for the Size By Speed module.</summary>
 		</member>
-		<member name="P:UnityEngine.ParticleCollisionEvent.normal">
-			<summary>Geometry normal at the intersection point of the collision.</summary>
-		</member>
-		<member name="M:UnityEngine.ParticlePhysicsExtensions.GetTriggerParticles(UnityEngine.ParticleSystem,UnityEngine.ParticleSystemTriggerEventType,System.Collections.Generic.List`1<UnityEngine.ParticleSystem.Particle>)">
-			<summary>Get the particles that met the condition in the particle trigger module. Returns the number of particles written to the array.</summary>
+		<member name="T:UnityEngine.ParticleSystem.ForceOverLifetimeModule">
+			<summary>Script interface for the Force Over Lifetime module.</summary>
 		</member>
 		<member name="P:UnityEngine.ParticleSystemRenderer.lengthScale">
 			<summary>How much are the particles stretched in their direction of motion.</summary>
 		</member>
-		<member name="P:UnityEngine.ParticleCollisionEvent.velocity">
-			<summary>Incident velocity at the intersection point of the collision.</summary>
-		</member>
-		<member name="P:UnityEngine.ParticleCollisionEvent.colliderComponent">
-			<summary>The Collider or Collider2D for the GameObject struck by the particles.</summary>
-		</member>
 		<member name="P:UnityEngine.ParticleSystem.isStopped">
 			<summary>Is the particle system stopped right now ?</summary>
+		</member>
+		<member name="T:UnityEngine.ParticleSystemSubEmitterType">
+			<summary>The events that cause new particles to be spawned.</summary>
+		</member>
+		<member name="M:UnityEngine.ParticlePhysicsExtensions.GetSafeTriggerParticlesSize(UnityEngine.ParticleSystem,UnityEngine.ParticleSystemTriggerEventType)">
+			<summary>Safe array size for use with ParticleSystem.GetTriggerParticles.</summary>
+		</member>
+		<member name="M:UnityEngine.ParticlePhysicsExtensions.GetTriggerParticles(UnityEngine.ParticleSystem,UnityEngine.ParticleSystemTriggerEventType,System.Collections.Generic.List`1<UnityEngine.ParticleSystem.Particle>)">
+			<summary>Get the particles that met the condition in the particle trigger module. Returns the number of particles written to the array.</summary>
+		</member>
+		<member name="P:UnityEngine.ParticleSystemRenderer.velocityScale">
+			<summary>How much are the particles stretched depending on "how fast they move".</summary>
+		</member>
+		<member name="P:UnityEngine.ParticleSystem.isPaused">
+			<summary>Is the particle system paused right now ?</summary>
 		</member>
 		<member name="M:UnityEngine.ParticlePhysicsExtensions.SetTriggerParticles(UnityEngine.ParticleSystem,UnityEngine.ParticleSystemTriggerEventType,System.Collections.Generic.List`1<UnityEngine.ParticleSystem.Particle>,System.Int32,System.Int32)">
 			<summary>Write modified particles back to the particle system, during a call to OnParticleTrigger.</summary>
@@ -247,38 +250,17 @@
 		<member name="M:UnityEngine.ParticlePhysicsExtensions.SetTriggerParticles(UnityEngine.ParticleSystem,UnityEngine.ParticleSystemTriggerEventType,System.Collections.Generic.List`1<UnityEngine.ParticleSystem.Particle>)">
 			<summary>Write modified particles back to the particle system, during a call to OnParticleTrigger.</summary>
 		</member>
-		<member name="P:UnityEngine.ParticleSystemRenderer.velocityScale">
-			<summary>How much are the particles stretched depending on "how fast they move".</summary>
-		</member>
-		<member name="T:UnityEngine.ParticleSystemAnimationMode">
-			<summary>The animation mode.</summary>
-		</member>
-		<member name="T:UnityEngine.ParticleSystemShapeMultiModeValue">
-			<summary>The mode used to generate new points in a shape (Shuriken).</summary>
-		</member>
-		<member name="T:UnityEngine.ParticleSystem.RotationOverLifetimeModule">
-			<summary>Script interface for the Rotation Over Lifetime module.</summary>
-		</member>
-		<member name="P:UnityEngine.ParticleCollisionEvent.collider">
-			<summary>The Collider for the GameObject struck by the particles.</summary>
-		</member>
-		<member name="P:UnityEngine.ParticleSystem.isPaused">
-			<summary>Is the particle system paused right now ?</summary>
-		</member>
-		<member name="P:UnityEngine.ParticleSystemRenderer.cameraVelocityScale">
-			<summary>How much are the particles stretched depending on the Camera's speed.</summary>
-		</member>
 		<member name="P:UnityEngine.ParticleSystem.loop">
 			<summary>Is the particle system looping?</summary>
 		</member>
 		<member name="P:UnityEngine.ParticleSystem.playOnAwake">
 			<summary>If set to true, the particle system will automatically start playing on startup.</summary>
 		</member>
+		<member name="P:UnityEngine.ParticleSystemRenderer.cameraVelocityScale">
+			<summary>How much are the particles stretched depending on the Camera's speed.</summary>
+		</member>
 		<member name="P:UnityEngine.ParticleSystemRenderer.normalDirection">
 			<summary>How much are billboard particle normals oriented towards the camera.</summary>
-		</member>
-		<member name="T:UnityEngine.ParticleSystem.InheritVelocityModule">
-			<summary>The Inherit Velocity Module controls how the velocity of the emitter is transferred to the particles as they are emitted.</summary>
 		</member>
 		<member name="P:UnityEngine.ParticleSystem.time">
 			<summary>Playback position in seconds.</summary>
@@ -286,11 +268,11 @@
 		<member name="P:UnityEngine.ParticleSystemRenderer.alignment">
 			<summary>Control the direction that particles face.</summary>
 		</member>
-		<member name="P:UnityEngine.ParticleSystemRenderer.pivot">
-			<summary>Modify the pivot point used for rotating particles.</summary>
-		</member>
 		<member name="P:UnityEngine.ParticleSystem.duration">
 			<summary>The duration of the particle system in seconds (Read Only).</summary>
+		</member>
+		<member name="P:UnityEngine.ParticleSystemRenderer.pivot">
+			<summary>Modify the pivot point used for rotating particles.</summary>
 		</member>
 		<member name="P:UnityEngine.ParticleSystem.playbackSpeed">
 			<summary>The playback speed of the particle system. 1 is normal playback speed.</summary>
@@ -310,53 +292,50 @@
 		<member name="P:UnityEngine.ParticleSystem.enableEmission">
 			<summary>When set to false, the particle system will not emit particles.</summary>
 		</member>
-		<member name="P:UnityEngine.ParticleSystem.emissionRate">
-			<summary>The rate of emission.</summary>
-		</member>
 		<member name="P:UnityEngine.ParticleSystemRenderer.maxParticleSize">
 			<summary>Clamp the maximum particle size.</summary>
 		</member>
-		<member name="P:UnityEngine.ParticleSystem.startSpeed">
-			<summary>The initial speed of particles when emitted. When using curves, this values acts as a scale on the curve.</summary>
+		<member name="P:UnityEngine.ParticleSystem.emissionRate">
+			<summary>The rate of emission.</summary>
 		</member>
 		<member name="P:UnityEngine.ParticleSystemRenderer.mesh">
 			<summary>Mesh used as particle instead of billboarded texture.</summary>
 		</member>
+		<member name="P:UnityEngine.ParticleSystem.startSpeed">
+			<summary>The initial speed of particles when emitted. When using curves, this values acts as a scale on the curve.</summary>
+		</member>
 		<member name="P:UnityEngine.ParticleSystem.startSize">
 			<summary>The initial size of particles when emitted. When using curves, this values acts as a scale on the curve.</summary>
-		</member>
-		<member name="P:UnityEngine.ParticleSystem.startColor">
-			<summary>The initial color of particles when emitted.</summary>
 		</member>
 		<member name="P:UnityEngine.ParticleSystemRenderer.meshCount">
 			<summary>The number of meshes being used for particle rendering.</summary>
 		</member>
-		<member name="P:UnityEngine.ParticleSystem.startRotation">
-			<summary>The initial rotation of particles when emitted. When using curves, this values acts as a scale on the curve.</summary>
-		</member>
 		<member name="P:UnityEngine.ParticleSystemRenderer.trailMaterial">
 			<summary>Set the material used by the Trail module for attaching trails to particles.</summary>
 		</member>
-		<member name="P:UnityEngine.ParticleSystem.startRotation3D">
-			<summary>The initial 3D rotation of particles when emitted. When using curves, this values acts as a scale on the curves.</summary>
+		<member name="P:UnityEngine.ParticleSystem.startColor">
+			<summary>The initial color of particles when emitted.</summary>
 		</member>
 		<member name="P:UnityEngine.ParticleSystemRenderer.activeVertexStreamsCount">
 			<summary>The number of currently active custom vertex streams.</summary>
 		</member>
-		<member name="P:UnityEngine.ParticleSystem.startLifetime">
-			<summary>The total lifetime in seconds that particles will have when emitted. When using curves, this values acts as a scale on the curve. This value is set in the particle when it is created by the particle system.</summary>
+		<member name="P:UnityEngine.ParticleSystem.startRotation">
+			<summary>The initial rotation of particles when emitted. When using curves, this values acts as a scale on the curve.</summary>
 		</member>
-		<member name="P:UnityEngine.ParticleSystem.gravityModifier">
-			<summary>Scale being applied to the gravity defined by Physics.gravity.</summary>
+		<member name="P:UnityEngine.ParticleSystem.startRotation3D">
+			<summary>The initial 3D rotation of particles when emitted. When using curves, this values acts as a scale on the curves.</summary>
 		</member>
 		<member name="P:UnityEngine.ParticleSystemRenderer.maskInteraction">
 			<summary>Specifies how the Particle System Renderer interacts with SpriteMask.</summary>
 		</member>
+		<member name="P:UnityEngine.ParticleSystem.startLifetime">
+			<summary>The total lifetime in seconds that particles will have when emitted. When using curves, this values acts as a scale on the curve. This value is set in the particle when it is created by the particle system.</summary>
+		</member>
 		<member name="M:UnityEngine.ParticleSystemRenderer.GetMeshes(UnityEngine.Mesh[])">
 			<summary>Get the array of meshes to be used as particles.</summary>
 		</member>
-		<member name="P:UnityEngine.ParticleSystem.maxParticles">
-			<summary>The maximum number of particles to emit.</summary>
+		<member name="P:UnityEngine.ParticleSystem.gravityModifier">
+			<summary>Scale being applied to the gravity defined by Physics.gravity.</summary>
 		</member>
 		<member name="M:UnityEngine.ParticleSystemRenderer.SetMeshes(UnityEngine.Mesh[])">
 			<summary>Set an array of meshes to be used as particles when the ParticleSystemRenderer.renderMode is set to ParticleSystemRenderMode.Mesh.</summary>
@@ -364,53 +343,74 @@
 		<member name="M:UnityEngine.ParticleSystemRenderer.SetMeshes(UnityEngine.Mesh[],System.Int32)">
 			<summary>Set an array of meshes to be used as particles when the ParticleSystemRenderer.renderMode is set to ParticleSystemRenderMode.Mesh.</summary>
 		</member>
-		<member name="P:UnityEngine.ParticleSystem.simulationSpace">
-			<summary>This selects the space in which to simulate particles. It can be either world or local space.</summary>
+		<member name="P:UnityEngine.ParticleSystem.maxParticles">
+			<summary>The maximum number of particles to emit.</summary>
 		</member>
 		<member name="M:UnityEngine.ParticleSystemRenderer.SetActiveVertexStreams(System.Collections.Generic.List`1<UnityEngine.ParticleSystemVertexStream>)">
 			<summary>Enable a set of vertex shader streams on the ParticleSystemRenderer.</summary>
 		</member>
-		<member name="P:UnityEngine.ParticleSystem.scalingMode">
-			<summary>The scaling mode applied to particle sizes and positions.</summary>
-		</member>
-		<member name="P:UnityEngine.ParticleSystem.randomSeed">
-			<summary>Override the random seed used for the particle system emission.</summary>
+		<member name="P:UnityEngine.ParticleSystem.simulationSpace">
+			<summary>This selects the space in which to simulate particles. It can be either world or local space.</summary>
 		</member>
 		<member name="M:UnityEngine.ParticleSystemRenderer.GetActiveVertexStreams(System.Collections.Generic.List`1<UnityEngine.ParticleSystemVertexStream>)">
 			<summary>Query which vertex shader streams are enabled on the ParticleSystemRenderer.</summary>
 		</member>
-		<member name="P:UnityEngine.ParticleSystem.useAutoRandomSeed">
-			<summary>Controls whether the Particle System uses an automatically-generated random number to seed the random number generator.</summary>
+		<member name="P:UnityEngine.ParticleSystem.scalingMode">
+			<summary>The scaling mode applied to particle sizes and positions.</summary>
 		</member>
 		<member name="M:UnityEngine.ParticleSystemRenderer.EnableVertexStreams(UnityEngine.ParticleSystemVertexStreams)">
 			<summary>Enable a set of vertex shader streams on the particle system renderer.</summary>
 		</member>
+		<member name="P:UnityEngine.ParticleSystem.randomSeed">
+			<summary>Override the random seed used for the particle system emission.</summary>
+		</member>
 		<member name="M:UnityEngine.ParticleSystemRenderer.DisableVertexStreams(UnityEngine.ParticleSystemVertexStreams)">
 			<summary></summary>
-		</member>
-		<member name="P:UnityEngine.ParticleSystem.MainModule UnityEngine.ParticleSystem.main">
-			<summary>Access the main particle system settings.</summary>
-		</member>
-		<member name="P:UnityEngine.ParticleSystem.EmissionModule UnityEngine.ParticleSystem.emission">
-			<summary>Access the particle system emission module.</summary>
 		</member>
 		<member name="M:UnityEngine.ParticleSystemRenderer.AreVertexStreamsEnabled(UnityEngine.ParticleSystemVertexStreams)">
 			<summary>Query whether the particle system renderer uses a particular set of vertex streams.</summary>
 		</member>
-		<member name="P:UnityEngine.ParticleSystem.ShapeModule UnityEngine.ParticleSystem.shape">
-			<summary>Access the particle system shape module.</summary>
+		<member name="P:UnityEngine.ParticleSystem.useAutoRandomSeed">
+			<summary>Controls whether the Particle System uses an automatically-generated random number to seed the random number generator.</summary>
 		</member>
 		<member name="M:UnityEngine.ParticleSystemRenderer.GetEnabledVertexStreams(UnityEngine.ParticleSystemVertexStreams)">
 			<summary>Query whether the particle system renderer uses a particular set of vertex streams.</summary>
 		</member>
+		<member name="P:UnityEngine.ParticleSystem.MainModule UnityEngine.ParticleSystem.main">
+			<summary>Access the main particle system settings.</summary>
+		</member>
+		<member name="T:UnityEngine.ParticleCollisionEvent">
+			<summary>Information about a particle collision.</summary>
+		</member>
+		<member name="P:UnityEngine.ParticleSystem.EmissionModule UnityEngine.ParticleSystem.emission">
+			<summary>Access the particle system emission module.</summary>
+		</member>
+		<member name="P:UnityEngine.ParticleSystem.ShapeModule UnityEngine.ParticleSystem.shape">
+			<summary>Access the particle system shape module.</summary>
+		</member>
+		<member name="P:UnityEngine.ParticleCollisionEvent.intersection">
+			<summary>Intersection point of the collision in world coordinates.</summary>
+		</member>
 		<member name="P:UnityEngine.ParticleSystem.VelocityOverLifetimeModule UnityEngine.ParticleSystem.velocityOverLifetime">
 			<summary>Access the particle system velocity over lifetime module.</summary>
+		</member>
+		<member name="P:UnityEngine.ParticleCollisionEvent.normal">
+			<summary>Geometry normal at the intersection point of the collision.</summary>
+		</member>
+		<member name="P:UnityEngine.ParticleCollisionEvent.velocity">
+			<summary>Incident velocity at the intersection point of the collision.</summary>
 		</member>
 		<member name="P:UnityEngine.ParticleSystem.LimitVelocityOverLifetimeModule UnityEngine.ParticleSystem.limitVelocityOverLifetime">
 			<summary>Access the particle system limit velocity over lifetime module.</summary>
 		</member>
+		<member name="P:UnityEngine.ParticleCollisionEvent.colliderComponent">
+			<summary>The Collider or Collider2D for the GameObject struck by the particles.</summary>
+		</member>
 		<member name="P:UnityEngine.ParticleSystem.InheritVelocityModule UnityEngine.ParticleSystem.inheritVelocity">
 			<summary>Access the particle system velocity inheritance module.</summary>
+		</member>
+		<member name="P:UnityEngine.ParticleCollisionEvent.collider">
+			<summary>The Collider for the GameObject struck by the particles.</summary>
 		</member>
 		<member name="P:UnityEngine.ParticleSystem.ForceOverLifetimeModule UnityEngine.ParticleSystem.forceOverLifetime">
 			<summary>Access the particle system force over lifetime module.</summary>

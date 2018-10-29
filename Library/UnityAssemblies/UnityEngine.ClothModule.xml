@@ -4,11 +4,11 @@
 		<name>UnityEngine.ClothModule</name>
 	</assembly>
 	<members>
-		<member name="T:UnityEngine.ClothSkinningCoefficient">
-			<summary>The ClothSkinningCoefficient struct is used to set up how a Cloth component is allowed to move with respect to the SkinnedMeshRenderer it is attached to.</summary>
-		</member>
 		<member name="T:UnityEngine.ClothSphereColliderPair">
 			<summary>A pair of SphereColliders used to define shapes for Cloth objects to collide against.</summary>
+		</member>
+		<member name="T:UnityEngine.ClothSkinningCoefficient">
+			<summary>The ClothSkinningCoefficient struct is used to set up how a Cloth component is allowed to move with respect to the SkinnedMeshRenderer it is attached to.</summary>
 		</member>
 		<member name="T:UnityEngine.Cloth">
 			<summary>The Cloth class provides an interface to cloth simulation physics.</summary>
@@ -16,20 +16,20 @@
 		<member name="P:UnityEngine.ClothSphereColliderPair.first">
 			<summary>The first SphereCollider of a ClothSphereColliderPair.</summary>
 		</member>
+		<member name="F:UnityEngine.ClothSkinningCoefficient.maxDistance">
+			<summary>Distance a vertex is allowed to travel from the skinned mesh vertex position.</summary>
+		</member>
 		<member name="P:UnityEngine.ClothSphereColliderPair.second">
 			<summary>The second SphereCollider of a ClothSphereColliderPair.</summary>
+		</member>
+		<member name="F:UnityEngine.ClothSkinningCoefficient.collisionSphereDistance">
+			<summary>Definition of a sphere a vertex is not allowed to enter. This allows collision against the animated cloth.</summary>
 		</member>
 		<member name="P:UnityEngine.Cloth.sleepThreshold">
 			<summary>Cloth's sleep threshold.</summary>
 		</member>
-		<member name="F:UnityEngine.ClothSkinningCoefficient.maxDistance">
-			<summary>Distance a vertex is allowed to travel from the skinned mesh vertex position.</summary>
-		</member>
 		<member name="P:UnityEngine.Cloth.bendingStiffness">
 			<summary>Bending stiffness of the cloth.</summary>
-		</member>
-		<member name="F:UnityEngine.ClothSkinningCoefficient.collisionSphereDistance">
-			<summary>Definition of a sphere a vertex is not allowed to enter. This allows collision against the animated cloth.</summary>
 		</member>
 		<member name="P:UnityEngine.Cloth.stretchingStiffness">
 			<summary>Stretching stiffness of the cloth.</summary>

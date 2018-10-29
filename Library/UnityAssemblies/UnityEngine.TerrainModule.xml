@@ -4,9 +4,6 @@
 		<name>UnityEngine.TerrainModule</name>
 	</assembly>
 	<members>
-		<member name="T:UnityEngine.Terrain.MaterialType">
-			<summary>The type of the material used to render a terrain object. Could be one of the built-in types or custom.</summary>
-		</member>
 		<member name="T:UnityEngine.TerrainChangedFlags">
 			<summary>Indicate the types of changes to the terrain in OnTerrainChanged callback.</summary>
 		</member>
@@ -22,11 +19,20 @@
 		<member name="T:UnityEngine.TreePrototype">
 			<summary>Simple class that contains a pointer to a tree prototype.</summary>
 		</member>
-		<member name="T:UnityEngine.DetailPrototype">
-			<summary>Detail prototype used by the Terrain GameObject.</summary>
+		<member name="T:UnityEngine.TerrainRenderFlags">
+			<summary>Enum provding terrain rendering options.</summary>
+		</member>
+		<member name="T:UnityEngine.Terrain.MaterialType">
+			<summary>The type of the material used to render a terrain object. Could be one of the built-in types or custom.</summary>
 		</member>
 		<member name="T:UnityEngine.DetailRenderMode">
 			<summary>Render mode for detail prototypes.</summary>
+		</member>
+		<member name="T:UnityEngine.DetailPrototype">
+			<summary>Detail prototype used by the Terrain GameObject.</summary>
+		</member>
+		<member name="T:UnityEngine.Terrain">
+			<summary>The Terrain component renders the terrain.</summary>
 		</member>
 		<member name="T:UnityEngine.TerrainExtensions">
 			<summary>Extension methods to the Terrain class, used only for the UpdateGIMaterials method used by the Global Illumination System.</summary>
@@ -34,11 +40,23 @@
 		<member name="T:UnityEngine.Tree">
 			<summary>Tree Component for the tree creator.</summary>
 		</member>
+		<member name="P:UnityEngine.TerrainData.heightmapWidth">
+			<summary>Width of the terrain in samples (Read Only).</summary>
+		</member>
+		<member name="P:UnityEngine.SplatPrototype.texture">
+			<summary>Texture of the splat applied to the Terrain.</summary>
+		</member>
+		<member name="P:UnityEngine.Terrain.terrainData">
+			<summary>The Terrain Data that stores heightmaps, terrain textures, detail meshes and trees.</summary>
+		</member>
 		<member name="P:UnityEngine.TreePrototype.prefab">
 			<summary>Retrieves the actual GameObect used by the tree.</summary>
 		</member>
-		<member name="T:UnityEngine.TerrainRenderFlags">
-			<summary>Enum provding terrain rendering options.</summary>
+		<member name="P:UnityEngine.Tree.data">
+			<summary>Data asociated to the Tree.</summary>
+		</member>
+		<member name="F:UnityEngine.TreeInstance.position">
+			<summary>Position of the tree.</summary>
 		</member>
 		<member name="M:UnityEngine.TerrainExtensions.UpdateGIMaterials(UnityEngine.Terrain)">
 			<summary>Schedules an update of the albedo and emissive Textures of a system that contains the Terrain.</summary>
@@ -46,83 +64,32 @@
 		<member name="M:UnityEngine.TerrainExtensions.UpdateGIMaterials(UnityEngine.Terrain,System.Int32,System.Int32,System.Int32,System.Int32)">
 			<summary>Schedules an update of the albedo and emissive Textures of a system that contains the Terrain.</summary>
 		</member>
-		<member name="T:UnityEngine.Terrain">
-			<summary>The Terrain component renders the terrain.</summary>
+		<member name="P:UnityEngine.TreePrototype.bendFactor">
+			<summary>Bend factor of the tree prototype.</summary>
 		</member>
 		<member name="P:UnityEngine.DetailPrototype.prototype">
 			<summary>GameObject used by the DetailPrototype.</summary>
 		</member>
-		<member name="P:UnityEngine.TreePrototype.bendFactor">
-			<summary>Bend factor of the tree prototype.</summary>
+		<member name="P:UnityEngine.SplatPrototype.normalMap">
+			<summary>Normal map of the splat applied to the Terrain.</summary>
 		</member>
-		<member name="P:UnityEngine.Tree.data">
-			<summary>Data asociated to the Tree.</summary>
-		</member>
-		<member name="P:UnityEngine.Terrain.terrainData">
-			<summary>The Terrain Data that stores heightmaps, terrain textures, detail meshes and trees.</summary>
-		</member>
-		<member name="P:UnityEngine.SplatPrototype.texture">
-			<summary>Texture of the splat applied to the Terrain.</summary>
+		<member name="F:UnityEngine.TreeInstance.widthScale">
+			<summary>Width scale of this instance (compared to the prototype's size).</summary>
 		</member>
 		<member name="P:UnityEngine.Tree.hasSpeedTreeWind">
 			<summary>Tells if there is wind data exported from SpeedTree are saved on this component.</summary>
 		</member>
-		<member name="P:UnityEngine.DetailPrototype.prototypeTexture">
-			<summary>Texture used by the DetailPrototype.</summary>
-		</member>
-		<member name="P:UnityEngine.SplatPrototype.normalMap">
-			<summary>Normal map of the splat applied to the Terrain.</summary>
-		</member>
-		<member name="P:UnityEngine.SplatPrototype.tileSize">
-			<summary>Size of the tile used in the texture of the SplatPrototype.</summary>
+		<member name="P:UnityEngine.TerrainData.heightmapHeight">
+			<summary>Height of the terrain in samples (Read Only).</summary>
 		</member>
 		<member name="P:UnityEngine.Terrain.treeDistance">
 			<summary>The maximum distance at which trees are rendered.</summary>
 		</member>
-		<member name="P:UnityEngine.DetailPrototype.minWidth">
-			<summary>Minimum width of the grass billboards (if render mode is GrassBillboard).</summary>
+		<member name="P:UnityEngine.DetailPrototype.prototypeTexture">
+			<summary>Texture used by the DetailPrototype.</summary>
 		</member>
-		<member name="P:UnityEngine.SplatPrototype.tileOffset">
-			<summary>Offset of the tile texture of the SplatPrototype.</summary>
-		</member>
-		<member name="P:UnityEngine.SplatPrototype.metallic">
-			<summary>The metallic value of the splat layer.</summary>
-		</member>
-		<member name="P:UnityEngine.DetailPrototype.maxWidth">
-			<summary>Maximum width of the grass billboards (if render mode is GrassBillboard).</summary>
-		</member>
-		<member name="P:UnityEngine.SplatPrototype.smoothness">
-			<summary>The smoothness value of the splat layer when the main texture has no alpha channel.</summary>
-		</member>
-		<member name="P:UnityEngine.DetailPrototype.minHeight">
-			<summary>Minimum height of the grass billboards (if render mode is GrassBillboard).</summary>
-		</member>
-		<member name="P:UnityEngine.DetailPrototype.maxHeight">
-			<summary>Maximum height of the grass billboards (if render mode is GrassBillboard).</summary>
-		</member>
-		<member name="P:UnityEngine.DetailPrototype.noiseSpread">
-			<summary>How spread out is the noise for the DetailPrototype.</summary>
-		</member>
-		<member name="P:UnityEngine.TerrainData.heightmapWidth">
-			<summary>Width of the terrain in samples (Read Only).</summary>
-		</member>
-		<member name="P:UnityEngine.Terrain.treeBillboardDistance">
-			<summary>Distance from the camera where trees will be rendered as billboards only.</summary>
-		</member>
-		<member name="F:UnityEngine.TreeInstance.position">
-			<summary>Position of the tree.</summary>
-		</member>
-		<member name="P:UnityEngine.DetailPrototype.bendFactor">
-			<summary>Bend factor of the detailPrototype.</summary>
-		</member>
-		<member name="P:UnityEngine.TerrainData.heightmapHeight">
-			<summary>Height of the terrain in samples (Read Only).</summary>
-		</member>
-		<member name="P:UnityEngine.Terrain.treeCrossFadeLength">
-			<summary>Total distance delta that trees will use to transition from billboard orientation to mesh orientation.</summary>
-		</member>
-		<member name="F:UnityEngine.TreeInstance.widthScale">
-			<summary>Width scale of this instance (compared to the prototype's size).</summary>
+		<member name="P:UnityEngine.SplatPrototype.tileSize">
+			<summary>Size of the tile used in the texture of the SplatPrototype.</summary>
 		</member>
 		<member name="F:UnityEngine.TreeInstance.heightScale">
 			<summary>Height scale of this instance (compared to the prototype's size).</summary>
@@ -130,29 +97,65 @@
 		<member name="P:UnityEngine.TerrainData.heightmapResolution">
 			<summary>Resolution of the heightmap.</summary>
 		</member>
-		<member name="P:UnityEngine.Terrain.treeMaximumFullLODCount">
-			<summary>Maximum number of trees rendered at full LOD.</summary>
+		<member name="P:UnityEngine.Terrain.treeBillboardDistance">
+			<summary>Distance from the camera where trees will be rendered as billboards only.</summary>
+		</member>
+		<member name="P:UnityEngine.DetailPrototype.minWidth">
+			<summary>Minimum width of the grass billboards (if render mode is GrassBillboard).</summary>
+		</member>
+		<member name="P:UnityEngine.DetailPrototype.maxWidth">
+			<summary>Maximum width of the grass billboards (if render mode is GrassBillboard).</summary>
+		</member>
+		<member name="P:UnityEngine.SplatPrototype.tileOffset">
+			<summary>Offset of the tile texture of the SplatPrototype.</summary>
+		</member>
+		<member name="P:UnityEngine.Terrain.treeCrossFadeLength">
+			<summary>Total distance delta that trees will use to transition from billboard orientation to mesh orientation.</summary>
 		</member>
 		<member name="F:UnityEngine.TreeInstance.rotation">
 			<summary>Read-only.Rotation of the tree on X-Z plane (in radians).</summary>
 		</member>
-		<member name="P:UnityEngine.Terrain.detailObjectDistance">
-			<summary>Detail objects will be displayed up to this distance.</summary>
-		</member>
 		<member name="P:UnityEngine.TerrainData.heightmapScale">
 			<summary>The size of each heightmap sample.</summary>
 		</member>
-		<member name="P:UnityEngine.DetailPrototype.healthyColor">
-			<summary>Color when the DetailPrototypes are "healthy".</summary>
+		<member name="P:UnityEngine.SplatPrototype.metallic">
+			<summary>The metallic value of the splat layer.</summary>
+		</member>
+		<member name="P:UnityEngine.DetailPrototype.minHeight">
+			<summary>Minimum height of the grass billboards (if render mode is GrassBillboard).</summary>
+		</member>
+		<member name="P:UnityEngine.Terrain.treeMaximumFullLODCount">
+			<summary>Maximum number of trees rendered at full LOD.</summary>
 		</member>
 		<member name="P:UnityEngine.TerrainData.size">
 			<summary>The total size in world units of the terrain.</summary>
 		</member>
-		<member name="P:UnityEngine.Terrain.detailObjectDensity">
-			<summary>Density of detail objects.</summary>
+		<member name="P:UnityEngine.Terrain.detailObjectDistance">
+			<summary>Detail objects will be displayed up to this distance.</summary>
+		</member>
+		<member name="P:UnityEngine.DetailPrototype.maxHeight">
+			<summary>Maximum height of the grass billboards (if render mode is GrassBillboard).</summary>
 		</member>
 		<member name="F:UnityEngine.TreeInstance.color">
 			<summary>Color of this instance.</summary>
+		</member>
+		<member name="P:UnityEngine.SplatPrototype.smoothness">
+			<summary>The smoothness value of the splat layer when the main texture has no alpha channel.</summary>
+		</member>
+		<member name="P:UnityEngine.Terrain.detailObjectDensity">
+			<summary>Density of detail objects.</summary>
+		</member>
+		<member name="P:UnityEngine.DetailPrototype.noiseSpread">
+			<summary>How spread out is the noise for the DetailPrototype.</summary>
+		</member>
+		<member name="P:UnityEngine.TerrainData.bounds">
+			<summary>The local bounding box of the TerrainData object.</summary>
+		</member>
+		<member name="P:UnityEngine.TerrainData.thickness">
+			<summary>The thickness of the terrain used for collision detection.</summary>
+		</member>
+		<member name="P:UnityEngine.DetailPrototype.bendFactor">
+			<summary>Bend factor of the detailPrototype.</summary>
 		</member>
 		<member name="P:UnityEngine.Terrain.heightmapPixelError">
 			<summary>An approximation of how many pixels the terrain will pop in the worst case when switching lod.</summary>
@@ -160,59 +163,50 @@
 		<member name="F:UnityEngine.TreeInstance.lightmapColor">
 			<summary>Lightmap color calculated for this instance.</summary>
 		</member>
-		<member name="P:UnityEngine.TerrainData.bounds">
-			<summary>The local bounding box of the TerrainData object.</summary>
-		</member>
-		<member name="F:UnityEngine.TreeInstance.prototypeIndex">
-			<summary>Index of this instance in the TerrainData.treePrototypes array.</summary>
-		</member>
-		<member name="P:UnityEngine.TerrainData.thickness">
-			<summary>The thickness of the terrain used for collision detection.</summary>
-		</member>
-		<member name="P:UnityEngine.DetailPrototype.dryColor">
-			<summary>Color when the DetailPrototypes are "dry".</summary>
-		</member>
-		<member name="P:UnityEngine.DetailPrototype.renderMode">
-			<summary>Render mode for the DetailPrototype.</summary>
-		</member>
-		<member name="P:UnityEngine.Terrain.heightmapMaximumLOD">
-			<summary>Lets you essentially lower the heightmap resolution used for rendering.</summary>
-		</member>
-		<member name="P:UnityEngine.Terrain.basemapDistance">
-			<summary>Heightmap patches beyond basemap distance will use a precomputed low res basemap.</summary>
-		</member>
 		<member name="P:UnityEngine.TerrainData.wavingGrassStrength">
 			<summary>Strength of the waving grass in the terrain.</summary>
 		</member>
-		<member name="P:UnityEngine.Terrain.lightmapIndex">
-			<summary>The index of the baked lightmap applied to this terrain.</summary>
+		<member name="P:UnityEngine.DetailPrototype.healthyColor">
+			<summary>Color when the DetailPrototypes are "healthy".</summary>
 		</member>
 		<member name="P:UnityEngine.TerrainData.wavingGrassAmount">
 			<summary>Amount of waving grass in the terrain.</summary>
 		</member>
+		<member name="F:UnityEngine.TreeInstance.prototypeIndex">
+			<summary>Index of this instance in the TerrainData.treePrototypes array.</summary>
+		</member>
+		<member name="P:UnityEngine.DetailPrototype.dryColor">
+			<summary>Color when the DetailPrototypes are "dry".</summary>
+		</member>
+		<member name="P:UnityEngine.Terrain.heightmapMaximumLOD">
+			<summary>Lets you essentially lower the heightmap resolution used for rendering.</summary>
+		</member>
+		<member name="P:UnityEngine.DetailPrototype.renderMode">
+			<summary>Render mode for the DetailPrototype.</summary>
+		</member>
 		<member name="P:UnityEngine.TerrainData.wavingGrassSpeed">
 			<summary>Speed of the waving grass.</summary>
+		</member>
+		<member name="P:UnityEngine.Terrain.basemapDistance">
+			<summary>Heightmap patches beyond basemap distance will use a precomputed low res basemap.</summary>
 		</member>
 		<member name="P:UnityEngine.TerrainData.wavingGrassTint">
 			<summary>Color of the waving grass that the terrain has.</summary>
 		</member>
-		<member name="P:UnityEngine.Terrain.realtimeLightmapIndex">
-			<summary>The index of the realtime lightmap applied to this terrain.</summary>
-		</member>
 		<member name="P:UnityEngine.TerrainData.detailWidth">
 			<summary>Detail width of the TerrainData.</summary>
+		</member>
+		<member name="P:UnityEngine.Terrain.lightmapIndex">
+			<summary>The index of the baked lightmap applied to this terrain.</summary>
 		</member>
 		<member name="P:UnityEngine.TerrainData.detailHeight">
 			<summary>Detail height of the TerrainData.</summary>
 		</member>
-		<member name="P:UnityEngine.Terrain.lightmapScaleOffset">
-			<summary>The UV scale &amp; offset used for a baked lightmap.</summary>
+		<member name="P:UnityEngine.Terrain.realtimeLightmapIndex">
+			<summary>The index of the realtime lightmap applied to this terrain.</summary>
 		</member>
 		<member name="P:UnityEngine.TerrainData.detailResolution">
 			<summary>Detail Resolution of the TerrainData.</summary>
-		</member>
-		<member name="P:UnityEngine.Terrain.realtimeLightmapScaleOffset">
-			<summary>The UV scale &amp; offset used for a realtime lightmap.</summary>
 		</member>
 		<member name="P:UnityEngine.TerrainData.detailPrototypes">
 			<summary>Contains the detail texture/meshes that the terrain has.</summary>
@@ -220,8 +214,14 @@
 		<member name="P:UnityEngine.TerrainData.treeInstances">
 			<summary>Contains the current trees placed in the terrain.</summary>
 		</member>
+		<member name="P:UnityEngine.Terrain.lightmapScaleOffset">
+			<summary>The UV scale &amp; offset used for a baked lightmap.</summary>
+		</member>
 		<member name="P:UnityEngine.TerrainData.treeInstanceCount">
 			<summary>Returns the number of tree instances.</summary>
+		</member>
+		<member name="P:UnityEngine.Terrain.realtimeLightmapScaleOffset">
+			<summary>The UV scale &amp; offset used for a realtime lightmap.</summary>
 		</member>
 		<member name="P:UnityEngine.TerrainData.treePrototypes">
 			<summary>The list of tree prototypes this are the ones available in the inspector.</summary>
@@ -238,41 +238,50 @@
 		<member name="P:UnityEngine.TerrainData.alphamapResolution">
 			<summary>Resolution of the alpha map.</summary>
 		</member>
-		<member name="P:UnityEngine.Terrain.reflectionProbeUsage">
-			<summary>How reflection probes are used for terrain. See ReflectionProbeUsage.</summary>
-		</member>
 		<member name="P:UnityEngine.TerrainData.alphamapWidth">
 			<summary>Width of the alpha map.</summary>
 		</member>
-		<member name="P:UnityEngine.Terrain.MaterialType UnityEngine.Terrain.materialType">
-			<summary>The type of the material used to render the terrain. Could be one of the built-in types or custom. See MaterialType.</summary>
+		<member name="P:UnityEngine.Terrain.reflectionProbeUsage">
+			<summary>How reflection probes are used for terrain. See ReflectionProbeUsage.</summary>
 		</member>
 		<member name="P:UnityEngine.TerrainData.alphamapHeight">
 			<summary>Height of the alpha map.</summary>
 		</member>
-		<member name="P:UnityEngine.Terrain.materialTemplate">
-			<summary>The custom material used to render the terrain.</summary>
-		</member>
-		<member name="P:UnityEngine.Terrain.legacySpecular">
-			<summary>The specular color of the terrain.</summary>
+		<member name="P:UnityEngine.Terrain.MaterialType UnityEngine.Terrain.materialType">
+			<summary>The type of the material used to render the terrain. Could be one of the built-in types or custom. See MaterialType.</summary>
 		</member>
 		<member name="P:UnityEngine.TerrainData.baseMapResolution">
 			<summary>Resolution of the base map used for rendering far patches on the terrain.</summary>
 		</member>
-		<member name="P:UnityEngine.Terrain.legacyShininess">
-			<summary>The shininess value of the terrain.</summary>
+		<member name="P:UnityEngine.Terrain.materialTemplate">
+			<summary>The custom material used to render the terrain.</summary>
 		</member>
 		<member name="P:UnityEngine.TerrainData.alphamapTextures">
 			<summary>Alpha map textures used by the Terrain. Used by Terrain Inspector for undo.</summary>
 		</member>
+		<member name="P:UnityEngine.TerrainData.splatPrototypes">
+			<summary>Splat texture used by the terrain.</summary>
+		</member>
+		<member name="P:UnityEngine.Terrain.legacySpecular">
+			<summary>The specular color of the terrain.</summary>
+		</member>
+		<member name="P:UnityEngine.Terrain.legacyShininess">
+			<summary>The shininess value of the terrain.</summary>
+		</member>
+		<member name="M:UnityEngine.TerrainData.GetHeight(System.Int32,System.Int32)">
+			<summary>Gets the height at a certain point x,y.</summary>
+		</member>
 		<member name="P:UnityEngine.Terrain.drawHeightmap">
 			<summary>Specify if terrain heightmap should be drawn.</summary>
+		</member>
+		<member name="M:UnityEngine.TerrainData.GetInterpolatedHeight(System.Single,System.Single)">
+			<summary>Gets an interpolated height at a point x,y.</summary>
 		</member>
 		<member name="P:UnityEngine.Terrain.drawTreesAndFoliage">
 			<summary>Specify if terrain trees and details should be drawn.</summary>
 		</member>
-		<member name="P:UnityEngine.TerrainData.splatPrototypes">
-			<summary>Splat texture used by the terrain.</summary>
+		<member name="M:UnityEngine.TerrainData.GetHeights(System.Int32,System.Int32,System.Int32,System.Int32)">
+			<summary>Get an array of heightmap samples.</summary>
 		</member>
 		<member name="P:UnityEngine.Terrain.patchBoundsMultiplier">
 			<summary>Set the terrain bounding box scale.</summary>
@@ -280,98 +289,89 @@
 		<member name="P:UnityEngine.Terrain.treeLODBiasMultiplier">
 			<summary>The multiplier to the current LOD bias used for rendering LOD trees (i.e. SpeedTree trees).</summary>
 		</member>
-		<member name="M:UnityEngine.TerrainData.GetHeight(System.Int32,System.Int32)">
-			<summary>Gets the height at a certain point x,y.</summary>
+		<member name="M:UnityEngine.TerrainData.SetHeights(System.Int32,System.Int32,System.Single[0...,0...])">
+			<summary>Set an array of heightmap samples.</summary>
 		</member>
 		<member name="P:UnityEngine.Terrain.collectDetailPatches">
 			<summary>Collect detail patches from memory.</summary>
 		</member>
-		<member name="M:UnityEngine.TerrainData.GetInterpolatedHeight(System.Single,System.Single)">
-			<summary>Gets an interpolated height at a point x,y.</summary>
-		</member>
 		<member name="P:UnityEngine.Terrain.editorRenderFlags">
 			<summary>Controls what part of the terrain should be rendered.</summary>
-		</member>
-		<member name="P:UnityEngine.Terrain.bakeLightProbesForTrees">
-			<summary>Specifies if an array of internal light probes should be baked for terrain trees. Available only in editor.</summary>
-		</member>
-		<member name="M:UnityEngine.TerrainData.GetHeights(System.Int32,System.Int32,System.Int32,System.Int32)">
-			<summary>Get an array of heightmap samples.</summary>
-		</member>
-		<member name="M:UnityEngine.TerrainData.SetHeights(System.Int32,System.Int32,System.Single[0...,0...])">
-			<summary>Set an array of heightmap samples.</summary>
-		</member>
-		<member name="P:UnityEngine.Terrain.activeTerrain">
-			<summary>The active terrain. This is a convenience function to get to the main terrain in the scene.</summary>
 		</member>
 		<member name="M:UnityEngine.TerrainData.SetHeightsDelayLOD(System.Int32,System.Int32,System.Single[0...,0...])">
 			<summary>Set an array of heightmap samples.</summary>
 		</member>
-		<member name="P:UnityEngine.Terrain.activeTerrains">
-			<summary>The active terrains in the scene.</summary>
-		</member>
 		<member name="M:UnityEngine.TerrainData.GetSteepness(System.Single,System.Single)">
 			<summary>Gets the gradient of the terrain at point (x,y).</summary>
 		</member>
-		<member name="M:UnityEngine.Terrain.GetClosestReflectionProbes(System.Collections.Generic.List`1<UnityEngine.Rendering.ReflectionProbeBlendInfo>)">
-			<summary>Fills the list with reflection probes whose AABB intersects with terrain's AABB. Their weights are also provided. Weight shows how much influence the probe has on the terrain, and is used when the blending between multiple reflection probes occurs.</summary>
+		<member name="P:UnityEngine.Terrain.bakeLightProbesForTrees">
+			<summary>Specifies if an array of internal light probes should be baked for terrain trees. Available only in editor.</summary>
+		</member>
+		<member name="P:UnityEngine.Terrain.activeTerrain">
+			<summary>The active terrain. This is a convenience function to get to the main terrain in the scene.</summary>
+		</member>
+		<member name="P:UnityEngine.Terrain.activeTerrains">
+			<summary>The active terrains in the scene.</summary>
 		</member>
 		<member name="M:UnityEngine.TerrainData.GetInterpolatedNormal(System.Single,System.Single)">
 			<summary>Get an interpolated normal at a given location.</summary>
 		</member>
-		<member name="M:UnityEngine.Terrain.SampleHeight(UnityEngine.Vector3)">
-			<summary>Samples the height at the given position defined in world space, relative to the terrain space.</summary>
+		<member name="M:UnityEngine.Terrain.GetClosestReflectionProbes(System.Collections.Generic.List`1<UnityEngine.Rendering.ReflectionProbeBlendInfo>)">
+			<summary>Fills the list with reflection probes whose AABB intersects with terrain's AABB. Their weights are also provided. Weight shows how much influence the probe has on the terrain, and is used when the blending between multiple reflection probes occurs.</summary>
 		</member>
 		<member name="M:UnityEngine.TerrainData.SetDetailResolution(System.Int32,System.Int32)">
 			<summary>Set the resolution of the detail map.</summary>
 		</member>
-		<member name="M:UnityEngine.Terrain.ApplyDelayedHeightmapModification()">
-			<summary>Update the terrain's LOD and vegetation information after making changes with TerrainData.SetHeightsDelayLOD.</summary>
-		</member>
-		<member name="M:UnityEngine.Terrain.AddTreeInstance(UnityEngine.TreeInstance)">
-			<summary>Adds a tree instance to the terrain.</summary>
+		<member name="M:UnityEngine.Terrain.SampleHeight(UnityEngine.Vector3)">
+			<summary>Samples the height at the given position defined in world space, relative to the terrain space.</summary>
 		</member>
 		<member name="M:UnityEngine.TerrainData.RefreshPrototypes()">
 			<summary>Reloads all the values of the available prototypes (ie, detail mesh assets) in the TerrainData Object.</summary>
 		</member>
-		<member name="M:UnityEngine.Terrain.SetNeighbors(UnityEngine.Terrain,UnityEngine.Terrain,UnityEngine.Terrain,UnityEngine.Terrain)">
-			<summary>Lets you setup the connection between neighboring Terrains.</summary>
+		<member name="M:UnityEngine.Terrain.ApplyDelayedHeightmapModification()">
+			<summary>Update the terrain's LOD and vegetation information after making changes with TerrainData.SetHeightsDelayLOD.</summary>
 		</member>
 		<member name="M:UnityEngine.TerrainData.GetSupportedLayers(System.Int32,System.Int32,System.Int32,System.Int32)">
 			<summary>Returns an array of all supported detail layer indices in the area.</summary>
 		</member>
-		<member name="M:UnityEngine.Terrain.GetPosition()">
-			<summary>Get the position of the terrain.</summary>
+		<member name="M:UnityEngine.Terrain.AddTreeInstance(UnityEngine.TreeInstance)">
+			<summary>Adds a tree instance to the terrain.</summary>
+		</member>
+		<member name="M:UnityEngine.Terrain.SetNeighbors(UnityEngine.Terrain,UnityEngine.Terrain,UnityEngine.Terrain,UnityEngine.Terrain)">
+			<summary>Lets you setup the connection between neighboring Terrains.</summary>
 		</member>
 		<member name="M:UnityEngine.TerrainData.GetDetailLayer(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)">
 			<summary>Returns a 2D array of the detail object density in the specific location.</summary>
 		</member>
-		<member name="M:UnityEngine.Terrain.Flush()">
-			<summary>Flushes any change done in the terrain so it takes effect.</summary>
-		</member>
-		<member name="M:UnityEngine.Terrain.SetSplatMaterialPropertyBlock(UnityEngine.MaterialPropertyBlock)">
-			<summary>Set the additional material properties when rendering the terrain heightmap using the splat material.</summary>
+		<member name="M:UnityEngine.Terrain.GetPosition()">
+			<summary>Get the position of the terrain.</summary>
 		</member>
 		<member name="M:UnityEngine.TerrainData.SetDetailLayer(System.Int32,System.Int32,System.Int32,System.Int32[0...,0...])">
 			<summary>Sets the detail layer density map.</summary>
 		</member>
-		<member name="M:UnityEngine.Terrain.GetSplatMaterialPropertyBlock(UnityEngine.MaterialPropertyBlock)">
-			<summary>Get the previously set splat material properties by copying to the dest MaterialPropertyBlock object.</summary>
-		</member>
-		<member name="M:UnityEngine.Terrain.CreateTerrainGameObject(UnityEngine.TerrainData)">
-			<summary>Creates a Terrain including collider from TerrainData.</summary>
-		</member>
 		<member name="M:UnityEngine.TerrainData.GetTreeInstance(System.Int32)">
 			<summary>Get the tree instance at the specified index. It is used as a faster version of treeInstances[index] as this function doesn't create the entire tree instances array.</summary>
+		</member>
+		<member name="M:UnityEngine.Terrain.Flush()">
+			<summary>Flushes any change done in the terrain so it takes effect.</summary>
 		</member>
 		<member name="M:UnityEngine.TerrainData.SetTreeInstance(System.Int32,UnityEngine.TreeInstance)">
 			<summary>Set the tree instance with new parameters at the specified index. However, TreeInstance.prototypeIndex and TreeInstance.position can not be changed otherwise an ArgumentException will be thrown.</summary>
 		</member>
+		<member name="M:UnityEngine.Terrain.SetSplatMaterialPropertyBlock(UnityEngine.MaterialPropertyBlock)">
+			<summary>Set the additional material properties when rendering the terrain heightmap using the splat material.</summary>
+		</member>
 		<member name="M:UnityEngine.TerrainData.GetAlphamaps(System.Int32,System.Int32,System.Int32,System.Int32)">
 			<summary>Returns the alpha map at a position x, y given a width and height.</summary>
 		</member>
+		<member name="M:UnityEngine.Terrain.GetSplatMaterialPropertyBlock(UnityEngine.MaterialPropertyBlock)">
+			<summary>Get the previously set splat material properties by copying to the dest MaterialPropertyBlock object.</summary>
+		</member>
 		<member name="M:UnityEngine.TerrainData.SetAlphamaps(System.Int32,System.Int32,System.Single[0...,0...,0...])">
 			<summary>Assign all splat values in the given map area.</summary>
+		</member>
+		<member name="M:UnityEngine.Terrain.CreateTerrainGameObject(UnityEngine.TerrainData)">
+			<summary>Creates a Terrain including collider from TerrainData.</summary>
 		</member>
 	</members>
 </doc>

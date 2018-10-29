@@ -4,14 +4,14 @@
 		<name>UnityEngine.TilemapModule</name>
 	</assembly>
 	<members>
+		<member name="T:UnityEngine.CustomGridBrushAttribute">
+			<summary>Attribute to define the class as a grid brush and to make it available in the palette window.</summary>
+		</member>
 		<member name="T:UnityEngine.GridBrushBase.Tool">
 			<summary>Tool mode for the GridBrushBase.</summary>
 		</member>
 		<member name="T:UnityEngine.GridBrushBase.FlipAxis">
 			<summary>Axis to flip tiles in the GridBrushBase by.</summary>
-		</member>
-		<member name="T:UnityEngine.CustomGridBrushAttribute">
-			<summary>Attribute to define the class as a grid brush and to make it available in the palette window.</summary>
 		</member>
 		<member name="T:UnityEngine.GridBrushBase.RotationDirection">
 			<summary>Direction to rotate tiles in the GridBrushBase by.</summary>

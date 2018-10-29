@@ -4,44 +4,44 @@
 		<name>UnityEngine.AudioModule</name>
 	</assembly>
 	<members>
-		<member name="T:UnityEngine.AudioVelocityUpdateMode">
-			<summary>Describes when an AudioSource or AudioListener is updated.</summary>
-		</member>
-		<member name="T:UnityEngine.AudioDistortionFilter">
-			<summary>The Audio Distortion Filter distorts the sound from an AudioSource or sounds reaching the AudioListener.</summary>
-		</member>
-		<member name="T:UnityEngine.AudioConfiguration">
-			<summary>Specifies the current properties or desired properties to be set for the audio system.</summary>
+		<member name="T:UnityEngine.AudioSpeakerMode">
+			<summary>These are speaker types defined for use with AudioSettings.speakerMode.</summary>
 		</member>
 		<member name="T:UnityEngine.AudioHighPassFilter">
 			<summary>The Audio High Pass Filter passes high frequencies of an AudioSource, and cuts off signals with frequencies lower than the Cutoff Frequency.</summary>
 		</member>
+		<member name="T:UnityEngine.AudioDistortionFilter">
+			<summary>The Audio Distortion Filter distorts the sound from an AudioSource or sounds reaching the AudioListener.</summary>
+		</member>
+		<member name="T:UnityEngine.AudioVelocityUpdateMode">
+			<summary>Describes when an AudioSource or AudioListener is updated.</summary>
+		</member>
 		<member name="T:UnityEngine.AudioRenderer">
 			<summary>Allow recording the main output of the game or specific groups in the AudioMixer.</summary>
+		</member>
+		<member name="T:UnityEngine.AudioClip.PCMSetPositionCallback">
+			<summary>Delegate called each time AudioClip changes read position.</summary>
 		</member>
 		<member name="T:UnityEngine.WebCamDevice">
 			<summary>A structure describing the webcam device.</summary>
 		</member>
-		<member name="T:UnityEngine.WebCamTexture">
-			<summary>WebCam Textures are textures onto which the live video input is rendered.</summary>
+		<member name="T:UnityEngine.AudioConfiguration">
+			<summary>Specifies the current properties or desired properties to be set for the audio system.</summary>
 		</member>
 		<member name="P:UnityEngine.WebCamDevice.name">
 			<summary>A human-readable name of the device. Varies across different systems.</summary>
 		</member>
-		<member name="P:UnityEngine.WebCamTexture.isPlaying">
-			<summary>Returns if the camera is currently playing.</summary>
+		<member name="T:UnityEngine.AudioDataLoadState">
+			<summary>Value describing the current load state of the audio data associated with an AudioClip.</summary>
 		</member>
-		<member name="T:UnityEngine.AudioListener">
-			<summary>Representation of a listener in 3D space.</summary>
+		<member name="P:UnityEngine.WebCamDevice.isFrontFacing">
+			<summary>True if camera faces the same direction a screen does, false otherwise.</summary>
 		</member>
 		<member name="P:UnityEngine.AudioHighPassFilter.cutoffFrequency">
 			<summary>Highpass cutoff frequency in hz. 10.0 to 22000.0. Default = 5000.0.</summary>
 		</member>
-		<member name="P:UnityEngine.AudioHighPassFilter.highpassResonanceQ">
-			<summary>Determines how much the filter's self-resonance isdampened.</summary>
-		</member>
-		<member name="P:UnityEngine.AudioListener.volume">
-			<summary>Controls the game sound volume (0.0 to 1.0).</summary>
+		<member name="T:UnityEngine.AudioListener">
+			<summary>Representation of a listener in 3D space.</summary>
 		</member>
 		<member name="P:UnityEngine.AudioDistortionFilter.distortionLevel">
 			<summary>Distortion value. 0.0 to 1.0. Default = 0.5.</summary>
@@ -49,23 +49,8 @@
 		<member name="F:UnityEngine.AudioConfiguration.speakerMode">
 			<summary>The current speaker mode used by the audio output device.</summary>
 		</member>
-		<member name="T:UnityEngine.AudioSpeakerMode">
-			<summary>These are speaker types defined for use with AudioSettings.speakerMode.</summary>
-		</member>
-		<member name="T:UnityEngine.AudioClip.PCMSetPositionCallback">
-			<summary>Delegate called each time AudioClip changes read position.</summary>
-		</member>
-		<member name="P:UnityEngine.WebCamTexture.deviceName">
-			<summary>Set this to specify the name of the device to use.</summary>
-		</member>
-		<member name="M:UnityEngine.AudioRenderer.Start()">
-			<summary>Enters audio recording mode. After this Unity will output silence until AudioRenderer.Stop is called.</summary>
-		</member>
-		<member name="P:UnityEngine.WebCamDevice.isFrontFacing">
-			<summary>True if camera faces the same direction a screen does, false otherwise.</summary>
-		</member>
-		<member name="P:UnityEngine.AudioListener.pause">
-			<summary>The paused state of the audio system.</summary>
+		<member name="T:UnityEngine.FFTWindow">
+			<summary>Spectrum analysis windowing types.</summary>
 		</member>
 		<member name="F:UnityEngine.AudioConfiguration.dspBufferSize">
 			<summary>The length of the DSP buffer in samples determining the latency of sounds by the audio output device.</summary>
@@ -73,182 +58,47 @@
 		<member name="T:UnityEngine.AudioSettings">
 			<summary>Controls the global audio settings from script.</summary>
 		</member>
-		<member name="T:UnityEngine.AudioReverbFilter">
-			<summary>The Audio Reverb Filter takes an Audio Clip and distorts it to create a custom reverb effect.</summary>
-		</member>
-		<member name="P:UnityEngine.WebCamTexture.requestedFPS">
-			<summary>Set the requested frame rate of the camera device (in frames per second).</summary>
-		</member>
-		<member name="T:UnityEngine.FFTWindow">
-			<summary>Spectrum analysis windowing types.</summary>
-		</member>
-		<member name="P:UnityEngine.AudioListener.velocityUpdateMode">
-			<summary>This lets you set whether the Audio Listener should be updated in the fixed or dynamic update.</summary>
-		</member>
-		<member name="T:UnityEngine.AudioDataLoadState">
-			<summary>Value describing the current load state of the audio data associated with an AudioClip.</summary>
-		</member>
-		<member name="T:UnityEngine.AudioEchoFilter">
-			<summary>The Audio Echo Filter repeats a sound after a given Delay, attenuating the repetitions based on the Decay Ratio.</summary>
-		</member>
-		<member name="P:UnityEngine.AudioEchoFilter.delay">
-			<summary>Echo delay in ms. 10 to 5000. Default = 500.</summary>
-		</member>
-		<member name="P:UnityEngine.AudioSettings.driverCapabilities">
-			<summary>Returns the speaker mode capability of the current audio driver. (Read Only)</summary>
-		</member>
-		<member name="F:UnityEngine.AudioConfiguration.sampleRate">
-			<summary>The current sample rate of the audio output device used.</summary>
-		</member>
-		<member name="P:UnityEngine.AudioReverbFilter.reverbPreset">
-			<summary>Set/Get reverb preset properties.</summary>
-		</member>
-		<member name="P:UnityEngine.AudioEchoFilter.decayRatio">
-			<summary>Echo decay per delay. 0 to 1. 1.0 = No decay, 0.0 = total decay (i.e. simple 1 line delay). Default = 0.5.</summary>
-		</member>
-		<member name="P:UnityEngine.WebCamTexture.requestedWidth">
-			<summary>Set the requested width of the camera device.</summary>
+		<member name="P:UnityEngine.AudioHighPassFilter.highpassResonanceQ">
+			<summary>Determines how much the filter's self-resonance isdampened.</summary>
 		</member>
 		<member name="T:UnityEngine.AudioRolloffMode">
 			<summary>Rolloff modes that a 3D sound can have in an audio source.</summary>
 		</member>
-		<member name="P:UnityEngine.AudioSettings.speakerMode">
-			<summary>Gets the current speaker mode. Default is 2 channel stereo.</summary>
+		<member name="P:UnityEngine.AudioListener.volume">
+			<summary>Controls the game sound volume (0.0 to 1.0).</summary>
 		</member>
-		<member name="P:UnityEngine.WebCamTexture.requestedHeight">
-			<summary>Set the requested height of the camera device.</summary>
+		<member name="T:UnityEngine.WebCamTexture">
+			<summary>WebCam Textures are textures onto which the live video input is rendered.</summary>
 		</member>
 		<member name="T:UnityEngine.AudioSourceCurveType">
 			<summary>This defines the curve type of the different custom curves that can be queried and set within the AudioSource.</summary>
 		</member>
-		<member name="T:UnityEngine.AudioLowPassFilter">
-			<summary>The Audio Low Pass Filter passes low frequencies of an AudioSource or all sounds reaching an AudioListener, while removing frequencies higher than the Cutoff Frequency.</summary>
+		<member name="P:UnityEngine.AudioSettings.driverCapabilities">
+			<summary>Returns the speaker mode capability of the current audio driver. (Read Only)</summary>
 		</member>
-		<member name="F:UnityEngine.AudioConfiguration.numRealVoices">
-			<summary>The current maximum number of simultaneously audible sounds in the game.</summary>
+		<member name="P:UnityEngine.WebCamTexture.isPlaying">
+			<summary>Returns if the camera is currently playing.</summary>
 		</member>
-		<member name="P:UnityEngine.AudioEchoFilter.dryMix">
-			<summary>Volume of original signal to pass to output. 0.0 to 1.0. Default = 1.0.</summary>
+		<member name="T:UnityEngine.AudioReverbFilter">
+			<summary>The Audio Reverb Filter takes an Audio Clip and distorts it to create a custom reverb effect.</summary>
 		</member>
-		<member name="P:UnityEngine.AudioReverbFilter.dryLevel">
-			<summary>Mix level of dry signal in output in mB. Ranges from -10000.0 to 0.0. Default is 0.</summary>
+		<member name="P:UnityEngine.AudioListener.pause">
+			<summary>The paused state of the audio system.</summary>
 		</member>
-		<member name="P:UnityEngine.AudioSettings.dspTime">
-			<summary>Returns the current time of the audio system.</summary>
+		<member name="P:UnityEngine.AudioSettings.speakerMode">
+			<summary>Gets the current speaker mode. Default is 2 channel stereo.</summary>
 		</member>
-		<member name="P:UnityEngine.WebCamTexture.isReadable">
-			<summary>Returns if the WebCamTexture is non-readable. (iOS only).</summary>
+		<member name="P:UnityEngine.AudioReverbFilter.reverbPreset">
+			<summary>Set/Get reverb preset properties.</summary>
 		</member>
-		<member name="F:UnityEngine.AudioConfiguration.numVirtualVoices">
-			<summary>The  maximum number of managed sounds in the game. Beyond this limit sounds will simply stop playing.</summary>
-		</member>
-		<member name="P:UnityEngine.AudioSettings.outputSampleRate">
-			<summary>Get the mixer's current output rate.</summary>
-		</member>
-		<member name="P:UnityEngine.AudioEchoFilter.wetMix">
-			<summary>Volume of echo signal to pass to output. 0.0 to 1.0. Default = 1.0.</summary>
-		</member>
-		<member name="P:UnityEngine.AudioReverbFilter.room">
-			<summary>Room effect level at low frequencies in mB. Ranges from -10000.0 to 0.0. Default is 0.0.</summary>
+		<member name="P:UnityEngine.AudioListener.velocityUpdateMode">
+			<summary>This lets you set whether the Audio Listener should be updated in the fixed or dynamic update.</summary>
 		</member>
 		<member name="T:UnityEngine.AudioSource">
 			<summary>A representation of audio sources in 3D.</summary>
 		</member>
-		<member name="P:UnityEngine.AudioLowPassFilter.cutoffFrequency">
-			<summary>Lowpass cutoff frequency in hz. 10.0 to 22000.0. Default = 5000.0.</summary>
-		</member>
-		<member name="T:UnityEngine.AudioChorusFilter">
-			<summary>The Audio Chorus Filter takes an Audio Clip and processes it creating a chorus effect.</summary>
-		</member>
-		<member name="P:UnityEngine.AudioReverbFilter.roomHF">
-			<summary>Room effect high-frequency level re. low frequency level in mB. Ranges from -10000.0 to 0.0. Default is 0.0.</summary>
-		</member>
-		<member name="P:UnityEngine.WebCamTexture.devices">
-			<summary>Return a list of available devices.</summary>
-		</member>
-		<member name="P:UnityEngine.AudioSource.volume">
-			<summary>The volume of the audio source (0.0 to 1.0).</summary>
-		</member>
-		<member name="P:UnityEngine.AudioChorusFilter.dryMix">
-			<summary>Volume of original signal to pass to output. 0.0 to 1.0. Default = 0.5.</summary>
-		</member>
-		<member name="P:UnityEngine.WebCamTexture.videoRotationAngle">
-			<summary>Returns an clockwise angle (in degrees), which can be used to rotate a polygon so camera contents are shown in correct orientation.</summary>
-		</member>
-		<member name="P:UnityEngine.AudioChorusFilter.wetMix1">
-			<summary>Volume of 1st chorus tap. 0.0 to 1.0. Default = 0.5.</summary>
-		</member>
-		<member name="P:UnityEngine.AudioSource.pitch">
-			<summary>The pitch of the audio source.</summary>
-		</member>
-		<member name="P:UnityEngine.WebCamTexture.videoVerticallyMirrored">
-			<summary>Returns if the texture image is vertically flipped.</summary>
-		</member>
-		<member name="P:UnityEngine.AudioReverbFilter.decayTime">
-			<summary>Reverberation decay time at low-frequencies in seconds. Ranges from 0.1 to 20.0. Default is 1.0.</summary>
-		</member>
-		<member name="P:UnityEngine.AudioChorusFilter.wetMix2">
-			<summary>Volume of 2nd chorus tap. This tap is 90 degrees out of phase of the first tap. 0.0 to 1.0. Default = 0.5.</summary>
-		</member>
-		<member name="P:UnityEngine.WebCamTexture.didUpdateThisFrame">
-			<summary>Did the video buffer update this frame?</summary>
-		</member>
-		<member name="P:UnityEngine.AudioSource.time">
-			<summary>Playback position in seconds.</summary>
-		</member>
-		<member name="P:UnityEngine.AudioChorusFilter.wetMix3">
-			<summary>Volume of 3rd chorus tap. This tap is 90 degrees out of phase of the second tap. 0.0 to 1.0. Default = 0.5.</summary>
-		</member>
-		<member name="P:UnityEngine.AudioSource.timeSamples">
-			<summary>Playback position in PCM samples.</summary>
-		</member>
-		<member name="M:UnityEngine.WebCamTexture.Play()">
-			<summary>Starts the camera.</summary>
-		</member>
-		<member name="P:UnityEngine.AudioChorusFilter.delay">
-			<summary>Chorus delay in ms. 0.1 to 100.0. Default = 40.0 ms.</summary>
-		</member>
-		<member name="P:UnityEngine.AudioSource.clip">
-			<summary>The default AudioClip to play.</summary>
-		</member>
-		<member name="M:UnityEngine.WebCamTexture.Pause()">
-			<summary>Pauses the camera.</summary>
-		</member>
-		<member name="P:UnityEngine.AudioSource.outputAudioMixerGroup">
-			<summary>The target group to which the AudioSource should route its signal.</summary>
-		</member>
-		<member name="M:UnityEngine.WebCamTexture.Stop()">
-			<summary>Stops the camera.</summary>
-		</member>
-		<member name="P:UnityEngine.AudioChorusFilter.rate">
-			<summary>Chorus modulation rate in hz. 0.0 to 20.0. Default = 0.8 hz.</summary>
-		</member>
-		<member name="P:UnityEngine.AudioSource.isPlaying">
-			<summary>Is the clip playing right now (Read Only)?</summary>
-		</member>
-		<member name="P:UnityEngine.AudioChorusFilter.depth">
-			<summary>Chorus modulation depth. 0.0 to 1.0. Default = 0.03.</summary>
-		</member>
-		<member name="P:UnityEngine.AudioSource.isVirtual">
-			<summary>True if all sounds played by the AudioSource (main sound started by Play() or playOnAwake as well as one-shots) are culled by the audio system.</summary>
-		</member>
-		<member name="M:UnityEngine.WebCamTexture.MarkNonReadable()">
-			<summary>Marks WebCamTexture as unreadable (no GetPixel* functions will be available (iOS only)).</summary>
-		</member>
-		<member name="M:UnityEngine.AudioRenderer.Stop()">
-			<summary>Exits audio recording mode. After this audio output will be audible again.</summary>
-		</member>
-		<member name="P:UnityEngine.AudioChorusFilter.feedback">
-			<summary>Chorus feedback. Controls how much of the wet signal gets fed back into the chorus buffer. 0.0 to 1.0. Default = 0.0.</summary>
-		</member>
-		<member name="P:UnityEngine.AudioSource.loop">
-			<summary>Is the audio clip looping?</summary>
-		</member>
-		<member name="M:UnityEngine.WebCamTexture.GetPixel(System.Int32,System.Int32)">
-			<summary>Returns pixel color at coordinates (x, y).</summary>
-		</member>
-		<member name="M:UnityEngine.AudioSettings.GetDSPBufferSize(System.Int32&,System.Int32&)">
-			<summary>Get the mixer's buffer size in samples.</summary>
+		<member name="F:UnityEngine.AudioConfiguration.sampleRate">
+			<summary>The current sample rate of the audio output device used.</summary>
 		</member>
 		<member name="M:UnityEngine.AudioListener.GetOutputData(System.Int32,System.Int32)">
 			<summary>Provides a block of the listener (master)'s output data.</summary>
@@ -256,8 +106,35 @@
 		<member name="M:UnityEngine.AudioListener.GetOutputData(System.Single[],System.Int32)">
 			<summary>Provides a block of the listener (master)'s output data.</summary>
 		</member>
-		<member name="P:UnityEngine.AudioReverbFilter.decayHFRatio">
-			<summary>Decay HF Ratio : High-frequency to low-frequency decay time ratio. Ranges from 0.1 to 2.0. Default is 0.5.</summary>
+		<member name="P:UnityEngine.AudioSource.volume">
+			<summary>The volume of the audio source (0.0 to 1.0).</summary>
+		</member>
+		<member name="P:UnityEngine.WebCamTexture.deviceName">
+			<summary>Set this to specify the name of the device to use.</summary>
+		</member>
+		<member name="M:UnityEngine.AudioRenderer.Start()">
+			<summary>Enters audio recording mode. After this Unity will output silence until AudioRenderer.Stop is called.</summary>
+		</member>
+		<member name="P:UnityEngine.WebCamTexture.requestedFPS">
+			<summary>Set the requested frame rate of the camera device (in frames per second).</summary>
+		</member>
+		<member name="P:UnityEngine.AudioSettings.dspTime">
+			<summary>Returns the current time of the audio system.</summary>
+		</member>
+		<member name="M:UnityEngine.AudioRenderer.Stop()">
+			<summary>Exits audio recording mode. After this audio output will be audible again.</summary>
+		</member>
+		<member name="P:UnityEngine.WebCamTexture.requestedWidth">
+			<summary>Set the requested width of the camera device.</summary>
+		</member>
+		<member name="F:UnityEngine.AudioConfiguration.numRealVoices">
+			<summary>The current maximum number of simultaneously audible sounds in the game.</summary>
+		</member>
+		<member name="P:UnityEngine.AudioSettings.outputSampleRate">
+			<summary>Get the mixer's current output rate.</summary>
+		</member>
+		<member name="P:UnityEngine.AudioSource.pitch">
+			<summary>The pitch of the audio source.</summary>
 		</member>
 		<member name="M:UnityEngine.AudioListener.GetSpectrumData(System.Int32,System.Int32,UnityEngine.FFTWindow)">
 			<summary>Provides a block of the listener (master)'s spectrum data.</summary>
@@ -265,95 +142,251 @@
 		<member name="M:UnityEngine.AudioListener.GetSpectrumData(System.Single[],System.Int32,UnityEngine.FFTWindow)">
 			<summary>Provides a block of the listener (master)'s spectrum data.</summary>
 		</member>
-		<member name="P:UnityEngine.AudioSource.ignoreListenerVolume">
-			<summary>This makes the audio source not take into account the volume of the audio listener.</summary>
+		<member name="P:UnityEngine.WebCamTexture.requestedHeight">
+			<summary>Set the requested height of the camera device.</summary>
+		</member>
+		<member name="P:UnityEngine.AudioReverbFilter.dryLevel">
+			<summary>Mix level of dry signal in output in mB. Ranges from -10000.0 to 0.0. Default is 0.</summary>
+		</member>
+		<member name="T:UnityEngine.AudioEchoFilter">
+			<summary>The Audio Echo Filter repeats a sound after a given Delay, attenuating the repetitions based on the Decay Ratio.</summary>
+		</member>
+		<member name="M:UnityEngine.AudioSettings.GetDSPBufferSize(System.Int32&,System.Int32&)">
+			<summary>Get the mixer's buffer size in samples.</summary>
+		</member>
+		<member name="P:UnityEngine.WebCamTexture.isReadable">
+			<summary>Returns if the WebCamTexture is non-readable. (iOS only).</summary>
+		</member>
+		<member name="P:UnityEngine.AudioEchoFilter.delay">
+			<summary>Echo delay in ms. 10 to 5000. Default = 500.</summary>
+		</member>
+		<member name="F:UnityEngine.AudioConfiguration.numVirtualVoices">
+			<summary>The  maximum number of managed sounds in the game. Beyond this limit sounds will simply stop playing.</summary>
 		</member>
 		<member name="M:UnityEngine.AudioRenderer.GetSampleCountForCaptureFrame()">
 			<summary>Returns the number of samples available since the last time AudioRenderer.Render was called. This is dependent on the frame capture rate.</summary>
 		</member>
-		<member name="P:UnityEngine.AudioReverbFilter.reflectionsLevel">
-			<summary>Early reflections level relative to room effect in mB. Ranges from -10000.0 to 1000.0. Default is -10000.0.</summary>
-		</member>
-		<member name="T:UnityEngine.MovieTexture">
-			<summary>Movie Textures are textures onto which movies are played back.</summary>
-		</member>
-		<member name="P:UnityEngine.AudioLowPassFilter.customCutoffCurve">
-			<summary>Returns or sets the current custom frequency cutoff curve.</summary>
-		</member>
 		<member name="M:UnityEngine.AudioSettings.GetSpatializerPluginNames()">
 			<summary>Returns an array with the names of all the available spatializer plugins.</summary>
 		</member>
-		<member name="M:UnityEngine.AudioRenderer.Render(UnityEngine.Collections.NativeArray`1<System.Single>)">
-			<summary>Performs the recording of the main output as well as any optional mixer groups that have been registered via AudioRenderer.AddMixerGroupSink.</summary>
+		<member name="T:UnityEngine.AudioLowPassFilter">
+			<summary>The Audio Low Pass Filter passes low frequencies of an AudioSource or all sounds reaching an AudioListener, while removing frequencies higher than the Cutoff Frequency.</summary>
 		</member>
-		<member name="P:UnityEngine.AudioLowPassFilter.lowpassResonanceQ">
-			<summary>Determines how much the filter's self-resonance is dampened.</summary>
-		</member>
-		<member name="P:UnityEngine.MovieTexture.audioClip">
-			<summary>Returns the AudioClip belonging to the MovieTexture.</summary>
+		<member name="P:UnityEngine.AudioSource.time">
+			<summary>Playback position in seconds.</summary>
 		</member>
 		<member name="M:UnityEngine.AudioSettings.GetSpatializerPluginName()">
 			<summary>Returns the name of the spatializer selected on the currently-running platform.</summary>
 		</member>
-		<member name="P:UnityEngine.AudioSource.playOnAwake">
-			<summary>If set to true, the audio source will automatically start playing on awake.</summary>
+		<member name="P:UnityEngine.AudioEchoFilter.decayRatio">
+			<summary>Echo decay per delay. 0 to 1. 1.0 = No decay, 0.0 = total decay (i.e. simple 1 line delay). Default = 0.5.</summary>
 		</member>
-		<member name="P:UnityEngine.AudioReverbFilter.reflectionsDelay">
-			<summary>Late reverberation level relative to room effect in mB. Ranges from -10000.0 to 2000.0. Default is 0.0.</summary>
+		<member name="P:UnityEngine.AudioSource.timeSamples">
+			<summary>Playback position in PCM samples.</summary>
 		</member>
-		<member name="P:UnityEngine.MovieTexture.loop">
-			<summary>Set this to true to make the movie loop.</summary>
+		<member name="P:UnityEngine.WebCamTexture.devices">
+			<summary>Return a list of available devices.</summary>
 		</member>
-		<member name="P:UnityEngine.AudioSource.ignoreListenerPause">
-			<summary>Allows AudioSource to play even though AudioListener.pause is set to true. This is useful for the menu element sounds or background music in pause menus.</summary>
-		</member>
-		<member name="P:UnityEngine.AudioReverbFilter.reverbLevel">
-			<summary>Late reverberation level relative to room effect in mB. Ranges from -10000.0 to 2000.0. Default is 0.0.</summary>
-		</member>
-		<member name="P:UnityEngine.MovieTexture.isPlaying">
-			<summary>Returns whether the movie is playing or not.</summary>
-		</member>
-		<member name="P:UnityEngine.AudioSource.velocityUpdateMode">
-			<summary>Whether the Audio Source should be updated in the fixed or dynamic update.</summary>
-		</member>
-		<member name="P:UnityEngine.AudioReverbFilter.reverbDelay">
-			<summary>Late reverberation delay time relative to first reflection in seconds. Ranges from 0.0 to 0.1. Default is 0.04.</summary>
+		<member name="P:UnityEngine.AudioReverbFilter.room">
+			<summary>Room effect level at low frequencies in mB. Ranges from -10000.0 to 0.0. Default is 0.0.</summary>
 		</member>
 		<member name="M:UnityEngine.AudioSettings.SetSpatializerPluginName(System.String)">
 			<summary>Sets the spatializer plugin for all platform groups. If a null or empty string is passed in, the existing spatializer plugin will be cleared.</summary>
 		</member>
-		<member name="P:UnityEngine.AudioSource.panStereo">
-			<summary>Pans a playing sound in a stereo way (left or right). This only applies to sounds that are Mono or Stereo.</summary>
+		<member name="M:UnityEngine.AudioRenderer.Render(UnityEngine.Collections.NativeArray`1<System.Single>)">
+			<summary>Performs the recording of the main output as well as any optional mixer groups that have been registered via AudioRenderer.AddMixerGroupSink.</summary>
 		</member>
-		<member name="P:UnityEngine.MovieTexture.isReadyToPlay">
-			<summary>If the movie is downloading from a web site, this returns if enough data has been downloaded so playback should be able to start without interruptions.</summary>
+		<member name="P:UnityEngine.AudioLowPassFilter.cutoffFrequency">
+			<summary>Lowpass cutoff frequency in hz. 10.0 to 22000.0. Default = 5000.0.</summary>
 		</member>
-		<member name="P:UnityEngine.AudioReverbFilter.diffusion">
-			<summary>Reverberation diffusion (echo density) in percent. Ranges from 0.0 to 100.0. Default is 100.0.</summary>
+		<member name="P:UnityEngine.AudioEchoFilter.dryMix">
+			<summary>Volume of original signal to pass to output. 0.0 to 1.0. Default = 1.0.</summary>
+		</member>
+		<member name="P:UnityEngine.AudioReverbFilter.roomHF">
+			<summary>Room effect high-frequency level re. low frequency level in mB. Ranges from -10000.0 to 0.0. Default is 0.0.</summary>
+		</member>
+		<member name="T:UnityEngine.AudioClipLoadType">
+			<summary>Determines how the audio clip is loaded in.</summary>
+		</member>
+		<member name="P:UnityEngine.AudioEchoFilter.wetMix">
+			<summary>Volume of echo signal to pass to output. 0.0 to 1.0. Default = 1.0.</summary>
 		</member>
 		<member name="M:UnityEngine.AudioSettings.GetConfiguration()">
 			<summary>Returns the current configuration of the audio device and system. The values in the struct may then be modified and reapplied via AudioSettings.Reset.</summary>
 		</member>
-		<member name="P:UnityEngine.AudioReverbFilter.density">
-			<summary>Reverberation density (modal density) in percent. Ranges from 0.0 to 100.0. Default is 100.0.</summary>
+		<member name="P:UnityEngine.AudioReverbFilter.decayTime">
+			<summary>Reverberation decay time at low-frequencies in seconds. Ranges from 0.1 to 20.0. Default is 1.0.</summary>
 		</member>
-		<member name="P:UnityEngine.AudioReverbFilter.hfReference">
-			<summary>Reference high frequency in Hz. Ranges from 20.0 to 20000.0. Default is 5000.0.</summary>
+		<member name="P:UnityEngine.AudioSource.clip">
+			<summary>The default AudioClip to play.</summary>
+		</member>
+		<member name="P:UnityEngine.WebCamTexture.videoRotationAngle">
+			<summary>Returns an clockwise angle (in degrees), which can be used to rotate a polygon so camera contents are shown in correct orientation.</summary>
+		</member>
+		<member name="P:UnityEngine.AudioLowPassFilter.customCutoffCurve">
+			<summary>Returns or sets the current custom frequency cutoff curve.</summary>
+		</member>
+		<member name="T:UnityEngine.AudioClip.PCMReaderCallback">
+			<summary>Delegate called each time AudioClip reads data.</summary>
+		</member>
+		<member name="P:UnityEngine.AudioReverbFilter.decayHFRatio">
+			<summary>Decay HF Ratio : High-frequency to low-frequency decay time ratio. Ranges from 0.1 to 2.0. Default is 0.5.</summary>
+		</member>
+		<member name="T:UnityEngine.AudioChorusFilter">
+			<summary>The Audio Chorus Filter takes an Audio Clip and processes it creating a chorus effect.</summary>
 		</member>
 		<member name="M:UnityEngine.AudioSettings.Reset(UnityEngine.AudioConfiguration)">
 			<summary>Performs a change of the device configuration. In response to this the AudioSettings.OnAudioConfigurationChanged delegate is invoked with the argument deviceWasChanged=false. It cannot be guaranteed that the exact settings specified can be used, but the an attempt is made to use the closest match supported by the system.</summary>
 		</member>
-		<member name="P:UnityEngine.AudioSource.spatialBlend">
-			<summary>Sets how much this AudioSource is affected by 3D spatialisation calculations (attenuation, doppler etc). 0.0 makes the sound full 2D, 1.0 makes it full 3D.</summary>
+		<member name="P:UnityEngine.AudioSource.outputAudioMixerGroup">
+			<summary>The target group to which the AudioSource should route its signal.</summary>
+		</member>
+		<member name="P:UnityEngine.AudioLowPassFilter.lowpassResonanceQ">
+			<summary>Determines how much the filter's self-resonance is dampened.</summary>
+		</member>
+		<member name="P:UnityEngine.WebCamTexture.videoVerticallyMirrored">
+			<summary>Returns if the texture image is vertically flipped.</summary>
+		</member>
+		<member name="T:UnityEngine.AudioClip">
+			<summary>A container for audio data.</summary>
+		</member>
+		<member name="P:UnityEngine.WebCamTexture.didUpdateThisFrame">
+			<summary>Did the video buffer update this frame?</summary>
+		</member>
+		<member name="P:UnityEngine.AudioSource.isPlaying">
+			<summary>Is the clip playing right now (Read Only)?</summary>
+		</member>
+		<member name="T:UnityEngine.AudioSettings.AudioConfigurationChangeHandler">
+			<summary>A delegate called whenever the global audio settings are changed, either by AudioSettings.Reset or by an external device change such as the OS control panel changing the sample rate or because the default output device was changed, for example when plugging in an HDMI monitor or a USB headset.</summary>
+		</member>
+		<member name="P:UnityEngine.AudioClip.length">
+			<summary>The length of the audio clip in seconds. (Read Only)</summary>
+		</member>
+		<member name="P:UnityEngine.AudioChorusFilter.dryMix">
+			<summary>Volume of original signal to pass to output. 0.0 to 1.0. Default = 0.5.</summary>
+		</member>
+		<member name="M:UnityEngine.WebCamTexture.Play()">
+			<summary>Starts the camera.</summary>
+		</member>
+		<member name="T:UnityEngine.MovieTexture">
+			<summary>Movie Textures are textures onto which movies are played back.</summary>
+		</member>
+		<member name="P:UnityEngine.AudioReverbFilter.reflectionsLevel">
+			<summary>Early reflections level relative to room effect in mB. Ranges from -10000.0 to 1000.0. Default is -10000.0.</summary>
+		</member>
+		<member name="P:UnityEngine.MovieTexture.audioClip">
+			<summary>Returns the AudioClip belonging to the MovieTexture.</summary>
+		</member>
+		<member name="M:UnityEngine.WebCamTexture.Pause()">
+			<summary>Pauses the camera.</summary>
+		</member>
+		<member name="P:UnityEngine.AudioReverbFilter.reflectionsDelay">
+			<summary>Late reverberation level relative to room effect in mB. Ranges from -10000.0 to 2000.0. Default is 0.0.</summary>
+		</member>
+		<member name="P:UnityEngine.AudioSource.isVirtual">
+			<summary>True if all sounds played by the AudioSource (main sound started by Play() or playOnAwake as well as one-shots) are culled by the audio system.</summary>
+		</member>
+		<member name="P:UnityEngine.AudioReverbFilter.reverbLevel">
+			<summary>Late reverberation level relative to room effect in mB. Ranges from -10000.0 to 2000.0. Default is 0.0.</summary>
+		</member>
+		<member name="T:UnityEngine.AudioCompressionFormat">
+			<summary>An enum containing different compression types.</summary>
+		</member>
+		<member name="P:UnityEngine.AudioChorusFilter.wetMix1">
+			<summary>Volume of 1st chorus tap. 0.0 to 1.0. Default = 0.5.</summary>
+		</member>
+		<member name="P:UnityEngine.AudioClip.samples">
+			<summary>The length of the audio clip in samples. (Read Only)</summary>
+		</member>
+		<member name="P:UnityEngine.AudioChorusFilter.wetMix2">
+			<summary>Volume of 2nd chorus tap. This tap is 90 degrees out of phase of the first tap. 0.0 to 1.0. Default = 0.5.</summary>
+		</member>
+		<member name="M:UnityEngine.WebCamTexture.Stop()">
+			<summary>Stops the camera.</summary>
+		</member>
+		<member name="P:UnityEngine.AudioClip.channels">
+			<summary>The number of channels in the audio clip. (Read Only)</summary>
+		</member>
+		<member name="P:UnityEngine.MovieTexture.loop">
+			<summary>Set this to true to make the movie loop.</summary>
+		</member>
+		<member name="P:UnityEngine.AudioChorusFilter.wetMix3">
+			<summary>Volume of 3rd chorus tap. This tap is 90 degrees out of phase of the second tap. 0.0 to 1.0. Default = 0.5.</summary>
+		</member>
+		<member name="P:UnityEngine.MovieTexture.isPlaying">
+			<summary>Returns whether the movie is playing or not.</summary>
+		</member>
+		<member name="P:UnityEngine.AudioClip.frequency">
+			<summary>The sample frequency of the clip in Hertz. (Read Only)</summary>
+		</member>
+		<member name="P:UnityEngine.MovieTexture.isReadyToPlay">
+			<summary>If the movie is downloading from a web site, this returns if enough data has been downloaded so playback should be able to start without interruptions.</summary>
+		</member>
+		<member name="P:UnityEngine.AudioReverbFilter.reverbDelay">
+			<summary>Late reverberation delay time relative to first reflection in seconds. Ranges from 0.0 to 0.1. Default is 0.04.</summary>
+		</member>
+		<member name="P:UnityEngine.AudioClip.isReadyToPlay">
+			<summary>Returns true if the AudioClip is ready to play (read-only).</summary>
+		</member>
+		<member name="P:UnityEngine.AudioSource.loop">
+			<summary>Is the audio clip looping?</summary>
+		</member>
+		<member name="P:UnityEngine.MovieTexture.duration">
+			<summary>The time, in seconds, that the movie takes to play back completely.</summary>
+		</member>
+		<member name="M:UnityEngine.WebCamTexture.MarkNonReadable()">
+			<summary>Marks WebCamTexture as unreadable (no GetPixel* functions will be available (iOS only)).</summary>
+		</member>
+		<member name="P:UnityEngine.AudioReverbFilter.diffusion">
+			<summary>Reverberation diffusion (echo density) in percent. Ranges from 0.0 to 100.0. Default is 100.0.</summary>
+		</member>
+		<member name="P:UnityEngine.AudioChorusFilter.delay">
+			<summary>Chorus delay in ms. 0.1 to 100.0. Default = 40.0 ms.</summary>
+		</member>
+		<member name="P:UnityEngine.AudioReverbFilter.density">
+			<summary>Reverberation density (modal density) in percent. Ranges from 0.0 to 100.0. Default is 100.0.</summary>
+		</member>
+		<member name="P:UnityEngine.AudioClip.loadType">
+			<summary>The load type of the clip (read-only).</summary>
+		</member>
+		<member name="P:UnityEngine.AudioChorusFilter.rate">
+			<summary>Chorus modulation rate in hz. 0.0 to 20.0. Default = 0.8 hz.</summary>
+		</member>
+		<member name="P:UnityEngine.AudioSource.ignoreListenerVolume">
+			<summary>This makes the audio source not take into account the volume of the audio listener.</summary>
+		</member>
+		<member name="M:UnityEngine.MovieTexture.Play()">
+			<summary>Starts playing the movie.</summary>
+		</member>
+		<member name="P:UnityEngine.AudioClip.preloadAudioData">
+			<summary>Preloads audio data of the clip when the clip asset is loaded. When this flag is off, scripts have to call AudioClip.LoadAudioData() to load the data before the clip can be played. Properties like length, channels and format are available before the audio data has been loaded.</summary>
+		</member>
+		<member name="P:UnityEngine.AudioReverbFilter.hfReference">
+			<summary>Reference high frequency in Hz. Ranges from 20.0 to 20000.0. Default is 5000.0.</summary>
+		</member>
+		<member name="M:UnityEngine.WebCamTexture.GetPixel(System.Int32,System.Int32)">
+			<summary>Returns pixel color at coordinates (x, y).</summary>
+		</member>
+		<member name="P:UnityEngine.AudioClip.ambisonic">
+			<summary>Returns true if this audio clip is ambisonic (read-only).</summary>
+		</member>
+		<member name="M:UnityEngine.WebCamTexture.GetPixels()">
+			<summary>Get a block of pixel colors.</summary>
+		</member>
+		<member name="M:UnityEngine.MovieTexture.Stop()">
+			<summary>Stops playing the movie, and rewinds it to the beginning.</summary>
+		</member>
+		<member name="M:UnityEngine.WebCamTexture.GetPixels(System.Int32,System.Int32,System.Int32,System.Int32)">
+			<summary>Get a block of pixel colors.</summary>
+		</member>
+		<member name="P:UnityEngine.AudioSource.playOnAwake">
+			<summary>If set to true, the audio source will automatically start playing on awake.</summary>
 		</member>
 		<member name="P:UnityEngine.AudioReverbFilter.roomLF">
 			<summary>Room effect low-frequency level in mB. Ranges from -10000.0 to 0.0. Default is 0.0.</summary>
 		</member>
-		<member name="P:UnityEngine.AudioSource.spatialize">
-			<summary>Enables or disables spatialization.</summary>
-		</member>
-		<member name="P:UnityEngine.AudioSource.spatializePostEffects">
-			<summary>Determines if the spatializer effect is inserted before or after the effect filters.</summary>
+		<member name="P:UnityEngine.AudioChorusFilter.depth">
+			<summary>Chorus modulation depth. 0.0 to 1.0. Default = 0.03.</summary>
 		</member>
 		<member name="P:UnityEngine.AudioReverbFilter.lfReference">
 			<summary>Reference low-frequency in Hz. Ranges from 20.0 to 1000.0. Default is 250.0.</summary>
@@ -361,119 +394,38 @@
 		<member name="P:UnityEngine.AudioReverbFilter.lFReference">
 			<summary>Reference low-frequency in Hz. Ranges from 20.0 to 1000.0. Default is 250.0.</summary>
 		</member>
-		<member name="T:UnityEngine.AudioSettings.AudioConfigurationChangeHandler">
-			<summary>A delegate called whenever the global audio settings are changed, either by AudioSettings.Reset or by an external device change such as the OS control panel changing the sample rate or because the default output device was changed, for example when plugging in an HDMI monitor or a USB headset.</summary>
-		</member>
-		<member name="P:UnityEngine.MovieTexture.duration">
-			<summary>The time, in seconds, that the movie takes to play back completely.</summary>
-		</member>
-		<member name="M:UnityEngine.WebCamTexture.GetPixels()">
-			<summary>Get a block of pixel colors.</summary>
-		</member>
-		<member name="M:UnityEngine.WebCamTexture.GetPixels(System.Int32,System.Int32,System.Int32,System.Int32)">
-			<summary>Get a block of pixel colors.</summary>
-		</member>
-		<member name="T:UnityEngine.Microphone">
-			<summary>Use this class to record to an AudioClip using a connected microphone.</summary>
-		</member>
-		<member name="P:UnityEngine.AudioSource.reverbZoneMix">
-			<summary>The amount by which the signal from the AudioSource will be mixed into the global reverb associated with the Reverb Zones.</summary>
-		</member>
-		<member name="M:UnityEngine.MovieTexture.Play()">
-			<summary>Starts playing the movie.</summary>
-		</member>
 		<member name="M:UnityEngine.WebCamTexture.GetPixels32(UnityEngine.Color32[])">
 			<summary>Returns the pixels data in raw format.</summary>
 		</member>
 		<member name="M:UnityEngine.WebCamTexture.GetPixels32()">
 			<summary>Returns the pixels data in raw format.</summary>
 		</member>
-		<member name="M:UnityEngine.MovieTexture.Stop()">
-			<summary>Stops playing the movie, and rewinds it to the beginning.</summary>
+		<member name="P:UnityEngine.AudioSource.ignoreListenerPause">
+			<summary>Allows AudioSource to play even though AudioListener.pause is set to true. This is useful for the menu element sounds or background music in pause menus.</summary>
 		</member>
-		<member name="T:UnityEngine.AudioCompressionFormat">
-			<summary>An enum containing different compression types.</summary>
-		</member>
-		<member name="M:UnityEngine.MovieTexture.Pause()">
-			<summary>Pauses playing the movie.</summary>
-		</member>
-		<member name="P:UnityEngine.Microphone.devices">
-			<summary>A list of available microphone devices, identified by name.</summary>
-		</member>
-		<member name="P:UnityEngine.AudioSource.bypassEffects">
-			<summary>Bypass effects (Applied from filter components or global listener filters).</summary>
-		</member>
-		<member name="T:UnityEngine.AudioClipLoadType">
-			<summary>Determines how the audio clip is loaded in.</summary>
-		</member>
-		<member name="M:UnityEngine.Microphone.Start(System.String,System.Boolean,System.Int32,System.Int32)">
-			<summary>Start Recording with device.</summary>
-		</member>
-		<member name="T:UnityEngine.AudioClip">
-			<summary>A container for audio data.</summary>
-		</member>
-		<member name="P:UnityEngine.AudioClip.length">
-			<summary>The length of the audio clip in seconds. (Read Only)</summary>
-		</member>
-		<member name="M:UnityEngine.Microphone.End(System.String)">
-			<summary>Stops recording.</summary>
-		</member>
-		<member name="P:UnityEngine.AudioClip.samples">
-			<summary>The length of the audio clip in samples. (Read Only)</summary>
-		</member>
-		<member name="M:UnityEngine.Microphone.IsRecording(System.String)">
-			<summary>Query if a device is currently recording.</summary>
-		</member>
-		<member name="P:UnityEngine.AudioClip.channels">
-			<summary>The number of channels in the audio clip. (Read Only)</summary>
-		</member>
-		<member name="M:UnityEngine.Microphone.GetPosition(System.String)">
-			<summary>Get the position in samples of the recording.</summary>
-		</member>
-		<member name="P:UnityEngine.AudioClip.frequency">
-			<summary>The sample frequency of the clip in Hertz. (Read Only)</summary>
-		</member>
-		<member name="P:UnityEngine.AudioSource.bypassListenerEffects">
-			<summary>When set global effects on the AudioListener will not be applied to the audio signal generated by the AudioSource. Does not apply if the AudioSource is playing into a mixer group.</summary>
-		</member>
-		<member name="P:UnityEngine.AudioSource.bypassReverbZones">
-			<summary>When set doesn't route the signal from an AudioSource into the global reverb associated with reverb zones.</summary>
-		</member>
-		<member name="P:UnityEngine.AudioClip.isReadyToPlay">
-			<summary>Returns true if the AudioClip is ready to play (read-only).</summary>
-		</member>
-		<member name="P:UnityEngine.AudioSource.dopplerLevel">
-			<summary>Sets the Doppler scale for this AudioSource.</summary>
-		</member>
-		<member name="P:UnityEngine.AudioClip.loadType">
-			<summary>The load type of the clip (read-only).</summary>
-		</member>
-		<member name="P:UnityEngine.AudioClip.preloadAudioData">
-			<summary>Preloads audio data of the clip when the clip asset is loaded. When this flag is off, scripts have to call AudioClip.LoadAudioData() to load the data before the clip can be played. Properties like length, channels and format are available before the audio data has been loaded.</summary>
-		</member>
-		<member name="P:UnityEngine.AudioSource.spread">
-			<summary>Sets the spread angle (in degrees) of a 3d stereo or multichannel sound in speaker space.</summary>
-		</member>
-		<member name="P:UnityEngine.AudioClip.ambisonic">
-			<summary>Returns true if this audio clip is ambisonic (read-only).</summary>
-		</member>
-		<member name="P:UnityEngine.AudioSource.priority">
-			<summary>Sets the priority of the AudioSource.</summary>
+		<member name="P:UnityEngine.AudioChorusFilter.feedback">
+			<summary>Chorus feedback. Controls how much of the wet signal gets fed back into the chorus buffer. 0.0 to 1.0. Default = 0.0.</summary>
 		</member>
 		<member name="P:UnityEngine.AudioClip.loadState">
 			<summary>Returns the current load state of the audio data associated with an AudioClip.</summary>
 		</member>
-		<member name="P:UnityEngine.AudioSource.mute">
-			<summary>Un- / Mutes the AudioSource. Mute sets the volume=0, Un-Mute restore the original volume.</summary>
+		<member name="M:UnityEngine.MovieTexture.Pause()">
+			<summary>Pauses playing the movie.</summary>
+		</member>
+		<member name="T:UnityEngine.Microphone">
+			<summary>Use this class to record to an AudioClip using a connected microphone.</summary>
+		</member>
+		<member name="P:UnityEngine.AudioSource.velocityUpdateMode">
+			<summary>Whether the Audio Source should be updated in the fixed or dynamic update.</summary>
 		</member>
 		<member name="P:UnityEngine.AudioClip.loadInBackground">
 			<summary>Corresponding to the "Load In Background" flag in the inspector, when this flag is set, the loading will happen delayed without blocking the main thread.</summary>
 		</member>
-		<member name="P:UnityEngine.AudioSource.minDistance">
-			<summary>Within the Min distance the AudioSource will cease to grow louder in volume.</summary>
+		<member name="P:UnityEngine.Microphone.devices">
+			<summary>A list of available microphone devices, identified by name.</summary>
 		</member>
-		<member name="M:UnityEngine.Microphone.GetDeviceCaps(System.String,System.Int32&,System.Int32&)">
-			<summary>Get the frequency capabilities of a device.</summary>
+		<member name="P:UnityEngine.AudioSource.panStereo">
+			<summary>Pans a playing sound in a stereo way (left or right). This only applies to sounds that are Mono or Stereo.</summary>
 		</member>
 		<member name="M:UnityEngine.AudioClip.LoadAudioData()">
 			<summary>Loads the audio data of a clip. Clips that have "Preload Audio Data" set will load the audio data automatically.</summary>
@@ -481,23 +433,20 @@
 		<member name="M:UnityEngine.AudioClip.UnloadAudioData()">
 			<summary>Unloads the audio data associated with the clip. This works only for AudioClips that are based on actual sound file assets.</summary>
 		</member>
-		<member name="P:UnityEngine.AudioSource.maxDistance">
-			<summary>(Logarithmic rolloff) MaxDistance is the distance a sound stops attenuating at.</summary>
+		<member name="P:UnityEngine.AudioSource.spatialBlend">
+			<summary>Sets how much this AudioSource is affected by 3D spatialisation calculations (attenuation, doppler etc). 0.0 makes the sound full 2D, 1.0 makes it full 3D.</summary>
 		</member>
 		<member name="M:UnityEngine.AudioClip.GetData(System.Single[],System.Int32)">
 			<summary>Fills an array with sample data from the clip.</summary>
 		</member>
-		<member name="P:UnityEngine.AudioSource.rolloffMode">
-			<summary>Sets/Gets how the AudioSource attenuates over distance.</summary>
-		</member>
-		<member name="P:UnityEngine.AudioSource.panLevel">
-			<summary>PanLevel has been deprecated. Use spatialBlend instead.</summary>
+		<member name="M:UnityEngine.Microphone.Start(System.String,System.Boolean,System.Int32,System.Int32)">
+			<summary>Start Recording with device.</summary>
 		</member>
 		<member name="M:UnityEngine.AudioClip.SetData(System.Single[],System.Int32)">
 			<summary>Set sample data in a clip.</summary>
 		</member>
-		<member name="P:UnityEngine.AudioSource.pan">
-			<summary>Pan has been deprecated. Use panStereo instead.</summary>
+		<member name="P:UnityEngine.AudioSource.spatialize">
+			<summary>Enables or disables spatialization.</summary>
 		</member>
 		<member name="M:UnityEngine.AudioClip.Create(System.String,System.Int32,System.Int32,System.Int32,System.Boolean,System.Boolean)">
 			<summary>Creates a user AudioClip with a name and with the given length in samples, channels and frequency.</summary>
@@ -517,6 +466,60 @@
 		<member name="M:UnityEngine.AudioClip.Create(System.String,System.Int32,System.Int32,System.Int32,System.Boolean,UnityEngine.AudioClip.PCMReaderCallback,UnityEngine.AudioClip.PCMSetPositionCallback)">
 			<summary>Creates a user AudioClip with a name and with the given length in samples, channels and frequency.</summary>
 		</member>
+		<member name="P:UnityEngine.AudioSource.spatializePostEffects">
+			<summary>Determines if the spatializer effect is inserted before or after the effect filters.</summary>
+		</member>
+		<member name="P:UnityEngine.AudioSource.reverbZoneMix">
+			<summary>The amount by which the signal from the AudioSource will be mixed into the global reverb associated with the Reverb Zones.</summary>
+		</member>
+		<member name="P:UnityEngine.AudioSource.bypassEffects">
+			<summary>Bypass effects (Applied from filter components or global listener filters).</summary>
+		</member>
+		<member name="M:UnityEngine.Microphone.End(System.String)">
+			<summary>Stops recording.</summary>
+		</member>
+		<member name="M:UnityEngine.Microphone.IsRecording(System.String)">
+			<summary>Query if a device is currently recording.</summary>
+		</member>
+		<member name="P:UnityEngine.AudioSource.bypassListenerEffects">
+			<summary>When set global effects on the AudioListener will not be applied to the audio signal generated by the AudioSource. Does not apply if the AudioSource is playing into a mixer group.</summary>
+		</member>
+		<member name="P:UnityEngine.AudioSource.bypassReverbZones">
+			<summary>When set doesn't route the signal from an AudioSource into the global reverb associated with reverb zones.</summary>
+		</member>
+		<member name="P:UnityEngine.AudioSource.dopplerLevel">
+			<summary>Sets the Doppler scale for this AudioSource.</summary>
+		</member>
+		<member name="P:UnityEngine.AudioSource.spread">
+			<summary>Sets the spread angle (in degrees) of a 3d stereo or multichannel sound in speaker space.</summary>
+		</member>
+		<member name="P:UnityEngine.AudioSource.priority">
+			<summary>Sets the priority of the AudioSource.</summary>
+		</member>
+		<member name="P:UnityEngine.AudioSource.mute">
+			<summary>Un- / Mutes the AudioSource. Mute sets the volume=0, Un-Mute restore the original volume.</summary>
+		</member>
+		<member name="M:UnityEngine.Microphone.GetPosition(System.String)">
+			<summary>Get the position in samples of the recording.</summary>
+		</member>
+		<member name="P:UnityEngine.AudioSource.minDistance">
+			<summary>Within the Min distance the AudioSource will cease to grow louder in volume.</summary>
+		</member>
+		<member name="M:UnityEngine.Microphone.GetDeviceCaps(System.String,System.Int32&,System.Int32&)">
+			<summary>Get the frequency capabilities of a device.</summary>
+		</member>
+		<member name="P:UnityEngine.AudioSource.maxDistance">
+			<summary>(Logarithmic rolloff) MaxDistance is the distance a sound stops attenuating at.</summary>
+		</member>
+		<member name="P:UnityEngine.AudioSource.rolloffMode">
+			<summary>Sets/Gets how the AudioSource attenuates over distance.</summary>
+		</member>
+		<member name="P:UnityEngine.AudioSource.panLevel">
+			<summary>PanLevel has been deprecated. Use spatialBlend instead.</summary>
+		</member>
+		<member name="P:UnityEngine.AudioSource.pan">
+			<summary>Pan has been deprecated. Use panStereo instead.</summary>
+		</member>
 		<member name="M:UnityEngine.AudioSource.Play(System.UInt64)">
 			<summary>Plays the clip with an optional certain delay.</summary>
 		</member>
@@ -525,9 +528,6 @@
 		</member>
 		<member name="M:UnityEngine.AudioSource.PlayDelayed(System.Single)">
 			<summary>Plays the clip with a delay specified in seconds. Users are advised to use this function instead of the old Play(delay) function that took a delay specified in samples relative to a reference rate of 44.1 kHz as an argument.</summary>
-		</member>
-		<member name="T:UnityEngine.AudioClip.PCMReaderCallback">
-			<summary>Delegate called each time AudioClip reads data.</summary>
 		</member>
 		<member name="M:UnityEngine.AudioSource.PlayScheduled(System.Double)">
 			<summary>Plays the clip at a specific time on the absolute time-line that AudioSettings.dspTime reads from.</summary>
