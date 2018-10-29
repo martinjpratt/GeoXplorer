@@ -11,7 +11,7 @@ public class HandRotate : MonoBehaviour, IManipulationHandler, IFocusable
 {
 
     //Simplified rotation tool for objects on airtap and drag
-
+    GameObject cursorAreaCylinder;
     GameObject ngo;
     public Font newFont;
     public Material fontMaterial;

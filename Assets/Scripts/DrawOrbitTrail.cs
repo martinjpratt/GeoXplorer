@@ -15,7 +15,7 @@ public class DrawOrbitTrail : MonoBehaviour {
 	void Start () {
         LineRenderer lr = GetComponentInChildren<LineRenderer>();
 
-        float currentPositionAngle = Vector3.Angle(Vector3.zero, this.transform.localPosition);
+        //float currentPositionAngle = Vector3.Angle(Vector3.zero, this.transform.localPosition);
 
         for (int i = 0; i < lr.positionCount; i++)
         {

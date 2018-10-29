@@ -56,7 +56,7 @@ public class sphericalCoords : MonoBehaviour {
     private IEnumerator Check()
     {
 
-        float[] scores = new float[48];
+        //float[] scores = new float[48];
 
         float extentMaxLat = TapLocationSet.topLeftLat;
         float extentMinLat = TapLocationSet.bottomRightLat;
@@ -125,7 +125,7 @@ public class sphericalCoords : MonoBehaviour {
                 stationSphere.GetComponent<TapEarthquakeResponder>().infoObject = infoObject;
                 stationSphere.GetComponent<TapEarthquakeResponder>().textObject = textObject;
 
-                int year = int.Parse(dataList[1].Substring(0,4)) - 1970;
+                //int year = int.Parse(dataList[1].Substring(0,4)) - 1970;
                 
                 float lat = float.Parse(dataList[2]);
                 float lon = float.Parse(dataList[3]);

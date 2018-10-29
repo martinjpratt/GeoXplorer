@@ -12,15 +12,16 @@ public class OpenStreetMapTileBuilder : IMapUrlBuilder
           //         TilePathPrefixes[Mathf.Abs(tileInfo.X) % 3],
             //       tileInfo.ZoomLevel, tileInfo.X, tileInfo.Y);
 
-		//var northEast = tileInfo.GetNorthEast();
-		//var southWest = tileInfo.GetSouthWest();
-		//return string.Format ("http://www.gmrt.org/services/ImageServer?maxlatitude={0}&minlongitude={1}&maxlongitude={2}&minlatitude={3}&mask=0", northEast.Lat, southWest.Lon, northEast.Lon, southWest.Lat);
-
-
-
 		return string.Format("https://api.mapbox.com/v4/mapbox.satellite/{1}/{2}/{3}.jpg70?access_token=" + mapBoxToken,
 			TilePathPrefixes[Mathf.Abs(tileInfo.X) % 3],
 			tileInfo.ZoomLevel, tileInfo.X, tileInfo.Y);
+
 		
+    }
+
+    public string GetGeoUrl(TileInfo tileInfo)
+    {
+        return string.Format("https://macrostrat.org/api/v2/maps/burwell/emphasized/{1}/{2}/{3}/tile.png",
+        		TilePathPrefixes[Mathf.Abs(tileInfo.X) % 3],tileInfo.ZoomLevel, tileInfo.X, tileInfo.Y);
     }
 }

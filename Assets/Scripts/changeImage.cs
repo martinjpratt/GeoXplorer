@@ -11,7 +11,7 @@ public class changeImage : MonoBehaviour {
 
     Renderer rend;
     Mesh mesh;
-    float r = 10;
+    //float r = 10;
 
     // Use this for initialization
     void Start () {
@@ -30,9 +30,9 @@ public class changeImage : MonoBehaviour {
         Mesh mesh = GetComponent<MeshFilter>().mesh;
         Vector3[] vertices = mesh.vertices;
         Vector3[] normals = mesh.normals;
-        float[] hLon = new float[11];
+        //float[] hLon = new float[11];
         
-        float[] hLat = new float[11];
+        //float[] hLat = new float[11];
         float deltaLon = sphericalCoords.minmaxLon / 10;
         float deltaLat = sphericalCoords.minmaxLat / 10;
 

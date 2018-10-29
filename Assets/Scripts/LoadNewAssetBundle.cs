@@ -14,7 +14,7 @@ public class LoadNewAssetBundle : MonoBehaviour {
     GameObject loadingText;
     GameObject go;
     AssetBundleRequest downloadedAsset;
-    bool loadingBool = false;
+    //bool loadingBool = false;
     
     // Use this for initialization
     void Start () {

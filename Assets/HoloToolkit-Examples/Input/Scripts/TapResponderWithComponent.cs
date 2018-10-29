@@ -24,15 +24,18 @@ namespace HoloToolkit.Unity.InputModule.Tests
         public string assetBundleName;
         public string assetName;
         public string assetTitle;
+        public string authorName;
         public bool sharingSelected = false;
+        public float latitude;
+        public float longitude;
 
         Material cachedMaterial;
-        Color originalColor;
+        //Color originalColor;
 
         private void Awake()
         {
             cachedMaterial = GetComponent<Renderer>().material;
-            originalColor = cachedMaterial.GetColor("_Color");
+            //originalColor = cachedMaterial.GetColor("_Color");
         }
 
 
@@ -57,6 +60,9 @@ namespace HoloToolkit.Unity.InputModule.Tests
             foreach (GameObject fl in flags) {
                 Destroy(fl);
             }
+
+            GameObject authorObject = GameObject.FindGameObjectWithTag("authorName");
+            authorObject.GetComponent<TextMesh>().text = authorName;
 
             GameObject titleObject = GameObject.FindGameObjectWithTag("Title");
             titleObject.GetComponent<TextMesh>().text = assetTitle;
@@ -137,7 +143,14 @@ namespace HoloToolkit.Unity.InputModule.Tests
             {
                 StartCoroutine(modelDownloader.GetComponent<LoadOutcropAssets>().DownloadOutcropAsset(assetBundleName, assetName));
             }
-            
+
+            if (latitude > -100)
+            {
+                GameObject.FindGameObjectWithTag("GameController").GetComponent<MapBuilder>().Latitude = latitude;
+                GameObject.FindGameObjectWithTag("GameController").GetComponent<MapBuilder>().Longitude = longitude;
+                GameObject.FindGameObjectWithTag("GameController").GetComponent<MapBuilder>().targetLatitude = latitude;
+                GameObject.FindGameObjectWithTag("GameController").GetComponent<MapBuilder>().targetLongitude = longitude;
+            }
 
             GazeAudio.Instance.PlayClickSound();
             cachedMaterial.SetColor("_Color", Color.white);

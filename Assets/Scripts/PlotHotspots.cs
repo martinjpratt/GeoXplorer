@@ -20,7 +20,7 @@ public class PlotHotspots : MonoBehaviour {
         for (int i = 0; i < dataText.Length-1; i++)
         {
             string[] lineText = dataText[i].Split("\t"[0]);
-            string name = lineText[0];
+            //string name = lineText[0];
             float lat = float.Parse(lineText[1]);
             float lon = float.Parse(lineText[2])+90f;
 

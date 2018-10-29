@@ -1,7 +1,5 @@
 ﻿using System;
 using UnityEngine;
-using System.Collections.Generic;
-using System.Collections;
 
 public class TileInfo : IEquatable<TileInfo>
 {
@@ -20,7 +18,6 @@ public class TileInfo : IEquatable<TileInfo>
         X = (int)((centerLocation.Lon + 180.0) / 360.0 * n);
         Y = (int)((1.0 - Mathf.Log(Mathf.Tan(latrad) + 1 / Mathf.Cos(latrad)) / Mathf.PI) / 2.0 * n);
         ZoomLevel = zoom;
-
     }
 
     public TileInfo(int x, int y, int zoom, float mapTileSize)
@@ -94,7 +91,6 @@ public class TileInfo : IEquatable<TileInfo>
     {
         return GetNorthWestLocation(X, Y+1, ZoomLevel);
     }
-
 
 //http://wiki.openstreetmap.org/wiki/Slippy_map_tilenames#C.23
 private WorldCoordinate GetNorthWestLocation(int tileX, int tileY, int zoomLevel)

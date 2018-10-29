@@ -4,9 +4,11 @@ namespace HoloToolkitExtensions.RemoteAssets
     public class DynamicTextureDownloader : MonoBehaviour
     {
         public string ImageUrl;
+        public string GeoImageUrl;
         public bool ResizePlane;
 
         private WWW _imageLoader = null;
+        private WWW _geoimageLoader = null;
         private string _previousImageUrl = null;
         private bool _appliedToTexture = false;
 
@@ -39,16 +41,15 @@ namespace HoloToolkitExtensions.RemoteAssets
                 OnStartLoad();
             }
 
-            if (_imageLoader != null &&_imageLoader.isDone && !_appliedToTexture)
+            if (_imageLoader != null &&_imageLoader.isDone && _geoimageLoader.isDone && !_appliedToTexture)
             {
                 // Apparently an image was loading and is now done. Get the texture and apply
                 _appliedToTexture = true;
 
                 Destroy(GetComponent<Renderer>().material.mainTexture);
-
-
-
-				Destroy(_imageLoader.texture);
+                GetComponent<Renderer>().material.SetTexture("_BaseTexture", _imageLoader.texture);
+                GetComponent<Renderer>().material.SetTexture("_OverlayTexture", _geoimageLoader.texture);
+                Destroy(_imageLoader.texture);
                 _imageLoader = null;
 
                 if (ResizePlane)
@@ -80,6 +81,7 @@ namespace HoloToolkitExtensions.RemoteAssets
         {
             _appliedToTexture = false;
             _imageLoader = new WWW(ImageUrl);
+            _geoimageLoader = new WWW(GeoImageUrl);
         }
 
         protected virtual void OnEndLoad()

@@ -13,12 +13,12 @@ public class TapResponderBack : MonoBehaviour, IFocusable, IInputClickHandler {
     public GameObject TurnOffObject;
 
     Material cachedMaterial;
-    Color originalColor;
+    //Color originalColor;
 
     private void Awake()
     {
         cachedMaterial = GetComponent<Renderer>().material;
-        originalColor = cachedMaterial.GetColor("_Color");
+        //originalColor = cachedMaterial.GetColor("_Color");
     }
 
     public void OnFocusEnter()

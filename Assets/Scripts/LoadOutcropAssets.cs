@@ -28,7 +28,7 @@ public class LoadOutcropAssets : MonoBehaviour
     {
 
         //uri = "http://epsc.wustl.edu/~martinpratt/AssetBundles2017/Windows/";
-        uri = "https://fossett.blob.core.windows.net/outcrops/";
+        uri = "https://fossett.blob.core.windows.net/outcrop-container/";
         if (isHirise)
         {
             uri = "https://fossett.blob.core.windows.net/fossett-lab/";

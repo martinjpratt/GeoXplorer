@@ -1,4 +1,9 @@
-﻿using System.Collections;
+﻿//Written by Martin Pratt, Fossett Lab for Virtual Planetary Exploration
+//Washington University in St. Louis
+//
+//October 2018
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -10,6 +15,8 @@ public class CreateIconsHiRise : MonoBehaviour {
 
 	// Use this for initialization
 	public void CreateIcons () {
+        this.GetComponent<HiRiseIconInteraction>().iconTag = "hiriseLocation";
+
 		var iconList = hiriseMetadata.text.Split("\n"[0]);
 		for (int i = 0; i < iconList.Length; i++) {
 			var dataList = iconList[i].Split("\t"[0]);
@@ -32,7 +39,8 @@ public class CreateIconsHiRise : MonoBehaviour {
 	}
 
 	public void DestroyIcons (){
-		GameObject[] icons = GameObject.FindGameObjectsWithTag ("hiriseLocation");
+        this.GetComponent<HiRiseIconInteraction>().iconTag = "outcropLocation";
+        GameObject[] icons = GameObject.FindGameObjectsWithTag ("hiriseLocation");
 		foreach (var icon in icons) {
 			Destroy (icon);
 		}

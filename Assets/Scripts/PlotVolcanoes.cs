@@ -15,7 +15,7 @@ public class PlotVolcanoes : MonoBehaviour {
 		for (int i = 2; i < dataText.Length; i++)
 		{
 			string[] lineText = dataText[i].Split("\t"[0]);
-			string name = lineText[0];
+			//string name = lineText[0];
 
 			float lat = float.Parse(lineText[8]);
 			float lon = float.Parse(lineText[9])+90f;
