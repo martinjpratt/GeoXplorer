@@ -55,8 +55,6 @@ Clicking on this button will replace the Earth with a semi-transparent surface w
 3.	Hotspots: Plots the location of notable intraplate hotspots (e.g. Hawaii) as cones on the Earth's surface.
 4.	LLSVP: The Large Low Shear Velocity Provinces are the so-called 'superplumes' in the lower mantle. These regions of low seismic shear velocity are thought to be chemically distinct from the rest of the mantle, potentially spawning mantle upwellings that we see as volcanic hotspots.
 
-[Launch Alpine Fault in GeoXplorer](geoxdl://outcrop?alpinefault)
-
 Coming soon:
 Sharing capability
 Two-handed manipulation
